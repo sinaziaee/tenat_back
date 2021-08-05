@@ -1,0 +1,4 @@
+# creating requirements.txt file automatically
+pip freeze > requirements.txt
+# list all pip installed packages
+pip list
