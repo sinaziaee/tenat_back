@@ -1,4 +1,8 @@
+db.sqlite3
 venv/
 **/migrations/*
 **/__pycache__/
 .idea/
+media/docs/
+media/data/
+media/result/

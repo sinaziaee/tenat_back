@@ -13,13 +13,15 @@ def home(request):
 
 
 def compress_view(request):
-    documents = CompressFile.objects.filter(uploader=request.user)
-
-    if request.user.is_superuser:
+    # documents = CompressFile.objects.filter(uploader=request.user)
+    documents = CompressFile.objects.all()
+    # if request.user.is_superuser:
+    if True:
         FileField(label='Select a file', help_text='max. 10 megabytes')
         # Handle file upload
         print('-' * 100)
         if request.method == 'POST':
+            print('post')
             if request.POST.get('delete_items') is not None:
                 id = request.POST.get('delete_items')
                 id = str(id).replace('delete ', '')
@@ -42,13 +44,15 @@ def compress_view(request):
                     deleter(founded_file.name)
                 # form = ZipFileForm()
                 # if form.is_valid():
-                newdoc = CompressFile(file=cur_file, name=cur_name, uploader=cur_user)
+                # newdoc = CompressFile(file=cur_file, name=cur_name, uploader=cur_user)
+                newdoc = CompressFile(file=cur_file, name=cur_name)
                 newdoc.save()
                 start_automated_scripts(newdoc)
                 # Redirect to the zip_upload.html page
                 return render(request, 'compress/upload.html',
                               {'status': 'File uploaded successfully', 'form': ZipFileForm(), 'files': documents})
         else:
+            print('get')
             print(documents)
 
         # Render list page with the documents and the form
@@ -62,9 +66,9 @@ def deleter(filename):
     dirname = os.path.dirname(__file__)
     path = pathlib.Path(dirname).parent
     print('*' * 100)
-    data_path = os.path.join(path, f'media_cdn/data/{new_filename}')
-    result_path = os.path.join(path, f'media_cdn/result/{new_filename}')
-    doc_zip_path = os.path.join(path, f'media_cdn/docs/zips/{filename}')
+    data_path = os.path.join(path, f'media/data/{new_filename}')
+    result_path = os.path.join(path, f'media/result/{new_filename}')
+    doc_zip_path = os.path.join(path, f'media/docs/zips/{filename}')
     print('*' * 100)
     shutil.rmtree(data_path)
     shutil.rmtree(result_path)
