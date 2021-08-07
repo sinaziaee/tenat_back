@@ -10,6 +10,8 @@ from pathlib import Path
 
 
 def apply(zip_file):
+    print('----------------------'*4)
+    print(zip_file)
     # getting the name of the compressed file
     folder_name = str(os.path.basename(zip_file))
     dot_index = folder_name.rfind('.')
@@ -37,6 +39,8 @@ def apply(zip_file):
             patoolib.extract_archive(zip_file, outdir=f'media/data/{folder_name}/', interactive=False)
     except OSError as error:
         print(error)
+
+
 
     # Manual set path in windows
     # folder_name = "Fava_c"
