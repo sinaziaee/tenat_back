@@ -17,7 +17,7 @@ def apply(zip_file):
     dot_index = folder_name.rfind('.')
     type = folder_name[dot_index + 1:]
     folder_name = folder_name[:dot_index]
-
+    folder_path = f'media/data/{folder_name}/'
     try:
         # check for existence of data folder
         if not os.path.isdir(f'media/data/'):
@@ -32,14 +32,27 @@ def apply(zip_file):
             os.mkdir(path)
         # extracting the compressed file
         # by adding parameter interactive=False we can avoid replace
-        if type == "zip":
-            patoolib.extract_archive(zip_file, outdir=f'media/data/{folder_name}/', interactive=False)
-        elif type == "rar":
-            # patoolib.extract_archive(zip_file, outdir=f'media_cdn/data/{folder_name}/', interactive=False, program=r"S:\UnrarDLL\x64\UnRAR64.dll")
-            patoolib.extract_archive(zip_file, outdir=f'media/data/{folder_name}/', interactive=False)
+
+        patoolib.extract_archive(zip_file, outdir=folder_path, interactive=False)
+        # if type == "zip":
+        #     patoolib.extract_archive(zip_file, outdir=f'media/data/{folder_name}/', interactive=False)
+        # elif type == "rar":
+        #     # patoolib.extract_archive(zip_file, outdir=f'media_cdn/data/{folder_name}/', interactive=False, program=r"S:\UnrarDLL\x64\UnRAR64.dll")
+        #     patoolib.extract_archive(zip_file, outdir=f'media/data/{folder_name}/', interactive=False)
     except OSError as error:
         print(error)
 
+    mapList = []
+
+    for path, dirs, files in os.walk(folder_path):
+        for f in files:
+            fp = os.path.join(path, f)
+            # size += os.path.getsize(fp)
+            name = fp.split('/')[-1]
+            new_map = {name, os.path.getsize(fp)}
+            mapList.append(new_map)
+
+    return mapList
 
 
     # Manual set path in windows

@@ -27,8 +27,8 @@ def upload(request):
         print('*'*100)
         obj = serializer.save()
         print(obj.file.path)
-        extractor.apply(obj.file.path)
-        return Response(serializer.data)
+        map_list = extractor.apply(obj.file.path)
+        return Response(map_list, status=status.HTTP_200_OK)
     return Response('failed')
 
 
