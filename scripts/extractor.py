@@ -1,6 +1,8 @@
 import patoolib
 import os
 from pathlib import Path
+
+
 # from scripts import tfidf_per_doc, Ngram, wordCloud, LsiSimilarity, Definition, DocFeatures, wordCombGraph, \
 #     InvertedIndex, DocSimilarityByKeyword, word2gramGraph, Paragraphs
 # from scripts import DocumentList
@@ -10,7 +12,7 @@ from pathlib import Path
 
 
 def apply(zip_file):
-    print('----------------------'*4)
+    print('----------------------' * 4)
     print(zip_file)
     # getting the name of the compressed file
     folder_name = str(os.path.basename(zip_file))
@@ -53,7 +55,6 @@ def apply(zip_file):
             mapList.append(new_map)
 
     return mapList
-
 
     # Manual set path in windows
     # folder_name = "Fava_c"
