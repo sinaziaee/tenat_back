@@ -1,6 +1,7 @@
 import patoolib
 import os
 from pathlib import Path
+from scripts import list_files
 
 
 # from scripts import tfidf_per_doc, Ngram, wordCloud, LsiSimilarity, Definition, DocFeatures, wordCombGraph, \
@@ -12,13 +13,7 @@ from pathlib import Path
 
 
 def apply(zip_file):
-    print('----------------------' * 4)
-    print(zip_file)
-    # getting the name of the compressed file
     folder_name = str(os.path.basename(zip_file))
-    dot_index = folder_name.rfind('.')
-    type = folder_name[dot_index + 1:]
-    folder_name = folder_name[:dot_index]
     folder_path = f'media/data/{folder_name}/'
     try:
         # check for existence of data folder
@@ -44,17 +39,19 @@ def apply(zip_file):
     except OSError as error:
         print(error)
 
-    mapList = []
+    return list_files.apply(folder_path)
 
-    for path, dirs, files in os.walk(folder_path):
-        for f in files:
-            fp = os.path.join(path, f)
-            # size += os.path.getsize(fp)
-            name = fp.split('/')[-1]
-            new_map = {name, os.path.getsize(fp)}
-            mapList.append(new_map)
+    # mapList = []
 
-    return mapList
+    # for path, dirs, files in os.walk(folder_path):
+    #     for f in files:
+    #         fp = os.path.join(path, f)
+    #         # size += os.path.getsize(fp)
+    #         name = fp.split('/')[-1]
+    #         new_map = {name, os.path.getsize(fp)}
+    #         mapList.append(new_map)
+    #
+    # return mapList
 
     # Manual set path in windows
     # folder_name = "Fava_c"
