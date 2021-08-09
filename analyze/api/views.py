@@ -5,7 +5,7 @@ from rest_framework import status
 from rest_framework.decorators import permission_classes, api_view
 from rest_framework.permissions import IsAuthenticated
 from analyze import models
-from scripts import extractor, list_files, tokenizer
+from scripts import extractor, list_files_and_sizes, tokenizer
 from scripts.normalize import english_normalizer, persian_normalizer
 import json
 from analyze.api.serializer import *
@@ -64,7 +64,7 @@ def upload(request):
             file = models.CompressFile.objects.get(file=request.GET.get('file'))
         folder_name = file.file.path
         folder_path = f'media/data/{folder_name}/'
-        map_list = list_files.apply(folder_path)
+        map_list = list_files_and_sizes.apply(folder_path)
         # print(args)
         # print(request.GET.get('name'))
         print(map_list)

@@ -1,7 +1,7 @@
 import patoolib
 import os
 from pathlib import Path
-from scripts import list_files
+from scripts import list_files_and_sizes
 import docx2txt
 
 
@@ -39,7 +39,7 @@ def apply(zip_file):
     for file in files_list:
         doc_to_txt(folder_path, file)
 
-    return list_files.apply(folder_path)
+    return list_files_and_sizes.apply(folder_path)
 
 
 def doc_to_txt(folder_path, file):
@@ -54,7 +54,7 @@ def doc_to_txt(folder_path, file):
         f = open(file, 'r', encoding='utf8')
         for line in f.readlines():
             if line != '':
-                text += line + '\n'
+                text += line.replace('\n', '') + '\n'
         f.flush()
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
