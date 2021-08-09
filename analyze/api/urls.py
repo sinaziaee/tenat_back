@@ -7,5 +7,5 @@ urlpatterns = [
     # path('import', views.Upload.as_view()),
     path('import/', views.upload),  # {host}/api/import
     path('tokenize/', views.tokenize, name='tokenizer'),  # {host}/api/tokenize
-    path('normalize/', views.normalize, name='normalizer'),  # {host}/api/normalize
+    path('normalize/', views.normalize, name='normalize'),  # {host}/api/normalize
 ]

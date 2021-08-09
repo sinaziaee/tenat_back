@@ -1,5 +1,5 @@
 import os
-from scripts import list_files
+from scripts import list_files, file_folder_creator
 import hazm
 
 
@@ -19,12 +19,12 @@ def apply(file_name, splitter, language):
     return files_list
 
 
+# this is a tokenizer that i wrote myself
 def writer(folder_path, file, text, splitter):
-    print('-'*100)
+    print('-' * 100)
     file = str(file)
     file = file.split('/')[-1]
-    if not os.path.exists(folder_path):
-        os.makedirs(folder_path)
+    file_folder_creator.apply(folder_path)
     filename = str(file).replace('.docx', '.txt')
     f = open(os.path.join(folder_path, filename), 'w')
     for line in text.split('\n'):
@@ -33,13 +33,13 @@ def writer(folder_path, file, text, splitter):
     f.flush()
 
 
+# this is a tokenizer that uses hazam library
 def writer_hazm(folder_path, file, text, splitter):
     print(folder_path)
     print(file)
     file = str(file)
     file = file.split('/')[-1]
-    if not os.path.exists(folder_path):
-        os.makedirs(folder_path)
+    file_folder_creator.apply(folder_path)
     filename = str(file).replace('.docx', '.txt')
     f = open(os.path.join(folder_path, filename), 'w')
     temp = hazm.word_tokenize(text)

@@ -11,6 +11,7 @@ import json
 from analyze.api.serializer import *
 import random
 import time
+from django.views.decorators.csrf import csrf_exempt
 
 
 def home_api(request):
@@ -107,17 +108,30 @@ def tokenize(request):
     try:
         files_list = tokenizer.apply(name, splitter, language)
         return Response(files_list, status=status.HTTP_200_OK)
-    except Exception:
+    except Exception as e:
+        print(e)
         return Response('failed', status=status.HTTP_400_BAD_REQUEST)
 
 
+@api_view(['POST'])
 def normalize(request):
     new_map = request.POST
     name = new_map.get('name')
     is_tokenized = new_map.get('is_tokenized')
-    language = new_map.get('language')
-    if language == 'persian':
-        persian_normalizer.apply(name, is_tokenized)
+    if is_tokenized is not None:
+        if is_tokenized == 'true':
+            is_tokenized = True
+        else:
+            is_tokenized = False
     else:
-        english_normalizer.apply(name, is_tokenized)
-    return Response('failed', status=status.HTTP_400_BAD_REQUEST)
+        is_tokenized = False
+    language = new_map.get('language')
+    try:
+        if language == 'persian':
+            result = persian_normalizer.apply(name, is_tokenized)
+        else:
+            result = english_normalizer.apply(name, is_tokenized)
+        return Response(result, status=status.HTTP_200_OK)
+    except Exception as e:
+        print(e)
+        return Response('failed', status=status.HTTP_400_BAD_REQUEST)
