@@ -5,11 +5,12 @@ from rest_framework import status
 from rest_framework.decorators import permission_classes, api_view
 from rest_framework.permissions import IsAuthenticated
 from analyze import models
-from scripts import extractor, list_files
+from scripts import extractor, list_files, tokenizer
 import json
 from analyze.api.serializer import *
 import random
 import time
+
 
 def home_api(request):
     return HttpResponse('apis')
@@ -51,7 +52,7 @@ def upload(request):
             # return Response("success", status=status.HTTP_200_OK)
         return Response('failed')
     elif request.method == 'GET':
-        print('-'*100)
+        print('-' * 100)
         name = request.GET.get('name')
         id = request.GET.get('id')
         if id is not None:
@@ -98,4 +99,12 @@ def upload(request):
 
 @api_view(['POST'])
 def tokenize(request):
-    return Response('success tokenization')
+    new_map = request.POST
+    name = new_map.get('name')
+    splitter = new_map.get('splitter')
+    language = new_map.get('language')
+    try:
+        files_list = tokenizer.apply(name, splitter, language)
+        return Response(files_list, status=status.HTTP_200_OK)
+    except Exception:
+        return Response('failed', status=status.HTTP_400_BAD_REQUEST)
