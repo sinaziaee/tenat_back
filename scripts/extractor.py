@@ -2,6 +2,7 @@ import patoolib
 import os
 from pathlib import Path
 from scripts import list_files
+import docx2txt
 
 
 # from scripts import tfidf_per_doc, Ngram, wordCloud, LsiSimilarity, Definition, DocFeatures, wordCombGraph, \
@@ -16,7 +17,6 @@ def apply(zip_file):
     folder_name = str(os.path.basename(zip_file))
     folder_path = f'media/data/{folder_name}/'
     try:
-        # check for existence of data folder
         if not os.path.isdir(f'media/data/'):
             dirname = os.path.dirname(__file__)
             path = Path(dirname).parent
@@ -27,19 +27,41 @@ def apply(zip_file):
             path = Path(dirname).parent
             path = os.path.join(path, f'media/data/{folder_name}')
             os.mkdir(path)
-        # extracting the compressed file
-        # by adding parameter interactive=False we can avoid replace
-
         patoolib.extract_archive(zip_file, outdir=folder_path, interactive=False)
-        # if type == "zip":
-        #     patoolib.extract_archive(zip_file, outdir=f'media/data/{folder_name}/', interactive=False)
-        # elif type == "rar":
-        #     # patoolib.extract_archive(zip_file, outdir=f'media_cdn/data/{folder_name}/', interactive=False, program=r"S:\UnrarDLL\x64\UnRAR64.dll")
-        #     patoolib.extract_archive(zip_file, outdir=f'media/data/{folder_name}/', interactive=False)
     except OSError as error:
         print(error)
+    files_list = []
+    for path, dirs, files in os.walk(folder_path):
+        for f in files:
+            fp = os.path.join(path, f)
+            files_list.append(fp)
+    folder_path = folder_path.replace('data', 'result/raw_text')
+    for file in files_list:
+        doc_to_txt(folder_path, file)
 
     return list_files.apply(folder_path)
+
+
+def doc_to_txt(folder_path, file):
+    text = ''
+    if str(file).endswith('.docx'):
+        f = docx2txt.process(file)
+        lines = f.split('\n')
+        for line in lines:
+            if line != '':
+                text += line + '\n'
+    else:
+        f = open(file, 'r', encoding='utf8')
+        for line in f.readlines():
+            if line != '':
+                text += line + '\n'
+        f.flush()
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+    file = file.split('/')[-1].replace('.docx', '.txt')
+    f = open(os.path.join(folder_path, file), 'w')
+    f.write(text)
+    f.flush()
 
     # mapList = []
 

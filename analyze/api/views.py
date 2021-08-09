@@ -6,6 +6,7 @@ from rest_framework.decorators import permission_classes, api_view
 from rest_framework.permissions import IsAuthenticated
 from analyze import models
 from scripts import extractor, list_files, tokenizer
+from scripts.normalize import english_normalizer, persian_normalizer
 import json
 from analyze.api.serializer import *
 import random
@@ -108,3 +109,15 @@ def tokenize(request):
         return Response(files_list, status=status.HTTP_200_OK)
     except Exception:
         return Response('failed', status=status.HTTP_400_BAD_REQUEST)
+
+
+def normalize(request):
+    new_map = request.POST
+    name = new_map.get('name')
+    is_tokenized = new_map.get('is_tokenized')
+    language = new_map.get('language')
+    if language == 'persian':
+        persian_normalizer.apply(name, is_tokenized)
+    else:
+        english_normalizer.apply(name, is_tokenized)
+    return Response('failed', status=status.HTTP_400_BAD_REQUEST)
