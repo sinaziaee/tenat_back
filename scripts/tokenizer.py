@@ -1,5 +1,5 @@
 import os
-from scripts import list_files, file_folder_creator
+from scripts import list_files, folder_creator
 import hazm
 
 
@@ -24,7 +24,7 @@ def writer(folder_path, file, text, splitter):
     print('-' * 100)
     file = str(file)
     file = file.split('/')[-1]
-    file_folder_creator.apply(folder_path)
+    folder_creator.apply(folder_path)
     filename = str(file).replace('.docx', '.txt')
     f = open(os.path.join(folder_path, filename), 'w')
     for line in text.split('\n'):
@@ -39,7 +39,7 @@ def writer_hazm(folder_path, file, text, splitter):
     print(file)
     file = str(file)
     file = file.split('/')[-1]
-    file_folder_creator.apply(folder_path)
+    folder_creator.apply(folder_path)
     filename = str(file).replace('.docx', '.txt')
     f = open(os.path.join(folder_path, filename), 'w')
     temp = hazm.word_tokenize(text)

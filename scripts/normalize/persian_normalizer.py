@@ -1,5 +1,5 @@
 import os
-from scripts import list_files, file_folder_creator
+from scripts import list_files, folder_creator
 import hazm
 
 
@@ -13,7 +13,7 @@ def apply(file_name, is_tokenized):
     normalizer = hazm.Normalizer()
     output_list = []
     output_path = str(f'media/result/normalized/{folder_name}/')
-    file_folder_creator.apply(output_path)
+    folder_creator.apply(output_path)
     for file in file_list:
         f = open(file, 'r', encoding='utf8')
         doc = str(file).split('/')[-1]

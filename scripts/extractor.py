@@ -1,7 +1,7 @@
 import patoolib
 import os
 from pathlib import Path
-from scripts import list_files_and_sizes, file_folder_creator
+from scripts import list_files_and_sizes, folder_creator
 import docx2txt
 
 
@@ -56,7 +56,7 @@ def doc_to_txt(folder_path, file):
             if line != '':
                 text += line.replace('\n', '') + '\n'
         f.flush()
-    file_folder_creator.apply(folder_path)
+    folder_creator.apply(folder_path)
     file = file.split('/')[-1].replace('.docx', '.txt')
     f = open(os.path.join(folder_path, file), 'w')
     f.write(text)
