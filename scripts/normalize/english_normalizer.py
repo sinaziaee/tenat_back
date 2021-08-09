@@ -1,6 +1,8 @@
 import os
 from scripts import list_files, folder_creator
+import nltk
 import hazm
+import PersianStemmer
 
 
 def apply(file_name, is_tokenized):

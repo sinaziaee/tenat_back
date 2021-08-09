@@ -7,11 +7,11 @@ from rest_framework.permissions import IsAuthenticated
 from analyze import models
 from scripts import extractor, list_files_and_sizes, tokenizer
 from scripts.normalize import english_normalizer, persian_normalizer
+from scripts.stem import english_stemmer, persian_stemmer
 import json
 from analyze.api.serializer import *
 import random
 import time
-from django.views.decorators.csrf import csrf_exempt
 
 
 def home_api(request):
@@ -135,3 +135,23 @@ def normalize(request):
     except Exception as e:
         print(e)
         return Response('failed', status=status.HTTP_400_BAD_REQUEST)
+
+
+@api_view(['POST'])
+def stem(request):
+    new_map = request.POST
+    name = new_map.get('name')
+    from_path = new_map.get('from')
+    language = new_map.get('language')
+    algorithm = new_map.get('algorithm')
+    # try:
+    if language == 'Persian':
+        persian_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name)
+    elif language == 'English':
+        english_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name)
+    else:
+        english_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name)
+    # except Exception as e:
+    #     print(e)
+    #     return Response('success', status=status.HTTP_200_OK)
+    return Response('failed', status=status.HTTP_400_BAD_REQUEST)

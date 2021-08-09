@@ -8,4 +8,5 @@ urlpatterns = [
     path('import/', views.upload),  # {host}/api/import
     path('tokenize/', views.tokenize, name='tokenizer'),  # {host}/api/tokenize
     path('normalize/', views.normalize, name='normalize'),  # {host}/api/normalize
+    path('stem/', views.stem, name='stem'),  # {host}/api/stem
 ]
