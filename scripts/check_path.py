@@ -10,5 +10,5 @@ def apply(path):
         return 'raw_text'
     elif 'stop' in path:
         return 'stop_word'
-    elif 'lemmat' in path:
+    elif 'lemmat' in path or 'limmat' in path:
         return 'lemmatized'
