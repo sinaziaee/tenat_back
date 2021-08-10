@@ -103,10 +103,13 @@ def upload(request):
 def tokenize(request):
     new_map = request.POST
     name = new_map.get('name')
-    splitter = new_map.get('splitter')
+    from_path = new_map.get('from')
     language = new_map.get('language')
+    algorithm = new_map.get('algorithm')
+    splitter = new_map.get('splitter')
     try:
-        files_list = tokenizer.apply(name, splitter, language)
+        files_list = tokenizer.apply(name=name, splitter=splitter, language=language, from_path=from_path,
+                                     to_path='tokenized')
         return Response(files_list, status=status.HTTP_200_OK)
     except Exception as e:
         print(e)
@@ -146,12 +149,14 @@ def stem(request):
     algorithm = new_map.get('algorithm')
     # try:
     if language == 'Persian':
-        persian_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name)
+        result = persian_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name)
     elif language == 'English':
-        english_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name)
+        result = english_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name)
     else:
-        english_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name)
+        result = english_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name)
     # except Exception as e:
     #     print(e)
     #     return Response('success', status=status.HTTP_200_OK)
+    if result is not None and len(result) != 0:
+        return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)
