@@ -18,12 +18,6 @@ def apply(from_path, algorithm, to_path, name):
     folder_path = f'media/result/{from_path}/{name}/'
     files_list = list_files.apply(folder_path)
     output_file_list = []
-    # print('*' * 100)
-    # print(from_path)
-    # print(to_path)
-    # print(algorithm)
-    # print(name)
-    # print(folder_path)
     folder_path = f'media/result/{to_path}/{name}/'
     folder_creator.apply(folder_path)
     for file in files_list:
@@ -39,5 +33,4 @@ def apply(from_path, algorithm, to_path, name):
                 f_output.write(f'{stemmed} ')
         f.flush()
         f_output.flush()
-    # print('*' * 100)
     return output_file_list

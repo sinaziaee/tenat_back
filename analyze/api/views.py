@@ -1,16 +1,13 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import HttpResponse
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.decorators import permission_classes, api_view
 from rest_framework.permissions import IsAuthenticated
-from analyze import models
 from scripts import extractor, list_files_and_sizes, tokenizer
 from scripts.normalize import english_normalizer, persian_normalizer
 from scripts.stem import english_stemmer, persian_stemmer
-import json
 from analyze.api.serializer import *
-import random
 import time
 
 
@@ -66,38 +63,11 @@ def upload(request):
         folder_name = file.file.path
         folder_path = f'media/data/{folder_name}/'
         map_list = list_files_and_sizes.apply(folder_path)
-        # print(args)
-        # print(request.GET.get('name'))
         print(map_list)
         return Response(map_list)
     else:
         pass
 
-
-# class Upload(APIView):
-#     def post(self, args):
-#         # if self.request.FILES is not None:
-#         #     cur_file = self.request.FILES['file']
-#         # print(self.request.data)
-#         data = json.loads(json.dumps(self.request.data))
-#         print(data)
-#         print('------------------------------------------------------------------------------')
-#         # print(self.request.data)
-#         # print(self.request.body)
-#         # serializer = UploadSerializer(data=data)
-#         # if serializer.is_valid():
-#         #     return Response('status: unsuccessful', status=status.HTTP_201_CREATED)
-#         return Response('status: unsuccessful', status=status.HTTP_400_BAD_REQUEST)
-#
-#     def get(self, args):
-#         print('here')
-#         return Response('status: successful', status=status.HTTP_200_OK)
-#
-#     def update(self, args):
-#         pass
-#
-#     def delete(self, args):
-#         pass
 
 @api_view(['POST'])
 def tokenize(request):
@@ -108,8 +78,8 @@ def tokenize(request):
     algorithm = new_map.get('algorithm')
     splitter = new_map.get('splitter')
     try:
-        files_list = tokenizer.apply(name=name, splitter=splitter, language=language, from_path=from_path,
-                                     to_path='tokenized')
+        files_list = tokenizer.apply(name=name, splitter=splitter,
+                                     from_path=from_path, to_path='tokenized')
         return Response(files_list, status=status.HTTP_200_OK)
     except Exception as e:
         print(e)
@@ -120,20 +90,13 @@ def tokenize(request):
 def normalize(request):
     new_map = request.POST
     name = new_map.get('name')
-    is_tokenized = new_map.get('is_tokenized')
-    if is_tokenized is not None:
-        if is_tokenized == 'true':
-            is_tokenized = True
-        else:
-            is_tokenized = False
-    else:
-        is_tokenized = False
+    from_path = new_map.get('from')
     language = new_map.get('language')
     try:
         if language == 'persian':
-            result = persian_normalizer.apply(name, is_tokenized)
+            result = persian_normalizer.apply(name=name, from_path=from_path, to_path='normalized')
         else:
-            result = english_normalizer.apply(name, is_tokenized)
+            result = english_normalizer.apply(name=name, from_path=from_path, to_path='normalized')
         return Response(result, status=status.HTTP_200_OK)
     except Exception as e:
         print(e)
@@ -147,16 +110,12 @@ def stem(request):
     from_path = new_map.get('from')
     language = new_map.get('language')
     algorithm = new_map.get('algorithm')
-    # try:
     if language == 'Persian':
         result = persian_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name)
     elif language == 'English':
         result = english_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name)
     else:
         result = english_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name)
-    # except Exception as e:
-    #     print(e)
-    #     return Response('success', status=status.HTTP_200_OK)
     if result is not None and len(result) != 0:
         return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)

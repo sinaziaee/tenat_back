@@ -1,18 +1,18 @@
 import os
-from scripts import list_files, folder_creator
+from scripts import list_files, folder_creator, check_path
+import nltk
 import hazm
+import PersianStemmer
 
 
-def apply(file_name, is_tokenized):
-    folder_name = str(os.path.basename(file_name))
-    if is_tokenized:
-        folder_path = f'media/result/tokenized/{folder_name}/'
-    else:
-        folder_path = f'media/result/raw_text/{folder_name}/'
+def apply(name, from_path, to_path):
+    from_path = check_path.apply(from_path)
+    to_path = check_path.apply(to_path)
+    folder_path = f'media/result/{from_path}/{name}/'
     file_list = list_files.apply(folder_path)
     normalizer = hazm.Normalizer()
     output_list = []
-    output_path = str(f'media/result/normalized/{folder_name}/')
+    output_path = folder_path.replace(from_path, to_path)
     folder_creator.apply(output_path)
     for file in file_list:
         f = open(file, 'r', encoding='utf8')

@@ -3,15 +3,12 @@ from scripts import list_files, folder_creator, check_path
 import hazm
 
 
-def apply(name, splitter, language, from_path, to_path):
+def apply(name, splitter, from_path, to_path):
     from_path = check_path.apply(from_path)
     to_path = check_path.apply(to_path)
     folder_path = f'media/result/{from_path}/{name}/'
-    print('-' * 100)
-    print(folder_path)
     files_list = list_files.apply(folder_path)
     folder_path = folder_path.replace(f'{from_path}', f'{to_path}')
-    print('-' * 100)
     for file in files_list:
         f = open(file, 'r', encoding="utf8")
         text = f.read()
@@ -22,9 +19,6 @@ def apply(name, splitter, language, from_path, to_path):
 
 
 def writer_hazm(folder_path, file, text, splitter):
-    print(splitter)
-    print(folder_path)
-    print(file)
     file = str(file)
     file = file.split('/')[-1]
     folder_creator.apply(folder_path)
