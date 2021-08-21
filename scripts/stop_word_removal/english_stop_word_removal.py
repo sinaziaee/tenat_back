@@ -1,10 +1,11 @@
+from scripts import check_path, list_files, folder_creator
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import nltk
+nltk.download('stopwords')
+nltk.download('punkt')
 
-def run(from_path, to_path, name):
-    nltk.download('stopwords')
-    nltk.download('punkt')
+def apply(from_path, to_path, name):
     stop_words = set(stopwords.words('english'))
     from_path = check_path.apply(from_path)
     to_path = check_path.apply(to_path)

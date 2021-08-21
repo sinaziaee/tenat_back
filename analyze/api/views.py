@@ -7,6 +7,7 @@ from rest_framework.permissions import IsAuthenticated
 from scripts import extractor, list_files_and_sizes, tokenizer
 from scripts.normalize import english_normalizer, persian_normalizer
 from scripts.stem import english_stemmer, persian_stemmer
+from scripts.stop_word_removal import english_stop_word_removal, persian_stop_word_removal
 from analyze.api.serializer import *
 import time
 
@@ -116,6 +117,22 @@ def stem(request):
         result = english_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name)
     else:
         result = english_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name)
+    if result is not None and len(result) != 0:
+        return Response(result, status=status.HTTP_200_OK)
+    return Response('failed', status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['POST'])
+def remove_stop_word(request):
+    new_map = request.POST
+    name = new_map.get('name')
+    from_path = new_map.get('from')
+    language = new_map.get('language')
+    if language == 'Persian':
+        result = persian_stop_word_removal.apply(from_path=from_path, to_path='stop_word', name=name)
+    elif language == 'English':
+        result = english_stop_word_removal.apply(from_path=from_path, to_path='stop_word', name=name)
+    else:
+        result = english_stop_word_removal.apply(from_path=from_path, to_path='stop_word', name=name)
     if result is not None and len(result) != 0:
         return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)
