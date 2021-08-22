@@ -3,6 +3,7 @@ import os
 from pathlib import Path
 from scripts import list_files_and_sizes, folder_creator
 import docx2txt
+import zip_unicode
 
 
 # from scripts import tfidf_per_doc, Ngram, wordCloud, LsiSimilarity, Definition, DocFeatures, wordCombGraph, \
@@ -27,7 +28,9 @@ def apply(zip_file):
             path = Path(dirname).parent
             path = os.path.join(path, f'media/data/{folder_name}')
             os.mkdir(path)
-        patoolib.extract_archive(zip_file, outdir=folder_path, interactive=False)
+        # patoolib.extract_archive(zip_file, outdir=folder_path, interactive=False)
+        zip_ref = zip_unicode.ZipHandler(path=zip_file, extract_path=folder_path)
+        zip_ref.extract_all()
     except OSError as error:
         print(error)
     files_list = []
@@ -58,7 +61,7 @@ def doc_to_txt(folder_path, file):
         f.flush()
     folder_creator.apply(folder_path)
     file = file.split('/')[-1].replace('.docx', '.txt')
-    f = open(os.path.join(folder_path, file), 'w')
+    f = open(os.path.join(folder_path, file), 'w', encoding='utf-8')
     f.write(text)
     f.flush()
 
