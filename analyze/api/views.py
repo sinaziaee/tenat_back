@@ -22,11 +22,12 @@ def temp(request):
 
 @api_view(['POST', 'GET'])
 def upload(request):
-    print(request.method)
     print('*' * 100)
     if request.method == 'POST':
         serializer = UploadSerializer(data=request.data)
+        print('='*100)
         if serializer.is_valid():
+            print('-' * 100)
             val_data = serializer.validated_data
             file_name = val_data['file']
             temp = models.CompressFile.objects.filter(file=file_name)
@@ -71,12 +72,16 @@ def upload(request):
 
 @api_view(['POST'])
 def tokenize(request):
+    print('*'*100)
     new_map = request.POST
     name = new_map.get('name')
     from_path = new_map.get('from')
     language = new_map.get('language')
     algorithm = new_map.get('algorithm')
     splitter = new_map.get('splitter')
+    print(name)
+    print(from_path)
+    print(splitter)
     try:
         files_list = tokenizer.apply(name=name, splitter=splitter,
                                      from_path=from_path, to_path='tokenized')
