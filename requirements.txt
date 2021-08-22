@@ -19,3 +19,4 @@ six==1.16.0
 sqlparse
 threadpoolctl==2.2.0
 typing-extensions
+ZipUnicode
