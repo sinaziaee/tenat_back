@@ -26,6 +26,9 @@ def upload(request):
     print(request.method)
     print('*' * 100)
     if request.method == 'POST':
+        print('yess')
+        print(str(request.data))
+
         serializer = UploadSerializer(data=request.data)
         if serializer.is_valid():
             val_data = serializer.validated_data
@@ -49,11 +52,10 @@ def upload(request):
                 print(obj.file.path)
             map_list = extractor.apply(obj.file.path)
             return Response(map_list, status=status.HTTP_200_OK)
-            # return Response("success", status=status.HTTP_200_OK)
         return Response('failed')
     elif request.method == 'GET':
         print('-' * 100)
-        name = request.GET.get('name')
+        name = request.GET.get('name')  
         id = request.GET.get('id')
         if id is not None:
             file = models.CompressFile.objects.get(file_id=id)

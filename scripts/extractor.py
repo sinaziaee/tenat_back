@@ -51,7 +51,7 @@ def doc_to_txt(folder_path, file):
         f.flush()
     folder_creator.apply(folder_path)
     file = file.split('/')[-1].replace('.docx', '.txt')
-    f = open(os.path.join(folder_path, file), 'w')
+    f = open(os.path.join(folder_path, file), 'w', encoding='utf-8')
     f.write(text)
     f.flush()
 
