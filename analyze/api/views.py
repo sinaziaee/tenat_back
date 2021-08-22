@@ -52,6 +52,7 @@ def upload(request):
                 obj.save()
                 print(obj.file.path)
             map_list = extractor.apply(obj.file.path)
+
             return Response(map_list, status=status.HTTP_200_OK)
         return Response('failed')
     elif request.method == 'GET':

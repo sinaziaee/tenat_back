@@ -20,3 +20,4 @@ sqlparse
 threadpoolctl==2.2.0
 typing-extensions
 ZipUnicode
+django-cors-headers
