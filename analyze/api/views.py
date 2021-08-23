@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.decorators import permission_classes, api_view
 from rest_framework.permissions import IsAuthenticated
-from scripts import extractor, list_files_and_sizes, tokenizer
+from scripts import extractor, list_files_and_sizes, tokenizer, exporter
 from scripts.normalize import english_normalizer, persian_normalizer
 from scripts.stem import english_stemmer, persian_stemmer
 from scripts.stop_word_removal import english_stop_word_removal, persian_stop_word_removal
@@ -143,6 +143,18 @@ def remove_stop_word(request):
         result = english_stop_word_removal.apply(from_path=from_path, to_path='stop_word', name=name)
     else:
         result = english_stop_word_removal.apply(from_path=from_path, to_path='stop_word', name=name)
+    if result is not None and len(result) != 0:
+        return Response(result, status=status.HTTP_200_OK)
+    return Response('failed', status=status.HTTP_400_BAD_REQUEST)
+
+
+@api_view(['POST'])
+def export(request):
+    new_map = request.POST
+    name = new_map.get('name')
+    from_path = new_map.get('from')
+    output_format = new_map.get('format')
+    result = exporter.apply(from_path=from_path, name=name, format=output_format, to_path='export')
     if result is not None and len(result) != 0:
         return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)
