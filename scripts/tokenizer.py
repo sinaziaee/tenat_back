@@ -34,6 +34,8 @@ def writer_hazm(folder_path, file, text, splitter):
 
 def show_files(files, tokens_count):
     result_list = []
+    result_file = str(files[0]).replace(os.path.basename(str(files[0])), '00_output_result.txt')
+    output_file = open(result_file, 'w', encoding='utf-8')
     for each in files:
         token_counter = 0
         file_name = os.path.basename(str(each))
@@ -48,7 +50,9 @@ def show_files(files, tokens_count):
                 first_top_tokens += line
             else:
                 pass
+        f.flush()
         new_map = {'doc_name': file_name, 'tokens_count': token_counter, 'tokens': first_top_tokens, 'link': each}
+        output_file.write(f'{str(new_map)}\n')
         result_list.append(new_map)
+    output_file.flush()
     return result_list
-
