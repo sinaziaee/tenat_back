@@ -29,7 +29,7 @@ def upload(request):
         print(str(request.data))
 
         serializer = UploadSerializer(data=request.data)
-        print('='*100)
+        print('=' * 100)
         if serializer.is_valid():
             print('-' * 100)
             val_data = serializer.validated_data
@@ -57,7 +57,7 @@ def upload(request):
         return Response('failed')
     elif request.method == 'GET':
         print('-' * 100)
-        name = request.GET.get('name')  
+        name = request.GET.get('name')
         id = request.GET.get('id')
         if id is not None:
             file = models.CompressFile.objects.get(file_id=id)
@@ -76,19 +76,20 @@ def upload(request):
 
 @api_view(['POST'])
 def tokenize(request):
-    print('*'*100)
+    print('*' * 100)
     new_map = request.POST
     name = new_map.get('name')
     from_path = new_map.get('from')
-    language = new_map.get('language')
-    algorithm = new_map.get('algorithm')
     splitter = new_map.get('splitter')
+    tokens_count = new_map.get('tokens_count')
+    if tokens_count is None or tokens_count == 0:
+        tokens_count = 10
     print(name)
     print(from_path)
     print(splitter)
     try:
         files_list = tokenizer.apply(name=name, splitter=splitter,
-                                     from_path=from_path, to_path='tokenized')
+                                     from_path=from_path, to_path='tokenized', tokens_count=tokens_count)
         return Response(files_list, status=status.HTTP_200_OK)
     except Exception as e:
         print(e)
@@ -128,6 +129,7 @@ def stem(request):
     if result is not None and len(result) != 0:
         return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)
+
 
 @api_view(['POST'])
 def remove_stop_word(request):
