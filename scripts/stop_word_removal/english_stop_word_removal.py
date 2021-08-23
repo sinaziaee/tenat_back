@@ -2,8 +2,10 @@ from scripts import check_path, list_files, folder_creator
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import nltk
+
 nltk.download('stopwords')
 nltk.download('punkt')
+
 
 def apply(from_path, to_path, name):
     stop_words = set(stopwords.words('english'))
@@ -11,6 +13,8 @@ def apply(from_path, to_path, name):
     to_path = check_path.apply(to_path)
     folder_path = f'media/result/{from_path}/{name}'
     file_list = list_files.apply(folder_path)
+    folder_creator.apply(folder_path)
+    folder_path = f'media/result/{to_path}/{name}'
     folder_creator.apply(folder_path)
     output_file_list = []
     for file in file_list:
