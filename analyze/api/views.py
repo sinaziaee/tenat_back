@@ -8,6 +8,7 @@ from scripts import extractor, list_files_and_sizes, tokenizer, exporter
 from scripts.normalize import english_normalizer, persian_normalizer
 from scripts.stem import english_stemmer, persian_stemmer
 from scripts.stop_word_removal import english_stop_word_removal, persian_stop_word_removal
+from scripts.tf_idf import tf_idf_english, tf_idf_persian
 from analyze.api.serializer import *
 import time
 
@@ -143,6 +144,22 @@ def remove_stop_word(request):
         result = english_stop_word_removal.apply(from_path=from_path, to_path='stop_word', name=name)
     else:
         result = english_stop_word_removal.apply(from_path=from_path, to_path='stop_word', name=name)
+    if result is not None and len(result) != 0:
+        return Response(result, status=status.HTTP_200_OK)
+    return Response('failed', status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['POST'])
+def tf_idf(request):
+    new_map = request.POST
+    name = new_map.get('name')
+    from_path = new_map.get('from')
+    language = new_map.get('language')
+    if language == 'Persian':
+        result = tf_idf_persian.apply(from_path=from_path, to_path='tf_idf', name=name)
+    elif language == 'English':
+        result = tf_idf_english.apply(from_path=from_path, to_path='tf_idf', name=name)
+    else:
+        result = tf_idf_english.apply(from_path=from_path, to_path='tf_idf', name=name)
     if result is not None and len(result) != 0:
         return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)
