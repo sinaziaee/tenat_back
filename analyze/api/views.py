@@ -82,7 +82,7 @@ def tokenize(request):
     name = new_map.get('name')
     from_path = new_map.get('from')
     splitter = new_map.get('splitter')
-    tokens_count = new_map.get('tokens_count')
+    tokens_count = int(new_map.get('tokens_count'))
     if tokens_count is None or tokens_count == 0:
         tokens_count = 10
     print(name)
@@ -121,12 +121,13 @@ def stem(request):
     from_path = new_map.get('from')
     language = new_map.get('language')
     algorithm = new_map.get('algorithm')
+    token_count = int(new_map.get('token_count'))
     if language == 'Persian':
-        result = persian_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name)
+        result = persian_stemmer.apply(from_path=from_path, to_path='stemmed', name=name, token_count=token_count)
     elif language == 'English':
-        result = english_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name)
+        result = english_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name, token_count=token_count)
     else:
-        result = english_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name)
+        result = english_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name, token_count=token_count)
     if result is not None and len(result) != 0:
         return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)
