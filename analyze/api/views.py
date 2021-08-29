@@ -84,9 +84,10 @@ def tokenize(request):
     tokens_count = new_map.get('tokens_count')
     if tokens_count is None or tokens_count == 0:
         tokens_count = 10
-    print(name)
-    print(from_path)
-    print(splitter)
+    print('name= '+str(name))
+    print('from_path= '+str(from_path))
+    print('splitter= '+str(splitter))
+
     try:
         files_list = tokenizer.apply(name=name, splitter=splitter,
                                      from_path=from_path, to_path='tokenized', tokens_count=tokens_count)

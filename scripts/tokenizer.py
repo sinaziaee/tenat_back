@@ -10,7 +10,8 @@ def apply(name, splitter, from_path, to_path, tokens_count):
     files_list = list_files.apply(folder_path)
     folder_path = folder_path.replace(f'{from_path}', f'{to_path}')
     for file in files_list:
-        f = open(file, 'r', encoding="utf8")
+        f = open(file, 'r', encoding="utf-8")
+            # print(r['body'], file=f)
         text = f.read()
         f.flush()
         writer_hazm(folder_path, str(file), text, splitter)
