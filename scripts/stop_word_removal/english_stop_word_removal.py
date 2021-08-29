@@ -12,7 +12,8 @@ def remove_stop_words(text):
     filtered_words = [w for w in word_tokens if not w.lower() in stop_words]
     removed_count = len(word_tokens) - len(filtered_words)
     removed_words = set(set(word_tokens) - set(filtered_words))
-    return {'removed_count': removed_count, 'removed_words': " ,".join(removed_words)}
+    text_without_stop = " ".join(filtered_words)
+    return ({'removed_count': removed_count, 'removed_words': " ,".join(removed_words)},text_without_stop)
 
 def apply(from_path, to_path, name):
     from_path = check_path.apply(from_path)
@@ -22,16 +23,22 @@ def apply(from_path, to_path, name):
     folder_creator.apply(folder_path)
     folder_path = f'media/result/{to_path}/{name}'
     folder_creator.apply(folder_path)
+    folder_path = f'media/result/{to_path}/text_without_stop_words/{name}'
+    folder_creator.apply(folder_path)
     result_list = []
     for file in file_list:
         f = open(file, 'r', encoding='utf8')
         result_file = str(file).replace(f'{from_path}', f'{to_path}')
+        text_result_file = str(file).replace(f'{from_path}', f'{to_path}/text_without_stop_words')
         f_output = open(result_file, 'w', encoding='utf8')
+        f_text_output = open(text_result_file, 'w', encoding='utf8')
         text = f.read()
-        result = remove_stop_words(text)
+        result, text = remove_stop_words(text)
         result['base-file'] = file
+        result['text-file'] = text_result_file
         result['result-file'] = result_file
         f_output.write(f'{str(result)}\n')
+        f_text_output.write(f'{text}')
         f.flush()
         f_output.flush()
         result_list.append(result)
