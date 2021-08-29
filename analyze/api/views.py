@@ -8,6 +8,7 @@ from scripts import extractor, list_files_and_sizes, tokenizer, exporter
 from scripts.normalize import english_normalizer, persian_normalizer
 from scripts.stem import english_stemmer, persian_stemmer
 from scripts.stop_word_removal import english_stop_word_removal, persian_stop_word_removal
+from scripts.doc_statistics import english_statistics, persian_statistics
 from analyze.api.serializer import *
 import time
 
@@ -81,7 +82,7 @@ def tokenize(request):
     name = new_map.get('name')
     from_path = new_map.get('from')
     splitter = new_map.get('splitter')
-    tokens_count = new_map.get('tokens_count')
+    tokens_count = int(new_map.get('tokens_count'))
     if tokens_count is None or tokens_count == 0:
         tokens_count = 10
     print('name= '+str(name))
@@ -121,12 +122,13 @@ def stem(request):
     from_path = new_map.get('from')
     language = new_map.get('language')
     algorithm = new_map.get('algorithm')
+    token_count = int(new_map.get('token_count'))
     if language == 'Persian':
-        result = persian_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name)
+        result = persian_stemmer.apply(from_path=from_path, to_path='stemmed', name=name, token_count=token_count)
     elif language == 'English':
-        result = english_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name)
+        result = english_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name, token_count=token_count)
     else:
-        result = english_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name)
+        result = english_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name, token_count=token_count)
     if result is not None and len(result) != 0:
         return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)
@@ -144,6 +146,22 @@ def remove_stop_word(request):
         result = english_stop_word_removal.apply(from_path=from_path, to_path='stop_word', name=name)
     else:
         result = english_stop_word_removal.apply(from_path=from_path, to_path='stop_word', name=name)
+    if result is not None and len(result) != 0:
+        return Response(result, status=status.HTTP_200_OK)
+    return Response('failed', status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['POST'])
+def doc_statistics(request):
+    new_map = request.POST
+    name = new_map.get('name')
+    from_path = new_map.get('from')
+    language = new_map.get('language')
+    if language == 'Persian':
+        result = persian_statistics.apply(from_path=from_path, to_path='statistics', name=name)
+    elif language == 'English':
+        result = english_statistics.apply(from_path=from_path, to_path='statistics', name=name)
+    else:
+        result = english_statistics.apply(from_path=from_path, to_path='statistics', name=name)
     if result is not None and len(result) != 0:
         return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)

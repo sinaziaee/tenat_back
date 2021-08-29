@@ -8,6 +8,8 @@ def apply(from_path, to_path, name, function):
     folder_path = f'media/result/{from_path}/{name}'
     file_list = list_files.apply(folder_path)
     folder_creator.apply(folder_path)
+    folder_path = f'media/result/{to_path}/{name}'
+    folder_creator.apply(folder_path)
     output_file_list = []
     for file in file_list:
         f = open(file, 'r', encoding='utf8')
