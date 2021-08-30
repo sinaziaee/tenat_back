@@ -31,7 +31,7 @@ def apply(from_path, to_path, name):
         f_output = open(result_file, 'w', encoding='utf8')
         text = f.read()
         result = doc_statistics(text)
-        result['doc_name'] = file
+        result['doc_name'] =str(file).split('/')[-1].split('\\')[-1]
         f_output.write(f'{str(result)}\n')
         f.flush()
         f_output.flush()

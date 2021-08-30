@@ -37,6 +37,7 @@ def apply(from_path, to_path, name, algorithm, token_count):
     result_list = []
     for file in file_list:
         f = open(file, 'r', encoding='utf8')
+        doc_name = str(file).split('/')[-1].split('\\')[-1]
         result_file = str(file).replace(f'{from_path}', f'{to_path}')
         f_output = open(result_file, 'w', encoding='utf8')
         text_result_file = str(file).replace(f'{from_path}', f'{to_path}/stemmed_text_and_words')
@@ -45,7 +46,7 @@ def apply(from_path, to_path, name, algorithm, token_count):
         result = stemming(text, algorithm)
         top_stemmed = " ,".join(result['stemmed_words'][:token_count])
         stemmed_text = result['text']
-        result_dict = {'top_tokens':top_stemmed, 'result_link':result_file, 'text_result_file':text_result_file, 'doc':file}
+        result_dict = {'top_tokens':top_stemmed, 'result_link':result_file, 'text_result_file':text_result_file, 'doc_name':doc_name}
         f_output.write(f'{str(result_dict)}\n')
         f_text_output.write(f'{stemmed_text}\n\n')
         for stm in result['stemmed_words']:

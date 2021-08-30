@@ -82,9 +82,10 @@ def tokenize(request):
     name = new_map.get('name')
     from_path = new_map.get('from')
     splitter = new_map.get('splitter')
-    tokens_count = int(new_map.get('tokens_count'))
-    if tokens_count is None or tokens_count == 0:
-        tokens_count = 10
+    tokens_count = 10
+    # tokens_count = int(new_map.get('tokens_count'))
+    # if tokens_count is None or tokens_count == 0:
+    #     tokens_count = 10
     print('name= '+str(name))
     print('from_path= '+str(from_path))
     print('splitter= '+str(splitter))
@@ -122,7 +123,8 @@ def stem(request):
     from_path = new_map.get('from')
     language = new_map.get('language')
     algorithm = new_map.get('algorithm')
-    token_count = int(new_map.get('token_count'))
+    token_count = 10
+
     if language == 'Persian':
         result = persian_stemmer.apply(from_path=from_path, to_path='stemmed', name=name, token_count=token_count)
     elif language == 'English':

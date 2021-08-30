@@ -34,7 +34,7 @@ def apply(from_path, to_path, name):
         f_text_output = open(text_result_file, 'w', encoding='utf8')
         text = f.read()
         result, text = remove_stop_words(text)
-        result['doc_name'] = file
+        result['doc_name'] =str(file).split('/')[-1].split('\\')[-1]
         f_output.write(f'{str(result)}\n')
         f_text_output.write(f'{text}')
         f.flush()

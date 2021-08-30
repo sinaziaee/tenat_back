@@ -9,7 +9,7 @@ def remove_stop_words(text):
     removed_count = len(word_tokens) - len(filtered_words)
     removed_words = list(set(word_tokens) - set(filtered_words))
     text_without_stop = " ".join(filtered_words)
-    return ({'removed_count': removed_count, 'removed_words': " ,".join(removed_words[:10])}, text_without_stop)
+    return ({'removed_count': removed_count, 'top_10_removed_words': " ,".join(removed_words[:10])}, text_without_stop)
 
 def apply(from_path, to_path, name):
     from_path = check_path.apply(from_path)
@@ -30,7 +30,7 @@ def apply(from_path, to_path, name):
         f_text_output = open(text_result_file, 'w', encoding='utf8')
         text = f.read()
         result, text = remove_stop_words(text)
-        result['doc_name'] = file
+        result['doc_name'] = str(file).split('/')[-1].split('\\')[-1]
         f_output.write(f'{str(result)}\n')
         f_text_output.write(f'{text}')
         f.flush()
