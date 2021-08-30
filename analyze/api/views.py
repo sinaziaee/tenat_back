@@ -9,6 +9,7 @@ from scripts.normalize import english_normalizer, persian_normalizer
 from scripts.stem import english_stemmer, persian_stemmer
 from scripts.stop_word_removal import english_stop_word_removal, persian_stop_word_removal
 from scripts.doc_statistics import english_statistics, persian_statistics
+from scripts.lemmatize import english_lemmatizer, persian_lemmatizer
 from analyze.api.serializer import *
 import time
 
@@ -131,6 +132,24 @@ def stem(request):
         result = english_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name, token_count=token_count)
     else:
         result = english_stemmer.apply(from_path=from_path, algorithm=algorithm, to_path='stemmed', name=name, token_count=token_count)
+    if result is not None and len(result) != 0:
+        return Response(result, status=status.HTTP_200_OK)
+    return Response('failed', status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['POST'])
+def lemmatize(request):
+    new_map = request.POST
+    name = new_map.get('name')
+    from_path = new_map.get('from')
+    language = new_map.get('language')
+    token_count = 10
+
+    if language == 'Persian':
+        result = english_lemmatizer.apply(from_path=from_path, to_path='lemmat', name=name, token_count=token_count)
+    elif language == 'English':
+        result = english_lemmatizer.apply(from_path=from_path, to_path='lemmat', name=name, token_count=token_count)
+    else:
+        result = english_lemmatizer.apply(from_path=from_path, to_path='lemmat', name=name, token_count=token_count)
     if result is not None and len(result) != 0:
         return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)
