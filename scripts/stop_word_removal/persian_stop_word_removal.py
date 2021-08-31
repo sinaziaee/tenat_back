@@ -1,6 +1,8 @@
 from hazm import word_tokenize
 from hazm import stopwords_list
 from scripts import check_path, list_files, folder_creator
+import os
+
 
 def remove_stop_words(text):
     stop_words = stopwords_list()
@@ -19,21 +21,22 @@ def apply(from_path, to_path, name):
     folder_creator.apply(folder_path)
     folder_path = f'media/result/{to_path}/{name}'
     folder_creator.apply(folder_path)
-    folder_path = f'media/result/{to_path}/text_without_stop_words/{name}'
-    folder_creator.apply(folder_path)
+    result_all = folder_path + '/00_output_result.txt'
+    output_file = open(result_all, 'w', encoding='utf-8')
     result_list = []
     for file in file_list:
         f = open(file, 'r', encoding='utf8')
         result_file = str(file).replace(f'{from_path}', f'{to_path}')
-        text_result_file = str(file).replace(f'{from_path}', f'{to_path}/text_without_stop_words')
         f_output = open(result_file, 'w', encoding='utf8')
-        f_text_output = open(text_result_file, 'w', encoding='utf8')
         text = f.read()
         result, text = remove_stop_words(text)
-        result['doc_name'] = str(file).split('/')[-1].split('\\')[-1]
-        f_output.write(f'{str(result)}\n')
-        f_text_output.write(f'{text}')
+        result['doc_name'] =str(file).split('/')[-1].split('\\')[-1]
+        f_output.write(f'{text}\n')
+        output_file.write(f'{str(result)}\n')
         f.flush()
-        f_output.flush()
         result_list.append(result)
+    result_list.append({'removed_count':0 , 'top_10_removed_words': 0, 'doc_name':'00_output_result.txt'})
+    output_file.flush()
     return result_list
+
+

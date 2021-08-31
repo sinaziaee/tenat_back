@@ -124,7 +124,7 @@ def stem(request):
     from_path = new_map.get('from')
     language = new_map.get('language')
     algorithm = new_map.get('algorithm')
-    token_count = 10
+    token_count = int(new_map.get('token_count'))
 
     if language == 'Persian':
         result = persian_stemmer.apply(from_path=from_path, to_path='stemmed', name=name, token_count=token_count)
@@ -142,7 +142,7 @@ def lemmatize(request):
     name = new_map.get('name')
     from_path = new_map.get('from')
     language = new_map.get('language')
-    token_count = 10
+    token_count = int(new_map.get('token_count'))
 
     if language == 'Persian':
         result = english_lemmatizer.apply(from_path=from_path, to_path='lemmat', name=name, token_count=token_count)

@@ -24,6 +24,8 @@ def apply(from_path, to_path, name):
     folder_creator.apply(folder_path)
     folder_path = f'media/result/{to_path}/{name}'
     folder_creator.apply(folder_path)
+    result_all = folder_path + '/00_output_result.txt'
+    output_file = open(result_all, 'w', encoding='utf-8')
     result_list = []
     for file in file_list:
         f = open(file, 'r', encoding='utf8')
@@ -33,7 +35,10 @@ def apply(from_path, to_path, name):
         result = doc_statistics(text)
         result['doc_name'] =str(file).split('/')[-1].split('\\')[-1]
         f_output.write(f'{str(result)}\n')
+        output_file.write(f'{str(result)}\n')
         f.flush()
         f_output.flush()
         result_list.append(result)
+    result_list.append({'total':0 , 'main': 0, 'stop': 0, 'distinct': 0, 'doc_name':'00_output_result.txt'})
+    output_file.flush()
     return result_list
