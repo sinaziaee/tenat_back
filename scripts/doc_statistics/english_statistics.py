@@ -4,7 +4,7 @@ from nltk.tokenize import word_tokenize
 import nltk
 
 
-def doc_statistics(text):
+def doc_statistics(text, doc_name):
     stop_words = set(stopwords.words('english'))
     word_tokens = word_tokenize(text)
     total_words = len(word_tokens)
@@ -16,7 +16,7 @@ def doc_statistics(text):
             stop_word += 1
         else:
             main_words += 1
-    return {'total': total_words, 'main': main_words, 'stop': stop_word, 'distinct':distinct_words}
+    return {'doc_name':doc_name, 'total': total_words, 'main': main_words, 'stop': stop_word, 'distinct':distinct_words}
 
 def apply(from_path, to_path, name):
     from_path = check_path.apply(from_path)
@@ -34,13 +34,12 @@ def apply(from_path, to_path, name):
         result_file = str(file).replace(f'{from_path}', f'{to_path}')
         f_output = open(result_file, 'w', encoding='utf8')
         text = f.read()
-        result = doc_statistics(text)
-        result['doc_name'] =str(file).split('/')[-1].split('\\')[-1]
+        doc_name = str(file).split('/')[-1].split('\\')[-1]
+        result = doc_statistics(text, doc_name)
         f_output.write(f'{str(result)}\n')
         output_file.write(f'{str(result)}\n')
         f.flush()
         f_output.flush()
         result_list.append(result)
-    result_list.append({'total':0 , 'main': 0, 'stop': 0, 'distinct': 0, 'doc_name':'00_output_result.txt'})
     output_file.flush()
     return result_list

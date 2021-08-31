@@ -12,7 +12,7 @@ def lemmatize(text):
         lem = lemmatizer.lemmatize(word)
         all_lemm.append(lem)
         if word!=lem:
-            w_lemm.append(lem)
+            w_lemm.append(f'{word} : {lem}')
     lemm_text = ' '.join(all_lemm)
     return {'text':lemm_text, 'lemmatized_words':w_lemm, 'lemmatized_count':len(w_lemm)}
 
@@ -36,11 +36,11 @@ def apply(from_path, to_path, name, token_count):
         result = lemmatize(text)
         top_lemmed = " ,".join(result['lemmatized_words'][:token_count])
         lemmed_text = result['text']
-        result_dict = {'top_lemmatized':top_lemmed, 'lemmatized_count':result['lemmatized_count'], 'doc_name':doc_name}
+        result_dict = {'doc_name':doc_name, 'top_lemmatized':top_lemmed, 'lemmatized_count':result['lemmatized_count']}
         f_output.write(f'{lemmed_text}\n')
         output_file.write(f'{str(result_dict)}\n')
         f.flush()
         f_output.flush()
         result_list.append(result_dict)
-    result_list.append({'top_lemmatized':'', 'lemmatized_count':0, 'doc_name':'00_output_result.txt'})
+    output_file.flush()
     return result_list

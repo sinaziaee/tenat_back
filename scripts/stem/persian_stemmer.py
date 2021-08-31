@@ -13,7 +13,7 @@ def stemming(text):
         stm = stemmer.stem(word)
         all_stemmed.append(stm)
         if word!=stm:
-            w_stemmes.append(stm)
+            w_stemmes.append(f'{word} : {stm}')
     stemmed_text = ' '.join(all_stemmed)
     return {'text':stemmed_text, 'stemmed_words':w_stemmes, 'stemmed_count':len(w_stemmes)}
 
@@ -35,12 +35,11 @@ def apply(from_path, to_path, name, token_count):
         text = f.read()
         result = stemming(text)
         stemmed_text = result['text']
-        result_dict = {'top_stemmed':', '.join(result['stemmed_words'][:token_count]), 'stemmed_count': result['stemmed_count'], 'doc_name':str(file).split('/')[-1].split('\\')[-1]}
+        result_dict = {'doc_name':str(file).split('/')[-1].split('\\')[-1], 'top_stemmed':', '.join(result['stemmed_words'][:token_count]), 'stemmed_count': result['stemmed_count']}
         f_output.write(f'{stemmed_text}\n')
         output_file.write(f'{str(result_dict)}\n')
         f.flush()
         f_output.flush()
         result_list.append(result_dict)
-    result_list.append({'top_stemmed':'', 'stemmed_count': 0 , 'doc_name':'00_output_result.txt'})
     output_file.flush()
     return result_list

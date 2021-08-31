@@ -5,14 +5,14 @@ import nltk
 import os
 
 
-def remove_stop_words(text):
+def remove_stop_words(text, doc_name):
     stop_words = set(stopwords.words('english'))
     word_tokens = word_tokenize(text)
     filtered_words = [w for w in word_tokens if not w.lower() in stop_words]
     removed_count = len(word_tokens) - len(filtered_words)
     removed_words = list(set(word_tokens) - set(filtered_words))
     text_without_stop = " ".join(filtered_words)
-    return ({'removed_count': removed_count, 'top_10_removed_words': " ,".join(removed_words[:10])},text_without_stop)
+    return ({'doc_name':doc_name, 'removed_count': removed_count, 'top_10_removed_words': " ,".join(removed_words[:10])},text_without_stop)
 
 def apply(from_path, to_path, name):
     from_path = check_path.apply(from_path)
@@ -30,13 +30,12 @@ def apply(from_path, to_path, name):
         result_file = str(file).replace(f'{from_path}', f'{to_path}')
         f_output = open(result_file, 'w', encoding='utf8')
         text = f.read()
-        result, text = remove_stop_words(text)
-        result['doc_name'] =str(file).split('/')[-1].split('\\')[-1]
+        doc_name = str(file).split('/')[-1].split('\\')[-1]
+        result, text = remove_stop_words(text, doc_name)
         f_output.write(f'{text}\n')
         output_file.write(f'{str(result)}\n')
         f.flush()
         result_list.append(result)
-    result_list.append({'removed_count':0 , 'top_10_removed_words': 0, 'doc_name':'00_output_result.txt'})
     output_file.flush()
     return result_list
 

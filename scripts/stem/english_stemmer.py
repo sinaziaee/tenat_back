@@ -22,7 +22,7 @@ def stemming(text, algorithm):
         stm = stemmer.stem(word)
         all_stemmed.append(stm)
         if word != stm:
-            w_stemmes.append(stm)
+            w_stemmes.append(f'{word} : {stm}')
     stemmed_text = ' '.join(all_stemmed)
     return {'text':stemmed_text, 'stemmed_words':w_stemmes, 'stemmed_count': len(w_stemmes)}
 
@@ -45,11 +45,10 @@ def apply(from_path, to_path, name, algorithm, token_count):
         text = f.read()
         result = stemming(text, algorithm)
         stemmed_text = result['text']
-        result_dict = {'top_stemmed':', '.join(result['stemmed_words'][:token_count]), 'stemmed_count':result['stemmed_count'], 'doc_name':doc_name}
+        result_dict = {'doc_name':doc_name, 'top_stemmed':', '.join(result['stemmed_words'][:token_count]), 'stemmed_count':result['stemmed_count']}
         output_file.write(f'{str(result_dict)}\n')
         f_output.write(f'{stemmed_text}\n')
         f_output.flush()
         result_list.append(result_dict)
-    result_list.append({'top_stemmed':'', 'stemmed_count':0, 'doc_name':'00_output_result.txt'})
     output_file.flush()
     return result_list
