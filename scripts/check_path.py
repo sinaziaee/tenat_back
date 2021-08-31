@@ -5,7 +5,7 @@ def apply(path):
         return 'tokenized'
     elif 'norm' in path:
         return 'normalized'
-    elif 'statistics' in path:
+    elif 'statistics' in path or 'Doc_Statistics'  in path:
         return 'doc_statistics'
     elif 'stem' in path or 'Stemming' in path:
         return 'stemmed'
