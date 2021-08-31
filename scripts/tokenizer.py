@@ -17,7 +17,7 @@ def apply(name, splitter, from_path, to_path, tokens_count):
         writer_hazm(folder_path, str(file), text, splitter)
     files_list = list_files.apply(folder_path)
     # return files_list
-    return show_files(files=files_list, tokens_count=tokens_count)
+    return show_files(files=files_list, tokens_count=tokens_count)[:-1]
 
 
 def writer_hazm(folder_path, file, text, splitter):
