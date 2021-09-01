@@ -30,6 +30,7 @@ def apply(from_path, to_path, name, token_count):
     result_list = []
     for file in file_list:
         f = open(file, 'r', encoding='utf8')
+        doc_name = str(file).split('/')[-1].split('\\')[-1]
         result_file = str(file).replace(f'{from_path}', f'{to_path}')
         f_output = open(result_file, 'w', encoding='utf8')
         text = f.read()
