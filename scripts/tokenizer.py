@@ -53,7 +53,8 @@ def show_files(files, tokens_count):
                 pass
         f.flush()
         new_map = {'doc_name': file_name, 'tokens_count': token_counter, 'tokens': first_top_tokens, 'link': each}
-        output_file.write(f'{str(new_map)}\n')
-        result_list.append(new_map)
+        if file_name != '00_output_result.txt':
+            output_file.write(f'{str(new_map)}\n')
+            result_list.append(new_map)
     output_file.flush()
     return result_list
