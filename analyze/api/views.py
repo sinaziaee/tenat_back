@@ -25,6 +25,7 @@ def temp(request):
 
 @api_view(['POST', 'GET'])
 def upload(request):
+    file_name = None
     print('*' * 100)
     if request.method == 'POST':
         print('yess')
@@ -44,17 +45,19 @@ def upload(request):
             print(models.CompressFile.objects.filter(file=file_name).exists())
             if models.CompressFile.objects.filter(name=val_data['name']).exists():
                 folder_name = val_data['name'] + '_' + str(rand_int)
+                file_name = folder_name
                 print(folder_name)
                 obj = models.CompressFile(name=val_data['name'], file=val_data['file'])
                 obj.file.name = folder_name
                 obj.save()
             else:
                 obj = models.CompressFile(name=val_data['name'], file=val_data['file'])
+                file_name = val_data['name']
                 obj.file.name = val_data['name']
                 obj.save()
                 print(obj.file.path)
             map_list = extractor.apply(obj.file.path)
-
+            map_list = [{'file_name': file_name}] + map_list
             return Response(map_list, status=status.HTTP_200_OK)
         return Response('failed')
     elif request.method == 'GET':
