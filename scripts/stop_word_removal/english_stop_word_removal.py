@@ -15,19 +15,23 @@ def remove_stop_words(text, doc_name):
     return ({'doc_name':doc_name, 'removed_count': removed_count, 'top_10_removed_words': " ,".join(removed_words[:10])},text_without_stop)
 
 def apply(from_path, to_path, name):
-    from_path = check_path.apply(from_path)
     to_path = check_path.apply(to_path)
-    folder_path = f'media/result/{from_path}/{name}'
+    folder_path = from_path
     file_list = list_files.apply(folder_path)
     folder_creator.apply(folder_path)
-    folder_path = f'media/result/{to_path}/{name}'
+    folder_path = '/'.join(from_path.split('/')[:-1]) + f'/{to_path}/' + name
+    print(folder_path)
     folder_creator.apply(folder_path)
     result_all = folder_path + '/00_output_result.txt'
     output_file = open(result_all, 'w', encoding='utf-8')
     result_list = []
+    output_path = {'output_path':folder_path }
+    result_list.append(output_path)
     for file in file_list:
+        if '00_output_result' in file:
+            continue
         f = open(file, 'r', encoding='utf8')
-        result_file = str(file).replace(f'{from_path}', f'{to_path}')
+        result_file = folder_path + '/' + file.split('/')[-1]
         f_output = open(result_file, 'w', encoding='utf8')
         text = f.read()
         doc_name = str(file).split('/')[-1].split('\\')[-1]
