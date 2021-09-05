@@ -44,7 +44,7 @@ def upload(request):
             print(file_name)
             print(models.CompressFile.objects.filter(file=file_name).exists())
             if models.CompressFile.objects.filter(name=val_data['name']).exists():
-                folder_name = val_data['name'] + '_' + str(rand_int)
+                folder_name = val_data['name'][:-4] + '_' + str(rand_int) + '.zip'
                 file_name = folder_name
                 print(folder_name)
                 obj = models.CompressFile(name=val_data['name'], file=val_data['file'])
