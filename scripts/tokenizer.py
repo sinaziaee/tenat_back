@@ -39,7 +39,7 @@ def apply(from_path, to_path, name, splitter, tokens_count):
         for tok in result['tokens']:
             f_output.write(f'{tok}\n')
         result['top_tokens'] = ', '.join(result['tokens'][:tokens_count])
-        result_dict = {'doc_name':result['doc_name'], 'top_tokenized': result['top_tokens'], 'tokens_count':len(result['tokens'])}
+        result_dict = {'doc_name':result['doc_name'], 'tokens': result['top_tokens'], 'tokens_count':len(result['tokens'])}
         output_file.write(f'{str(result_dict)}\n')
         f.flush()
         result_list.append(result_dict)
