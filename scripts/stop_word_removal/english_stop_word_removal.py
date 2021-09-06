@@ -24,6 +24,7 @@ def apply(from_path, to_path, name):
     folder_creator.apply(folder_path)
     result_all = folder_path + '/00_output_result.txt'
     output_file = open(result_all, 'w', encoding='utf-8')
+    output_file.write(f'[\n')
     result_list = []
     output_path = {'output_path':folder_path }
     result_list.append(output_path)
@@ -37,9 +38,10 @@ def apply(from_path, to_path, name):
         doc_name = str(file).split('/')[-1].split('\\')[-1]
         result, text = remove_stop_words(text, doc_name)
         f_output.write(f'{text}\n')
-        output_file.write(f'{str(result)}\n')
+        output_file.write(f'{str(result)},\n')
         f.flush()
         result_list.append(result)
+    output_file.write(f']\n')
     output_file.flush()
     return result_list
 

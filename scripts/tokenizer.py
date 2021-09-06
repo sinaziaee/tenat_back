@@ -26,6 +26,7 @@ def apply(from_path, to_path, name, splitter, tokens_count):
     folder_creator.apply(folder_path)
     result_all = folder_path + '/00_output_result.txt'
     output_file = open(result_all, 'w', encoding='utf-8')
+    output_file.write(f'[\n')
     output_path = {'output_path': folder_path}
     result_list = []
     result_list.append(output_path)
@@ -40,8 +41,9 @@ def apply(from_path, to_path, name, splitter, tokens_count):
             f_output.write(f'{tok}\n')
         result['top_tokens'] = ', '.join(result['tokens'][:tokens_count])
         result_dict = {'doc_name':result['doc_name'], 'tokens': result['top_tokens'], 'tokens_count':len(result['tokens'])}
-        output_file.write(f'{str(result_dict)}\n')
+        output_file.write(f'{str(result_dict)},\n')
         f.flush()
         result_list.append(result_dict)
+    output_file.write(f']\n')
     output_file.flush()
     return result_list

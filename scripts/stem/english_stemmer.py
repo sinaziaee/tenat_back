@@ -35,6 +35,7 @@ def apply(from_path, to_path, name, algorithm, token_count):
     folder_creator.apply(folder_path)
     result_all = folder_path + '/00_output_result.txt'
     output_file = open(result_all, 'w', encoding='utf-8')
+    output_file.write(f'[\n')
     result_list = []
     output_path = {'output_path':folder_path }
     result_list.append(output_path)
@@ -49,9 +50,10 @@ def apply(from_path, to_path, name, algorithm, token_count):
         result = stemming(text, algorithm)
         stemmed_text = result['text']
         result_dict = {'doc_name':doc_name, 'top_stemmed':', '.join(result['stemmed_words'][:token_count]), 'stemmed_count':result['stemmed_count']}
-        output_file.write(f'{str(result_dict)}\n')
+        output_file.write(f'{str(result_dict)},\n')
         f_output.write(f'{stemmed_text}\n')
         f_output.flush()
         result_list.append(result_dict)
+    output_file.write(f']\n')
     output_file.flush()
     return result_list
