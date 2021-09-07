@@ -2,6 +2,7 @@ from scripts import list_files, check_path, folder_creator, slicer
 import hazm
 from hazm import word_tokenize
 from scripts import base_script
+from pathlib import Path
 
 
 def stemming(text):
@@ -25,7 +26,7 @@ def apply(from_path, to_path, name, token_count):
     folder_path = '/'.join(from_path.split('/')[:-1]) + f'/{to_path}/' + name
     folder_creator.apply(folder_path)
     result_all = folder_path + '/00_output_result.txt'
-    output_file = open(result_all, 'w', encoding='utf-8')
+    output_file = open(Path(result_all), 'w', encoding='utf-8')
     output_file.write(f'[\n')
     result_list = []
     output_path = {'output_path':folder_path }
@@ -33,10 +34,10 @@ def apply(from_path, to_path, name, token_count):
     for file in file_list:
         if '00_output_result' in file:
             continue
-        f = open(file, 'r', encoding='utf8')
+        f = open(Path(file), 'r', encoding='utf8')
         doc_name = str(file).split('/')[-1].split('\\')[-1]
         result_file = folder_path + '/' + file.split('/')[-1]
-        f_output = open(result_file, 'w', encoding='utf8')
+        f_output = open(Path(result_file), 'w', encoding='utf8')
         text = f.read()
         result = stemming(text)
         stemmed_text = result['text']

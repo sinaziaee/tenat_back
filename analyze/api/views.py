@@ -57,7 +57,7 @@ def upload(request):
                 obj.save()
                 print(obj.file.path)
             map_list = extractor.apply(obj.file.path)
-            map_list = [{'file_name': file_name}] + map_list
+            map_list = [{'file_name': file_name , 'output_path': f'media/result/raw_text/{file_name}'}] + map_list
             return Response(map_list, status=status.HTTP_200_OK)
         return Response('failed')
     elif request.method == 'GET':

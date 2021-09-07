@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 from scripts import list_files, folder_creator, check_path
 import hazm
 import string
@@ -25,15 +26,16 @@ def apply(from_path, to_path, name, splitter, tokens_count):
     folder_path = f'media/result/{to_path}/{name}'
     folder_creator.apply(folder_path)
     result_all = folder_path + '/00_output_result.txt'
-    output_file = open(result_all, 'w', encoding='utf-8')
+    output_file = open(Path(result_all), 'w', encoding='utf-8')
     output_file.write(f'[\n')
     output_path = {'output_path': folder_path}
     result_list = []
     result_list.append(output_path)
     for file in file_list:
-        f = open(file, 'r', encoding='utf8')
+        print(str(Path(r'{file}')))
+        f = open(Path(file), 'r', encoding='utf8')
         result_file = str(file).replace(f'{from_path}', f'{to_path}')
-        f_output = open(result_file, 'w', encoding='utf8')
+        f_output = open(Path(result_file), 'w', encoding='utf8')
         text = f.read()
         doc_name = str(file).split('/')[-1].split('\\')[-1]
         result = tokenize_text(text, doc_name, splitter)
