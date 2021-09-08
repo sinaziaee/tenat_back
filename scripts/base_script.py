@@ -1,5 +1,6 @@
 # import hazm
 from scripts import check_path, list_files, folder_creator, slicer
+from pathlib import Path
 
 
 def apply(from_path, to_path, name, function):
@@ -12,9 +13,9 @@ def apply(from_path, to_path, name, function):
     folder_creator.apply(folder_path)
     output_file_list = []
     for file in file_list:
-        f = open(file, 'r', encoding='utf8')
+        f = open(Path(file), 'r', encoding='utf8')
         file = str(file).replace(f'{from_path}', f'{to_path}')
-        f_output = open(file, 'w', encoding='utf8')
+        f_output = open(Path(file), 'w', encoding='utf8')
         output_file_list.append(file)
         text = f.read()
         text = slicer.apply(text)
