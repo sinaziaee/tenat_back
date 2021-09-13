@@ -1,6 +1,5 @@
 def apply(path):
     path = str(path)
-    print('path is: '+path)
     if 'import' in path or 'raw' in path or 'text' in path or 'Import_Collection' in path:
         return 'raw_text'
     elif 'tok' in path or 'Tokenization' in path:

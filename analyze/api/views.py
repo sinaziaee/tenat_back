@@ -26,27 +26,16 @@ def temp(request):
 @api_view(['POST', 'GET'])
 def upload(request):
     file_name = None
-    print('*' * 100)
     if request.method == 'POST':
-        print('yess')
-        print(str(request.data))
-
         serializer = UploadSerializer(data=request.data)
-        print('=' * 100)
         if serializer.is_valid():
-            print('-' * 100)
             val_data = serializer.validated_data
             file_name = val_data['file']
             temp = models.CompressFile.objects.filter(file=file_name)
             rand_int = round(time.time() * 1000)
-            print(temp)
-            print('*' * 100)
-            print(file_name)
-            print(models.CompressFile.objects.filter(file=file_name).exists())
             if models.CompressFile.objects.filter(name=val_data['name']).exists():
                 folder_name = val_data['name'][:-4] + '_' + str(rand_int) + '.zip'
                 file_name = folder_name
-                print(folder_name)
                 obj = models.CompressFile(name=val_data['name'], file=val_data['file'])
                 obj.file.name = folder_name
                 obj.save()
@@ -55,13 +44,11 @@ def upload(request):
                 file_name = val_data['name']
                 obj.file.name = val_data['name']
                 obj.save()
-                print(obj.file.path)
             map_list = extractor.apply(obj.file.path)
             map_list = [{'file_name': file_name , 'output_path': f'media/result/raw_text/{file_name}'}] + map_list
             return Response(map_list, status=status.HTTP_200_OK)
         return Response('failed')
     elif request.method == 'GET':
-        print('-' * 100)
         name = request.GET.get('name')
         id = request.GET.get('id')
         if id is not None:
@@ -73,7 +60,6 @@ def upload(request):
         folder_name = file.file.path
         folder_path = f'media/data/{folder_name}/'
         map_list = list_files_and_sizes.apply(folder_path)
-        print(map_list)
         return Response(map_list)
     else:
         pass
@@ -81,19 +67,11 @@ def upload(request):
 
 @api_view(['POST'])
 def tokenize(request):
-    print('*' * 100)
     new_map = request.POST
     name = new_map.get('name')
     from_path = new_map.get('from')
     splitter = new_map.get('splitter')
     tokens_count = 10
-    # tokens_count = int(new_map.get('tokens_count'))
-    # if tokens_count is None or tokens_count == 0:
-    #     tokens_count = 10
-    print('name= '+str(name))
-    print('from_path= '+str(from_path))
-    print('splitter= '+str(splitter))
-
     try:
         files_list = tokenizer.apply(name=name, splitter=splitter,
                                      from_path=from_path, to_path='tokenized', tokens_count=tokens_count)

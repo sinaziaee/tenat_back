@@ -32,7 +32,6 @@ def apply(from_path, to_path, name, splitter, tokens_count):
     result_list = []
     result_list.append(output_path)
     for file in file_list:
-        print(str(Path(r'{file}')))
         f = open(Path(file), 'r', encoding='utf8')
         result_file = str(file).replace(f'{from_path}', f'{to_path}')
         f_output = open(Path(result_file), 'w', encoding='utf8')

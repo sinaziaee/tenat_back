@@ -4,7 +4,6 @@ from pathlib import Path, PurePath
 from zipfile import ZipFile
 import time
 
-
 def apply(from_path, format, name, to_path):
     files = list_files.apply(from_path)
     name_zip = from_path.split('/')[-1][:-4]
@@ -13,6 +12,5 @@ def apply(from_path, format, name, to_path):
     rand_int = round(time.time() * 1000)
     zipfile = ZipFile(f'{path}/output_{str(rand_int)}.zip', 'w')
     for file in files:
-        if not '00_output_result' in file:
-            zipfile.write(file, str(PurePath(file).name))
+        zipfile.write(file, str(PurePath(file).name))
     return str(f'{path}/output_{str(rand_int)}.zip')

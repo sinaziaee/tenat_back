@@ -49,8 +49,9 @@ def doc_to_txt(folder_path, file):
             if line != '':
                 text += line.replace('\n', '') + '\n'
         f.flush()
-    folder_creator.apply(folder_path)
+    folder_creator.apply(str(Path(folder_path)))
     file = str(file).split('/')[-1].replace('.docx', '.txt')
+    file = str(PurePath(file).name)
     f = open(Path(folder_path, file), 'w', encoding='utf-8')
     f.write(text)
     f.flush()

@@ -20,7 +20,6 @@ def apply(from_path, to_path, name):
     file_list = list_files.apply(folder_path)
     folder_creator.apply(folder_path)
     folder_path = '/'.join(from_path.split('/')[:-1]) + f'/{to_path}/' + name
-    print(folder_path)
     folder_creator.apply(folder_path)
     result_all = folder_path + '/00_output_result.txt'
     output_file = open(Path(result_all), 'w', encoding='utf-8')
