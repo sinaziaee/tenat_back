@@ -2,7 +2,7 @@ from hazm import word_tokenize
 from hazm import stopwords_list
 from scripts import check_path, list_files, folder_creator
 import os
-from pathlib import Path
+from pathlib import Path, PurePath
 
 
 def remove_stop_words(text, doc_name):
@@ -31,7 +31,7 @@ def apply(from_path, to_path, name):
         if '00_output_result' in file:
             continue
         f = open(Path(file), 'r', encoding='utf8')
-        result_file = folder_path + '/' + file.split('/')[-1]
+        result_file = Path(folder_path, PurePath(file).name )
         f_output = open(Path(result_file), 'w', encoding='utf8')
         text = f.read()
         doc_name = str(file).split('/')[-1].split('\\')[-1]
