@@ -46,7 +46,7 @@ def apply(from_path, to_path, name, algorithm, token_count):
         f = open(Path(file), 'r', encoding='utf8')
         doc_name = str(file).split('/')[-1].split('\\')[-1]
         result_file = folder_path + '/' + file.split('/')[-1]
-        f_output = open(Path(result_file), 'w', encoding='utf8')
+        f_output = open(Path(result_file), 'w', encoding='utf-8')
         text = f.read()
         result = stemming(text, algorithm)
         stemmed_text = result['text']
