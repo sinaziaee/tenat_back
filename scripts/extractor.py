@@ -3,6 +3,7 @@ from pathlib import Path
 from scripts import list_files_and_sizes, folder_creator
 import docx2txt
 import zip_unicode
+from pathlib import PurePath
 
 
 def apply(zip_file):
