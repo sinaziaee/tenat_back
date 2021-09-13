@@ -2,7 +2,7 @@ from nltk import stem
 from nltk.tokenize import word_tokenize
 from scripts import list_files, check_path, folder_creator, slicer
 from scripts import base_script
-from pathlib import Path
+from pathlib import Path, PurePath
 
 stemming_algorithms = ['Porter', 'Snowball', 'Lancaster']
 
@@ -45,7 +45,7 @@ def apply(from_path, to_path, name, algorithm, token_count):
             continue
         f = open(Path(file), 'r', encoding='utf8')
         doc_name = str(file).split('/')[-1].split('\\')[-1]
-        result_file = folder_path + '/' + file.split('/')[-1]
+        result_file = Path(folder_path, PurePath(file).name)
         f_output = open(Path(result_file), 'w', encoding='utf-8')
         text = f.read()
         result = stemming(text, algorithm)

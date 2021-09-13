@@ -3,8 +3,10 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import nltk
 import os
-from pathlib import Path
+from pathlib import Path, PurePath
 
+nltk.download('stopwords')
+nltk.download('punkt')
 
 def remove_stop_words(text, doc_name):
     stop_words = set(stopwords.words('english'))
@@ -32,7 +34,8 @@ def apply(from_path, to_path, name):
         if '00_output_result' in file:
             continue
         f = open(Path(file), 'r', encoding='utf8')
-        result_file = folder_path + '/' + file.split('/')[-1]
+        result_file = Path(folder_path, PurePath(file).name )
+        #result_file = folder_path + '/' + file.split('/')[-1]
         f_output = open(Path(result_file), 'w', encoding='utf8')
         text = f.read()
         doc_name = str(file).split('/')[-1].split('\\')[-1]
