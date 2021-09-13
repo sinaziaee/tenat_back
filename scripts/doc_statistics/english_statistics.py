@@ -36,16 +36,12 @@ def apply(from_path, to_path, name):
         if '00_output_result' in file:
             continue
         f = open(Path(file), 'r', encoding='utf8')
-        result_file = folder_path + '/' + file.split('/')[-1]
-        f_output = open(Path(result_file), 'w', encoding='utf8')
         text = f.read()
         doc_name = str(file).split('/')[-1].split('\\')[-1]
         result = doc_statistics(text, doc_name)
-        f_output.write(f'{str(result)}\n')
         output_file.write(f'{str(result)},\n')
         f.flush()
-        f_output.flush()
         result_list.append(result)
-    output_file.write(f'[\n')
+    output_file.write(f']\n')
     output_file.flush()
     return result_list

@@ -13,19 +13,14 @@ def home(request):
 
 
 def compress_view(request):
-    # documents = CompressFile.objects.filter(uploader=request.user)
     documents = CompressFile.objects.all()
-    # if request.user.is_superuser:
     if True:
         FileField(label='Select a file', help_text='max. 10 megabytes')
         # Handle file upload
-        print('-' * 100)
         if request.method == 'POST':
-            print('post')
             if request.POST.get('delete_items') is not None:
                 id = request.POST.get('delete_items')
                 id = str(id).replace('delete ', '')
-                print(id)
                 file = CompressFile.objects.get(file_id=id)
                 file.delete()
                 deleter(file.name)
@@ -39,12 +34,8 @@ def compress_view(request):
                 founded_file = CompressFile.objects.filter(name=cur_name)
                 if len(founded_file) != 0:
                     founded_file = CompressFile.objects.get(name=cur_name)
-                    print('founded: ', founded_file.name)
                     founded_file.delete()
                     deleter(founded_file.name)
-                # form = ZipFileForm()
-                # if form.is_valid():
-                # newdoc = CompressFile(file=cur_file, name=cur_name, uploader=cur_user)
                 newdoc = CompressFile(file=cur_file, name=cur_name)
                 newdoc.save()
                 start_automated_scripts(newdoc)
@@ -65,16 +56,13 @@ def deleter(filename):
     new_filename = str(filename).replace('.rar', '').replace('.zip', '')
     dirname = os.path.dirname(__file__)
     path = pathlib.Path(dirname).parent
-    print('*' * 100)
     data_path = os.path.join(path, f'media/data/{new_filename}')
     result_path = os.path.join(path, f'media/result/{new_filename}')
     doc_zip_path = os.path.join(path, f'media/docs/zips/{filename}')
-    print('*' * 100)
     shutil.rmtree(data_path)
     shutil.rmtree(result_path)
     os.remove(doc_zip_path)
 
 
 def start_automated_scripts(newdoc):
-    print(newdoc.file.path)
     extractor.apply(newdoc.file.path)
