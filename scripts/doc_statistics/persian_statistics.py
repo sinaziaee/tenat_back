@@ -2,6 +2,8 @@ from hazm import word_tokenize
 from hazm import stopwords_list
 from scripts import check_path, list_files, folder_creator
 from pathlib import Path
+import operator
+
 
 def doc_statistics(text, doc_name):
     stop_words = stopwords_list()
@@ -10,12 +12,24 @@ def doc_statistics(text, doc_name):
     distinct_words = len(set(word_tokens))
     stop_word = 0
     main_words = 0
+    frequent_words = ""
+    frequent_words_dic = {}
     for w in word_tokens:
         if w.lower() in stop_words:
             stop_word += 1
         else:
             main_words += 1
-    return {'doc_name': doc_name, 'total': total_words, 'main': main_words, 'stop': stop_word, 'distinct':distinct_words}
+            if w in frequent_words_dic:
+                frequent_words_dic[w] += 1
+            else:
+                frequent_words_dic[w] = 1
+    sort_dic = sorted(frequent_words_dic.items(), key=operator.itemgetter(1), reverse=True)
+    for i in range(10):
+        word, n = sort_dic[i]
+        frequent_words += (word + ', ')
+    return {'doc_name': doc_name, 'total': total_words, 'main': main_words, 'stop': stop_word,
+            'distinct': distinct_words, 'frequent': frequent_words}
+
 
 def apply(from_path, to_path, name):
     to_path = check_path.apply(to_path)
@@ -28,7 +42,7 @@ def apply(from_path, to_path, name):
     output_file = open(Path(result_all), 'w', encoding='utf-8')
     output_file.write(f'[\n')
     result_list = []
-    output_path = {'output_path':folder_path }
+    output_path = {'output_path': folder_path}
     result_list.append(output_path)
     for file in file_list:
         if '00_output_result' in file:
