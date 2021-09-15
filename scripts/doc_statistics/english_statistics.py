@@ -3,7 +3,7 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from pathlib import Path
 import nltk
-
+import operator
 
 def doc_statistics(text, doc_name):
     stop_words = set(stopwords.words('english'))
@@ -12,12 +12,23 @@ def doc_statistics(text, doc_name):
     distinct_words = len(set([w.lower() for w in word_tokens]))
     stop_word = 0
     main_words = 0
+    frequent_words = ""
+    frequent_words_dic = {}
     for w in word_tokens:
         if w.lower() in stop_words:
             stop_word += 1
         else:
             main_words += 1
-    return {'doc_name':doc_name, 'total': total_words, 'main': main_words, 'stop': stop_word, 'distinct':distinct_words}
+            if w in frequent_words_dic:
+                frequent_words_dic[w] += 1
+            else:
+                frequent_words_dic[w] = 1
+    sort_dic = sorted(frequent_words_dic.items(), key=operator.itemgetter(1), reverse=True)
+    for i in range(10):
+        word, n = sort_dic[i]
+        frequent_words += (word + ', ')
+    return {'doc_name':doc_name, 'total': total_words, 'main': main_words, 'stop': stop_word,
+            'distinct':distinct_words, 'frequent': frequent_words}
 
 def apply(from_path, to_path, name):
     to_path = check_path.apply(to_path)
