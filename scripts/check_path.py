@@ -14,3 +14,5 @@ def apply(path):
         return 'stop_word'
     elif 'lemmat' in path or 'limmat' in path:
         return 'lemmatized'
+    elif 'tf' in path or 'idf' in path:
+        return 'tf_idf'
