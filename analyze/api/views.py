@@ -10,7 +10,7 @@ from scripts.stem import english_stemmer, persian_stemmer
 from scripts.stop_word_removal import english_stop_word_removal, persian_stop_word_removal
 from scripts.doc_statistics import english_statistics, persian_statistics
 from scripts.lemmatize import english_lemmatizer, persian_lemmatizer
-from scripts.tf_idf import english_tf_idf, persian_tf_idf
+from scripts.tf_idf import tf_idf
 from analyze.api.serializer import *
 import time
 
@@ -193,15 +193,12 @@ def tf_idf(request):
     new_map = request.POST
     name = new_map.get('name')
     from_path = new_map.get('from')
-    language = new_map.get('language')
+#    language = new_map.get('language')
     method = new_map.get('method')
 #    if 'media/result/stemmed' not in from_path:
 #        return Response('You have to stem first', status=status.HTTP_400_BAD_REQUEST)
     try:
-        if language == 'Persian':
-            result = persian_tf_idf.apply(name=name, from_path=from_path, to_path='tf_idf', method=method)
-        else:
-            result = english_tf_idf.apply(name=name, from_path=from_path, to_path='tf_idf', method=method)
+        result = tf_idf.apply(name=name, from_path=from_path, to_path='tf_idf', method=method)
         return Response(result, status=status.HTTP_200_OK)
     except Exception as e:
         return Response(e, status=status.HTTP_400_BAD_REQUEST)

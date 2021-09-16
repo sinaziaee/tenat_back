@@ -5,8 +5,8 @@ import math
 
 def words_frequency(document_word):
     words_in_docs = {}
-    for doc, words in document_word.items():
-        for word in words:
+    for doc in document_word.keys():
+        for word in document_word[doc]:
             if word not in words_in_docs:
                 words_in_docs[word] = [doc]
             elif doc not in words_in_docs[word]:
@@ -17,10 +17,13 @@ def words_frequency(document_word):
 def compute_tf(doc_dict, docs_by_words):
     tf = {}
     word_bag = docs_by_words.keys()
-    for doc, words in doc_dict.items():
+    for doc in doc_dict.keys():
         tf[doc] = {}
         for word in word_bag:
-            tf[doc][word] = sum(word == w for w in doc_dict[doc])/len(doc_dict[doc])
+            if len(doc_dict[doc]) == 0:
+                tf[doc][word] = 0
+            else:
+                tf[doc][word] = sum(word == w for w in doc_dict[doc])/len(doc_dict[doc])
     return tf
 
 
@@ -54,14 +57,13 @@ def apply(from_path, to_path, name, method):
     folder_creator.apply(folder_path)
 
     doc_dict = {}
-    #print(file_list)
     for file in file_list:
+        if 'output_result' in file:
+            continue
         f = open(file, 'r', encoding='utf8')
-        doc_dict[file] = f.read()
+        doc_dict[file] = f.read().split('\n')
 
-    #print(doc_dict)
     docs_by_word = words_frequency(doc_dict)
-    #print(docs_by_word)
     if method == 'tf':
         x = compute_tf(doc_dict, docs_by_word)
     elif method == 'idf':
@@ -70,5 +72,4 @@ def apply(from_path, to_path, name, method):
         x = compute_tf_idf(doc_dict, docs_by_word)
     else:
         pass
-    #print(x)
-    pass
+    return x
