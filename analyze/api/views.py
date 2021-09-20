@@ -10,6 +10,7 @@ from scripts.stem import english_stemmer, persian_stemmer
 from scripts.stop_word_removal import english_stop_word_removal, persian_stop_word_removal
 from scripts.doc_statistics import english_statistics, persian_statistics
 from scripts.lemmatize import english_lemmatizer, persian_lemmatizer
+from scripts.graph_construction import graph
 from analyze.api.serializer import *
 import time
 
@@ -185,3 +186,18 @@ def export(request):
     if result is not None and len(result) != 0:
         return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['POST'])
+def graph_construction(request):
+    new_map = request.POST
+    name = new_map.get('name')
+    from_path = new_map.get('from')
+    graph_type = new_map.get('graph_type')
+    min_sim = float(new_map.get('min_sim'))
+    print(new_map.get('min_sim'))
+
+
+    result = graph.apply(from_path=from_path,to_path='graph_construction',name=name,graph_type=graph_type,min_sim=min_sim)
+    if result is not None and len(result) != 0:
+        return Response(result, status=status.HTTP_200_OK)
+    return Response('failed', status=status.HTTP_400_BAD_REQUEST) 
