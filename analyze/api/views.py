@@ -35,6 +35,7 @@ def upload(request):
             file_name = val_data['file']
             temp = models.CompressFile.objects.filter(file=file_name)
             rand_int = round(time.time() * 1000)
+            # if there is a file with same name --> add a random number to tail
             if models.CompressFile.objects.filter(name=val_data['name']).exists():
                 folder_name = val_data['name'][:-4] + '_' + str(rand_int) + '.zip'
                 file_name = folder_name
