@@ -3,7 +3,7 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from pathlib import Path
 
-
+# function for get text of input file (result is list of terms)
 def get_text(file_name):
     f = open(Path(file_name), 'r', encoding='utf8')
     text = f.read()
@@ -11,7 +11,7 @@ def get_text(file_name):
     f.flush()
     text_list = text.split('\n')
     return text_list
-
+import json
 def apply(from_path, to_path, name,graph_type,min_sim):
     to_path = check_path.apply(to_path)
     folder_path = from_path
@@ -50,8 +50,9 @@ def apply(from_path, to_path, name,graph_type,min_sim):
                 result_list.append(result_dict)
 
     # save to output file
+    res = json.dumps(result_list)
     output_file = open(Path(result_all), 'w', encoding='utf-8')
-    output_file.write(f'{str(result_list)}\n')
+    output_file.write(f'{res}\n')
     output_file.flush()
     return result_list
 

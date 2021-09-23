@@ -13,6 +13,7 @@ from scripts.lemmatize import english_lemmatizer, persian_lemmatizer
 from scripts.graph_construction import graph
 from analyze.api.serializer import *
 import time
+from scripts.tf_idf import basic_tf_idf
 
 
 def home_api(request):
@@ -196,8 +197,24 @@ def graph_construction(request):
     min_sim = float(new_map.get('min_sim'))
     print(new_map.get('min_sim'))
 
-
     result = graph.apply(from_path=from_path,to_path='graph_construction',name=name,graph_type=graph_type,min_sim=min_sim)
     if result is not None and len(result) != 0:
         return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST) 
+
+@api_view(['POST'])
+def td_idf(request):
+    new_map = request.POST
+    name = new_map.get('name')
+    from_path = new_map.get('from')
+    language = new_map.get('language')
+    if language == 'Persian':
+        result = basic_tf_idf.apply(from_path=from_path, to_path='tf_idf', name=name)
+    elif language == 'English':
+        result = basic_tf_idf.apply(from_path=from_path, to_path='tf_idf', name=name)
+    else:
+        result = basic_tf_idf.apply(from_path=from_path, to_path='tf_idf', name=name)
+    if result is not None and len(result) != 0:
+        return Response(result, status=status.HTTP_200_OK)
+    return Response('failed', status=status.HTTP_400_BAD_REQUEST)
+
