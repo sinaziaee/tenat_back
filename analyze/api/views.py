@@ -10,6 +10,7 @@ from scripts.stem import english_stemmer, persian_stemmer
 from scripts.stop_word_removal import english_stop_word_removal, persian_stop_word_removal
 from scripts.doc_statistics import english_statistics, persian_statistics
 from scripts.lemmatize import english_lemmatizer, persian_lemmatizer
+from scripts import tfidf_gensim
 from analyze.api.serializer import *
 import time
 
@@ -63,6 +64,20 @@ def upload(request):
         return Response(map_list)
     else:
         pass
+
+@api_view(['POST'])
+def tfidf(request):
+    new_map = request.POST
+    name = new_map.get('name')
+    from_path = new_map.get('from')
+    tokens_count = 10
+    try:
+        files_list = tfidf_gensim.apply(name=name, 
+                                     from_path=from_path, to_path='tff')
+        return Response(files_list, status=status.HTTP_200_OK)
+    except Exception as e:
+        print(e)
+        return Response('failed', status=status.HTTP_400_BAD_REQUEST)    
 
 
 @api_view(['POST'])

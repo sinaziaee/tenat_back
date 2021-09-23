@@ -11,5 +11,6 @@ urlpatterns = [
     path('lemmatize/', views.lemmatize, name='lemmatizer'),  # {host}/api/lemmatize
     path('stop-word-removal/', views.remove_stop_word, name='stop-word-removal'),  # {host}/api/stop-word-removal
     path('doc-statistics/', views.doc_statistics, name='doc-statistics'),  # {host}/api/doc-statistics
+    path('tfidf/', views.tfidf, name='tfidf'),  # {host}/api/tfidf
     path('export/', views.export, name='export'),  # {host}/api/export
 ]
