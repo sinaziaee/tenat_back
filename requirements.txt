@@ -48,3 +48,4 @@ threadpoolctl==2.2.0
 typing-extensions==3.10.0.2
 ZipUnicode==1.0.0
 
+pyunpack==0.2.2

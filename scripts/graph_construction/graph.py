@@ -1,4 +1,4 @@
-from scripts import check_path, list_files, folder_creator
+from scripts import check_path, list_files, folder_creator,save_json
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from pathlib import Path
@@ -50,10 +50,7 @@ def apply(from_path, to_path, name,graph_type,min_sim):
                 result_list.append(result_dict)
 
     # save to output file
-    res = json.dumps(result_list)
-    output_file = open(Path(result_all), 'w', encoding='utf-8')
-    output_file.write(f'{res}\n')
-    output_file.flush()
+    save_json.apply(result_list,result_all)
     return result_list
 
         

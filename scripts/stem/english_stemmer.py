@@ -1,6 +1,6 @@
 from nltk import stem
 from nltk.tokenize import word_tokenize
-from scripts import list_files, check_path, folder_creator, slicer
+from scripts import list_files, check_path, folder_creator, slicer,save_json
 from scripts import base_script
 from pathlib import Path, PurePath
 
@@ -35,8 +35,7 @@ def apply(from_path, to_path, name, algorithm, token_count):
     folder_path = '/'.join(from_path.split('/')[:-1]) + f'/{to_path}/' + name
     folder_creator.apply(folder_path)
     result_all = folder_path + '/00_output_result.txt'
-    output_file = open(Path(result_all), 'w', encoding='utf-8')
-    output_file.write(f'[\n')
+ 
     result_list = []
     output_path = {'output_path':folder_path }
     result_list.append(output_path)
@@ -51,10 +50,8 @@ def apply(from_path, to_path, name, algorithm, token_count):
         result = stemming(text, algorithm)
         stemmed_text = result['text']
         result_dict = {'doc_name':doc_name, 'top_stemmed':', '.join(result['stemmed_words'][:token_count]), 'stemmed_count':result['stemmed_count']}
-        output_file.write(f'{str(result_dict)},\n')
         f_output.write(f'{stemmed_text}\n')
         f_output.flush()
         result_list.append(result_dict)
-    output_file.write(f']\n')
-    output_file.flush()
+    save_json.apply(result_list,result_all)
     return result_list
