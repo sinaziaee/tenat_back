@@ -23,7 +23,7 @@ def stemming(text, algorithm):
         stm = stemmer.stem(word)
         all_stemmed.append(stm)
         if word != stm:
-            w_stemmes.append(f'{word} : {stm}')
+            w_stemmes.append(f'{word} => {stm}')
     stemmed_text = ' '.join(all_stemmed)
     return {'text':stemmed_text, 'stemmed_words':w_stemmes, 'stemmed_count': len(w_stemmes)}
 
