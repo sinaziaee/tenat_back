@@ -1,52 +1,64 @@
-from sklearn.feature_extraction.text import TfidfVectorizer
-import pandas as pd
 from scripts import check_path, list_files, folder_creator
-from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
-from pathlib import Path
-import json
+import nltk
+from collections import Counter
+import math
 
+nltk.download('punkt')
 
-# function for get text of input file (result is list of terms)
-def get_text(file_name):
-    f = open(Path(file_name), 'r', encoding='utf8')
-    text = f.read()
-    doc_name = str(file_name).split('/')[-1].split('\\')[-1]
-    f.flush()
-    return text
+def words_docs_frequency(document_word):
+    words_in_docs = {}
+    for doc , words in document_word.items():
+        for word in words:
+            if not word in words_in_docs:
+                words_in_docs[word] = [doc]
+            elif not doc in words_in_docs[word]:
+                words_in_docs[word].append(doc)
+    return words_in_docs
+
+def words_per_document(docs):
+    word_dict = {}
+    for doc, text in docs.items():
+        words = [w.lower() for w in word_tokenize(text)]
+        word_dict[doc] = dict(Counter(words))
+    return word_dict
+
+def TF_IDF(word_dict,words_docs,doc_count,doc):
+    tf_idf_dict = {}
+    all_words = len(word_tokenize(doc))
+    for word, count in word_dict.items():
+        frequency = count
+        tf = frequency/all_words
+        idf = math.log10(doc_count/len(words_docs[word]))
+        tf_idf = tf * idf
+        tf_idf_dict[word] = {'frequency':frequency, 'tf':tf, 'idf':idf, 'tf_idf': tf_idf}
+    return tf_idf_dict
 
 def apply(from_path, to_path, name):
+    from_path = check_path.apply(from_path)
     to_path = check_path.apply(to_path)
-    folder_path = from_path
+    folder_path = f'media/result/{from_path}/{name}'
     file_list = list_files.apply(folder_path)
     folder_creator.apply(folder_path)
-    folder_path = '/'.join(from_path.split('/')[:-1]) + f'/{to_path}/' + name
+    folder_path = f'media/result/{to_path}/{name}'
     folder_creator.apply(folder_path)
-    result_all = folder_path + '/00_output_result.txt'
-    # output_file = open(Path(result_all), 'w', encoding='utf-8')
-    # output_file.write(f'[\n')
-    result_list = []
-    output_path = {'output_path':folder_path }
-    result_list.append(output_path)
-    result_dict = {}
+    output_file_list = []
+    doc_text_dict = {}
+    doc_count = len(file_list)
+    print(file_list)
+    for file in file_list:
+        f = open(file, 'r', encoding='utf8')
+        doc_text_dict[file] = f.read()
+    word_dict = words_per_document(doc_text_dict)
+    docs_per_word = words_docs_frequency(word_dict)
+    for file in file_list:
+        new_file = str(file).replace(f'{from_path}', f'{to_path}')
+        output_file_list.append(new_file)
+        f_output = open(new_file, 'w', encoding='utf8')
+        tf_idf = TF_IDF(word_dict[file], docs_per_word, doc_count, doc_text_dict[file])
+        f_output.write(str(tf_idf))
+        f_output.flush()
+    return output_file_list
 
-    corpus = []
-    for i in range(0,len(file_list)):
-        text = get_text(file_list[i])
-        corpus.append(text)
-
-    tfIdfVectorizer=TfidfVectorizer(use_idf=True)
-    tfIdfVectorizer=TfidfVectorizer()
-    tfIdf = tfIdfVectorizer.fit_transform(corpus)
-    df = pd.DataFrame(tfIdf[0].T.todense(), index=tfIdfVectorizer.get_feature_names(), columns=["TF-IDF"])
-    df = df.sort_values('TF-IDF', ascending=False)
-    # df.to_csv('tf_idf', sep='\t', encoding='utf-8')
-    # result_list= list(df.to_json(orient = 'record'))
-    # df.to_json('tf_idf.json', orient = 'split', compression = 'infer', index = 'true')
-    # df.to_json (r'C:\Users\Ron\Desktop\Export_DataFrame.json')
-    print (df.tail(50))
-    result_list = []
-    return result_list
 
         
-

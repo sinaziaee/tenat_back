@@ -2,6 +2,7 @@ from scripts import check_path, list_files, folder_creator,save_json
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from pathlib import Path
+import json
 
 # function for get text of input file (result is list of terms)
 def get_text(file_name):
@@ -11,7 +12,7 @@ def get_text(file_name):
     f.flush()
     text_list = text.split('\n')
     return text_list
-import json
+
 def apply(from_path, to_path, name,graph_type,min_sim):
     to_path = check_path.apply(to_path)
     folder_path = from_path
@@ -20,8 +21,7 @@ def apply(from_path, to_path, name,graph_type,min_sim):
     folder_path = '/'.join(from_path.split('/')[:-1]) + f'/{to_path}/' + name
     folder_creator.apply(folder_path)
     result_all = folder_path + '/00_output_result.txt'
-    # output_file = open(Path(result_all), 'w', encoding='utf-8')
-    # output_file.write(f'[\n')
+
     result_list = []
     output_path = {'output_path':folder_path }
     result_list.append(output_path)
