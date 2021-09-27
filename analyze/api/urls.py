@@ -13,5 +13,6 @@ urlpatterns = [
     path('doc-statistics/', views.doc_statistics, name='doc-statistics'),  # {host}/api/doc-statistics
     path('export/', views.export, name='export'),  # {host}/api/export
     path('graph-construction/', views.graph_construction, name='graph_construction'),  # {host}/api/export
+    path('graph-viewer/', views.graph_viewer, name='graph_viewer'),  # {host}/api/export
     path('tf-idf/', views.td_idf, name='tf_idf'),  # {host}/api/tf-idf
 ]

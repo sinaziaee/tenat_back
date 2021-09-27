@@ -21,11 +21,24 @@ def apply(from_path, to_path, name,graph_type,min_sim):
     folder_path = '/'.join(from_path.split('/')[:-1]) + f'/{to_path}/' + name
     folder_creator.apply(folder_path)
     result_all = folder_path + '/00_output_result.txt'
-
+    data_file = folder_path + '/00_graph_data.json'
     result_list = []
     output_path = {'output_path':folder_path }
     result_list.append(output_path)
     result_dict = {}
+
+
+    data = {}
+    nodes = []
+    edges = []
+    for file in file_list:
+        doc_name = str(file).split('/')[-1].split('\\')[-1]
+
+        if doc_name == '00_output_result.txt':
+                continue
+            
+        node = {'id':doc_name}
+        nodes.append(node);
 
     # calculate sim between each pair of documents
     for i in range(0,len(file_list)-1):
@@ -48,8 +61,11 @@ def apply(from_path, to_path, name,graph_type,min_sim):
             if(jaccard_sim >= min_sim):
                 result_dict = {'source':source_doc_name,'target':target_doc_name,'sim':jaccard_sim}
                 result_list.append(result_dict)
-
+                edge = {'from':source_doc_name,'to':target_doc_name}
+                edges.append(edge);
+    data = {'nodes':nodes,'edges':edges}
     # save to output file
+    save_json.apply(data,data_file)
     save_json.apply(result_list,result_all)
     return result_list
 

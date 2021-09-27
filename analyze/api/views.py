@@ -12,7 +12,7 @@ from scripts.doc_statistics import english_statistics, persian_statistics
 from scripts.lemmatize import english_lemmatizer, persian_lemmatizer
 from scripts.graph_construction import graph
 from analyze.api.serializer import *
-import time
+import time,json
 from scripts.tf_idf import basic_tf_idf,sklearn_tf_idf,gensim_tf_idf
 
 
@@ -202,6 +202,25 @@ def graph_construction(request):
     if result is not None and len(result) != 0:
         return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST) 
+
+
+
+@api_view(['POST'])
+def graph_viewer(request):
+    new_map = request.POST
+    name = new_map.get('name')
+    from_path = new_map.get('from')+'/00_graph_data.json'
+        # Opening JSON file
+    f = open(from_path,'r',encoding='utf-8')
+    # returns JSON object as
+    # a dictionary
+    result = json.load(f)
+    f.close()
+    # print(result)
+    if result is not None and len(result) != 0:
+        return Response(result, status=status.HTTP_200_OK)
+    return Response('failed', status=status.HTTP_400_BAD_REQUEST)
+
 
 @api_view(['POST'])
 def td_idf(request):
