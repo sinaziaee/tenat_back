@@ -25,10 +25,11 @@ def tf_idf(texts, docs):
         counter += 1
         for term in doc:
             word = id_word[term[0]]
-            weight = term[1]
-            dic = { 'term': word , 'tf_idf':{ 'doc': docs[counter], 'weight': weight } }
+            weight = round(term[1],4)
+            dic = {'term': word, 'doc': docs[counter], 'weight': weight}
             result.append(dic)
-    return result 
+    return result
+
 
 def apply(from_path, to_path, name):
     to_path = check_path.apply(to_path)
@@ -39,7 +40,7 @@ def apply(from_path, to_path, name):
     folder_creator.apply(folder_path)
     result_all = folder_path + '/00_output_result.txt'
     output_file = open(Path(result_all), 'w', encoding='utf-8')
-    output_file.write(f'[\n')
+    # output_file.write(f'[\n')
     result = []
     output_path = {'output_path':folder_path }
     result.append(output_path)
@@ -53,9 +54,10 @@ def apply(from_path, to_path, name):
         doc_name = str(PurePath(file).name)
         text_list.append(text)
         doc_list.append(doc_name)
-    result.append(tf_idf(text_list, doc_list)[:])
+    result=tf_idf(text_list, doc_list)
     output_file.write(str(result))
-    output_file.write(f']\n')
+    # output_file.write(f']\n')
     output_file.flush()
-    return result
+    # print(result)
+    return result[:20]
 

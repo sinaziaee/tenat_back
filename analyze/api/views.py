@@ -227,14 +227,16 @@ def td_idf(request):
     new_map = request.POST
     name = new_map.get('name')
     from_path = new_map.get('from')
-    language = new_map.get('language')
-    if language == 'Persian':
+    # language = new_map.get('language')
+    method = new_map.get('method')
+    if method == 'basic':
         result = basic_tf_idf.apply(from_path=from_path, to_path='tf_idf', name=name)
-    elif language == 'English':
-        result = basic_tf_idf.apply(from_path=from_path, to_path='tf_idf', name=name)
+    elif method == 'gensim':
+        result = gensim_tf_idf.apply(from_path=from_path, to_path='tf_idf', name=name)
+    elif method == 'sklearn':
+        result = sklearn_tf_idf.apply(from_path=from_path, to_path='tf_idf', name=name)
     else:
         result = basic_tf_idf.apply(from_path=from_path, to_path='tf_idf', name=name)
     if result is not None and len(result) != 0:
         return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)
-
