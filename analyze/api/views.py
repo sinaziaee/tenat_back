@@ -12,13 +12,8 @@ from scripts.doc_statistics import english_statistics, persian_statistics
 from scripts.lemmatize import english_lemmatizer, persian_lemmatizer
 from scripts.graph_construction import graph
 from analyze.api.serializer import *
-<<<<<<< HEAD
 import time,json
 from scripts.tf_idf import basic_tf_idf,sklearn_tf_idf,gensim_tf_idf
-=======
-import time
-from scripts.tf_idf import basic_tf_idf, sklearn_tf_idf, gensim_tf_idf
->>>>>>> 885cf54d700e42fec410cc7388b513f20b426765
 
 
 def home_api(request):
@@ -209,7 +204,6 @@ def graph_construction(request):
     return Response('failed', status=status.HTTP_400_BAD_REQUEST) 
 
 
-<<<<<<< HEAD
 
 @api_view(['POST'])
 def graph_viewer(request):
@@ -228,8 +222,6 @@ def graph_viewer(request):
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)
 
 
-=======
->>>>>>> 885cf54d700e42fec410cc7388b513f20b426765
 @api_view(['POST'])
 def td_idf(request):
     new_map = request.POST
