@@ -26,9 +26,10 @@ def tf_idf(texts, docs):
         for term in doc:
             word = id_word[term[0]]
             weight = term[1]
-            dic = { 'term': word , 'tf_idf':{ 'doc': docs[counter], 'weight': weight } }
+            dic = {'term': word, 'doc': docs[counter], 'weight': weight}
             result.append(dic)
-    return result 
+    return result
+
 
 def apply(from_path, to_path, name):
     to_path = check_path.apply(to_path)

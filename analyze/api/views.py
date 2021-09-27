@@ -12,8 +12,13 @@ from scripts.doc_statistics import english_statistics, persian_statistics
 from scripts.lemmatize import english_lemmatizer, persian_lemmatizer
 from scripts.graph_construction import graph
 from analyze.api.serializer import *
+<<<<<<< HEAD
 import time,json
 from scripts.tf_idf import basic_tf_idf,sklearn_tf_idf,gensim_tf_idf
+=======
+import time
+from scripts.tf_idf import basic_tf_idf, sklearn_tf_idf, gensim_tf_idf
+>>>>>>> 885cf54d700e42fec410cc7388b513f20b426765
 
 
 def home_api(request):
@@ -204,6 +209,7 @@ def graph_construction(request):
     return Response('failed', status=status.HTTP_400_BAD_REQUEST) 
 
 
+<<<<<<< HEAD
 
 @api_view(['POST'])
 def graph_viewer(request):
@@ -222,19 +228,23 @@ def graph_viewer(request):
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)
 
 
+=======
+>>>>>>> 885cf54d700e42fec410cc7388b513f20b426765
 @api_view(['POST'])
 def td_idf(request):
     new_map = request.POST
     name = new_map.get('name')
     from_path = new_map.get('from')
-    language = new_map.get('language')
-    if language == 'Persian':
+    # language = new_map.get('language')
+    method = new_map.get('method')
+    if method == 'basic':
         result = basic_tf_idf.apply(from_path=from_path, to_path='tf_idf', name=name)
-    elif language == 'English':
-        result = basic_tf_idf.apply(from_path=from_path, to_path='tf_idf', name=name)
+    elif method == 'gensim':
+        result = gensim_tf_idf.apply(from_path=from_path, to_path='tf_idf', name=name)
+    elif method == 'sklearn':
+        result = sklearn_tf_idf.apply(from_path=from_path, to_path='tf_idf', name=name)
     else:
         result = basic_tf_idf.apply(from_path=from_path, to_path='tf_idf', name=name)
     if result is not None and len(result) != 0:
         return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)
-
