@@ -1,12 +1,12 @@
-import os
+import os,json
 from pathlib import Path
-from scripts import list_files, folder_creator, check_path
+from scripts import list_files, folder_creator, check_path,save_json
 import hazm
 import string
 ignoreList = ["!", "@", "$", "%", "^", "&","#" "*", "(", ")", "_", "+", "-", "/", "*", "'", "،", "؛", ",", ""
                       "{","}",":",";",'=',"|",
                       "[", "]", "«", "»", "<", ">", ".", "?", "؟", "\n", "\t", '"',"“","”","\u200c","\u200e"
-                      '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹', '۰', "٫",
+                      '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹', '۰', "٫","."
                       '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
 
@@ -17,23 +17,41 @@ def tokenize_text(text, doc_name, splitter):
     word_tokens = [word.lower() for word in text.split(splitter) if word != ""]
     return ({'doc_name':doc_name, 'tokens': word_tokens })
 
+
+# def get_files_list(path,name):
+#     # get files of from_path
+#     folder_path = get_folder_path(path,name)
+#     file_list = list_files.apply(folder_path)
+#     return file_list
+
+# def get_folder_path(path,name):
+#     path = check_path.apply(path)
+#     folder_path = f'media/result/{path}/{name}'
+#     folder_creator.apply(folder_path)
+#     return folder_path
+
+
 def apply(from_path, to_path, name, splitter, tokens_count):
+
     from_path = check_path.apply(from_path)
     to_path = check_path.apply(to_path)
-    folder_path = f'media/result/{from_path}/{name}'
-    file_list = list_files.apply(folder_path)
-    folder_creator.apply(folder_path)
-    folder_path = f'media/result/{to_path}/{name}'
-    folder_creator.apply(folder_path)
+
+    # get files of from_path
+    file_list = list_files.get_files_list(from_path,name)
+
+    # get output folder path
+    folder_path = list_files.get_folder_path(to_path,name)
+
+
     result_all = folder_path + '/00_output_result.txt'
-    output_file = open(Path(result_all), 'w', encoding='utf-8')
-    output_file.write(f'[\n')
     output_path = {'output_path': folder_path}
     result_list = []
     result_list.append(output_path)
+
     for file in file_list:
         f = open(Path(file), 'r', encoding='utf8')
         result_file = str(file).replace(f'{from_path}', f'{to_path}')
+        print('result_file= '+str(result_file))
         f_output = open(Path(result_file), 'w', encoding='utf8')
         text = f.read()
         doc_name = str(file).split('/')[-1].split('\\')[-1]
@@ -42,9 +60,12 @@ def apply(from_path, to_path, name, splitter, tokens_count):
             f_output.write(f'{tok}\n')
         result['top_tokens'] = ', '.join(result['tokens'][:tokens_count])
         result_dict = {'doc_name':result['doc_name'], 'tokens': result['top_tokens'], 'tokens_count':len(result['tokens'])}
-        output_file.write(f'{str(result_dict)},\n')
         f.flush()
         result_list.append(result_dict)
-    output_file.write(f']\n')
-    output_file.flush()
+
+    save_json.apply(result_list=result_list,output_path=result_all)
+
     return result_list
+
+
+

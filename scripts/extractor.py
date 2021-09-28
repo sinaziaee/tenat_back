@@ -4,24 +4,35 @@ from scripts import list_files_and_sizes, folder_creator
 import docx2txt
 import zip_unicode
 from pathlib import PurePath
+import patoolib
 
 
 def apply(zip_file):
     folder_name = str(os.path.basename(zip_file))
-    folder_path = f'media/data/{folder_name}/'
+    folder_path = f'media/data/{folder_name}/'  # media/data/computer.zip/
     try:
+        # check data folder is created or not.
         if not Path(f'media/data/').is_dir():
-            dirname = os.path.dirname(__file__)
-            path = Path(dirname).parent
+            dirname = os.path.dirname(__file__) # scripts folder
+            path = Path(dirname).parent # tenat_back folder
             path = Path(path, f'media/data')
             path.mkdir(parents=True, exist_ok=True)
+        
+        # if there is not zip folder previously ---> make it
         if not os.path.isdir(f'media/data/{folder_name}'):
             dirname = os.path.dirname(__file__)
             path = Path(dirname).parent
             path = Path(path, f'media/data/{folder_name}')
             path.mkdir(parents=True, exist_ok=True)
-        zip_ref = zip_unicode.ZipHandler(path=zip_file, extract_path=folder_path)
-        zip_ref.extract_all()
+        # zip_ref = zip_unicode.ZipHandler(path=zip_file, extract_path=folder_path)
+        # zip_ref.extract_all()
+
+        # all archives (zip, rar, 7z)
+        print('zip file= '+str(zip_file))
+        print('zip file= '+str(zip_file))
+        patoolib.extract_archive(zip_file,outdir=folder_path)
+
+
     except OSError as error:
         print(error)
     files_list = []
@@ -29,6 +40,7 @@ def apply(zip_file):
         for f in files:
             fp = Path(path, f)
             files_list.append(fp)
+    # go to result/raw_text and convert documents to txt files
     folder_path = folder_path.replace('data', 'result/raw_text')
     for file in files_list:
         doc_to_txt(folder_path, file)

@@ -10,8 +10,10 @@ from scripts.stem import english_stemmer, persian_stemmer
 from scripts.stop_word_removal import english_stop_word_removal, persian_stop_word_removal
 from scripts.doc_statistics import english_statistics, persian_statistics
 from scripts.lemmatize import english_lemmatizer, persian_lemmatizer
+from scripts.graph_construction import graph
 from analyze.api.serializer import *
-import time
+import time,json
+from scripts.tf_idf import basic_tf_idf,sklearn_tf_idf,gensim_tf_idf
 
 
 def home_api(request):
@@ -33,6 +35,7 @@ def upload(request):
             file_name = val_data['file']
             temp = models.CompressFile.objects.filter(file=file_name)
             rand_int = round(time.time() * 1000)
+            # if there is a file with same name --> add a random number to tail
             if models.CompressFile.objects.filter(name=val_data['name']).exists():
                 folder_name = val_data['name'][:-4] + '_' + str(rand_int) + '.zip'
                 file_name = folder_name
@@ -182,6 +185,58 @@ def export(request):
     from_path = new_map.get('from')
     output_format = new_map.get('format')
     result = exporter.apply(from_path=from_path, name=name, format=output_format, to_path='export')
+    if result is not None and len(result) != 0:
+        return Response(result, status=status.HTTP_200_OK)
+    return Response('failed', status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['POST'])
+def graph_construction(request):
+    new_map = request.POST
+    name = new_map.get('name')
+    from_path = new_map.get('from')
+    graph_type = new_map.get('graph_type')
+    min_sim = float(new_map.get('min_sim'))
+    print(new_map.get('min_sim'))
+
+    result = graph.apply(from_path=from_path,to_path='graph_construction',name=name,graph_type=graph_type,min_sim=min_sim)
+    if result is not None and len(result) != 0:
+        return Response(result, status=status.HTTP_200_OK)
+    return Response('failed', status=status.HTTP_400_BAD_REQUEST) 
+
+
+
+@api_view(['POST'])
+def graph_viewer(request):
+    new_map = request.POST
+    name = new_map.get('name')
+    from_path = new_map.get('from')+'/00_graph_data.json'
+        # Opening JSON file
+    f = open(from_path,'r',encoding='utf-8')
+    # returns JSON object as
+    # a dictionary
+    result = json.load(f)
+    f.close()
+    # print(result)
+    if result is not None and len(result) != 0:
+        return Response(result, status=status.HTTP_200_OK)
+    return Response('failed', status=status.HTTP_400_BAD_REQUEST)
+
+
+@api_view(['POST'])
+def td_idf(request):
+    new_map = request.POST
+    name = new_map.get('name')
+    from_path = new_map.get('from')
+    # language = new_map.get('language')
+    method = new_map.get('method')
+    if method == 'basic':
+        result = basic_tf_idf.apply(from_path=from_path, to_path='tf_idf', name=name)
+    elif method == 'gensim':
+        result = gensim_tf_idf.apply(from_path=from_path, to_path='tf_idf', name=name)
+    elif method == 'sklearn':
+        result = sklearn_tf_idf.apply(from_path=from_path, to_path='tf_idf', name=name)
+    else:
+        result = basic_tf_idf.apply(from_path=from_path, to_path='tf_idf', name=name)
     if result is not None and len(result) != 0:
         return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)
