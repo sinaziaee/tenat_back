@@ -55,6 +55,7 @@ def apply(from_path, to_path, name):
         text_list.append(text)
         doc_list.append(doc_name)
     result=tf_idf(text_list, doc_list)
+    result.insert(0,output_path)
     output_file.write(str(result))
     # output_file.write(f']\n')
     output_file.flush()
