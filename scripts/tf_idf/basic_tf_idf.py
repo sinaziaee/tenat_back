@@ -33,7 +33,7 @@ def TF_IDF(word_dict, words_docs, doc_count, doc, file_name):
         frequency = count
         tf = frequency/all_words
         idf = math.log10(doc_count/len(words_docs[word]))
-        tf_idf = tf * idf
+        tf_idf = round(tf * idf,4)
         tf_idf_list.append({'term': word, 'doc': file_name, 'weight': tf_idf})
     return tf_idf_list
 
