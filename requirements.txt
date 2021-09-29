@@ -49,3 +49,5 @@ typing-extensions==3.10.0.2
 ZipUnicode==1.0.0
 
 pyunpack==0.2.2
+gensim~=4.1.2
+pandas~=1.3.3

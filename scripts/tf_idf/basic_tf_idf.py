@@ -54,6 +54,7 @@ def apply(from_path, to_path, name):
         doc_text_dict[file] = f.read()
     word_dict = words_per_document(doc_text_dict)
     docs_per_word = words_docs_frequency(word_dict)
+    result = []
     for file in file_list:
         new_file = str(file).replace(f'{from_path}', f'{to_path}')
         output_file_list.append(new_file)
@@ -62,4 +63,5 @@ def apply(from_path, to_path, name):
         tf_idf = TF_IDF(word_dict[file], docs_per_word, doc_count, doc_text_dict[file], file_name)
         f_output.write(str(tf_idf))
         f_output.flush()
-    return tf_idf
+        result.extend(tf_idf)
+    return result
