@@ -13,7 +13,7 @@ from scripts.lemmatize import english_lemmatizer, persian_lemmatizer
 from scripts.graph_construction import graph
 from analyze.api.serializer import *
 import time,json
-from scripts.tf_idf import basic_tf_idf,sklearn_tf_idf,gensim_tf_idf
+from scripts.tf_idf import basic_tf_idf, sklearn_tf_idf, gensim_tf_idf
 
 
 def home_api(request):
