@@ -1,3 +1,4 @@
+from scripts.tf_idf.sklearn_tf_idf import get_file_name
 from scripts import check_path, list_files, folder_creator
 from nltk.tokenize import word_tokenize
 import nltk
@@ -57,6 +58,8 @@ def apply(from_path, to_path, name):
     result = []
     for file in file_list:
         new_file = str(file).replace(f'{from_path}', f'{to_path}')
+        if '00_output_result' in file:
+            continue
         output_file_list.append(new_file)
         f_output = open(new_file, 'w', encoding='utf8')
         file_name = str(file).split("\\")[-1]
@@ -64,4 +67,4 @@ def apply(from_path, to_path, name):
         f_output.write(str(tf_idf))
         f_output.flush()
         result.extend(tf_idf)
-    return result
+    return result[:20]

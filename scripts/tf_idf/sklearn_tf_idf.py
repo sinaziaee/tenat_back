@@ -23,7 +23,7 @@ def TF_IDF(file):
     tfIdf = tfIdfVectorizer.fit_transform(text)
     tfIdf = pd.DataFrame(tfIdf[0].T.todense(), index=tfIdfVectorizer.get_feature_names(), columns=["TF-IDF"])
     for index, row in tfIdf.iterrows():
-        result.append({'term': index, 'doc': file_name, 'weight': row['TF-IDF']})
+        result.append({'term': index, 'doc': file_name, 'weight': round(row['TF-IDF'],4)})
     return result
 
 
@@ -39,10 +39,12 @@ def apply(from_path, to_path, name):
     result = []
     for file in file_list:
         new_file = str(file).replace(f'{from_path}', f'{to_path}')
+        if '00_output_result' in file:
+            continue
         output_file_list.append(new_file)
         f_output = open(new_file, 'w', encoding='utf8')
         tf_idf = TF_IDF(file)
         f_output.write(str(tf_idf))
         f_output.flush()
         result.extend(tf_idf)
-    return result
+    return result[:20]
