@@ -34,7 +34,7 @@ def apply(from_path, to_path, name,graph_type,min_sim):
     for file in file_list:
         doc_name = str(file).split('/')[-1].split('\\')[-1]
 
-        if doc_name == '00_output_result.txt':
+        if doc_name == '00_output_result.txt' or doc_name == '00_graph_data.json':
                 continue
             
         node = {'id':doc_name}
@@ -49,7 +49,7 @@ def apply(from_path, to_path, name,graph_type,min_sim):
 
             source_doc_name = str(source_doc).split('/')[-1].split('\\')[-1]
             target_doc_name = str(target_doc).split('/')[-1].split('\\')[-1]
-            if source_doc_name == '00_output_result.txt' or target_doc_name == '00_output_result.txt':
+            if source_doc_name == '00_output_result.txt' or target_doc_name == '00_graph_data.json':
                 continue
             source_text = get_text(source_doc)
             target_text = get_text(target_doc)

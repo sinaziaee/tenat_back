@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.decorators import permission_classes, api_view
 from rest_framework.permissions import IsAuthenticated
-from scripts import extractor, list_files_and_sizes, tokenizer, exporter
+from scripts import extractor, list_files_and_sizes, tokenizer, exporter,join_operator
 from scripts.normalize import english_normalizer, persian_normalizer
 from scripts.stem import english_stemmer, persian_stemmer
 from scripts.stop_word_removal import english_stop_word_removal, persian_stop_word_removal
@@ -237,6 +237,26 @@ def td_idf(request):
         result = sklearn_tf_idf.apply(from_path=from_path, to_path='tf_idf', name=name)
     else:
         result = basic_tf_idf.apply(from_path=from_path, to_path='tf_idf', name=name)
+
+    return Response('failed', status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['POST'])
+def join(request):
+    new_map = request.POST
+    name1 = new_map.get('name1')
+    name2 = new_map.get('name2')
+    from_path1 = new_map.get('from1')
+    from_path2 = new_map.get('from2')
+    print('=====================================')
+    print(name1)
+    print(name2)
+    print(from_path1)
+    print(from_path2)
+    print('=====================================')
+
+    # language = new_map.get('language')
+    
+    result = join_operator.apply(from_path1,from_path2,name1,name2,to_path='join')
     if result is not None and len(result) != 0:
         return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)
