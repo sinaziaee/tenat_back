@@ -18,3 +18,5 @@ def apply(path):
         return 'graph_construction'
     elif 'TF_IDF' in path or 'tf_idf' in path:
             return 'tf_idf'
+    elif 'join' in path or 'Join' in path:
+            return 'join'
