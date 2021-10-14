@@ -238,8 +238,10 @@ def td_idf(request):
     else:
         result = basic_tf_idf.apply(from_path=from_path, to_path='tf_idf', name=name)
 
+    if result is not None and len(result) != 0:
+        return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)
-
+    
 @api_view(['POST'])
 def join(request):
     new_map = request.POST
