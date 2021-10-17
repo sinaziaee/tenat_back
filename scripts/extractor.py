@@ -29,7 +29,6 @@ def apply(zip_file):
 
         # all archives (zip, rar, 7z)
         print('zip file= '+str(zip_file))
-        print('zip file= '+str(zip_file))
         patoolib.extract_archive(zip_file,outdir=folder_path)
 
 

@@ -35,7 +35,8 @@ def apply(from_path, to_path, name, splitter, tokens_count):
 
     from_path = check_path.apply(from_path)
     to_path = check_path.apply(to_path)
-
+    print('==================================')
+    print('from_path= '+str(from_path))
     # get files of from_path
     file_list = list_files.get_files_list(from_path,name)
 

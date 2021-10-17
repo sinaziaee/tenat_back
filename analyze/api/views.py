@@ -25,6 +25,20 @@ def temp(request):
     return Response('temp')
 
 
+
+@api_view(['POST'])
+def sample_data(request):
+    new_map = request.POST
+    file_name = new_map.get('name')
+    folder_path = f'media/result/raw_text/{file_name}/'
+    map_list = list_files_and_sizes.apply(folder_path)
+    map_list=[{'file_name': file_name , 'output_path': f'media/result/raw_text/{file_name}'}] + map_list
+    print(map_list)
+    return Response(map_list, status=status.HTTP_200_OK)
+
+
+
+
 @api_view(['POST', 'GET'])
 def upload(request):
     file_name = None
@@ -238,8 +252,10 @@ def td_idf(request):
     else:
         result = basic_tf_idf.apply(from_path=from_path, to_path='tf_idf', name=name)
 
+    if result is not None and len(result) != 0:
+        return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)
-
+    
 @api_view(['POST'])
 def join(request):
     new_map = request.POST
