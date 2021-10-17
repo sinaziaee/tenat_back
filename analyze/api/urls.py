@@ -16,4 +16,5 @@ urlpatterns = [
     path('graph-viewer/', views.graph_viewer, name='graph_viewer'),  # {host}/api/export
     path('tf-idf/', views.td_idf, name='tf_idf'),  # {host}/api/tf-idf
     path('join/', views.join, name='join'),  # {host}/api/tf-idf
+    path('sample-data/', views.sample_data, name='sample_data'),  # {host}/api/tf-idf
 ]
