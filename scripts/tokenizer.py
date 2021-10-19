@@ -37,17 +37,19 @@ def apply(from_path, to_path, name, splitter, tokens_count):
     to_path = check_path.apply(to_path)
     print('==================================')
     print('from_path= '+str(from_path))
+
     # get files of from_path
     file_list = list_files.get_files_list(from_path,name)
 
-    # get output folder path
+    # make output folder path
     folder_path = list_files.get_folder_path(to_path,name)
 
-
-    result_all = folder_path + '/00_output_result.txt'
     output_path = {'output_path': folder_path}
+
     result_list = []
     result_list.append(output_path)
+
+    output_file_path = folder_path + '/00_output_result.txt'
 
     for file in file_list:
         f = open(Path(file), 'r', encoding='utf8')
@@ -64,7 +66,7 @@ def apply(from_path, to_path, name, splitter, tokens_count):
         f.flush()
         result_list.append(result_dict)
 
-    save_json.apply(result_list=result_list,output_path=result_all)
+    save_json.apply(result_list=result_list,output_path=output_file_path)
 
     return result_list
 
