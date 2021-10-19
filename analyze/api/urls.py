@@ -17,4 +17,5 @@ urlpatterns = [
     path('tf-idf/', views.td_idf, name='tf_idf'),  # {host}/api/tf-idf
     path('join/', views.join, name='join'),  # {host}/api/tf-idf
     path('sample-data/', views.sample_data, name='sample_data'),  # {host}/api/tf-idf
+    path('topic-modeling/', views.topic_modeling, name='topic_modeling'),  # {host}/api/tf-idf
 ]

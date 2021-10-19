@@ -20,3 +20,6 @@ def apply(path):
             return 'tf_idf'
     elif 'join' in path or 'Join' in path:
             return 'join'
+
+    elif 'topic_modeling' in path or 'Topic_Modeling' in path:
+            return 'topic_modeling'

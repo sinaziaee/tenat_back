@@ -14,6 +14,7 @@ from scripts.graph_construction import graph
 from analyze.api.serializer import *
 import time,json
 from scripts.tf_idf import basic_tf_idf, sklearn_tf_idf, gensim_tf_idf
+from scripts import topic
 
 
 def home_api(request):
@@ -276,3 +277,19 @@ def join(request):
     if result is not None and len(result) != 0:
         return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)
+
+
+
+@api_view(['POST'])
+def topic_modeling(request):
+    new_map = request.POST
+    # get fields
+    name = new_map.get('name')
+    from_path = new_map.get('from')
+    method = new_map.get('method')
+    limit = int(new_map.get('limit'))
+
+    result = topic.apply(from_path=from_path,to_path='topic_modeling',name=name,method=method,limit=limit)
+    if result is not None and len(result) != 0:
+        return Response(result, status=status.HTTP_200_OK)
+    return Response('failed', status=status.HTTP_400_BAD_REQUEST)  
