@@ -1,8 +1,12 @@
 import os,json
 from pathlib import Path
+
 from scripts import list_files, folder_creator, check_path,save_json
 import hazm
 import string
+
+import gensim
+import gensim.corpora as corpora
 
 # function for get text of input file (result is list of terms)
 def get_text(file_name):
@@ -12,6 +16,19 @@ def get_text(file_name):
     f.flush()
     text_list = text.split('\n')
     return text_list
+
+
+def LDA(corpus, id2word, num_topics):
+    lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus,
+                                                id2word=id2word,
+                                                num_topics=num_topics,
+                                                random_state=100,
+                                                update_every=1,
+                                                chunksize=100,
+                                                passes=10,
+                                                alpha='auto')
+    return lda_model
+
 
 def apply(from_path, to_path, name, method, limit):
 
@@ -30,10 +47,32 @@ def apply(from_path, to_path, name, method, limit):
     result_list.append(output_path)
     output_file_path = folder_path + '/00_output_result.txt'
     #----------------------------------------------------------
+    data = []
     for file in file_list:
+        if '00_output_result' in file:
+            continue
+
+        tokens = file.readlines()
+        data.append(tokens)
         
-        result_dict = {'topic':{}}
-        result_list.append(result_dict)
+        # result_dict = {'topic':{}}
+        # result_list.append(result_dict)
+    # Create Dictionary
+    id2word = corpora.Dictionary(data)
+    # Term Document Frequency
+    corpus = [id2word.doc2bow(text) for text in texts]
+
+    model = None
+    topics = None
+    if method == 'LDA':
+        model = LDA(corpus, id2word, limit)
+        topics = model.print_topics()
+    else:
+        pass
+    result_list.append(model)
+    result_list.append(topics)
+    result_list.append(corpus)
+
 
     #-------------------------------------------------------------
     save_json.apply(result_list=result_list,output_path=output_file_path)
