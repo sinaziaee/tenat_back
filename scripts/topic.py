@@ -7,6 +7,7 @@ import string
 
 import gensim
 import gensim.corpora as corpora
+from pprint import pprint
 
 # function for get text of input file (result is list of terms)
 def get_text(file_name):
@@ -51,29 +52,29 @@ def apply(from_path, to_path, name, method, limit):
     for file in file_list:
         if '00_output_result' in file:
             continue
-
-        tokens = file.readlines()
+        f = open(file, 'r', encoding='utf8')
+        tokens = f.readlines()
         data.append(tokens)
-        
-        # result_dict = {'topic':{}}
-        # result_list.append(result_dict)
     # Create Dictionary
     id2word = corpora.Dictionary(data)
     # Term Document Frequency
-    corpus = [id2word.doc2bow(text) for text in texts]
+    corpus = [id2word.doc2bow(word) for word in data]
 
     model = None
-    topics = None
+    topics = []
     if method == 'LDA':
         model = LDA(corpus, id2word, limit)
-        topics = model.print_topics()
+        for i in range(0, model.num_topics):
+            topics.append(model.print_topic(i))
     else:
         pass
-    result_list.append(model)
-    result_list.append(topics)
-    result_list.append(corpus)
 
-
+    for i in range(len(topics)):
+        result_file = folder_path + '/Topic' + str(i)
+        f_output = open(Path(result_file), 'w', encoding='utf8')
+        f_output.write(topics[i])
+        result_dict = {'number': i, 'topic': topics[i]}
+        result_list.append(result_dict)
     #-------------------------------------------------------------
     save_json.apply(result_list=result_list,output_path=output_file_path)
 
