@@ -15,7 +15,7 @@ from analyze.api.serializer import *
 import time,json
 from scripts.tf_idf import basic_tf_idf, sklearn_tf_idf, gensim_tf_idf
 from scripts import topic
-
+from scripts.entity_recognition import entity_recognition_english, entity_recognition_persian
 
 def home_api(request):
     return HttpResponse('apis')
@@ -292,4 +292,22 @@ def topic_modeling(request):
     result = topic.apply(from_path=from_path,to_path='topic_modeling',name=name,method=method,num_topics=num_topics)
     if result is not None and len(result) != 0:
         return Response(result, status=status.HTTP_200_OK)
-    return Response('failed', status=status.HTTP_400_BAD_REQUEST)  
+    return Response('failed', status=status.HTTP_400_BAD_REQUEST)
+
+
+@api_view(['POST'])
+def entity_rec(request):
+    new_map = request.POST
+    name = new_map.get('name')
+    from_path = new_map.get('from')
+    style = new_map.get('style')
+    language = new_map.get('language')
+    if language is "Persian":
+        result = entity_recognition_persian.apply(from_path=from_path, to_path='entity_recognition',
+                                                  name=name, style=style)
+    else:
+        result = entity_recognition_english.apply(from_path=from_path, name=name,
+                                                  to_path='entity_recognition', style=style)
+    if result is not None and len(result) != 0:
+        return Response(result, status=status.HTTP_200_OK)
+    return Response('failed', status=status.HTTP_400_BAD_REQUEST)

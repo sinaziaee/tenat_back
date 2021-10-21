@@ -3,7 +3,7 @@ from pathlib import Path
 from scripts import check_path,folder_creator
 
 
-def apply(folder_path):
+def apply(folder_path: object) -> object:
     mapList = []
     for path, dirs, files in os.walk(folder_path):
         for f in files:
