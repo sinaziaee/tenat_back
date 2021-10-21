@@ -287,9 +287,9 @@ def topic_modeling(request):
     name = new_map.get('name')
     from_path = new_map.get('from')
     method = new_map.get('method')
-    limit = int(new_map.get('limit'))
+    num_topics = int(new_map.get('num_topics'))
 
-    result = topic.apply(from_path=from_path,to_path='topic_modeling',name=name,method=method,limit=limit)
+    result = topic.apply(from_path=from_path,to_path='topic_modeling',name=name,method=method,num_topics=num_topics)
     if result is not None and len(result) != 0:
         return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)  
