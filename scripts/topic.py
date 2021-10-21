@@ -34,14 +34,15 @@ def LDA(corpus, id2word, num_topics):
     return lda_model
 
 
-def apply(from_path, to_path, name, method, limit):
+def apply(from_path, to_path, name, method, num_topics):
 
     # get files in from_path and set output_path
-    from_path = check_path.apply(from_path)
- 
+    # from_path = check_path.apply(from_path)
+    print('from_path= '+str(from_path))
     to_path = check_path.apply(to_path)
     folder_path = from_path
     file_list = list_files.apply(folder_path)
+    print(file_list)
     folder_creator.apply(folder_path)
     folder_path = '/'.join(from_path.split('/')[:-1]) + f'/{to_path}/' + name
     folder_creator.apply(folder_path)
@@ -67,7 +68,7 @@ def apply(from_path, to_path, name, method, limit):
     model = None
     topics = []
     if method == 'LDA':
-        model = LDA(corpus, id2word, limit)
+        model = LDA(corpus, id2word, num_topics)
         for i in range(0, model.num_topics):
             topics.append(model.print_topic(i))
     else:
