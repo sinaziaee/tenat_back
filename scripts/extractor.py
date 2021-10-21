@@ -5,6 +5,8 @@ import docx2txt
 import zip_unicode
 from pathlib import PurePath
 import patoolib
+import pytesseract
+from pdf2image import convert_from_path
 
 
 def apply(zip_file):
@@ -13,11 +15,11 @@ def apply(zip_file):
     try:
         # check data folder is created or not.
         if not Path(f'media/data/').is_dir():
-            dirname = os.path.dirname(__file__) # scripts folder
-            path = Path(dirname).parent # tenat_back folder
+            dirname = os.path.dirname(__file__)  # scripts folder
+            path = Path(dirname).parent  # tenat_back folder
             path = Path(path, f'media/data')
             path.mkdir(parents=True, exist_ok=True)
-        
+
         # if there is not zip folder previously ---> make it
         if not os.path.isdir(f'media/data/{folder_name}'):
             dirname = os.path.dirname(__file__)
@@ -29,8 +31,7 @@ def apply(zip_file):
 
         # all archives (zip, rar, 7z)
         print('zip file= '+str(zip_file))
-        patoolib.extract_archive(zip_file,outdir=folder_path)
-
+        patoolib.extract_archive(zip_file, outdir=folder_path)
 
     except OSError as error:
         print(error)
@@ -55,6 +56,15 @@ def doc_to_txt(folder_path, file):
         for line in lines:
             if line != '':
                 text += line + '\n'
+    elif str(file).endswith('.pdf'):
+        pdf_path =file
+        pages = convert_from_path(pdf_path, 500)
+        pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+        text = ''
+        for pageNum, imgBlob in enumerate(pages):
+            page_text = pytesseract.image_to_string(imgBlob, lang='fas')
+            text += page_text+'\n'
+            print('done.')
     else:
         f = open(Path(file), 'r', encoding='utf8')
         for line in f.readlines():
@@ -63,8 +73,8 @@ def doc_to_txt(folder_path, file):
         f.flush()
     folder_creator.apply(str(Path(folder_path)))
     file = str(file).split('/')[-1].replace('.docx', '.txt')
+    file = str(file).split('/')[-1].replace('.pdf', '.txt')
     file = str(PurePath(file).name)
     f = open(Path(folder_path, file), 'w', encoding='utf-8')
     f.write(text)
     f.flush()
-
