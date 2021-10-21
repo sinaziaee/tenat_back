@@ -8,7 +8,8 @@ import string
 import gensim
 import gensim.corpora as corpora
 from pprint import pprint
-import pickle5 as pickle
+# import pickle5 as pickle
+import pickle
 import numpy as np
 
 # function for get text of input file (result is list of terms)
@@ -35,15 +36,13 @@ def LDA(corpus, id2word, num_topics):
 
 def apply(from_path, to_path, name, method, limit):
 
-    # get files in from_path and set output_path
-    from_path = check_path.apply(from_path)
     to_path = check_path.apply(to_path)
+    folder_path = from_path
+    file_list = list_files.apply(folder_path)
+    folder_creator.apply(folder_path)
+    folder_path = '/'.join(from_path.split('/')[:-1]) + f'/{to_path}/' + name
+    folder_creator.apply(folder_path)
 
-    # get files of from_path
-    file_list = list_files.get_files_list(from_path,name)
-
-    # make output folder path
-    folder_path = list_files.get_folder_path(to_path,name)
     output_path = {'output_path': folder_path}
 
     result_list = []
@@ -92,7 +91,6 @@ def apply(from_path, to_path, name, method, limit):
 
     #-------------------------------------------------------------
     save_json.apply(result_list=result_list,output_path=output_file_path)
-
     return result_list
 
 
