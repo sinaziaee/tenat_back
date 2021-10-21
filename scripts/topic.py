@@ -8,6 +8,8 @@ import string
 import gensim
 import gensim.corpora as corpora
 from pprint import pprint
+import pickle5 as pickle
+import numpy as np
 
 # function for get text of input file (result is list of terms)
 def get_text(file_name):
@@ -75,6 +77,19 @@ def apply(from_path, to_path, name, method, limit):
         f_output.write(topics[i])
         result_dict = {'number': i, 'topic': topics[i]}
         result_list.append(result_dict)
+
+    model_file = folder_path + '/model'
+    with open(model_file, 'wb') as fp:
+        pickle.dump(model, fp)
+
+    corpus_file = folder_path + '/corpus'
+    with open(corpus_file, 'wb') as fp:
+        pickle.dump(corpus, fp)
+
+    id2word_file = folder_path + '/id2word'
+    with open(id2word_file, 'wb') as fp:
+        pickle.dump(id2word, fp)
+
     #-------------------------------------------------------------
     save_json.apply(result_list=result_list,output_path=output_file_path)
 
