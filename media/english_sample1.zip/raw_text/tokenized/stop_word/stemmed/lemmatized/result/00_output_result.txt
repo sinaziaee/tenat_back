@@ -1,0 +1,60 @@
+[
+    {
+        "output_path": "media/english_sample1.zip/raw_text/tokenized/stop_word/stemmed/lemmatized/result"
+    },
+    {
+        "doc_name": "Computer_Science20.txt",
+        "lemmatized_count": 0,
+        "top_lemmatized": ""
+    },
+    {
+        "doc_name": "Computer_Science21.txt",
+        "lemmatized_count": 0,
+        "top_lemmatized": ""
+    },
+    {
+        "doc_name": "Computer_Science22.txt",
+        "lemmatized_count": 0,
+        "top_lemmatized": ""
+    },
+    {
+        "doc_name": "Computer_Science23.txt",
+        "lemmatized_count": 0,
+        "top_lemmatized": ""
+    },
+    {
+        "doc_name": "Computer_Science24.txt",
+        "lemmatized_count": 0,
+        "top_lemmatized": ""
+    },
+    {
+        "doc_name": "Computer_Science25.txt",
+        "lemmatized_count": 0,
+        "top_lemmatized": ""
+    },
+    {
+        "doc_name": "Computer_Science26.txt",
+        "lemmatized_count": 0,
+        "top_lemmatized": ""
+    },
+    {
+        "doc_name": "Computer_Science27.txt",
+        "lemmatized_count": 0,
+        "top_lemmatized": ""
+    },
+    {
+        "doc_name": "Computer_Science28.txt",
+        "lemmatized_count": 0,
+        "top_lemmatized": ""
+    },
+    {
+        "doc_name": "Computer_Science29.txt",
+        "lemmatized_count": 0,
+        "top_lemmatized": ""
+    },
+    {
+        "doc_name": "Computer_Science30.txt",
+        "lemmatized_count": 0,
+        "top_lemmatized": ""
+    }
+]

@@ -33,28 +33,30 @@ def tokenize_text(text, doc_name, splitter):
 
 def apply(from_path, to_path, name, splitter, tokens_count):
 
-    from_path = check_path.apply(from_path)
+
+    from_path = from_path
     to_path = check_path.apply(to_path)
-    print('==================================')
-    print('from_path= '+str(from_path))
+    target_folder_path = from_path.replace('result',to_path+'/result')
+ 
 
+    folder_creator.apply(target_folder_path)
+
+
+# ------------------------------------------------
     # get files of from_path
-    file_list = list_files.get_files_list(from_path,name)
+    file_list = list_files.apply(from_path)
 
-    # make output folder path
-    folder_path = list_files.get_folder_path(to_path,name)
 
-    output_path = {'output_path': folder_path}
+    output_path = {'output_path': target_folder_path}
 
     result_list = []
     result_list.append(output_path)
 
-    output_file_path = folder_path + '/00_output_result.txt'
+    output_file_path = target_folder_path + '/00_output_result.txt'
 
     for file in file_list:
         f = open(Path(file), 'r', encoding='utf8')
-        result_file = str(file).replace(f'{from_path}', f'{to_path}')
-        print('result_file= '+str(result_file))
+        result_file = str(file).replace('result',to_path+'/result')
         f_output = open(Path(result_file), 'w', encoding='utf8')
         text = f.read()
         doc_name = str(file).split('/')[-1].split('\\')[-1]

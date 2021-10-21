@@ -1,0 +1,60 @@
+[
+    {
+        "output_path": "media/english_sample1.zip/raw_text/tokenized/stop_word/result"
+    },
+    {
+        "doc_name": "Computer_Science20.txt",
+        "removed_count": 0,
+        "top_10_removed_words": ""
+    },
+    {
+        "doc_name": "Computer_Science21.txt",
+        "removed_count": 0,
+        "top_10_removed_words": ""
+    },
+    {
+        "doc_name": "Computer_Science22.txt",
+        "removed_count": 0,
+        "top_10_removed_words": ""
+    },
+    {
+        "doc_name": "Computer_Science23.txt",
+        "removed_count": 0,
+        "top_10_removed_words": ""
+    },
+    {
+        "doc_name": "Computer_Science24.txt",
+        "removed_count": 0,
+        "top_10_removed_words": ""
+    },
+    {
+        "doc_name": "Computer_Science25.txt",
+        "removed_count": 0,
+        "top_10_removed_words": ""
+    },
+    {
+        "doc_name": "Computer_Science26.txt",
+        "removed_count": 0,
+        "top_10_removed_words": ""
+    },
+    {
+        "doc_name": "Computer_Science27.txt",
+        "removed_count": 0,
+        "top_10_removed_words": ""
+    },
+    {
+        "doc_name": "Computer_Science28.txt",
+        "removed_count": 0,
+        "top_10_removed_words": ""
+    },
+    {
+        "doc_name": "Computer_Science29.txt",
+        "removed_count": 0,
+        "top_10_removed_words": ""
+    },
+    {
+        "doc_name": "Computer_Science30.txt",
+        "removed_count": 0,
+        "top_10_removed_words": ""
+    }
+]

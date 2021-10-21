@@ -31,9 +31,9 @@ def temp(request):
 def sample_data(request):
     new_map = request.POST
     file_name = new_map.get('name')
-    folder_path = f'media/result/raw_text/{file_name}/'
+    folder_path = f'media/{file_name}/raw_text/result/'
     map_list = list_files_and_sizes.apply(folder_path)
-    map_list=[{'file_name': file_name , 'output_path': f'media/result/raw_text/{file_name}'}] + map_list
+    map_list=[{'file_name': file_name , 'output_path': f'media/{file_name}/raw_text/result'}] + map_list
     print(map_list)
     return Response(map_list, status=status.HTTP_200_OK)
 
@@ -63,7 +63,7 @@ def upload(request):
                 obj.file.name = val_data['name']
                 obj.save()
             map_list = extractor.apply(obj.file.path)
-            map_list = [{'file_name': file_name , 'output_path': f'media/result/raw_text/{file_name}'}] + map_list
+            map_list = [{'file_name': file_name , 'output_path': f'media/{file_name}/raw_text/result'}] + map_list
             return Response(map_list, status=status.HTTP_200_OK)
         return Response('failed')
     elif request.method == 'GET':

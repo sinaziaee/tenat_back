@@ -1,0 +1,60 @@
+[
+    {
+        "output_path": "media/english_sample1.zip/raw_text/tokenized/stop_word/stemmed/result"
+    },
+    {
+        "doc_name": "Computer_Science20.txt",
+        "stemmed_count": 0,
+        "top_stemmed": ""
+    },
+    {
+        "doc_name": "Computer_Science21.txt",
+        "stemmed_count": 0,
+        "top_stemmed": ""
+    },
+    {
+        "doc_name": "Computer_Science22.txt",
+        "stemmed_count": 0,
+        "top_stemmed": ""
+    },
+    {
+        "doc_name": "Computer_Science23.txt",
+        "stemmed_count": 0,
+        "top_stemmed": ""
+    },
+    {
+        "doc_name": "Computer_Science24.txt",
+        "stemmed_count": 0,
+        "top_stemmed": ""
+    },
+    {
+        "doc_name": "Computer_Science25.txt",
+        "stemmed_count": 0,
+        "top_stemmed": ""
+    },
+    {
+        "doc_name": "Computer_Science26.txt",
+        "stemmed_count": 0,
+        "top_stemmed": ""
+    },
+    {
+        "doc_name": "Computer_Science27.txt",
+        "stemmed_count": 0,
+        "top_stemmed": ""
+    },
+    {
+        "doc_name": "Computer_Science28.txt",
+        "stemmed_count": 0,
+        "top_stemmed": ""
+    },
+    {
+        "doc_name": "Computer_Science29.txt",
+        "stemmed_count": 0,
+        "top_stemmed": ""
+    },
+    {
+        "doc_name": "Computer_Science30.txt",
+        "stemmed_count": 0,
+        "top_stemmed": ""
+    }
+]
