@@ -36,6 +36,9 @@ def LDA(corpus, id2word, num_topics):
 
 def apply(from_path, to_path, name, method, limit):
 
+    # get files in from_path and set output_path
+    from_path = check_path.apply(from_path)
+ 
     to_path = check_path.apply(to_path)
     folder_path = from_path
     file_list = list_files.apply(folder_path)
