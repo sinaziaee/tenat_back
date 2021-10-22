@@ -12,7 +12,7 @@ def apply(from_path1,from_path2,name1,name2, to_path):
     folder_name = str(name1+'_'+name2).replace('.zip','').replace('.rar','').replace('.7z','');        
     rand_int = round(time.time() * 1000)
 
-    to_path = f'media/result/join/{folder_name}/'  # media/data/computer.zip/
+    to_path = f'media/{folder_name}/join//result/'  # media/data/computer.zip/
     folder_creator.apply(to_path)
 
     result_list = []

@@ -32,17 +32,22 @@ def tf_idf(texts, docs):
 
 
 def apply(from_path, to_path, name):
+
+    from_path = from_path
     to_path = check_path.apply(to_path)
-    folder_path = from_path
-    file_list = list_files.apply(folder_path)
-    folder_creator.apply(folder_path)
-    folder_path = '/'.join(from_path.split('/')[:-1]) + f'/{to_path}/' + name
-    folder_creator.apply(folder_path)
-    result_all = folder_path + '/00_output_result.txt'
-    output_file = open(Path(result_all), 'w', encoding='utf-8')
+    target_folder_path = from_path.replace('result',to_path+'/result')
+    folder_creator.apply(target_folder_path)
+
+    # get files of from_path
+    file_list = list_files.apply(from_path)
+    output_path = {'output_path': target_folder_path}
+    result_list = []
+    result_list.append(output_path)
+
+    output_file_path = target_folder_path + '/00_output_result.txt'
+    output_file = open(Path(output_file_path), 'w', encoding='utf-8')
     # output_file.write(f'[\n')
     result = []
-    output_path = {'output_path':folder_path }
     result.append(output_path)
     text_list = []
     doc_list = []

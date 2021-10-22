@@ -37,18 +37,12 @@ def apply(from_path, to_path, name, splitter, tokens_count):
     from_path = from_path
     to_path = check_path.apply(to_path)
     target_folder_path = from_path.replace('result',to_path+'/result')
- 
-
     folder_creator.apply(target_folder_path)
 
 
-# ------------------------------------------------
     # get files of from_path
     file_list = list_files.apply(from_path)
-
-
     output_path = {'output_path': target_folder_path}
-
     result_list = []
     result_list.append(output_path)
 

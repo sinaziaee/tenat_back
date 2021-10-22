@@ -4,57 +4,57 @@
     },
     {
         "doc_name": "Computer_Science20.txt",
-        "removed_count": 0,
-        "top_10_removed_words": ""
+        "removed_count": 160,
+        "top_10_removed_words": "to ,more ,now ,s ,who ,why ,have ,with ,that ,no"
     },
     {
         "doc_name": "Computer_Science21.txt",
-        "removed_count": 0,
-        "top_10_removed_words": ""
+        "removed_count": 228,
+        "top_10_removed_words": "but ,are ,to ,more ,both ,have ,these ,such ,with ,about"
     },
     {
         "doc_name": "Computer_Science22.txt",
-        "removed_count": 0,
-        "top_10_removed_words": ""
+        "removed_count": 187,
+        "top_10_removed_words": "are ,to ,more ,have ,such ,with ,that ,few ,and ,for"
     },
     {
         "doc_name": "Computer_Science23.txt",
-        "removed_count": 0,
-        "top_10_removed_words": ""
+        "removed_count": 86,
+        "top_10_removed_words": "but ,these ,so ,with ,about ,and ,for ,not ,most ,were"
     },
     {
         "doc_name": "Computer_Science24.txt",
-        "removed_count": 0,
-        "top_10_removed_words": ""
+        "removed_count": 86,
+        "top_10_removed_words": "are ,to ,now ,s ,who ,have ,with ,that ,about ,and"
     },
     {
         "doc_name": "Computer_Science25.txt",
-        "removed_count": 0,
-        "top_10_removed_words": ""
+        "removed_count": 230,
+        "top_10_removed_words": "are ,to ,more ,s ,both ,re ,have ,these ,such ,with"
     },
     {
         "doc_name": "Computer_Science26.txt",
-        "removed_count": 0,
-        "top_10_removed_words": ""
+        "removed_count": 152,
+        "top_10_removed_words": "to ,both ,have ,these ,such ,o ,with ,that ,and ,for"
     },
     {
         "doc_name": "Computer_Science27.txt",
-        "removed_count": 0,
-        "top_10_removed_words": ""
+        "removed_count": 156,
+        "top_10_removed_words": "but ,to ,s ,both ,being ,re ,these ,such ,o ,with"
     },
     {
         "doc_name": "Computer_Science28.txt",
-        "removed_count": 0,
-        "top_10_removed_words": ""
+        "removed_count": 150,
+        "top_10_removed_words": "are ,to ,s ,both ,re ,why ,these ,so ,with ,that"
     },
     {
         "doc_name": "Computer_Science29.txt",
-        "removed_count": 0,
-        "top_10_removed_words": ""
+        "removed_count": 162,
+        "top_10_removed_words": "but ,to ,more ,s ,these ,such ,so ,that ,and ,for"
     },
     {
         "doc_name": "Computer_Science30.txt",
-        "removed_count": 0,
-        "top_10_removed_words": ""
+        "removed_count": 60,
+        "top_10_removed_words": "are ,to ,more ,these ,so ,that ,few ,and ,for ,when"
     }
 ]

@@ -40,13 +40,22 @@ def TF_IDF(word_dict, words_docs, doc_count, doc, file_name):
 
 
 def apply(from_path, to_path, name):
-    from_path = check_path.apply(from_path)
+
+    from_path = from_path
     to_path = check_path.apply(to_path)
-    folder_path = f'media/result/{from_path}/{name}'
-    file_list = list_files.apply(folder_path)
-    folder_creator.apply(folder_path)
-    folder_path = f'media/result/{to_path}/{name}'
-    folder_creator.apply(folder_path)
+    target_folder_path = from_path.replace('result',to_path+'/result')
+    folder_creator.apply(target_folder_path)
+
+    # get files of from_path
+    file_list = list_files.apply(from_path)
+    output_path = {'output_path': target_folder_path}
+    result_list = []
+    result_list.append(output_path)
+
+    output_file_path = target_folder_path + '/00_output_result.txt'
+
+
+    
     output_file_list = []
     doc_text_dict = {}
     doc_count = len(file_list)
@@ -57,7 +66,7 @@ def apply(from_path, to_path, name):
     docs_per_word = words_docs_frequency(word_dict)
     result = []
     for file in file_list:
-        new_file = str(file).replace(f'{from_path}', f'{to_path}')
+        new_file = str(file).replace('result',to_path+'/result')
         if '00_output_result' in file:
             continue
         output_file_list.append(new_file)

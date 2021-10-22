@@ -17,7 +17,7 @@ def apply(folder_path):
 
 def get_folder_path(path,name):
     path = check_path.apply(path)
-    folder_path = f'media/result/{path}/{name}'
+    folder_path = f'media/{name}/{path}/result'
     folder_creator.apply(folder_path)
     return folder_path
 

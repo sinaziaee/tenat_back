@@ -1,0 +1,82 @@
+[
+    {
+        "output_path": "media/english_sample1.zip/raw_text/tokenized/stop_word/stemmed/lemmatized/doc_statistics/result"
+    },
+    {
+        "distinct": 206,
+        "doc_name": "Computer_Science20.txt",
+        "main": 275,
+        "stop": 1,
+        "total": 276
+    },
+    {
+        "distinct": 217,
+        "doc_name": "Computer_Science21.txt",
+        "main": 375,
+        "stop": 0,
+        "total": 375
+    },
+    {
+        "distinct": 188,
+        "doc_name": "Computer_Science22.txt",
+        "main": 297,
+        "stop": 0,
+        "total": 297
+    },
+    {
+        "distinct": 82,
+        "doc_name": "Computer_Science23.txt",
+        "main": 129,
+        "stop": 0,
+        "total": 129
+    },
+    {
+        "distinct": 96,
+        "doc_name": "Computer_Science24.txt",
+        "main": 128,
+        "stop": 0,
+        "total": 128
+    },
+    {
+        "distinct": 181,
+        "doc_name": "Computer_Science25.txt",
+        "main": 262,
+        "stop": 0,
+        "total": 262
+    },
+    {
+        "distinct": 116,
+        "doc_name": "Computer_Science26.txt",
+        "main": 196,
+        "stop": 2,
+        "total": 198
+    },
+    {
+        "distinct": 138,
+        "doc_name": "Computer_Science27.txt",
+        "main": 228,
+        "stop": 0,
+        "total": 228
+    },
+    {
+        "distinct": 103,
+        "doc_name": "Computer_Science28.txt",
+        "main": 177,
+        "stop": 0,
+        "total": 177
+    },
+    {
+        "distinct": 122,
+        "doc_name": "Computer_Science29.txt",
+        "main": 253,
+        "stop": 0,
+        "total": 253
+    },
+    {
+        "distinct": 99,
+        "doc_name": "Computer_Science30.txt",
+        "main": 172,
+        "stop": 0,
+        "total": 172
+    }
+]
