@@ -5,56 +5,56 @@
     {
         "doc_name": "Computer_Science20.txt",
         "removed_count": 160,
-        "top_10_removed_words": "with ,why ,this ,more ,on ,by ,until ,each ,not ,a"
+        "top_10_removed_words": "our ,i ,they ,now ,it ,the ,its ,a ,in ,been"
     },
     {
         "doc_name": "Computer_Science21.txt",
         "removed_count": 228,
-        "top_10_removed_words": "but ,with ,this ,more ,on ,we ,some ,by ,what ,both"
+        "top_10_removed_words": "they ,once ,it ,their ,or ,the ,about ,a ,only ,in"
     },
     {
         "doc_name": "Computer_Science22.txt",
         "removed_count": 187,
-        "top_10_removed_words": "with ,this ,more ,on ,we ,some ,not ,a ,an ,are"
+        "top_10_removed_words": "they ,their ,or ,the ,few ,its ,a ,only ,in ,been"
     },
     {
         "doc_name": "Computer_Science23.txt",
         "removed_count": 86,
-        "top_10_removed_words": "but ,with ,between ,this ,by ,some ,each ,not ,are ,for"
+        "top_10_removed_words": "the ,about ,only ,in ,while ,been ,of ,by ,and ,are"
     },
     {
         "doc_name": "Computer_Science24.txt",
         "removed_count": 86,
-        "top_10_removed_words": "you ,with ,between ,this ,on ,by ,what ,a ,an ,are"
+        "top_10_removed_words": "you ,now ,their ,the ,or ,about ,a ,in ,been ,by"
     },
     {
         "doc_name": "Computer_Science25.txt",
         "removed_count": 230,
-        "top_10_removed_words": "but ,you ,don ,with ,between ,this ,more ,we ,on ,by"
+        "top_10_removed_words": "our ,they ,you ,once ,it ,the ,or ,a ,both ,in"
     },
     {
         "doc_name": "Computer_Science26.txt",
         "removed_count": 152,
-        "top_10_removed_words": "you ,with ,yourself ,this ,we ,on ,some ,both ,each ,them"
+        "top_10_removed_words": "i ,they ,you ,it ,the ,or ,a ,only ,both ,in"
     },
     {
         "doc_name": "Computer_Science27.txt",
         "removed_count": 156,
-        "top_10_removed_words": "but ,you ,with ,between ,on ,we ,both ,each ,them ,re"
+        "top_10_removed_words": "i ,they ,you ,it ,their ,the ,or ,a ,only ,both"
     },
     {
         "doc_name": "Computer_Science28.txt",
         "removed_count": 150,
-        "top_10_removed_words": "but ,you ,don ,with ,why ,on ,we ,by ,both ,what"
+        "top_10_removed_words": "our ,you ,the ,or ,a ,both ,in ,by ,of ,an"
     },
     {
         "doc_name": "Computer_Science29.txt",
         "removed_count": 162,
-        "top_10_removed_words": "but ,this ,more ,by ,a ,an ,for ,can ,it ,in"
+        "top_10_removed_words": "they ,it ,their ,the ,or ,a ,in ,by ,of ,an"
     },
     {
         "doc_name": "Computer_Science30.txt",
         "removed_count": 60,
-        "top_10_removed_words": "this ,more ,some ,t ,a ,an ,are ,for ,when ,it"
+        "top_10_removed_words": "i ,they ,it ,their ,the ,few ,a ,in ,of ,an"
     }
 ]
