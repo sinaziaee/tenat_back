@@ -18,22 +18,24 @@ def remove_stop_words(text, doc_name):
     return ({'doc_name':doc_name, 'removed_count': removed_count, 'top_10_removed_words': " ,".join(removed_words[:10])},text_without_stop)
 
 def apply(from_path, to_path, name):
+    from_path = from_path
     to_path = check_path.apply(to_path)
-    folder_path = from_path
-    file_list = list_files.apply(folder_path)
-    folder_creator.apply(folder_path)
-    folder_path = '/'.join(from_path.split('/')[:-1]) + f'/{to_path}/' + name
-    folder_creator.apply(folder_path)
-    result_all = folder_path + '/00_output_result.txt'
+    target_folder_path = from_path.replace('result',to_path+'/result')
+    folder_creator.apply(target_folder_path)
 
+    # get files of from_path
+    file_list = list_files.apply(from_path)
+    output_path = {'output_path': target_folder_path}
     result_list = []
-    output_path = {'output_path':folder_path }
     result_list.append(output_path)
+
+    output_file_path = target_folder_path + '/00_output_result.txt'
+
     for file in file_list:
         if '00_output_result' in file:
             continue
         f = open(Path(file), 'r', encoding='utf8')
-        result_file = Path(folder_path, PurePath(file).name )
+        result_file = str(file).replace('result',to_path+'/result')
         #result_file = folder_path + '/' + file.split('/')[-1]
         f_output = open(Path(result_file), 'w', encoding='utf8')
         text = f.read()
@@ -42,7 +44,7 @@ def apply(from_path, to_path, name):
         f_output.write(f'{text}\n')
         f.flush()
         result_list.append(result)
-    save_json.apply(result_list,result_all)
+    save_json.apply(result_list,output_file_path)
     return result_list
 
 

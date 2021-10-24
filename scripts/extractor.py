@@ -12,6 +12,7 @@ from pdf2image import convert_from_path
 def apply(zip_file):
     folder_name = str(os.path.basename(zip_file))
     folder_path = f'media/data/{folder_name}/'  # media/data/computer.zip/
+
     try:
         # check data folder is created or not.
         if not Path(f'media/data/').is_dir():
@@ -41,7 +42,7 @@ def apply(zip_file):
             fp = Path(path, f)
             files_list.append(fp)
     # go to result/raw_text and convert documents to txt files
-    folder_path = folder_path.replace('data', 'result/raw_text')
+    folder_path =  'media/'+folder_name+'/raw_text/result/'
     for file in files_list:
         doc_to_txt(folder_path, file)
 

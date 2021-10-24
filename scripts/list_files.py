@@ -3,7 +3,7 @@ from pathlib import Path
 from scripts import check_path,folder_creator
 
 
-def apply(folder_path):
+def apply(folder_path: object) -> object:
     mapList = []
     for path, dirs, files in os.walk(folder_path):
         for f in files:
@@ -17,7 +17,7 @@ def apply(folder_path):
 
 def get_folder_path(path,name):
     path = check_path.apply(path)
-    folder_path = f'media/result/{path}/{name}'
+    folder_path = f'media/{name}/{path}/result'
     folder_creator.apply(folder_path)
     return folder_path
 

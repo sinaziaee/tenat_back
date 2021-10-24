@@ -14,17 +14,21 @@ def get_text(file_name):
     return text_list
 
 def apply(from_path, to_path, name,graph_type,min_sim):
+
+    from_path = from_path
     to_path = check_path.apply(to_path)
-    folder_path = from_path
-    file_list = list_files.apply(folder_path)
-    folder_creator.apply(folder_path)
-    folder_path = '/'.join(from_path.split('/')[:-1]) + f'/{to_path}/' + name
-    folder_creator.apply(folder_path)
-    result_all = folder_path + '/00_output_result.txt'
-    data_file = folder_path + '/00_graph_data.json'
+    target_folder_path = from_path.replace('result',to_path+'/result')
+    folder_creator.apply(target_folder_path)
+
+    # get files of from_path
+    file_list = list_files.apply(from_path)
+    output_path = {'output_path': target_folder_path}
     result_list = []
-    output_path = {'output_path':folder_path }
     result_list.append(output_path)
+
+    output_file_path = target_folder_path + '/00_output_result.txt'
+    data_file = target_folder_path + '/00_graph_data.json'
+
     result_dict = {}
 
 
@@ -66,7 +70,7 @@ def apply(from_path, to_path, name,graph_type,min_sim):
     data = {'nodes':nodes,'edges':edges}
     # save to output file
     save_json.apply(data,data_file)
-    save_json.apply(result_list,result_all)
+    save_json.apply(result_list,output_file_path)
     return result_list
 
         

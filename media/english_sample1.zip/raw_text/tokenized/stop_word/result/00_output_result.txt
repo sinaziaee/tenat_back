@@ -1,0 +1,60 @@
+[
+    {
+        "output_path": "media/english_sample1.zip/raw_text/tokenized/stop_word/result"
+    },
+    {
+        "doc_name": "Computer_Science20.txt",
+        "removed_count": 160,
+        "top_10_removed_words": "with ,why ,this ,more ,on ,by ,until ,each ,not ,a"
+    },
+    {
+        "doc_name": "Computer_Science21.txt",
+        "removed_count": 228,
+        "top_10_removed_words": "but ,with ,this ,more ,on ,we ,some ,by ,what ,both"
+    },
+    {
+        "doc_name": "Computer_Science22.txt",
+        "removed_count": 187,
+        "top_10_removed_words": "with ,this ,more ,on ,we ,some ,not ,a ,an ,are"
+    },
+    {
+        "doc_name": "Computer_Science23.txt",
+        "removed_count": 86,
+        "top_10_removed_words": "but ,with ,between ,this ,by ,some ,each ,not ,are ,for"
+    },
+    {
+        "doc_name": "Computer_Science24.txt",
+        "removed_count": 86,
+        "top_10_removed_words": "you ,with ,between ,this ,on ,by ,what ,a ,an ,are"
+    },
+    {
+        "doc_name": "Computer_Science25.txt",
+        "removed_count": 230,
+        "top_10_removed_words": "but ,you ,don ,with ,between ,this ,more ,we ,on ,by"
+    },
+    {
+        "doc_name": "Computer_Science26.txt",
+        "removed_count": 152,
+        "top_10_removed_words": "you ,with ,yourself ,this ,we ,on ,some ,both ,each ,them"
+    },
+    {
+        "doc_name": "Computer_Science27.txt",
+        "removed_count": 156,
+        "top_10_removed_words": "but ,you ,with ,between ,on ,we ,both ,each ,them ,re"
+    },
+    {
+        "doc_name": "Computer_Science28.txt",
+        "removed_count": 150,
+        "top_10_removed_words": "but ,you ,don ,with ,why ,on ,we ,by ,both ,what"
+    },
+    {
+        "doc_name": "Computer_Science29.txt",
+        "removed_count": 162,
+        "top_10_removed_words": "but ,this ,more ,by ,a ,an ,for ,can ,it ,in"
+    },
+    {
+        "doc_name": "Computer_Science30.txt",
+        "removed_count": 60,
+        "top_10_removed_words": "this ,more ,some ,t ,a ,an ,are ,for ,when ,it"
+    }
+]

@@ -1,0 +1,25 @@
+[
+    {
+        "output_path": "media/english_sample1.zip/raw_text/tokenized/stop_word/topic_modeling/result"
+    },
+    {
+        "number": 0,
+        "topic": "0.026*\"computer\" + 0.019*\"system\" + 0.016*\"program\" + 0.012*\"software\" + 0.011*\"language\" + 0.010*\"application\" + 0.008*\"instruction\" + 0.007*\"performance\" + 0.007*\"compiler\" + 0.007*\"level\""
+    },
+    {
+        "number": 1,
+        "topic": "0.020*\"computer\" + 0.017*\"program\" + 0.016*\"language\" + 0.014*\"use\" + 0.013*\"application\" + 0.009*\"software\" + 0.009*\"performance\" + 0.007*\"memory\" + 0.007*\"chapter\" + 0.007*\"machine\""
+    },
+    {
+        "number": 2,
+        "topic": "0.042*\"computer\" + 0.013*\"application\" + 0.013*\"program\" + 0.010*\"software\" + 0.010*\"use\" + 0.009*\"hardware\" + 0.009*\"language\" + 0.008*\"system\" + 0.008*\"cost\" + 0.008*\"embed\""
+    },
+    {
+        "number": 3,
+        "topic": "0.022*\"computer\" + 0.019*\"language\" + 0.013*\"program\" + 0.012*\"application\" + 0.011*\"instruction\" + 0.011*\"processor\" + 0.010*\"machine\" + 0.009*\"use\" + 0.009*\"embed\" + 0.009*\"chapter\""
+    },
+    {
+        "number": 4,
+        "topic": "0.018*\"computer\" + 0.011*\"system\" + 0.010*\"language\" + 0.010*\"embed\" + 0.009*\"program\" + 0.008*\"application\" + 0.007*\"processor\" + 0.007*\"server\" + 0.007*\"instruction\" + 0.007*\"software\""
+    }
+]

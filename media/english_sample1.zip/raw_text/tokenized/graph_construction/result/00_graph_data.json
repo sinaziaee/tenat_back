@@ -1,0 +1,259 @@
+{
+    "edges": [
+        {
+            "from": "Computer_Science20.txt",
+            "to": "Computer_Science21.txt"
+        },
+        {
+            "from": "Computer_Science20.txt",
+            "to": "Computer_Science22.txt"
+        },
+        {
+            "from": "Computer_Science20.txt",
+            "to": "Computer_Science23.txt"
+        },
+        {
+            "from": "Computer_Science20.txt",
+            "to": "Computer_Science24.txt"
+        },
+        {
+            "from": "Computer_Science20.txt",
+            "to": "Computer_Science25.txt"
+        },
+        {
+            "from": "Computer_Science20.txt",
+            "to": "Computer_Science26.txt"
+        },
+        {
+            "from": "Computer_Science20.txt",
+            "to": "Computer_Science27.txt"
+        },
+        {
+            "from": "Computer_Science20.txt",
+            "to": "Computer_Science28.txt"
+        },
+        {
+            "from": "Computer_Science20.txt",
+            "to": "Computer_Science29.txt"
+        },
+        {
+            "from": "Computer_Science20.txt",
+            "to": "Computer_Science30.txt"
+        },
+        {
+            "from": "Computer_Science21.txt",
+            "to": "Computer_Science22.txt"
+        },
+        {
+            "from": "Computer_Science21.txt",
+            "to": "Computer_Science23.txt"
+        },
+        {
+            "from": "Computer_Science21.txt",
+            "to": "Computer_Science24.txt"
+        },
+        {
+            "from": "Computer_Science21.txt",
+            "to": "Computer_Science25.txt"
+        },
+        {
+            "from": "Computer_Science21.txt",
+            "to": "Computer_Science26.txt"
+        },
+        {
+            "from": "Computer_Science21.txt",
+            "to": "Computer_Science27.txt"
+        },
+        {
+            "from": "Computer_Science21.txt",
+            "to": "Computer_Science28.txt"
+        },
+        {
+            "from": "Computer_Science21.txt",
+            "to": "Computer_Science29.txt"
+        },
+        {
+            "from": "Computer_Science21.txt",
+            "to": "Computer_Science30.txt"
+        },
+        {
+            "from": "Computer_Science22.txt",
+            "to": "Computer_Science23.txt"
+        },
+        {
+            "from": "Computer_Science22.txt",
+            "to": "Computer_Science24.txt"
+        },
+        {
+            "from": "Computer_Science22.txt",
+            "to": "Computer_Science25.txt"
+        },
+        {
+            "from": "Computer_Science22.txt",
+            "to": "Computer_Science26.txt"
+        },
+        {
+            "from": "Computer_Science22.txt",
+            "to": "Computer_Science27.txt"
+        },
+        {
+            "from": "Computer_Science22.txt",
+            "to": "Computer_Science28.txt"
+        },
+        {
+            "from": "Computer_Science22.txt",
+            "to": "Computer_Science29.txt"
+        },
+        {
+            "from": "Computer_Science22.txt",
+            "to": "Computer_Science30.txt"
+        },
+        {
+            "from": "Computer_Science23.txt",
+            "to": "Computer_Science24.txt"
+        },
+        {
+            "from": "Computer_Science23.txt",
+            "to": "Computer_Science25.txt"
+        },
+        {
+            "from": "Computer_Science23.txt",
+            "to": "Computer_Science26.txt"
+        },
+        {
+            "from": "Computer_Science23.txt",
+            "to": "Computer_Science27.txt"
+        },
+        {
+            "from": "Computer_Science23.txt",
+            "to": "Computer_Science28.txt"
+        },
+        {
+            "from": "Computer_Science23.txt",
+            "to": "Computer_Science29.txt"
+        },
+        {
+            "from": "Computer_Science23.txt",
+            "to": "Computer_Science30.txt"
+        },
+        {
+            "from": "Computer_Science24.txt",
+            "to": "Computer_Science25.txt"
+        },
+        {
+            "from": "Computer_Science24.txt",
+            "to": "Computer_Science26.txt"
+        },
+        {
+            "from": "Computer_Science24.txt",
+            "to": "Computer_Science27.txt"
+        },
+        {
+            "from": "Computer_Science24.txt",
+            "to": "Computer_Science28.txt"
+        },
+        {
+            "from": "Computer_Science24.txt",
+            "to": "Computer_Science29.txt"
+        },
+        {
+            "from": "Computer_Science24.txt",
+            "to": "Computer_Science30.txt"
+        },
+        {
+            "from": "Computer_Science25.txt",
+            "to": "Computer_Science26.txt"
+        },
+        {
+            "from": "Computer_Science25.txt",
+            "to": "Computer_Science27.txt"
+        },
+        {
+            "from": "Computer_Science25.txt",
+            "to": "Computer_Science28.txt"
+        },
+        {
+            "from": "Computer_Science25.txt",
+            "to": "Computer_Science29.txt"
+        },
+        {
+            "from": "Computer_Science25.txt",
+            "to": "Computer_Science30.txt"
+        },
+        {
+            "from": "Computer_Science26.txt",
+            "to": "Computer_Science27.txt"
+        },
+        {
+            "from": "Computer_Science26.txt",
+            "to": "Computer_Science28.txt"
+        },
+        {
+            "from": "Computer_Science26.txt",
+            "to": "Computer_Science29.txt"
+        },
+        {
+            "from": "Computer_Science26.txt",
+            "to": "Computer_Science30.txt"
+        },
+        {
+            "from": "Computer_Science27.txt",
+            "to": "Computer_Science28.txt"
+        },
+        {
+            "from": "Computer_Science27.txt",
+            "to": "Computer_Science29.txt"
+        },
+        {
+            "from": "Computer_Science27.txt",
+            "to": "Computer_Science30.txt"
+        },
+        {
+            "from": "Computer_Science28.txt",
+            "to": "Computer_Science29.txt"
+        },
+        {
+            "from": "Computer_Science28.txt",
+            "to": "Computer_Science30.txt"
+        },
+        {
+            "from": "Computer_Science29.txt",
+            "to": "Computer_Science30.txt"
+        }
+    ],
+    "nodes": [
+        {
+            "id": "Computer_Science20.txt"
+        },
+        {
+            "id": "Computer_Science21.txt"
+        },
+        {
+            "id": "Computer_Science22.txt"
+        },
+        {
+            "id": "Computer_Science23.txt"
+        },
+        {
+            "id": "Computer_Science24.txt"
+        },
+        {
+            "id": "Computer_Science25.txt"
+        },
+        {
+            "id": "Computer_Science26.txt"
+        },
+        {
+            "id": "Computer_Science27.txt"
+        },
+        {
+            "id": "Computer_Science28.txt"
+        },
+        {
+            "id": "Computer_Science29.txt"
+        },
+        {
+            "id": "Computer_Science30.txt"
+        }
+    ]
+}

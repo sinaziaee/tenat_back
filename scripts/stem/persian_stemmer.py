@@ -19,23 +19,24 @@ def stemming(text):
     return {'text':stemmed_text, 'stemmed_words':w_stemmes, 'stemmed_count':len(w_stemmes)}
 
 def apply(from_path, to_path, name, token_count):
+    from_path = from_path
     to_path = check_path.apply(to_path)
-    folder_path = from_path
-    file_list = list_files.apply(folder_path)
-    folder_creator.apply(folder_path)
-    folder_path = '/'.join(from_path.split('/')[:-1]) + f'/{to_path}/' + name
-    folder_creator.apply(folder_path)
-    result_all = folder_path + '/00_output_result.txt'
+    target_folder_path = from_path.replace('result',to_path+'/result')
+    folder_creator.apply(target_folder_path)
 
+    # get files of from_path
+    file_list = list_files.apply(from_path)
+    output_path = {'output_path': target_folder_path}
     result_list = []
-    output_path = {'output_path':folder_path }
     result_list.append(output_path)
+
+    output_file_path = target_folder_path + '/00_output_result.txt'
     for file in file_list:
         if '00_output_result' in file:
             continue
         f = open(Path(file), 'r', encoding='utf8')
         doc_name = str(file).split('/')[-1].split('\\')[-1]
-        result_file = Path(folder_path, PurePath(file).name )
+        result_file = str(file).replace('result',to_path+'/result')
         f_output = open(Path(result_file), 'w', encoding='utf-8')
         text = f.read()
         result = stemming(text)
@@ -44,5 +45,5 @@ def apply(from_path, to_path, name, token_count):
         f_output.write(f'{stemmed_text}\n')
         f_output.flush()
         result_list.append(result_dict)
-    save_json.apply(result_list,result_all)
+    save_json.apply(result_list,output_file_path)
     return result_list

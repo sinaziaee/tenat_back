@@ -1,0 +1,110 @@
+[
+    {
+        "output_path": "media/english_sample1_computer3/join//tokenized/result/"
+    },
+    {
+        "doc_name": "Computer_Science20.txt",
+        "tokens": "chapter, computer, abstractions, and, technology, computers, have, led, to, third",
+        "tokens_count": 436
+    },
+    {
+        "doc_name": "Computer_Science21.txt",
+        "tokens": "introduction, classes, of, computing, applications, and, their, characteristics, although, a",
+        "tokens_count": 603
+    },
+    {
+        "doc_name": "Computer_Science22.txt",
+        "tokens": "chapter, computer, abstractions, and, technology, or, persollal, digital, assistant, the",
+        "tokens_count": 484
+    },
+    {
+        "doc_name": "Computer_Science23.txt",
+        "tokens": "introduction, 000, 00, 00, figure, the, number, of, distinct, processors",
+        "tokens_count": 215
+    },
+    {
+        "doc_name": "Computer_Science24.txt",
+        "tokens": "chapter, computer, abstractions, and, technology, figure, sales, of, microprocessors, between",
+        "tokens_count": 214
+    },
+    {
+        "doc_name": "Computer_Science25.txt",
+        "tokens": "introduction, we, are, honored, to, have, the, opportunity, to, explain",
+        "tokens_count": 492
+    },
+    {
+        "doc_name": "Computer_Science26.txt",
+        "tokens": "0, chapter, computer, abstractions, and, technology, will, be, impressed, as",
+        "tokens_count": 350
+    },
+    {
+        "doc_name": "Computer_Science27.txt",
+        "tokens": "below, your, program, as, mentioned, earlier, both, the, software, and",
+        "tokens_count": 384
+    },
+    {
+        "doc_name": "Computer_Science28.txt",
+        "tokens": "chapter, computer, abstractions, and, technology, figure, a, simplified, view, of",
+        "tokens_count": 327
+    },
+    {
+        "doc_name": "Computer_Science29.txt",
+        "tokens": "below, your, program, the, first, programmers, communicated, to, computers, in",
+        "tokens_count": 415
+    },
+    {
+        "doc_name": "Computer_Science30.txt",
+        "tokens": "chapter, computer, abstractions, and, technology, swap, i, nt, v, i",
+        "tokens_count": 232
+    },
+    {
+        "doc_name": "Computer_Science41.txt",
+        "tokens": "under, the, covers, although, hard, drives, are, not, removable, there",
+        "tokens_count": 481
+    },
+    {
+        "doc_name": "Computer_Science42.txt",
+        "tokens": "chapter, computer, abstractions, and, technology, the, power, of, computing, by",
+        "tokens_count": 494
+    },
+    {
+        "doc_name": "Computer_Science43.txt",
+        "tokens": "under, the, covers, combined, with, the, increases, in, capacity, have",
+        "tokens_count": 403
+    },
+    {
+        "doc_name": "Computer_Science44.txt",
+        "tokens": "chapter, computer, abstractions, and, technology, 000, 000, 00, 000, m",
+        "tokens_count": 395
+    },
+    {
+        "doc_name": "Computer_Science45.txt",
+        "tokens": "real, stuff, manufacturing, pentium, chips, let, s, start, at, the",
+        "tokens_count": 444
+    },
+    {
+        "doc_name": "Computer_Science46.txt",
+        "tokens": "chapter, computer, abstractions, and, technology, on, each, wafer, creating, the",
+        "tokens_count": 584
+    },
+    {
+        "doc_name": "Computer_Science47.txt",
+        "tokens": "real, stuff, manufacturing, pentium, chips, •, •, •, •, •",
+        "tokens_count": 370
+    },
+    {
+        "doc_name": "Computer_Science48.txt",
+        "tokens": "chapter, computer, abstractions, and, technology, figure, an, intel, pentium, 0",
+        "tokens_count": 165
+    },
+    {
+        "doc_name": "Computer_Science49.txt",
+        "tokens": "fallacies, and, pitfalls, a, key, factor, in, determining, the, cost",
+        "tokens_count": 384
+    },
+    {
+        "doc_name": "Computer_Science50.txt",
+        "tokens": "chapter, computer, abstractions, and, technology, 0, 000, intel, pentium, 000",
+        "tokens_count": 250
+    }
+]

@@ -23,3 +23,5 @@ def apply(path):
 
     elif 'topic_modeling' in path or 'Topic_Modeling' in path:
             return 'topic_modeling'
+    elif 'entity_recognition' in path or 'Entity_Recognition' in path:
+            return 'entity_recognition'
