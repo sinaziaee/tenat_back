@@ -2,9 +2,10 @@ venv/
 **/migrations/*
 **/__pycache__/
 .idea/
-media/docs/
-media/data/
-media/result/
+!/media/english_sample1.zip/result
+!/media/english_sample2.rar/result
+!/media/persian_sample1.7z/result
+!/media/persian_sample2.rar/result
 __pycache__/
 *.py[cod]
 *$py.class
