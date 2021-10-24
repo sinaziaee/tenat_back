@@ -1,0 +1,55 @@
+[
+    {
+        "output_path": "media/english_sample2.rar/raw_text/tokenized/result"
+    },
+    {
+        "doc_name": "Computer_Science31.txt",
+        "tokens": "under, the, covers, the, final, advantage, is, that, programming, languages",
+        "tokens_count": 418
+    },
+    {
+        "doc_name": "Computer_Science32.txt",
+        "tokens": "chapter, computer, abstractions, and, technology, interlace, evaluating, performance, figure, the",
+        "tokens_count": 189
+    },
+    {
+        "doc_name": "Computer_Science33.txt",
+        "tokens": "under, the, covers, figure, a, desktop, computer, the, liquid, crystal",
+        "tokens_count": 209
+    },
+    {
+        "doc_name": "Computer_Science34.txt",
+        "tokens": "chapter, computer, abstractions, and, technology, through, the, looking, glass, through",
+        "tokens_count": 678
+    },
+    {
+        "doc_name": "Computer_Science35.txt",
+        "tokens": "under, the, covers, frame, buffer, raster, scan, crt, display, y",
+        "tokens_count": 245
+    },
+    {
+        "doc_name": "Computer_Science36.txt",
+        "tokens": "chapter, computer, abstractions, and, technology, motherboard, a, plastic, board, shows",
+        "tokens_count": 621
+    },
+    {
+        "doc_name": "Computer_Science37.txt",
+        "tokens": "under, the, covers, control, control, 0, interface, instruction, cache, data",
+        "tokens_count": 169
+    },
+    {
+        "doc_name": "Computer_Science38.txt",
+        "tokens": "chapter, computer, abstractions, and, technology, processor, m, •, m, o",
+        "tokens_count": 454
+    },
+    {
+        "doc_name": "Computer_Science39.txt",
+        "tokens": "under, the, covers, a, safe, place, for, data, thus, far",
+        "tokens_count": 673
+    },
+    {
+        "doc_name": "Computer_Science40.txt",
+        "tokens": "chapter, computer, abstractions, and, technology, figure, a, disk, showing, 0",
+        "tokens_count": 97
+    }
+]

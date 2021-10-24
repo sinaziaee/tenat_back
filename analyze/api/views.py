@@ -15,7 +15,7 @@ from analyze.api.serializer import *
 import time,json
 from scripts.tf_idf import basic_tf_idf, sklearn_tf_idf, gensim_tf_idf
 from scripts import topic
-# from scripts.entity_recognition import entity_recognition_english, entity_recognition_persian
+from scripts.entity_recognition import entity_recognition_english
 import codecs
 from django.shortcuts import render
 
@@ -327,19 +327,19 @@ def topic_viewer(request):
 
 
 
-# @api_view(['POST'])
-# def entity_rec(request):
-#     new_map = request.POST
-#     name = new_map.get('name')
-#     from_path = new_map.get('from')
-#     style = new_map.get('style')
-#     language = new_map.get('language')
-#     if language is "Persian":
-#         result = entity_recognition_persian.apply(from_path=from_path, to_path='entity_recognition',
-#                                                   name=name, style=style)
-#     else:
-#         result = entity_recognition_english.apply(from_path=from_path, name=name,
-#                                                   to_path='entity_recognition', style=style)
-#     if result is not None and len(result) != 0:
-#         return Response(result, status=status.HTTP_200_OK)
-#     return Response('failed', status=status.HTTP_400_BAD_REQUEST)
+@api_view(['POST'])
+def entity_rec(request):
+    new_map = request.POST
+    name = new_map.get('name')
+    from_path = new_map.get('from')
+
+    language = new_map.get('language')
+
+    if language is "English":
+        result = entity_recognition_english.apply(from_path=from_path, to_path='entity_recognition',
+                                                  name=name)
+    else:
+        pass
+    if result is not None and len(result) != 0:
+        return Response(result, status=status.HTTP_200_OK)
+    return Response('failed', status=status.HTTP_400_BAD_REQUEST)

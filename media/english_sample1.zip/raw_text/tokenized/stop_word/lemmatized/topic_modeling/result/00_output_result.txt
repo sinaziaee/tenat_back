@@ -1,0 +1,25 @@
+[
+    {
+        "output_path": "media/english_sample1.zip/raw_text/tokenized/stop_word/lemmatized/topic_modeling/result"
+    },
+    {
+        "number": 0,
+        "topic": "0.024*\"computer\" + 0.021*\"program\" + 0.015*\"software\" + 0.012*\"hardware\" + 0.009*\"performance\" + 0.008*\"book\" + 0.008*\"use\" + 0.007*\"word\" + 0.007*\"acronym\" + 0.006*\"understand\""
+    },
+    {
+        "number": 1,
+        "topic": "0.041*\"computer\" + 0.014*\"application\" + 0.012*\"use\" + 0.012*\"server\" + 0.010*\"cost\" + 0.010*\"system\" + 0.009*\"performance\" + 0.009*\"desktop\" + 0.009*\"chapter\" + 0.008*\"hardware\""
+    },
+    {
+        "number": 2,
+        "topic": "0.030*\"computer\" + 0.023*\"language\" + 0.017*\"program\" + 0.017*\"application\" + 0.016*\"system\" + 0.016*\"instruction\" + 0.012*\"software\" + 0.011*\"use\" + 0.010*\"embed\" + 0.009*\"processor\""
+    },
+    {
+        "number": 3,
+        "topic": "0.016*\"processor\" + 0.014*\"embed\" + 0.012*\"computer\" + 0.011*\"count\" + 0.010*\"bit\" + 0.010*\"core\" + 0.010*\"desktop\" + 0.009*\"system\" + 0.009*\"growth\" + 0.008*\"total\""
+    },
+    {
+        "number": 4,
+        "topic": "0.033*\"language\" + 0.018*\"program\" + 0.014*\"machine\" + 0.013*\"binary\" + 0.010*\"level\" + 0.010*\"computer\" + 0.009*\"high\" + 0.008*\"assembly\" + 0.007*\"chapter\" + 0.006*\"design\""
+    }
+]
