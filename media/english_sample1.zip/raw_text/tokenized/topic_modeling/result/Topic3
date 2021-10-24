@@ -1,11 +1,1 @@
-0.002*"the
-" + 0.001*"of
-" + 0.001*"and
-" + 0.001*"a
-" + 0.001*"to
-" + 0.001*"in
-" + 0.001*"for
-" + 0.001*"are
-" + 0.001*"computer
-" + 0.001*"software
-"
+0.017*"computer" + 0.011*"language" + 0.011*"program" + 0.010*"system" + 0.010*"performance" + 0.009*"use" + 0.009*"chapter" + 0.009*"instruction" + 0.007*"processor" + 0.007*"software"

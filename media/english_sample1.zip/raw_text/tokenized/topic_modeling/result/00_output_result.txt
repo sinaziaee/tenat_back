@@ -4,38 +4,22 @@
     },
     {
         "number": 0,
-        "topic": "0.001*\"the\n\" + 0.001*\"to\n\" + 0.001*\"a\n\" + 0.001*\"of\n\" + 0.001*\"and\n\" + 0.001*\"in\n\" + 0.001*\"language\n\" + 0.001*\"that\n\" + 0.001*\"this\n\" + 0.001*\"program\n\""
+        "topic": "0.032*\"computer\" + 0.017*\"language\" + 0.014*\"application\" + 0.013*\"program\" + 0.010*\"hardware\" + 0.010*\"machine\" + 0.010*\"use\" + 0.009*\"software\" + 0.008*\"embed\" + 0.008*\"server\""
     },
     {
         "number": 1,
-        "topic": "0.065*\"the\n\" + 0.035*\"of\n\" + 0.030*\"and\n\" + 0.021*\"to\n\" + 0.020*\"in\n\" + 0.019*\"a\n\" + 0.017*\"computer\n\" + 0.010*\"this\n\" + 0.009*\"are\n\" + 0.009*\"for\n\""
+        "topic": "0.038*\"computer\" + 0.014*\"application\" + 0.010*\"use\" + 0.010*\"program\" + 0.008*\"cost\" + 0.007*\"number\" + 0.007*\"chapter\" + 0.007*\"hardware\" + 0.007*\"software\" + 0.006*\"system\""
     },
     {
         "number": 2,
-        "topic": "0.058*\"the\n\" + 0.031*\"a\n\" + 0.027*\"of\n\" + 0.024*\"to\n\" + 0.020*\"in\n\" + 0.018*\"and\n\" + 0.017*\"that\n\" + 0.010*\"embedded\n\" + 0.010*\"this\n\" + 0.010*\"language\n\""
+        "topic": "0.020*\"computer\" + 0.020*\"language\" + 0.019*\"program\" + 0.015*\"system\" + 0.012*\"software\" + 0.011*\"instruction\" + 0.010*\"processor\" + 0.010*\"application\" + 0.010*\"embed\" + 0.009*\"level\""
     },
     {
         "number": 3,
-        "topic": "0.002*\"the\n\" + 0.001*\"of\n\" + 0.001*\"and\n\" + 0.001*\"a\n\" + 0.001*\"to\n\" + 0.001*\"in\n\" + 0.001*\"for\n\" + 0.001*\"are\n\" + 0.001*\"computer\n\" + 0.001*\"software\n\""
+        "topic": "0.017*\"computer\" + 0.011*\"language\" + 0.011*\"program\" + 0.010*\"system\" + 0.010*\"performance\" + 0.009*\"use\" + 0.009*\"chapter\" + 0.009*\"instruction\" + 0.007*\"processor\" + 0.007*\"software\""
     },
     {
         "number": 4,
-        "topic": "0.022*\"language\n\" + 0.022*\"000\n\" + 0.019*\"0\n\" + 0.017*\"in\n\" + 0.017*\"00\n\" + 0.014*\"and\n\" + 0.014*\"program\n\" + 0.014*\"for\n\" + 0.014*\"v\n\" + 0.012*\"the\n\""
-    },
-    {
-        "number": 5,
-        "topic": "0.057*\"the\n\" + 0.034*\"of\n\" + 0.030*\"and\n\" + 0.024*\"a\n\" + 0.016*\"in\n\" + 0.016*\"program\n\" + 0.015*\"to\n\" + 0.015*\"software\n\" + 0.012*\"that\n\" + 0.012*\"system\n\""
-    },
-    {
-        "number": 6,
-        "topic": "0.002*\"the\n\" + 0.001*\"and\n\" + 0.001*\"of\n\" + 0.001*\"in\n\" + 0.001*\"a\n\" + 0.001*\"to\n\" + 0.001*\"are\n\" + 0.001*\"program\n\" + 0.001*\"computer\n\" + 0.001*\"that\n\""
-    },
-    {
-        "number": 7,
-        "topic": "0.043*\"the\n\" + 0.026*\"of\n\" + 0.018*\"in\n\" + 0.015*\"and\n\" + 0.015*\"processors\n\" + 0.012*\"for\n\" + 0.012*\"been\n\" + 0.012*\"embedded\n\" + 0.012*\"only\n\" + 0.012*\"00\n\""
-    },
-    {
-        "number": 8,
-        "topic": "0.043*\"the\n\" + 0.040*\"of\n\" + 0.034*\"and\n\" + 0.030*\"a\n\" + 0.022*\"are\n\" + 0.020*\"to\n\" + 0.017*\"in\n\" + 0.013*\"for\n\" + 0.012*\"computers\n\" + 0.012*\"as\n\""
+        "topic": "0.025*\"computer\" + 0.014*\"program\" + 0.013*\"system\" + 0.013*\"application\" + 0.010*\"software\" + 0.009*\"processor\" + 0.008*\"use\" + 0.008*\"embed\" + 0.008*\"hardware\" + 0.007*\"instruction\""
     }
 ]

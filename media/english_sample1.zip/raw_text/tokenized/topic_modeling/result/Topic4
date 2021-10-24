@@ -1,11 +1,1 @@
-0.022*"language
-" + 0.022*"000
-" + 0.019*"0
-" + 0.017*"in
-" + 0.017*"00
-" + 0.014*"and
-" + 0.014*"program
-" + 0.014*"for
-" + 0.014*"v
-" + 0.012*"the
-"
+0.025*"computer" + 0.014*"program" + 0.013*"system" + 0.013*"application" + 0.010*"software" + 0.009*"processor" + 0.008*"use" + 0.008*"embed" + 0.008*"hardware" + 0.007*"instruction"

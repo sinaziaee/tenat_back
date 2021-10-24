@@ -11,7 +11,21 @@ from pprint import pprint
 # import pickle5 as pickle
 import pickle
 import numpy as np
-
+from nltk.corpus import stopwords
+import re
+import numpy as np
+import pandas as pd
+from pprint import pprint
+import gensim
+import gensim.corpora as corpora
+from gensim.utils import simple_preprocess
+from gensim.models import CoherenceModel
+import spacy
+import pyLDAvis
+import pyLDAvis.gensim_models
+import matplotlib.pyplot as plt
+from nltk.corpus import stopwords
+import en_core_web_sm
 # function for get text of input file (result is list of terms)
 def get_text(file_name):
     f = open(Path(file_name), 'r', encoding='utf8')
@@ -22,19 +36,36 @@ def get_text(file_name):
     return text_list
 
 
-def LDA(corpus, id2word, num_topics):
+
+def remove_stopwords(texts,stop_words):
+       return [[word for word in simple_preprocess(str(doc)) 
+   if word not in stop_words] for doc in texts]
+def make_bigrams(texts, bigram_mod):
+   return [bigram_mod[doc] for doc in texts]
+def make_trigrams(texts,trigram_mod,bigram_mod):
+   [trigram_mod[bigram_mod[doc]] for doc in texts]
+def lemmatization(texts,nlp, allowed_postags=['NOUN', 'ADJ', 'VERB', 'ADV']):
+   texts_out = []
+   for sent in texts:
+      doc = nlp(" ".join(sent))
+      texts_out.append([token.lemma_ for token in doc if token.pos_ in allowed_postags])
+   return texts_out
+
+
+
+def LDA(corpus, id2word,alpha, num_topics,chunk_size,passes):
     lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus,
                                                 id2word=id2word,
                                                 num_topics=num_topics,
-                                                random_state=100,
                                                 update_every=1,
-                                                chunksize=100,
-                                                passes=10,
-                                                alpha='auto')
+                                                chunksize=chunk_size,
+                                                passes=passes,
+                                                alpha=alpha,per_word_topics=True)
+
     return lda_model
 
 
-def apply(from_path, to_path, name, method, num_topics):
+def apply(from_path, to_path, name, method,alpha, num_topics,chunk_size,passes):
 
     # get files in from_path and set output_path
     # from_path = check_path.apply(from_path)
@@ -60,16 +91,46 @@ def apply(from_path, to_path, name, method, num_topics):
         tokens = f.readlines()
         data.append(tokens)
     # Create Dictionary
-    id2word = corpora.Dictionary(data)
-    # Term Document Frequency
-    corpus = [id2word.doc2bow(word) for word in data]
+    stop_words = stopwords.words('english')
+    stop_words.extend(['from', 'subject', 're', 'edu', 'use'])
+
+
+    bigram = gensim.models.Phrases(data, min_count=5, threshold=100)
+    trigram = gensim.models.Phrases(bigram[data], threshold=100)
+    bigram_mod = gensim.models.phrases.Phraser(bigram)
+    trigram_mod = gensim.models.phrases.Phraser(trigram)
+
+
+
+    data_words_nostops = remove_stopwords(data,stop_words)
+    data_words_bigrams = make_bigrams(data_words_nostops,bigram_mod)
+    nlp = en_core_web_sm.load()
+    # nlp = spacy.load('en_core_web_md', disable=['parser', 'ner'])
+    data_lemmatized = lemmatization(data_words_bigrams,nlp, allowed_postags=[
+    'NOUN', 'ADJ', 'VERB', 'ADV'
+    ])
+
+
+    # id2word = corpora.Dictionary(data)
+    # # Term Document Frequency
+    # corpus = [id2word.doc2bow(word) for word in data]
+
+
+    id2word = corpora.Dictionary(data_lemmatized)
+    texts = data_lemmatized
+    corpus = [id2word.doc2bow(text) for text in texts]
 
     model = None
     topics = []
+
+
     if method == 'LDA':
-        model = LDA(corpus, id2word, num_topics)
+        model = LDA(corpus, id2word,alpha,num_topics,chunk_size,passes)
         for i in range(0, model.num_topics):
             topics.append(model.print_topic(i))
+        p = pyLDAvis.gensim_models.prepare(model, corpus, id2word)
+        pyLDAvis.save_html(p, target_folder_path+'/lda.html')
+        html_string =str(pyLDAvis.prepared_data_to_html(p))
     else:
         pass
 

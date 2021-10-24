@@ -1,11 +1,1 @@
-0.001*"the
-" + 0.001*"to
-" + 0.001*"a
-" + 0.001*"of
-" + 0.001*"and
-" + 0.001*"in
-" + 0.001*"language
-" + 0.001*"that
-" + 0.001*"this
-" + 0.001*"program
-"
+0.032*"computer" + 0.017*"language" + 0.014*"application" + 0.013*"program" + 0.010*"hardware" + 0.010*"machine" + 0.010*"use" + 0.009*"software" + 0.008*"embed" + 0.008*"server"
