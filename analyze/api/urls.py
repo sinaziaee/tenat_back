@@ -20,4 +20,5 @@ urlpatterns = [
     path('topic-modeling/', views.topic_modeling, name='topic_modeling'),  # {host}/api/tf-idf
     path('topic-viewer/', views.topic_viewer, name='topic_viewer'),  # {host}/api/tf-idf
     path('entity-recognition/', views.entity_rec, name='entity_recognition'),   # {host}/api/entity-recognition
+    path('graph-sequence/', views.graph_sequence, name='graph_sequence'),  # {host}/api/graph-sequence
 ]

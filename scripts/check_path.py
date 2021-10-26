@@ -25,3 +25,5 @@ def apply(path):
             return 'topic_modeling'
     elif 'entity_recognition' in path or 'Entity_Recognition' in path:
             return 'entity_recognition'
+    elif 'graph_sequence' in path or 'sequence_graph' in path or 'sequence' in path:
+            return 'graph_sequence'

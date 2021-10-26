@@ -16,6 +16,7 @@ import time,json
 from scripts.tf_idf import basic_tf_idf, sklearn_tf_idf, gensim_tf_idf
 from scripts import topic
 from scripts.entity_recognition import entity_recognition_english
+from scripts.word_sequence_graph import graph_sequence_construction
 import codecs
 from django.shortcuts import render
 
@@ -340,6 +341,21 @@ def entity_rec(request):
                                                   name=name)
     else:
         pass
+    if result is not None and len(result) != 0:
+        return Response(result, status=status.HTTP_200_OK)
+    return Response('failed', status=status.HTTP_400_BAD_REQUEST)
+
+
+@api_view(['POST'])
+def graph_sequence(request):
+    new_map = request.POST
+    name = new_map.get('name')
+    from_path = new_map.get('from')
+
+    language = new_map.get('language')
+
+    result = graph_sequence_construction.apply(from_path=from_path, to_path='graph_sequence', name=name)
+
     if result is not None and len(result) != 0:
         return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)
