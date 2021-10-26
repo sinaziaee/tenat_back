@@ -60,3 +60,4 @@ pdf2image
 polyglot
 pyLDAvis
 
+spacy

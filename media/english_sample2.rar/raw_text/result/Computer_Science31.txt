@@ -1,6 +1,6 @@
 1.3 Under the Covers 15
-The final advantage is that programming languages allow programs to be inde 
-pendent of the computer on which they were developed, since compilers and
+The final advantage is that programming languages allow programs to be independent
+of the computer on which they were developed, since compilers and
 assemblers can translate high-level language programs to the binary instructions
 of any machine. These three advantages are so strong that today little program 
 ming is done in assembly language.
@@ -29,14 +29,11 @@ portion of interest to that chapter highlighted.
 Figure 1.6 shows a typical desktop computer with keyboard, mouse, screen, input device A mechanism
 through which the computer is
 and a box containing even more hardware. What is not visible in the photograph
-fed information, such as the
-is a network that connects the computer to other computers. This photograph
+fed information, such as a network that connects the computer to other computers. This photograph
 keyboard or mouse.
-reveals two of the key components of computers: input devices, such as the key 
-board and m ouse, and o utput devices, such as the screen. As the names suggest, output device A mechanism
+reveals two of the key components of computers: input devices, such as the keyboard and
+mouse, and output devices, such as the screen. As the names suggest, output device A mechanism
 that conveys the result ofa com 
 input feeds the computer, and output is the result of computation sent to the user.
-putation to a user or another
 Some devices, such as networks and disks, provide both input and output to the
-computer.
 computer.
