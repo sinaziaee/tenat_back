@@ -42,7 +42,7 @@ def apply(from_path, to_path, name,graph_type,min_sim):
                 continue
             
         node = {'id':doc_name}
-        nodes.append(node);
+        nodes.append(node)
 
     # calculate sim between each pair of documents
     for i in range(0,len(file_list)-1):
@@ -66,7 +66,7 @@ def apply(from_path, to_path, name,graph_type,min_sim):
                 result_dict = {'source':source_doc_name,'target':target_doc_name,'sim':jaccard_sim}
                 result_list.append(result_dict)
                 edge = {'from':source_doc_name,'to':target_doc_name}
-                edges.append(edge);
+                edges.append(edge)
     data = {'nodes':nodes,'edges':edges}
     # save to output file
     save_json.apply(data,data_file)
