@@ -1,0 +1,4359 @@
+{
+    "edges": [
+        {
+            "from": "<START>",
+            "to": "2."
+        },
+        {
+            "from": "<START>",
+            "to": "Chapter"
+        },
+        {
+            "from": "performs",
+            "to": "Chapter"
+        },
+        {
+            "from": "and",
+            "to": "Chapter"
+        },
+        {
+            "from": "Chapter",
+            "to": "1"
+        },
+        {
+            "from": "1",
+            "to": "Computer"
+        },
+        {
+            "from": "Computer",
+            "to": "Abstractions"
+        },
+        {
+            "from": "Abstractions",
+            "to": "and"
+        },
+        {
+            "from": "drive,",
+            "to": "and"
+        },
+        {
+            "from": "memory,",
+            "to": "and"
+        },
+        {
+            "from": "networks",
+            "to": "and"
+        },
+        {
+            "from": "ory,",
+            "to": "and"
+        },
+        {
+            "from": "running",
+            "to": "and"
+        },
+        {
+            "from": "<START>",
+            "to": "and"
+        },
+        {
+            "from": "datapath",
+            "to": "and"
+        },
+        {
+            "from": "trol",
+            "to": "and"
+        },
+        {
+            "from": "I/O",
+            "to": "and"
+        },
+        {
+            "from": "brawn",
+            "to": "and"
+        },
+        {
+            "from": "activate,",
+            "to": "and"
+        },
+        {
+            "from": "operations,",
+            "to": "and"
+        },
+        {
+            "from": "memory,",
+            "to": "and"
+        },
+        {
+            "from": "datapath",
+            "to": "and"
+        },
+        {
+            "from": "tion,",
+            "to": "and"
+        },
+        {
+            "from": "memory,",
+            "to": "and"
+        },
+        {
+            "from": "instructions",
+            "to": "and"
+        },
+        {
+            "from": "dense,",
+            "to": "and"
+        },
+        {
+            "from": "and",
+            "to": "Technology"
+        },
+        {
+            "from": "<START>",
+            "to": "motherboard"
+        },
+        {
+            "from": "This",
+            "to": "motherboard"
+        },
+        {
+            "from": "the",
+            "to": "motherboard"
+        },
+        {
+            "from": "the",
+            "to": "motherboard"
+        },
+        {
+            "from": "motherboard",
+            "to": "A"
+        },
+        {
+            "from": "chip.",
+            "to": "A"
+        },
+        {
+            "from": "memory",
+            "to": "A"
+        },
+        {
+            "from": "A",
+            "to": "plastic"
+        },
+        {
+            "from": "plastic",
+            "to": "board"
+        },
+        {
+            "from": "The",
+            "to": "board"
+        },
+        {
+            "from": "memory",
+            "to": "board"
+        },
+        {
+            "from": "board",
+            "to": "shows"
+        },
+        {
+            "from": "shows",
+            "to": "the"
+        },
+        {
+            "from": "of",
+            "to": "the"
+        },
+        {
+            "from": "on",
+            "to": "the"
+        },
+        {
+            "from": "with",
+            "to": "the"
+        },
+        {
+            "from": "on",
+            "to": "the"
+        },
+        {
+            "from": "on",
+            "to": "the"
+        },
+        {
+            "from": "contain",
+            "to": "the"
+        },
+        {
+            "from": "pieces:",
+            "to": "the"
+        },
+        {
+            "from": "to",
+            "to": "the"
+        },
+        {
+            "from": "earlier,",
+            "to": "the"
+        },
+        {
+            "from": "and",
+            "to": "the"
+        },
+        {
+            "from": "via",
+            "to": "the"
+        },
+        {
+            "from": "to",
+            "to": "the"
+        },
+        {
+            "from": "toward",
+            "to": "the"
+        },
+        {
+            "from": "on",
+            "to": "the"
+        },
+        {
+            "from": "where",
+            "to": "the"
+        },
+        {
+            "from": "contains",
+            "to": "the"
+        },
+        {
+            "from": "by",
+            "to": "the"
+        },
+        {
+            "from": "on",
+            "to": "the"
+        },
+        {
+            "from": "toward",
+            "to": "the"
+        },
+        {
+            "from": "of",
+            "to": "the"
+        },
+        {
+            "from": "tains",
+            "to": "the"
+        },
+        {
+            "from": "by",
+            "to": "the"
+        },
+        {
+            "from": "is",
+            "to": "the"
+        },
+        {
+            "from": "of",
+            "to": "the"
+        },
+        {
+            "from": "following",
+            "to": "the"
+        },
+        {
+            "from": "to",
+            "to": "the"
+        },
+        {
+            "from": "is",
+            "to": "the"
+        },
+        {
+            "from": "below",
+            "to": "the"
+        },
+        {
+            "from": "in",
+            "to": "the"
+        },
+        {
+            "from": "call",
+            "to": "the"
+        },
+        {
+            "from": "processor",
+            "to": "the"
+        },
+        {
+            "from": "for",
+            "to": "the"
+        },
+        {
+            "from": "contains",
+            "to": "the"
+        },
+        {
+            "from": "into",
+            "to": "the"
+        },
+        {
+            "from": "of",
+            "to": "the"
+        },
+        {
+            "from": "control,",
+            "to": "the"
+        },
+        {
+            "from": "of",
+            "to": "the"
+        },
+        {
+            "from": "forms",
+            "to": "the"
+        },
+        {
+            "from": "tells",
+            "to": "the"
+        },
+        {
+            "from": "to",
+            "to": "the"
+        },
+        {
+            "from": "of",
+            "to": "the"
+        },
+        {
+            "from": "of",
+            "to": "the"
+        },
+        {
+            "from": "<START>",
+            "to": "the"
+        },
+        {
+            "from": "explains",
+            "to": "the"
+        },
+        {
+            "from": "describes",
+            "to": "the"
+        },
+        {
+            "from": "into",
+            "to": "the"
+        },
+        {
+            "from": "of",
+            "to": "the"
+        },
+        {
+            "from": "commands",
+            "to": "the"
+        },
+        {
+            "from": "into",
+            "to": "the"
+        },
+        {
+            "from": "to",
+            "to": "the"
+        },
+        {
+            "from": "contain",
+            "to": "the"
+        },
+        {
+            "from": "tapes,",
+            "to": "the"
+        },
+        {
+            "from": "of",
+            "to": "the"
+        },
+        {
+            "from": "take",
+            "to": "the"
+        },
+        {
+            "from": "<START>",
+            "to": "the"
+        },
+        {
+            "from": "Inside",
+            "to": "the"
+        },
+        {
+            "from": "<START>",
+            "to": "the"
+        },
+        {
+            "from": "the",
+            "to": "contents"
+        },
+        {
+            "from": "contents",
+            "to": "of"
+        },
+        {
+            "from": "packages",
+            "to": "of"
+        },
+        {
+            "from": "composed",
+            "to": "of"
+        },
+        {
+            "from": "dle",
+            "to": "of"
+        },
+        {
+            "from": "rt",
+            "to": "of"
+        },
+        {
+            "from": "instructions",
+            "to": "of"
+        },
+        {
+            "from": "corner",
+            "to": "of"
+        },
+        {
+            "from": "details",
+            "to": "of"
+        },
+        {
+            "from": "brain",
+            "to": "of"
+        },
+        {
+            "from": "wishes",
+            "to": "of"
+        },
+        {
+            "from": "instructions",
+            "to": "of"
+        },
+        {
+            "from": "component",
+            "to": "of"
+        },
+        {
+            "from": "depths",
+            "to": "of"
+        },
+        {
+            "from": "component",
+            "to": "of"
+        },
+        {
+            "from": "data",
+            "to": "of"
+        },
+        {
+            "from": "portion",
+            "to": "of"
+        },
+        {
+            "from": "amount",
+            "to": "of"
+        },
+        {
+            "from": "portion",
+            "to": "of"
+        },
+        {
+            "from": "type",
+            "to": "of"
+        },
+        {
+            "from": "consists",
+            "to": "of"
+        },
+        {
+            "from": "definition",
+            "to": "of"
+        },
+        {
+            "from": "the",
+            "to": "desktop"
+        },
+        {
+            "from": "desktop",
+            "to": "computer"
+        },
+        {
+            "from": "computer",
+            "to": "in"
+        },
+        {
+            "from": "area",
+            "to": "in"
+        },
+        {
+            "from": "boards",
+            "to": "in"
+        },
+        {
+            "from": "cessor",
+            "to": "in"
+        },
+        {
+            "from": "memory",
+            "to": "in"
+        },
+        {
+            "from": "in",
+            "to": "Figure"
+        },
+        {
+            "from": "In",
+            "to": "Figure"
+        },
+        {
+            "from": "of",
+            "to": "Figure"
+        },
+        {
+            "from": "hardware,",
+            "to": "Figure"
+        },
+        {
+            "from": "in",
+            "to": "Figure"
+        },
+        {
+            "from": "in",
+            "to": "Figure"
+        },
+        {
+            "from": "Figure",
+            "to": "1.6."
+        },
+        {
+            "from": "1.6.",
+            "to": "This"
+        },
+        {
+            "from": "motherboard",
+            "to": "is"
+        },
+        {
+            "from": "board",
+            "to": "is"
+        },
+        {
+            "from": "memory",
+            "to": "is"
+        },
+        {
+            "from": "memory",
+            "to": "is"
+        },
+        {
+            "from": "processor",
+            "to": "is"
+        },
+        {
+            "from": "processor",
+            "to": "is"
+        },
+        {
+            "from": "1.10",
+            "to": "is"
+        },
+        {
+            "from": "memory",
+            "to": "is"
+        },
+        {
+            "from": "processor",
+            "to": "is"
+        },
+        {
+            "from": "cache",
+            "to": "is"
+        },
+        {
+            "from": "Cache",
+            "to": "is"
+        },
+        {
+            "from": "SRAM",
+            "to": "is"
+        },
+        {
+            "from": "<START>",
+            "to": "containing"
+        },
+        {
+            "from": "containing",
+            "to": "packages"
+        },
+        {
+            "from": "of",
+            "to": "shown"
+        },
+        {
+            "from": "shown",
+            "to": "vertically"
+        },
+        {
+            "from": "vertically",
+            "to": "on"
+        },
+        {
+            "from": "drive-appear",
+            "to": "on"
+        },
+        {
+            "from": "rectangles",
+            "to": "on"
+        },
+        {
+            "from": "middle",
+            "to": "on"
+        },
+        {
+            "from": "found",
+            "to": "on"
+        },
+        {
+            "from": "the",
+            "to": "left"
+        },
+        {
+            "from": "left",
+            "to": "with"
+        },
+        {
+            "from": "the",
+            "to": "power"
+        },
+        {
+            "from": "power",
+            "to": "supply."
+        },
+        {
+            "from": "supply.",
+            "to": "Three"
+        },
+        {
+            "from": "Three",
+            "to": "disk"
+        },
+        {
+            "from": "disk",
+            "to": "drives-a"
+        },
+        {
+            "from": "drives-a",
+            "to": "DVD"
+        },
+        {
+            "from": "<START>",
+            "to": "integrated"
+        },
+        {
+            "from": "technology,",
+            "to": "integrated"
+        },
+        {
+            "from": "<START>",
+            "to": "integrated"
+        },
+        {
+            "from": "eight",
+            "to": "integrated"
+        },
+        {
+            "from": "an",
+            "to": "integrated"
+        },
+        {
+            "from": "integrated",
+            "to": "circuits"
+        },
+        {
+            "from": "integrated",
+            "to": "circuits"
+        },
+        {
+            "from": "circuits",
+            "to": "or"
+        },
+        {
+            "from": "circuits",
+            "to": "or"
+        },
+        {
+            "from": "or",
+            "to": "chips,"
+        },
+        {
+            "from": "<START>",
+            "to": "drive,"
+        },
+        {
+            "from": "Zip",
+            "to": "drive,"
+        },
+        {
+            "from": "drive,",
+            "to": "Zip"
+        },
+        {
+            "from": "and",
+            "to": "hard"
+        },
+        {
+            "from": "hard",
+            "to": "drive-appear"
+        },
+        {
+            "from": "the",
+            "to": "right."
+        },
+        {
+            "from": "<START>",
+            "to": "including"
+        },
+        {
+            "from": "including",
+            "to": "processor,"
+        },
+        {
+            "from": "processor,",
+            "to": "cache,"
+        },
+        {
+            "from": "<START>",
+            "to": "The"
+        },
+        {
+            "from": "chips.",
+            "to": "The"
+        },
+        {
+            "from": "processor.",
+            "to": "The"
+        },
+        {
+            "from": "<START>",
+            "to": "The"
+        },
+        {
+            "from": "memory",
+            "to": "The"
+        },
+        {
+            "from": "<START>",
+            "to": "The"
+        },
+        {
+            "from": "on.",
+            "to": "The"
+        },
+        {
+            "from": "processor.",
+            "to": "The"
+        },
+        {
+            "from": "1.8.",
+            "to": "The"
+        },
+        {
+            "from": "processor.",
+            "to": "The"
+        },
+        {
+            "from": "datapath",
+            "to": "The"
+        },
+        {
+            "from": "control",
+            "to": "The"
+        },
+        {
+            "from": "machine.",
+            "to": "The"
+        },
+        {
+            "from": "The",
+            "to": "small"
+        },
+        {
+            "from": "two",
+            "to": "small"
+        },
+        {
+            "from": "Each",
+            "to": "small"
+        },
+        {
+            "from": "small",
+            "to": "rectangles"
+        },
+        {
+            "from": "motherboard",
+            "to": "contain"
+        },
+        {
+            "from": "<START>",
+            "to": "contain"
+        },
+        {
+            "from": "the",
+            "to": "devices"
+        },
+        {
+            "from": "<START>",
+            "to": "devices"
+        },
+        {
+            "from": "I/O",
+            "to": "devices"
+        },
+        {
+            "from": "I/O",
+            "to": "devices"
+        },
+        {
+            "from": "I/O",
+            "to": "devices"
+        },
+        {
+            "from": "<START>",
+            "to": "devices"
+        },
+        {
+            "from": "<START>",
+            "to": "devices"
+        },
+        {
+            "from": "<START>",
+            "to": "devices"
+        },
+        {
+            "from": "devices",
+            "to": "that"
+        },
+        {
+            "from": "boards",
+            "to": "that"
+        },
+        {
+            "from": "and",
+            "to": "that"
+        },
+        {
+            "from": "processor",
+            "to": "that"
+        },
+        {
+            "from": "processor",
+            "to": "that"
+        },
+        {
+            "from": "Memory",
+            "to": "that"
+        },
+        {
+            "from": "memory",
+            "to": "that"
+        },
+        {
+            "from": "memory",
+            "to": "that"
+        },
+        {
+            "from": "that",
+            "to": "drive"
+        },
+        {
+            "from": "drive",
+            "to": "our"
+        },
+        {
+            "from": "<START>",
+            "to": "va"
+        },
+        {
+            "from": "<START>",
+            "to": "memory,"
+        },
+        {
+            "from": "datapath,",
+            "to": "memory,"
+        },
+        {
+            "from": "datapath,",
+            "to": "memory,"
+        },
+        {
+            "from": "and",
+            "to": "connectors"
+        },
+        {
+            "from": "connectors",
+            "to": "for"
+        },
+        {
+            "from": "<START>",
+            "to": "for"
+        },
+        {
+            "from": "control",
+            "to": "for"
+        },
+        {
+            "from": "needed",
+            "to": "for"
+        },
+        {
+            "from": "stands",
+            "to": "for"
+        },
+        {
+            "from": "buffer",
+            "to": "for"
+        },
+        {
+            "from": "place",
+            "to": "for"
+        },
+        {
+            "from": "buffer",
+            "to": "for"
+        },
+        {
+            "from": "<START>",
+            "to": "advancing"
+        },
+        {
+            "from": "advancing",
+            "to": "technology,"
+        },
+        {
+            "from": "memory",
+            "to": "technology,"
+        },
+        {
+            "from": "or",
+            "to": "chips."
+        },
+        {
+            "from": "DRAM",
+            "to": "chips."
+        },
+        {
+            "from": "is",
+            "to": "composed"
+        },
+        {
+            "from": "devices",
+            "to": "such"
+        },
+        {
+            "from": "memories",
+            "to": "such"
+        },
+        {
+            "from": "such",
+            "to": "as"
+        },
+        {
+            "from": "such",
+            "to": "as"
+        },
+        {
+            "from": "built",
+            "to": "as"
+        },
+        {
+            "from": "acts",
+            "to": "as"
+        },
+        {
+            "from": "acts",
+            "to": "as"
+        },
+        {
+            "from": "as",
+            "to": "networks"
+        },
+        {
+            "from": "<START>",
+            "to": "three"
+        },
+        {
+            "from": "three",
+            "to": "pieces:"
+        },
+        {
+            "from": "the",
+            "to": "piece"
+        },
+        {
+            "from": "piece",
+            "to": "connecting"
+        },
+        {
+            "from": "connecting",
+            "to": "to"
+        },
+        {
+            "from": "perpendicularly",
+            "to": "to"
+        },
+        {
+            "from": "ens",
+            "to": "to"
+        },
+        {
+            "from": "gram",
+            "to": "to"
+        },
+        {
+            "from": "devices",
+            "to": "to"
+        },
+        {
+            "from": "devices",
+            "to": "to"
+        },
+        {
+            "from": "what",
+            "to": "to"
+        },
+        {
+            "from": "according",
+            "to": "to"
+        },
+        {
+            "from": "according",
+            "to": "to"
+        },
+        {
+            "from": "together",
+            "to": "to"
+        },
+        {
+            "from": "contrast",
+            "to": "to"
+        },
+        {
+            "from": "access",
+            "to": "to"
+        },
+        {
+            "from": "the",
+            "to": "I/O"
+        },
+        {
+            "from": "The",
+            "to": "I/O"
+        },
+        {
+            "from": "signals",
+            "to": "I/O"
+        },
+        {
+            "from": "signals",
+            "to": "I/O"
+        },
+        {
+            "from": "and",
+            "to": "I/O"
+        },
+        {
+            "from": "and",
+            "to": "I/O"
+        },
+        {
+            "from": "devices",
+            "to": "mentioned"
+        },
+        {
+            "from": "mentioned",
+            "to": "earlier,"
+        },
+        {
+            "from": "the",
+            "to": "mem"
+        },
+        {
+            "from": "the",
+            "to": "mem"
+        },
+        {
+            "from": "mem",
+            "to": ""
+        },
+        {
+            "from": "",
+            "to": ""
+        },
+        {
+            "from": "right",
+            "to": ""
+        },
+        {
+            "from": "doz",
+            "to": ""
+        },
+        {
+            "from": "mid",
+            "to": ""
+        },
+        {
+            "from": "con",
+            "to": ""
+        },
+        {
+            "from": "cir",
+            "to": ""
+        },
+        {
+            "from": "pro",
+            "to": ""
+        },
+        {
+            "from": "pro",
+            "to": ""
+        },
+        {
+            "from": "COI1",
+            "to": ""
+        },
+        {
+            "from": "per",
+            "to": ""
+        },
+        {
+            "from": "implementa",
+            "to": ""
+        },
+        {
+            "from": "instruc",
+            "to": ""
+        },
+        {
+            "from": "hid",
+            "to": ""
+        },
+        {
+            "from": "expen",
+            "to": ""
+        },
+        {
+            "from": "<START>",
+            "to": "disks."
+        },
+        {
+            "from": "<START>",
+            "to": "ory,"
+        },
+        {
+            "from": "the",
+            "to": "processor."
+        },
+        {
+            "from": "called",
+            "to": "processor."
+        },
+        {
+            "from": "the",
+            "to": "processor."
+        },
+        {
+            "from": "devices",
+            "to": "are"
+        },
+        {
+            "from": "programs",
+            "to": "are"
+        },
+        {
+            "from": "they",
+            "to": "are"
+        },
+        {
+            "from": "programs",
+            "to": "are"
+        },
+        {
+            "from": "that",
+            "to": "are"
+        },
+        {
+            "from": "they",
+            "to": "are"
+        },
+        {
+            "from": "DRAMs",
+            "to": "are"
+        },
+        {
+            "from": "are",
+            "to": "connected"
+        },
+        {
+            "from": "connected",
+            "to": "via"
+        },
+        {
+            "from": "the",
+            "to": "two"
+        },
+        {
+            "from": "the",
+            "to": "two"
+        },
+        {
+            "from": "comprises",
+            "to": "two"
+        },
+        {
+            "from": "two",
+            "to": "large"
+        },
+        {
+            "from": "the",
+            "to": "large"
+        },
+        {
+            "from": "large",
+            "to": "boards"
+        },
+        {
+            "from": "small",
+            "to": "boards"
+        },
+        {
+            "from": "ory",
+            "to": "boards"
+        },
+        {
+            "from": "integrated",
+            "to": "circuit"
+        },
+        {
+            "from": "circuit",
+            "to": "Also"
+        },
+        {
+            "from": "<START>",
+            "to": "Also"
+        },
+        {
+            "from": "Also",
+            "to": "called"
+        },
+        {
+            "from": "Also",
+            "to": "called"
+        },
+        {
+            "from": "<START>",
+            "to": "attached"
+        },
+        {
+            "from": "are",
+            "to": "attached"
+        },
+        {
+            "from": "attached",
+            "to": "perpendicularly"
+        },
+        {
+            "from": "attached",
+            "to": "perpendicularly"
+        },
+        {
+            "from": "motherboard",
+            "to": "toward"
+        },
+        {
+            "from": "perpendicularly",
+            "to": "toward"
+        },
+        {
+            "from": "the",
+            "to": "middle"
+        },
+        {
+            "from": "the",
+            "to": "right"
+        },
+        {
+            "from": "<START>",
+            "to": "chip."
+        },
+        {
+            "from": "A",
+            "to": "device"
+        },
+        {
+            "from": "device",
+            "to": "combining"
+        },
+        {
+            "from": "combining",
+            "to": "doz"
+        },
+        {
+            "from": "<START>",
+            "to": "hand"
+        },
+        {
+            "from": "hand",
+            "to": "side."
+        },
+        {
+            "from": "<START>",
+            "to": "ens"
+        },
+        {
+            "from": "to",
+            "to": "millions"
+        },
+        {
+            "from": "millions",
+            "to": "oftransistors."
+        },
+        {
+            "from": "The",
+            "to": "memory"
+        },
+        {
+            "from": "<START>",
+            "to": "memory"
+        },
+        {
+            "from": "1.8,",
+            "to": "memory"
+        },
+        {
+            "from": "small",
+            "to": "memory"
+        },
+        {
+            "from": "The",
+            "to": "memory"
+        },
+        {
+            "from": "<START>",
+            "to": "memory"
+        },
+        {
+            "from": "that",
+            "to": "memory"
+        },
+        {
+            "from": "the",
+            "to": "memory"
+        },
+        {
+            "from": "Cache",
+            "to": "memory"
+        },
+        {
+            "from": "st",
+            "to": "memory"
+        },
+        {
+            "from": "cache",
+            "to": "memory"
+        },
+        {
+            "from": "different",
+            "to": "memory"
+        },
+        {
+            "from": "<START>",
+            "to": "memory"
+        },
+        {
+            "from": "access",
+            "to": "memory"
+        },
+        {
+            "from": "is",
+            "to": "where"
+        },
+        {
+            "from": "the",
+            "to": "programs"
+        },
+        {
+            "from": "which",
+            "to": "programs"
+        },
+        {
+            "from": "are",
+            "to": "kept"
+        },
+        {
+            "from": "are",
+            "to": "kept"
+        },
+        {
+            "from": "kept",
+            "to": "when"
+        },
+        {
+            "from": "kept",
+            "to": "when"
+        },
+        {
+            "from": "when",
+            "to": "they"
+        },
+        {
+            "from": "<START>",
+            "to": "they"
+        },
+        {
+            "from": "are",
+            "to": "running;"
+        },
+        {
+            "from": "running;",
+            "to": "it"
+        },
+        {
+            "from": "circuit,",
+            "to": "it"
+        },
+        {
+            "from": "it",
+            "to": "also"
+        },
+        {
+            "from": "The",
+            "to": "storage"
+        },
+        {
+            "from": "storage",
+            "to": "area"
+        },
+        {
+            "from": "<START>",
+            "to": "contains"
+        },
+        {
+            "from": "board",
+            "to": "contains"
+        },
+        {
+            "from": "<START>",
+            "to": "contains"
+        },
+        {
+            "from": "the",
+            "to": "data"
+        },
+        {
+            "from": "the",
+            "to": "data"
+        },
+        {
+            "from": "and",
+            "to": "data"
+        },
+        {
+            "from": "data",
+            "to": "needed"
+        },
+        {
+            "from": "data",
+            "to": "needed"
+        },
+        {
+            "from": "changes",
+            "to": "needed"
+        },
+        {
+            "from": "needed",
+            "to": "by"
+        },
+        {
+            "from": "needed",
+            "to": "by"
+        },
+        {
+            "from": "the",
+            "to": "running"
+        },
+        {
+            "from": "are",
+            "to": "running"
+        },
+        {
+            "from": "running",
+            "to": "programs."
+        },
+        {
+            "from": "rUfimng",
+            "to": "programs."
+        },
+        {
+            "from": "programs.",
+            "to": "In"
+        },
+        {
+            "from": "program.",
+            "to": "In"
+        },
+        {
+            "from": "Figure",
+            "to": "1.8,"
+        },
+        {
+            "from": "<START>",
+            "to": "which"
+        },
+        {
+            "from": "computer,",
+            "to": "which"
+        },
+        {
+            "from": "and",
+            "to": "which"
+        },
+        {
+            "from": "<START>",
+            "to": "found"
+        },
+        {
+            "from": "the",
+            "to": "mid"
+        },
+        {
+            "from": "that",
+            "to": "con"
+        },
+        {
+            "from": "<START>",
+            "to": "dle"
+        },
+        {
+            "from": "the",
+            "to": "motherboard."
+        },
+        {
+            "from": "motherboard.",
+            "to": "Each"
+        },
+        {
+            "from": "contains",
+            "to": "eight"
+        },
+        {
+            "from": "integrated",
+            "to": "cir"
+        },
+        {
+            "from": "<START>",
+            "to": "tains"
+        },
+        {
+            "from": "<START>",
+            "to": "cuits."
+        },
+        {
+            "from": "<START>",
+            "to": "rUfimng"
+        },
+        {
+            "from": "The",
+            "to": "processor"
+        },
+        {
+            "from": "The",
+            "to": "processor"
+        },
+        {
+            "from": "central",
+            "to": "processor"
+        },
+        {
+            "from": "the",
+            "to": "processor"
+        },
+        {
+            "from": "central",
+            "to": "processor"
+        },
+        {
+            "from": "The",
+            "to": "processor"
+        },
+        {
+            "from": "the",
+            "to": "processor"
+        },
+        {
+            "from": "<START>",
+            "to": "processor"
+        },
+        {
+            "from": "the",
+            "to": "processor"
+        },
+        {
+            "from": "the",
+            "to": "active"
+        },
+        {
+            "from": "The",
+            "to": "active"
+        },
+        {
+            "from": "active",
+            "to": "pa"
+        },
+        {
+            "from": "pa",
+            "to": "rt"
+        },
+        {
+            "from": "the",
+            "to": "boa"
+        },
+        {
+            "from": "boa",
+            "to": "rd,"
+        },
+        {
+            "from": "rd,",
+            "to": "following"
+        },
+        {
+            "from": "the",
+            "to": "instructions"
+        },
+        {
+            "from": "the",
+            "to": "instructions"
+        },
+        {
+            "from": "the",
+            "to": "instructions"
+        },
+        {
+            "from": "of",
+            "to": "a"
+        },
+        {
+            "from": "for",
+            "to": "a"
+        },
+        {
+            "from": "for",
+            "to": "a"
+        },
+        {
+            "from": "of",
+            "to": "a"
+        },
+        {
+            "from": "of",
+            "to": "a"
+        },
+        {
+            "from": "as",
+            "to": "a"
+        },
+        {
+            "from": "is",
+            "to": "a"
+        },
+        {
+            "from": "using",
+            "to": "a"
+        },
+        {
+            "from": "as",
+            "to": "a"
+        },
+        {
+            "from": "<START>",
+            "to": "a"
+        },
+        {
+            "from": "a",
+            "to": "pro"
+        },
+        {
+            "from": "the",
+            "to": "pro"
+        },
+        {
+            "from": "<START>",
+            "to": "gram"
+        },
+        {
+            "from": "the",
+            "to": "letter."
+        },
+        {
+            "from": "letter.",
+            "to": "It"
+        },
+        {
+            "from": "It",
+            "to": "adds"
+        },
+        {
+            "from": "which",
+            "to": "adds"
+        },
+        {
+            "from": "adds",
+            "to": "numbers,"
+        },
+        {
+            "from": "tests",
+            "to": "numbers,"
+        },
+        {
+            "from": "adds",
+            "to": "numbers,"
+        },
+        {
+            "from": "tests",
+            "to": "numbers,"
+        },
+        {
+            "from": "numbers,",
+            "to": "tests"
+        },
+        {
+            "from": "<START>",
+            "to": "tests"
+        },
+        {
+            "from": "numbers,",
+            "to": "signals"
+        },
+        {
+            "from": "numbers,",
+            "to": "signals"
+        },
+        {
+            "from": "to",
+            "to": "activate,"
+        },
+        {
+            "from": "to",
+            "to": "activate,"
+        },
+        {
+            "from": "and",
+            "to": "so"
+        },
+        {
+            "from": "and",
+            "to": "so"
+        },
+        {
+            "from": "so",
+            "to": "on."
+        },
+        {
+            "from": "so",
+            "to": "on."
+        },
+        {
+            "from": "large",
+            "to": "square"
+        },
+        {
+            "from": "square",
+            "to": "below"
+        },
+        {
+            "from": "mem",
+            "to": "ory"
+        },
+        {
+            "from": "<START>",
+            "to": "central"
+        },
+        {
+            "from": "bureaucratic-sounding",
+            "to": "central"
+        },
+        {
+            "from": "processor",
+            "to": "unit"
+        },
+        {
+            "from": "unit",
+            "to": "(CPU)"
+        },
+        {
+            "from": "<START>",
+            "to": "lower-right"
+        },
+        {
+            "from": "lower-right",
+            "to": "corner"
+        },
+        {
+            "from": "Figure",
+            "to": "1.8."
+        },
+        {
+            "from": "Figure",
+            "to": "1.8."
+        },
+        {
+            "from": "1.8.",
+            "to": "Occasionally,"
+        },
+        {
+            "from": "Occasionally,",
+            "to": "people"
+        },
+        {
+            "from": "people",
+            "to": "call"
+        },
+        {
+            "from": "the",
+            "to": "CPU,"
+        },
+        {
+            "from": "the",
+            "to": "more"
+        },
+        {
+            "from": "hence",
+            "to": "more"
+        },
+        {
+            "from": "more",
+            "to": "bureaucratic-sounding"
+        },
+        {
+            "from": "processor",
+            "to": "unit."
+        },
+        {
+            "from": "<START>",
+            "to": "part"
+        },
+        {
+            "from": "part",
+            "to": "ofthe"
+        },
+        {
+            "from": "component",
+            "to": "ofthe"
+        },
+        {
+            "from": "tions",
+            "to": "ofthe"
+        },
+        {
+            "from": "ofthe",
+            "to": "computer,"
+        },
+        {
+            "from": "the",
+            "to": "datapath"
+        },
+        {
+            "from": "components:",
+            "to": "datapath"
+        },
+        {
+            "from": "The",
+            "to": "datapath"
+        },
+        {
+            "from": "<START>",
+            "to": "datapath"
+        },
+        {
+            "from": "the",
+            "to": "datapath"
+        },
+        {
+            "from": "and",
+            "to": "Descending"
+        },
+        {
+            "from": "<START>",
+            "to": "Descending"
+        },
+        {
+            "from": "Descending",
+            "to": "even"
+        },
+        {
+            "from": "even",
+            "to": "lower"
+        },
+        {
+            "from": "lower",
+            "to": "into"
+        },
+        {
+            "from": "Descending",
+            "to": "into"
+        },
+        {
+            "from": "I/O",
+            "to": "into"
+        },
+        {
+            "from": "the",
+            "to": "hardware,"
+        },
+        {
+            "from": "Figure",
+            "to": "1.9"
+        },
+        {
+            "from": "1.9",
+            "to": "reveals"
+        },
+        {
+            "from": "hardware",
+            "to": "reveals"
+        },
+        {
+            "from": "reveals",
+            "to": "details"
+        },
+        {
+            "from": "<START>",
+            "to": "COI1"
+        },
+        {
+            "from": "<START>",
+            "to": "trol"
+        },
+        {
+            "from": "numbers,",
+            "to": "cessor"
+        },
+        {
+            "from": "processor",
+            "to": "comprises"
+        },
+        {
+            "from": "two",
+            "to": "main"
+        },
+        {
+            "from": "main",
+            "to": "components:"
+        },
+        {
+            "from": "and",
+            "to": "control,"
+        },
+        {
+            "from": "the",
+            "to": "respective"
+        },
+        {
+            "from": "respective",
+            "to": "brawn"
+        },
+        {
+            "from": "and",
+            "to": "brain"
+        },
+        {
+            "from": "datapath",
+            "to": "per"
+        },
+        {
+            "from": "<START>",
+            "to": "forms"
+        },
+        {
+            "from": "the",
+            "to": "arithmetic"
+        },
+        {
+            "from": "<START>",
+            "to": "arithmetic"
+        },
+        {
+            "from": "arithmetic",
+            "to": "operations,"
+        },
+        {
+            "from": "and",
+            "to": "control"
+        },
+        {
+            "from": "and",
+            "to": "control"
+        },
+        {
+            "from": "<START>",
+            "to": "control"
+        },
+        {
+            "from": "control",
+            "to": "tells"
+        },
+        {
+            "from": "the",
+            "to": "datapath,"
+        },
+        {
+            "from": "<START>",
+            "to": "datapath,"
+        },
+        {
+            "from": "devices",
+            "to": "what"
+        },
+        {
+            "from": "matter",
+            "to": "what"
+        },
+        {
+            "from": "to",
+            "to": "do"
+        },
+        {
+            "from": "do",
+            "to": "according"
+        },
+        {
+            "from": "devices",
+            "to": "according"
+        },
+        {
+            "from": "the",
+            "to": "wishes"
+        },
+        {
+            "from": "the",
+            "to": "program."
+        },
+        {
+            "from": "ofthe",
+            "to": "program."
+        },
+        {
+            "from": "a",
+            "to": "program."
+        },
+        {
+            "from": "The",
+            "to": "component"
+        },
+        {
+            "from": "The",
+            "to": "component"
+        },
+        {
+            "from": "any",
+            "to": "component"
+        },
+        {
+            "from": "that",
+            "to": "performs"
+        },
+        {
+            "from": "Chapter",
+            "to": "5"
+        },
+        {
+            "from": "5",
+            "to": "explains"
+        },
+        {
+            "from": "a",
+            "to": "straightforward"
+        },
+        {
+            "from": "straightforward",
+            "to": "implementa"
+        },
+        {
+            "from": "arithmetic",
+            "to": "operations."
+        },
+        {
+            "from": "operations.",
+            "to": "tion,"
+        },
+        {
+            "from": "Chapter",
+            "to": "6"
+        },
+        {
+            "from": "6",
+            "to": "describes"
+        },
+        {
+            "from": "the",
+            "to": "changes"
+        },
+        {
+            "from": "a",
+            "to": "higher-performance"
+        },
+        {
+            "from": "<START>",
+            "to": "design."
+        },
+        {
+            "from": "the",
+            "to": "depths"
+        },
+        {
+            "from": "of",
+            "to": "any"
+        },
+        {
+            "from": "to",
+            "to": "any"
+        },
+        {
+            "from": "the",
+            "to": "hardware"
+        },
+        {
+            "from": "reveals",
+            "to": "insights"
+        },
+        {
+            "from": "that",
+            "to": "commands"
+        },
+        {
+            "from": "the",
+            "to": "machine."
+        },
+        {
+            "from": "Figure",
+            "to": "1.10"
+        },
+        {
+            "from": "is",
+            "to": "built"
+        },
+        {
+            "from": "<START>",
+            "to": "built"
+        },
+        {
+            "from": "is",
+            "to": "built"
+        },
+        {
+            "from": "built",
+            "to": "from"
+        },
+        {
+            "from": "from",
+            "to": "DRAM"
+        },
+        {
+            "from": "chips.",
+            "to": "DRAM"
+        },
+        {
+            "from": "term",
+            "to": "DRAM"
+        },
+        {
+            "from": "the",
+            "to": "DRAM"
+        },
+        {
+            "from": "the",
+            "to": "instruc"
+        },
+        {
+            "from": "<START>",
+            "to": "stands"
+        },
+        {
+            "from": "for",
+            "to": "dynamic"
+        },
+        {
+            "from": "<START>",
+            "to": "dynamic"
+        },
+        {
+            "from": "dynamic",
+            "to": "random"
+        },
+        {
+            "from": "dynamic",
+            "to": "random"
+        },
+        {
+            "from": "provides",
+            "to": "random"
+        },
+        {
+            "from": "static",
+            "to": "random"
+        },
+        {
+            "from": "random",
+            "to": "access"
+        },
+        {
+            "from": "sequential",
+            "to": "access"
+        },
+        {
+            "from": "random",
+            "to": "access"
+        },
+        {
+            "from": "random",
+            "to": "access"
+        },
+        {
+            "from": "<START>",
+            "to": "access"
+        },
+        {
+            "from": "access",
+            "to": "memory."
+        },
+        {
+            "from": "<START>",
+            "to": "memory."
+        },
+        {
+            "from": "DRAM",
+            "to": "memory."
+        },
+        {
+            "from": "larger",
+            "to": "memory."
+        },
+        {
+            "from": "memory.",
+            "to": "Several"
+        },
+        {
+            "from": "Several",
+            "to": "DRAMs"
+        },
+        {
+            "from": "are",
+            "to": "used"
+        },
+        {
+            "from": "used",
+            "to": "together"
+        },
+        {
+            "from": "<START>",
+            "to": "tions"
+        },
+        {
+            "from": "In",
+            "to": "contrast"
+        },
+        {
+            "from": "to",
+            "to": "sequential"
+        },
+        {
+            "from": "access",
+            "to": "memories"
+        },
+        {
+            "from": "as",
+            "to": "magnetic"
+        },
+        {
+            "from": "magnetic",
+            "to": "tapes,"
+        },
+        {
+            "from": "the",
+            "to": "RAM"
+        },
+        {
+            "from": "RAM",
+            "to": "portion"
+        },
+        {
+            "from": "what",
+            "to": "portion"
+        },
+        {
+            "from": "the",
+            "to": "term"
+        },
+        {
+            "from": "DRAM",
+            "to": "means"
+        },
+        {
+            "from": "memory",
+            "to": "(DRAM)"
+        },
+        {
+            "from": "(DRAM)",
+            "to": "Memory"
+        },
+        {
+            "from": "memory",
+            "to": "accesses"
+        },
+        {
+            "from": "accesses",
+            "to": "take"
+        },
+        {
+            "from": "the",
+            "to": "same"
+        },
+        {
+            "from": "same",
+            "to": "amount"
+        },
+        {
+            "from": "of",
+            "to": "time"
+        },
+        {
+            "from": "time",
+            "to": "no"
+        },
+        {
+            "from": "no",
+            "to": "matter"
+        },
+        {
+            "from": "as",
+            "to": "an"
+        },
+        {
+            "from": "integrated",
+            "to": "circuit,"
+        },
+        {
+            "from": "is",
+            "to": "read."
+        },
+        {
+            "from": "read.",
+            "to": "Inside"
+        },
+        {
+            "from": "is",
+            "to": "another"
+        },
+        {
+            "from": "another",
+            "to": "type"
+        },
+        {
+            "from": "of",
+            "to": "memory-cache"
+        },
+        {
+            "from": "<START>",
+            "to": "provides"
+        },
+        {
+            "from": "memory.",
+            "to": "Cache"
+        },
+        {
+            "from": "things.)",
+            "to": "Cache"
+        },
+        {
+            "from": "memory",
+            "to": "consists"
+        },
+        {
+            "from": "a",
+            "to": "small,"
+        },
+        {
+            "from": "A",
+            "to": "small,"
+        },
+        {
+            "from": "small,",
+            "to": "fa"
+        },
+        {
+            "from": "is",
+            "to": "fa"
+        },
+        {
+            "from": "fa",
+            "to": "st"
+        },
+        {
+            "from": "that",
+            "to": "acts"
+        },
+        {
+            "from": "that",
+            "to": "acts"
+        },
+        {
+            "from": "a",
+            "to": "buffer"
+        },
+        {
+            "from": "a",
+            "to": "buffer"
+        },
+        {
+            "from": "<START>",
+            "to": "location."
+        },
+        {
+            "from": "memory.",
+            "to": "(The"
+        },
+        {
+            "from": "(The",
+            "to": "nontechnical"
+        },
+        {
+            "from": "nontechnical",
+            "to": "definition"
+        },
+        {
+            "from": "of",
+            "to": "cache"
+        },
+        {
+            "from": "<START>",
+            "to": "cache"
+        },
+        {
+            "from": "a",
+            "to": "safe"
+        },
+        {
+            "from": "safe",
+            "to": "place"
+        },
+        {
+            "from": "for",
+            "to": "hid"
+        },
+        {
+            "from": "small,",
+            "to": "fast"
+        },
+        {
+            "from": "fast",
+            "to": "ing"
+        },
+        {
+            "from": "ing",
+            "to": "things.)"
+        },
+        {
+            "from": "built",
+            "to": "using"
+        },
+        {
+            "from": "a",
+            "to": "different"
+        },
+        {
+            "from": "technology,",
+            "to": "static"
+        },
+        {
+            "from": "memory",
+            "to": "(SRAM)."
+        },
+        {
+            "from": "(SRAM).",
+            "to": "SRAM"
+        },
+        {
+            "from": "fa",
+            "to": "ster"
+        },
+        {
+            "from": "ster",
+            "to": "but"
+        },
+        {
+            "from": "but",
+            "to": "less"
+        },
+        {
+            "from": "less",
+            "to": "dense,"
+        },
+        {
+            "from": "and",
+            "to": "hence"
+        },
+        {
+            "from": "more",
+            "to": "expen"
+        },
+        {
+            "from": "a",
+            "to": "slower,"
+        },
+        {
+            "from": "slower,",
+            "to": "larger"
+        },
+        {
+            "from": "<START>",
+            "to": "sive,"
+        },
+        {
+            "from": "sive,",
+            "to": "than"
+        },
+        {
+            "from": "than",
+            "to": "DRAM."
+        }
+    ],
+    "nodes": [
+        {
+            "2.": [
+                "0:0"
+            ]
+        },
+        {
+            "Chapter": [
+                "1:0",
+                "46:4",
+                "47:4"
+            ]
+        },
+        {
+            "1": [
+                "1:1"
+            ]
+        },
+        {
+            "Computer": [
+                "1:2"
+            ]
+        },
+        {
+            "Abstractions": [
+                "1:3"
+            ]
+        },
+        {
+            "and": [
+                "1:4",
+                "5:3",
+                "9:1",
+                "11:4",
+                "14:1",
+                "25:3",
+                "32:0",
+                "38:3",
+                "40:1",
+                "41:4",
+                "41:9",
+                "42:3",
+                "43:4",
+                "43:10",
+                "46:9",
+                "47:3",
+                "52:2",
+                "56:3",
+                "67:10"
+            ]
+        },
+        {
+            "Technology": [
+                "1:5"
+            ]
+        },
+        {
+            "motherboard": [
+                "2:0",
+                "2:15",
+                "7:5",
+                "16:4"
+            ]
+        },
+        {
+            "A": [
+                "2:1",
+                "17:1",
+                "65:2"
+            ]
+        },
+        {
+            "plastic": [
+                "2:2"
+            ]
+        },
+        {
+            "board": [
+                "2:3",
+                "10:7",
+                "26:7"
+            ]
+        },
+        {
+            "shows": [
+                "2:4"
+            ]
+        },
+        {
+            "the": [
+                "2:5",
+                "2:8",
+                "3:6",
+                "3:9",
+                "5:7",
+                "7:4",
+                "7:7",
+                "12:2",
+                "12:6",
+                "12:11",
+                "14:2",
+                "14:10",
+                "16:3",
+                "16:6",
+                "16:9",
+                "20:4",
+                "22:1",
+                "22:5",
+                "24:2",
+                "24:11",
+                "26:2",
+                "27:1",
+                "27:5",
+                "30:3",
+                "30:8",
+                "30:12",
+                "31:2",
+                "32:6",
+                "32:10",
+                "32:15",
+                "34:8",
+                "34:10",
+                "36:1",
+                "38:1",
+                "38:8",
+                "38:15",
+                "41:6",
+                "41:12",
+                "43:1",
+                "43:7",
+                "44:6",
+                "44:9",
+                "44:12",
+                "46:0",
+                "46:7",
+                "47:7",
+                "50:2",
+                "50:8",
+                "51:3",
+                "52:5",
+                "53:3",
+                "56:1",
+                "57:8",
+                "57:12",
+                "58:7",
+                "60:0",
+                "60:5",
+                "64:0"
+            ]
+        },
+        {
+            "contents": [
+                "2:6"
+            ]
+        },
+        {
+            "of": [
+                "2:7",
+                "3:2",
+                "10:10",
+                "26:1",
+                "30:7",
+                "30:14",
+                "34:2",
+                "38:14",
+                "41:11",
+                "44:8",
+                "44:11",
+                "45:3",
+                "50:4",
+                "50:7",
+                "56:5",
+                "57:11",
+                "58:10",
+                "58:16",
+                "60:10",
+                "62:4",
+                "64:6"
+            ]
+        },
+        {
+            "desktop": [
+                "2:9"
+            ]
+        },
+        {
+            "computer": [
+                "2:10"
+            ]
+        },
+        {
+            "in": [
+                "2:11",
+                "21:4",
+                "32:14",
+                "40:6",
+                "52:9"
+            ]
+        },
+        {
+            "Figure": [
+                "2:12",
+                "22:9",
+                "34:3",
+                "38:10",
+                "40:7",
+                "52:10"
+            ]
+        },
+        {
+            "1.6.": [
+                "2:13"
+            ]
+        },
+        {
+            "This": [
+                "2:14"
+            ]
+        },
+        {
+            "is": [
+                "2:16",
+                "10:8",
+                "20:2",
+                "22:12",
+                "30:2",
+                "32:5",
+                "52:12",
+                "60:2",
+                "60:7",
+                "64:8",
+                "65:8",
+                "67:4"
+            ]
+        },
+        {
+            "containing": [
+                "3:0"
+            ]
+        },
+        {
+            "packages": [
+                "3:1"
+            ]
+        },
+        {
+            "shown": [
+                "3:3"
+            ]
+        },
+        {
+            "vertically": [
+                "3:4"
+            ]
+        },
+        {
+            "on": [
+                "3:5",
+                "5:6",
+                "7:3",
+                "16:8",
+                "24:1"
+            ]
+        },
+        {
+            "left": [
+                "3:7"
+            ]
+        },
+        {
+            "with": [
+                "3:8"
+            ]
+        },
+        {
+            "power": [
+                "3:10"
+            ]
+        },
+        {
+            "supply.": [
+                "3:11"
+            ]
+        },
+        {
+            "Three": [
+                "3:12"
+            ]
+        },
+        {
+            "disk": [
+                "3:13"
+            ]
+        },
+        {
+            "drives-a": [
+                "3:14"
+            ]
+        },
+        {
+            "DVD": [
+                "3:15"
+            ]
+        },
+        {
+            "integrated": [
+                "4:0",
+                "10:2",
+                "15:0",
+                "26:10",
+                "59:3"
+            ]
+        },
+        {
+            "circuits": [
+                "4:1",
+                "10:3"
+            ]
+        },
+        {
+            "or": [
+                "4:2",
+                "10:4"
+            ]
+        },
+        {
+            "chips,": [
+                "4:3"
+            ]
+        },
+        {
+            "drive,": [
+                "5:0",
+                "5:2"
+            ]
+        },
+        {
+            "Zip": [
+                "5:1"
+            ]
+        },
+        {
+            "hard": [
+                "5:4"
+            ]
+        },
+        {
+            "drive-appear": [
+                "5:5"
+            ]
+        },
+        {
+            "right.": [
+                "5:8"
+            ]
+        },
+        {
+            "including": [
+                "6:0"
+            ]
+        },
+        {
+            "processor,": [
+                "6:1"
+            ]
+        },
+        {
+            "cache,": [
+                "6:2"
+            ]
+        },
+        {
+            "The": [
+                "7:0",
+                "10:6",
+                "14:4",
+                "20:0",
+                "21:1",
+                "30:0",
+                "32:3",
+                "35:3",
+                "40:9",
+                "41:14",
+                "45:1",
+                "49:1",
+                "52:7"
+            ]
+        },
+        {
+            "small": [
+                "7:1",
+                "24:4",
+                "26:5"
+            ]
+        },
+        {
+            "rectangles": [
+                "7:2"
+            ]
+        },
+        {
+            "contain": [
+                "7:6",
+                "56:0"
+            ]
+        },
+        {
+            "devices": [
+                "7:8",
+                "11:0",
+                "12:8",
+                "14:6",
+                "31:11",
+                "42:0",
+                "44:0",
+                "53:0"
+            ]
+        },
+        {
+            "that": [
+                "7:9",
+                "24:6",
+                "25:4",
+                "46:2",
+                "51:1",
+                "58:3",
+                "62:10",
+                "66:1"
+            ]
+        },
+        {
+            "drive": [
+                "7:10"
+            ]
+        },
+        {
+            "our": [
+                "7:11"
+            ]
+        },
+        {
+            "va": [
+                "8:0"
+            ]
+        },
+        {
+            "memory,": [
+                "9:0",
+                "43:9",
+                "52:1"
+            ]
+        },
+        {
+            "connectors": [
+                "9:2"
+            ]
+        },
+        {
+            "for": [
+                "9:3",
+                "36:0",
+                "46:11",
+                "47:10",
+                "54:1",
+                "62:15",
+                "64:12",
+                "66:6"
+            ]
+        },
+        {
+            "advancing": [
+                "10:0"
+            ]
+        },
+        {
+            "technology,": [
+                "10:1",
+                "65:14"
+            ]
+        },
+        {
+            "chips.": [
+                "10:5",
+                "52:16"
+            ]
+        },
+        {
+            "composed": [
+                "10:9"
+            ]
+        },
+        {
+            "such": [
+                "11:1",
+                "57:4"
+            ]
+        },
+        {
+            "as": [
+                "11:2",
+                "57:5",
+                "59:1",
+                "62:12",
+                "66:3"
+            ]
+        },
+        {
+            "networks": [
+                "11:3"
+            ]
+        },
+        {
+            "three": [
+                "12:0"
+            ]
+        },
+        {
+            "pieces:": [
+                "12:1"
+            ]
+        },
+        {
+            "piece": [
+                "12:3"
+            ]
+        },
+        {
+            "connecting": [
+                "12:4"
+            ]
+        },
+        {
+            "to": [
+                "12:5",
+                "16:2",
+                "19:1",
+                "31:1",
+                "31:12",
+                "42:1",
+                "44:2",
+                "44:5",
+                "53:2",
+                "54:11",
+                "56:10",
+                "61:3"
+            ]
+        },
+        {
+            "I/O": [
+                "12:7",
+                "14:5",
+                "31:10",
+                "41:3",
+                "43:11",
+                "52:3"
+            ]
+        },
+        {
+            "mentioned": [
+                "12:9"
+            ]
+        },
+        {
+            "earlier,": [
+                "12:10"
+            ]
+        },
+        {
+            "mem": [
+                "12:12",
+                "32:11"
+            ]
+        },
+        {
+            "": [
+                "12:13",
+                "12:14",
+                "16:11",
+                "17:5",
+                "24:13",
+                "25:6",
+                "26:12",
+                "30:17",
+                "38:17",
+                "39:1",
+                "41:17",
+                "46:15",
+                "53:5",
+                "64:14",
+                "67:14"
+            ]
+        },
+        {
+            "disks.": [
+                "13:0"
+            ]
+        },
+        {
+            "ory,": [
+                "14:0"
+            ]
+        },
+        {
+            "processor.": [
+                "14:3",
+                "35:2",
+                "41:13"
+            ]
+        },
+        {
+            "are": [
+                "14:7",
+                "20:6",
+                "20:10",
+                "23:2",
+                "24:7",
+                "25:1",
+                "54:8"
+            ]
+        },
+        {
+            "connected": [
+                "14:8"
+            ]
+        },
+        {
+            "via": [
+                "14:9"
+            ]
+        },
+        {
+            "two": [
+                "14:11",
+                "24:3",
+                "40:12"
+            ]
+        },
+        {
+            "large": [
+                "14:12",
+                "32:7"
+            ]
+        },
+        {
+            "boards": [
+                "14:13",
+                "24:5",
+                "32:13"
+            ]
+        },
+        {
+            "circuit": [
+                "15:1"
+            ]
+        },
+        {
+            "Also": [
+                "15:2",
+                "35:0"
+            ]
+        },
+        {
+            "called": [
+                "15:3",
+                "35:1"
+            ]
+        },
+        {
+            "attached": [
+                "16:0",
+                "24:8"
+            ]
+        },
+        {
+            "perpendicularly": [
+                "16:1",
+                "24:9"
+            ]
+        },
+        {
+            "toward": [
+                "16:5",
+                "24:10"
+            ]
+        },
+        {
+            "middle": [
+                "16:7"
+            ]
+        },
+        {
+            "right": [
+                "16:10"
+            ]
+        },
+        {
+            "chip.": [
+                "17:0"
+            ]
+        },
+        {
+            "device": [
+                "17:2"
+            ]
+        },
+        {
+            "combining": [
+                "17:3"
+            ]
+        },
+        {
+            "doz": [
+                "17:4"
+            ]
+        },
+        {
+            "hand": [
+                "18:0"
+            ]
+        },
+        {
+            "side.": [
+                "18:1"
+            ]
+        },
+        {
+            "ens": [
+                "19:0"
+            ]
+        },
+        {
+            "millions": [
+                "19:2"
+            ]
+        },
+        {
+            "oftransistors.": [
+                "19:3"
+            ]
+        },
+        {
+            "memory": [
+                "20:1",
+                "21:0",
+                "22:11",
+                "26:6",
+                "52:8",
+                "58:0",
+                "58:4",
+                "60:1",
+                "62:2",
+                "62:9",
+                "65:1",
+                "65:13",
+                "66:0",
+                "67:1"
+            ]
+        },
+        {
+            "where": [
+                "20:3"
+            ]
+        },
+        {
+            "programs": [
+                "20:5",
+                "23:1"
+            ]
+        },
+        {
+            "kept": [
+                "20:7",
+                "23:3"
+            ]
+        },
+        {
+            "when": [
+                "20:8",
+                "23:4"
+            ]
+        },
+        {
+            "they": [
+                "20:9",
+                "25:0"
+            ]
+        },
+        {
+            "running;": [
+                "20:11"
+            ]
+        },
+        {
+            "it": [
+                "20:12",
+                "59:5"
+            ]
+        },
+        {
+            "also": [
+                "20:13"
+            ]
+        },
+        {
+            "storage": [
+                "21:2"
+            ]
+        },
+        {
+            "area": [
+                "21:3"
+            ]
+        },
+        {
+            "contains": [
+                "22:0",
+                "26:8",
+                "38:0"
+            ]
+        },
+        {
+            "data": [
+                "22:2",
+                "27:2",
+                "56:4"
+            ]
+        },
+        {
+            "needed": [
+                "22:3",
+                "27:3",
+                "47:9"
+            ]
+        },
+        {
+            "by": [
+                "22:4",
+                "27:4"
+            ]
+        },
+        {
+            "running": [
+                "22:6",
+                "25:2"
+            ]
+        },
+        {
+            "programs.": [
+                "22:7",
+                "29:1"
+            ]
+        },
+        {
+            "In": [
+                "22:8",
+                "56:8"
+            ]
+        },
+        {
+            "1.8,": [
+                "22:10"
+            ]
+        },
+        {
+            "which": [
+                "23:0",
+                "37:3",
+                "40:2"
+            ]
+        },
+        {
+            "found": [
+                "24:0"
+            ]
+        },
+        {
+            "mid": [
+                "24:12"
+            ]
+        },
+        {
+            "con": [
+                "25:5"
+            ]
+        },
+        {
+            "dle": [
+                "26:0"
+            ]
+        },
+        {
+            "motherboard.": [
+                "26:3"
+            ]
+        },
+        {
+            "Each": [
+                "26:4"
+            ]
+        },
+        {
+            "eight": [
+                "26:9"
+            ]
+        },
+        {
+            "cir": [
+                "26:11"
+            ]
+        },
+        {
+            "tains": [
+                "27:0"
+            ]
+        },
+        {
+            "cuits.": [
+                "28:0"
+            ]
+        },
+        {
+            "rUfimng": [
+                "29:0"
+            ]
+        },
+        {
+            "processor": [
+                "30:1",
+                "32:4",
+                "33:1",
+                "34:9",
+                "36:5",
+                "40:10",
+                "46:1",
+                "51:0",
+                "60:6"
+            ]
+        },
+        {
+            "active": [
+                "30:4",
+                "35:4"
+            ]
+        },
+        {
+            "pa": [
+                "30:5"
+            ]
+        },
+        {
+            "rt": [
+                "30:6"
+            ]
+        },
+        {
+            "boa": [
+                "30:9"
+            ]
+        },
+        {
+            "rd,": [
+                "30:10"
+            ]
+        },
+        {
+            "following": [
+                "30:11"
+            ]
+        },
+        {
+            "instructions": [
+                "30:13",
+                "44:10",
+                "56:2"
+            ]
+        },
+        {
+            "a": [
+                "30:15",
+                "46:12",
+                "47:11",
+                "56:6",
+                "62:5",
+                "62:13",
+                "64:9",
+                "65:11",
+                "66:4",
+                "68:0"
+            ]
+        },
+        {
+            "pro": [
+                "30:16",
+                "38:16"
+            ]
+        },
+        {
+            "gram": [
+                "31:0"
+            ]
+        },
+        {
+            "letter.": [
+                "31:3"
+            ]
+        },
+        {
+            "It": [
+                "31:4"
+            ]
+        },
+        {
+            "adds": [
+                "31:5",
+                "40:3"
+            ]
+        },
+        {
+            "numbers,": [
+                "31:6",
+                "31:8",
+                "40:4",
+                "41:1"
+            ]
+        },
+        {
+            "tests": [
+                "31:7",
+                "41:0"
+            ]
+        },
+        {
+            "signals": [
+                "31:9",
+                "41:2"
+            ]
+        },
+        {
+            "activate,": [
+                "31:13",
+                "42:2"
+            ]
+        },
+        {
+            "so": [
+                "32:1",
+                "42:4"
+            ]
+        },
+        {
+            "on.": [
+                "32:2",
+                "42:5"
+            ]
+        },
+        {
+            "square": [
+                "32:8"
+            ]
+        },
+        {
+            "below": [
+                "32:9"
+            ]
+        },
+        {
+            "ory": [
+                "32:12"
+            ]
+        },
+        {
+            "central": [
+                "33:0",
+                "36:4"
+            ]
+        },
+        {
+            "unit": [
+                "33:2"
+            ]
+        },
+        {
+            "(CPU)": [
+                "33:3"
+            ]
+        },
+        {
+            "lower-right": [
+                "34:0"
+            ]
+        },
+        {
+            "corner": [
+                "34:1"
+            ]
+        },
+        {
+            "1.8.": [
+                "34:4",
+                "40:8"
+            ]
+        },
+        {
+            "Occasionally,": [
+                "34:5"
+            ]
+        },
+        {
+            "people": [
+                "34:6"
+            ]
+        },
+        {
+            "call": [
+                "34:7"
+            ]
+        },
+        {
+            "CPU,": [
+                "34:11"
+            ]
+        },
+        {
+            "more": [
+                "36:2",
+                "67:12"
+            ]
+        },
+        {
+            "bureaucratic-sounding": [
+                "36:3"
+            ]
+        },
+        {
+            "unit.": [
+                "36:6"
+            ]
+        },
+        {
+            "part": [
+                "37:0"
+            ]
+        },
+        {
+            "ofthe": [
+                "37:1",
+                "49:3",
+                "55:1"
+            ]
+        },
+        {
+            "computer,": [
+                "37:2"
+            ]
+        },
+        {
+            "datapath": [
+                "38:2",
+                "40:15",
+                "41:15",
+                "45:0",
+                "46:8"
+            ]
+        },
+        {
+            "Descending": [
+                "38:4",
+                "50:0"
+            ]
+        },
+        {
+            "even": [
+                "38:5"
+            ]
+        },
+        {
+            "lower": [
+                "38:6"
+            ]
+        },
+        {
+            "into": [
+                "38:7",
+                "50:1",
+                "52:4"
+            ]
+        },
+        {
+            "hardware,": [
+                "38:9"
+            ]
+        },
+        {
+            "1.9": [
+                "38:11"
+            ]
+        },
+        {
+            "reveals": [
+                "38:12",
+                "50:10"
+            ]
+        },
+        {
+            "details": [
+                "38:13"
+            ]
+        },
+        {
+            "COI1": [
+                "39:0"
+            ]
+        },
+        {
+            "trol": [
+                "40:0"
+            ]
+        },
+        {
+            "cessor": [
+                "40:5"
+            ]
+        },
+        {
+            "comprises": [
+                "40:11"
+            ]
+        },
+        {
+            "main": [
+                "40:13"
+            ]
+        },
+        {
+            "components:": [
+                "40:14"
+            ]
+        },
+        {
+            "control,": [
+                "41:5"
+            ]
+        },
+        {
+            "respective": [
+                "41:7"
+            ]
+        },
+        {
+            "brawn": [
+                "41:8"
+            ]
+        },
+        {
+            "brain": [
+                "41:10"
+            ]
+        },
+        {
+            "per": [
+                "41:16"
+            ]
+        },
+        {
+            "forms": [
+                "43:0"
+            ]
+        },
+        {
+            "arithmetic": [
+                "43:2",
+                "47:0"
+            ]
+        },
+        {
+            "operations,": [
+                "43:3"
+            ]
+        },
+        {
+            "control": [
+                "43:5",
+                "46:10",
+                "49:0"
+            ]
+        },
+        {
+            "tells": [
+                "43:6"
+            ]
+        },
+        {
+            "datapath,": [
+                "43:8",
+                "52:0"
+            ]
+        },
+        {
+            "what": [
+                "44:1",
+                "58:14"
+            ]
+        },
+        {
+            "do": [
+                "44:3"
+            ]
+        },
+        {
+            "according": [
+                "44:4",
+                "53:1"
+            ]
+        },
+        {
+            "wishes": [
+                "44:7"
+            ]
+        },
+        {
+            "program.": [
+                "44:13",
+                "55:2",
+                "56:7"
+            ]
+        },
+        {
+            "component": [
+                "45:2",
+                "49:2",
+                "50:6"
+            ]
+        },
+        {
+            "performs": [
+                "46:3"
+            ]
+        },
+        {
+            "5": [
+                "46:5"
+            ]
+        },
+        {
+            "explains": [
+                "46:6"
+            ]
+        },
+        {
+            "straightforward": [
+                "46:13"
+            ]
+        },
+        {
+            "implementa": [
+                "46:14"
+            ]
+        },
+        {
+            "operations.": [
+                "47:1"
+            ]
+        },
+        {
+            "tion,": [
+                "47:2"
+            ]
+        },
+        {
+            "6": [
+                "47:5"
+            ]
+        },
+        {
+            "describes": [
+                "47:6"
+            ]
+        },
+        {
+            "changes": [
+                "47:8"
+            ]
+        },
+        {
+            "higher-performance": [
+                "47:12"
+            ]
+        },
+        {
+            "design.": [
+                "48:0"
+            ]
+        },
+        {
+            "depths": [
+                "50:3"
+            ]
+        },
+        {
+            "any": [
+                "50:5",
+                "61:4"
+            ]
+        },
+        {
+            "hardware": [
+                "50:9"
+            ]
+        },
+        {
+            "insights": [
+                "50:11"
+            ]
+        },
+        {
+            "commands": [
+                "51:2"
+            ]
+        },
+        {
+            "machine.": [
+                "52:6"
+            ]
+        },
+        {
+            "1.10": [
+                "52:11"
+            ]
+        },
+        {
+            "built": [
+                "52:13",
+                "59:0",
+                "65:9"
+            ]
+        },
+        {
+            "from": [
+                "52:14"
+            ]
+        },
+        {
+            "DRAM": [
+                "52:15",
+                "52:17",
+                "57:14",
+                "64:1"
+            ]
+        },
+        {
+            "instruc": [
+                "53:4"
+            ]
+        },
+        {
+            "stands": [
+                "54:0"
+            ]
+        },
+        {
+            "dynamic": [
+                "54:2",
+                "57:0"
+            ]
+        },
+        {
+            "random": [
+                "54:3",
+                "57:1",
+                "61:1",
+                "65:16"
+            ]
+        },
+        {
+            "access": [
+                "54:4",
+                "56:12",
+                "57:2",
+                "61:2",
+                "67:0"
+            ]
+        },
+        {
+            "memory.": [
+                "54:5",
+                "62:0",
+                "64:2",
+                "68:3"
+            ]
+        },
+        {
+            "Several": [
+                "54:6"
+            ]
+        },
+        {
+            "DRAMs": [
+                "54:7"
+            ]
+        },
+        {
+            "used": [
+                "54:9"
+            ]
+        },
+        {
+            "together": [
+                "54:10"
+            ]
+        },
+        {
+            "tions": [
+                "55:0"
+            ]
+        },
+        {
+            "contrast": [
+                "56:9"
+            ]
+        },
+        {
+            "sequential": [
+                "56:11"
+            ]
+        },
+        {
+            "memories": [
+                "57:3"
+            ]
+        },
+        {
+            "magnetic": [
+                "57:6"
+            ]
+        },
+        {
+            "tapes,": [
+                "57:7"
+            ]
+        },
+        {
+            "RAM": [
+                "57:9"
+            ]
+        },
+        {
+            "portion": [
+                "57:10",
+                "58:15"
+            ]
+        },
+        {
+            "term": [
+                "57:13"
+            ]
+        },
+        {
+            "means": [
+                "57:15"
+            ]
+        },
+        {
+            "(DRAM)": [
+                "58:1"
+            ]
+        },
+        {
+            "Memory": [
+                "58:2"
+            ]
+        },
+        {
+            "accesses": [
+                "58:5"
+            ]
+        },
+        {
+            "take": [
+                "58:6"
+            ]
+        },
+        {
+            "same": [
+                "58:8"
+            ]
+        },
+        {
+            "amount": [
+                "58:9"
+            ]
+        },
+        {
+            "time": [
+                "58:11"
+            ]
+        },
+        {
+            "no": [
+                "58:12"
+            ]
+        },
+        {
+            "matter": [
+                "58:13"
+            ]
+        },
+        {
+            "an": [
+                "59:2"
+            ]
+        },
+        {
+            "circuit,": [
+                "59:4"
+            ]
+        },
+        {
+            "read.": [
+                "60:3"
+            ]
+        },
+        {
+            "Inside": [
+                "60:4"
+            ]
+        },
+        {
+            "another": [
+                "60:8"
+            ]
+        },
+        {
+            "type": [
+                "60:9"
+            ]
+        },
+        {
+            "memory-cache": [
+                "60:11"
+            ]
+        },
+        {
+            "provides": [
+                "61:0"
+            ]
+        },
+        {
+            "Cache": [
+                "62:1",
+                "65:7"
+            ]
+        },
+        {
+            "consists": [
+                "62:3"
+            ]
+        },
+        {
+            "small,": [
+                "62:6",
+                "65:3"
+            ]
+        },
+        {
+            "fa": [
+                "62:7",
+                "67:5"
+            ]
+        },
+        {
+            "st": [
+                "62:8"
+            ]
+        },
+        {
+            "acts": [
+                "62:11",
+                "66:2"
+            ]
+        },
+        {
+            "buffer": [
+                "62:14",
+                "66:5"
+            ]
+        },
+        {
+            "location.": [
+                "63:0"
+            ]
+        },
+        {
+            "(The": [
+                "64:3"
+            ]
+        },
+        {
+            "nontechnical": [
+                "64:4"
+            ]
+        },
+        {
+            "definition": [
+                "64:5"
+            ]
+        },
+        {
+            "cache": [
+                "64:7",
+                "65:0"
+            ]
+        },
+        {
+            "safe": [
+                "64:10"
+            ]
+        },
+        {
+            "place": [
+                "64:11"
+            ]
+        },
+        {
+            "hid": [
+                "64:13"
+            ]
+        },
+        {
+            "fast": [
+                "65:4"
+            ]
+        },
+        {
+            "ing": [
+                "65:5"
+            ]
+        },
+        {
+            "things.)": [
+                "65:6"
+            ]
+        },
+        {
+            "using": [
+                "65:10"
+            ]
+        },
+        {
+            "different": [
+                "65:12"
+            ]
+        },
+        {
+            "static": [
+                "65:15"
+            ]
+        },
+        {
+            "(SRAM).": [
+                "67:2"
+            ]
+        },
+        {
+            "SRAM": [
+                "67:3"
+            ]
+        },
+        {
+            "ster": [
+                "67:6"
+            ]
+        },
+        {
+            "but": [
+                "67:7"
+            ]
+        },
+        {
+            "less": [
+                "67:8"
+            ]
+        },
+        {
+            "dense,": [
+                "67:9"
+            ]
+        },
+        {
+            "hence": [
+                "67:11"
+            ]
+        },
+        {
+            "expen": [
+                "67:13"
+            ]
+        },
+        {
+            "slower,": [
+                "68:1"
+            ]
+        },
+        {
+            "larger": [
+                "68:2"
+            ]
+        },
+        {
+            "sive,": [
+                "69:0"
+            ]
+        },
+        {
+            "than": [
+                "69:1"
+            ]
+        },
+        {
+            "DRAM.": [
+                "69:2"
+            ]
+        }
+    ]
+}

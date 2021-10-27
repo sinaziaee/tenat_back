@@ -1,0 +1,1511 @@
+{
+    "edges": [
+        {
+            "from": "<START>",
+            "to": "16"
+        },
+        {
+            "from": "16",
+            "to": "Chapter"
+        },
+        {
+            "from": "<START>",
+            "to": "Chapter"
+        },
+        {
+            "from": "Chapter",
+            "to": "1"
+        },
+        {
+            "from": "that",
+            "to": "1"
+        },
+        {
+            "from": "1",
+            "to": "Computer"
+        },
+        {
+            "from": "Computer",
+            "to": "Abstractions"
+        },
+        {
+            "from": "Abstractions",
+            "to": "and"
+        },
+        {
+            "from": "instructions",
+            "to": "and"
+        },
+        {
+            "from": "memory,",
+            "to": "and"
+        },
+        {
+            "from": "input,",
+            "to": "and"
+        },
+        {
+            "from": "daydreaming",
+            "to": "and"
+        },
+        {
+            "from": "device,",
+            "to": "and"
+        },
+        {
+            "from": "plays",
+            "to": "and"
+        },
+        {
+            "from": "and",
+            "to": "Technology"
+        },
+        {
+            "from": "<START>",
+            "to": "Interlace"
+        },
+        {
+            "from": "<START>",
+            "to": "Evaluating"
+        },
+        {
+            "from": "<START>",
+            "to": "performance"
+        },
+        {
+            "from": "<START>",
+            "to": "FIGURE"
+        },
+        {
+            "from": "FIGURE",
+            "to": "1.5"
+        },
+        {
+            "from": "1.5",
+            "to": "The"
+        },
+        {
+            "from": "components.",
+            "to": "The"
+        },
+        {
+            "from": "conference.",
+            "to": "The"
+        },
+        {
+            "from": "<START>",
+            "to": "The"
+        },
+        {
+            "from": "The",
+            "to": "organization"
+        },
+        {
+            "from": "organization",
+            "to": "of"
+        },
+        {
+            "from": "Anatomy",
+            "to": "of"
+        },
+        {
+            "from": "idea",
+            "to": "of"
+        },
+        {
+            "from": "of",
+            "to": "a"
+        },
+        {
+            "from": "of",
+            "to": "a"
+        },
+        {
+            "from": "attending",
+            "to": "a"
+        },
+        {
+            "from": "at",
+            "to": "a"
+        },
+        {
+            "from": "of",
+            "to": "a"
+        },
+        {
+            "from": "as",
+            "to": "a"
+        },
+        {
+            "from": "using",
+            "to": "a"
+        },
+        {
+            "from": "included",
+            "to": "a"
+        },
+        {
+            "from": "a",
+            "to": "computer,"
+        },
+        {
+            "from": "computer,",
+            "to": "showing"
+        },
+        {
+            "from": "showing",
+            "to": "the"
+        },
+        {
+            "from": "sends",
+            "to": "the"
+        },
+        {
+            "from": "determine",
+            "to": "the"
+        },
+        {
+            "from": "through",
+            "to": "the"
+        },
+        {
+            "from": "with",
+            "to": "the"
+        },
+        {
+            "from": "1got",
+            "to": "the"
+        },
+        {
+            "from": "for",
+            "to": "the"
+        },
+        {
+            "from": "granted,",
+            "to": "the"
+        },
+        {
+            "from": "was",
+            "to": "the"
+        },
+        {
+            "from": "for",
+            "to": "the"
+        },
+        {
+            "from": "By",
+            "to": "the"
+        },
+        {
+            "from": "IIpon",
+            "to": "the"
+        },
+        {
+            "from": "became",
+            "to": "the"
+        },
+        {
+            "from": "the",
+            "to": "five"
+        },
+        {
+            "from": "five",
+            "to": "classic:"
+        },
+        {
+            "from": "classic:",
+            "to": "components."
+        },
+        {
+            "from": "<START>",
+            "to": "processor"
+        },
+        {
+            "from": "processor",
+            "to": "gels"
+        },
+        {
+            "from": "gels",
+            "to": "instructions"
+        },
+        {
+            "from": "and",
+            "to": "data"
+        },
+        {
+            "from": "WTiles",
+            "to": "data"
+        },
+        {
+            "from": "reads",
+            "to": "data"
+        },
+        {
+            "from": "data",
+            "to": "from"
+        },
+        {
+            "from": "<START>",
+            "to": "from"
+        },
+        {
+            "from": "from",
+            "to": "memory."
+        },
+        {
+            "from": "from",
+            "to": "memory."
+        },
+        {
+            "from": "memory.",
+            "to": "Input"
+        },
+        {
+            "from": "Input",
+            "to": "WTiles"
+        },
+        {
+            "from": "data",
+            "to": "to"
+        },
+        {
+            "from": "to",
+            "to": "memory,"
+        },
+        {
+            "from": "datapath,",
+            "to": "memory,"
+        },
+        {
+            "from": "and",
+            "to": "outpul"
+        },
+        {
+            "from": "outpul",
+            "to": "reads"
+        },
+        {
+            "from": "memory.",
+            "to": "Control"
+        },
+        {
+            "from": "Control",
+            "to": "sends"
+        },
+        {
+            "from": "the",
+            "to": "signals"
+        },
+        {
+            "from": "signals",
+            "to": "that"
+        },
+        {
+            "from": "boring",
+            "to": "that"
+        },
+        {
+            "from": "that",
+            "to": "determine"
+        },
+        {
+            "from": "the",
+            "to": "operations"
+        },
+        {
+            "from": "operations",
+            "to": "ofthe"
+        },
+        {
+            "from": "ofthe",
+            "to": "datapath,"
+        },
+        {
+            "from": "memory,",
+            "to": "input,"
+        },
+        {
+            "from": "<START>",
+            "to": "output."
+        },
+        {
+            "from": "Chapter",
+            "to": "8"
+        },
+        {
+            "from": "8",
+            "to": "describes"
+        },
+        {
+            "from": "describes",
+            "to": "input/output"
+        },
+        {
+            "from": "input/output",
+            "to": "0/0)"
+        },
+        {
+            "from": "0/0)",
+            "to": "devices"
+        },
+        {
+            "from": "devices",
+            "to": "in"
+        },
+        {
+            "from": "prototype",
+            "to": "in"
+        },
+        {
+            "from": "device",
+            "to": "in"
+        },
+        {
+            "from": "in",
+            "to": "more"
+        },
+        {
+            "from": "more",
+            "to": "detail,"
+        },
+        {
+            "from": "detail,",
+            "to": "but"
+        },
+        {
+            "from": "but",
+            "to": "let's"
+        },
+        {
+            "from": "let's",
+            "to": "take"
+        },
+        {
+            "from": "now",
+            "to": "take"
+        },
+        {
+            "from": "take",
+            "to": "an"
+        },
+        {
+            "from": "<START>",
+            "to": "introductory"
+        },
+        {
+            "from": "introductory",
+            "to": "tour"
+        },
+        {
+            "from": "tour",
+            "to": "through"
+        },
+        {
+            "from": "the",
+            "to": "computer"
+        },
+        {
+            "from": "computer",
+            "to": "hardware,"
+        },
+        {
+            "from": "hardware,",
+            "to": "starting"
+        },
+        {
+            "from": "starting",
+            "to": "with"
+        },
+        {
+            "from": "the",
+            "to": "external"
+        },
+        {
+            "from": "external",
+            "to": "I/O"
+        },
+        {
+            "from": "<START>",
+            "to": "devices."
+        },
+        {
+            "from": "<START>",
+            "to": "1got"
+        },
+        {
+            "from": "the",
+            "to": "idea"
+        },
+        {
+            "from": "the",
+            "to": "idea"
+        },
+        {
+            "from": "idea",
+            "to": "for"
+        },
+        {
+            "from": "mice",
+            "to": "for"
+        },
+        {
+            "from": "inspiration",
+            "to": "for"
+        },
+        {
+            "from": "as",
+            "to": "for"
+        },
+        {
+            "from": "the",
+            "to": "mouse"
+        },
+        {
+            "from": "a",
+            "to": "mouse"
+        },
+        {
+            "from": "a",
+            "to": "mouse"
+        },
+        {
+            "from": "mouse",
+            "to": "Anatomy"
+        },
+        {
+            "from": "a",
+            "to": "Mouse"
+        },
+        {
+            "from": "<START>",
+            "to": "while"
+        },
+        {
+            "from": "while",
+            "to": "attending"
+        },
+        {
+            "from": "a",
+            "to": "talk"
+        },
+        {
+            "from": "talk",
+            "to": "at"
+        },
+        {
+            "from": "<START>",
+            "to": "Although"
+        },
+        {
+            "from": "Although",
+            "to": "many"
+        },
+        {
+            "from": "many",
+            "to": "users"
+        },
+        {
+            "from": "users",
+            "to": "now"
+        },
+        {
+            "from": "take",
+            "to": "mice"
+        },
+        {
+            "from": "and",
+            "to": "mice"
+        },
+        {
+            "from": "for",
+            "to": "granted,"
+        },
+        {
+            "from": "a",
+            "to": "pointing"
+        },
+        {
+            "from": "its",
+            "to": "pointing"
+        },
+        {
+            "from": "pointing",
+            "to": "device"
+        },
+        {
+            "from": "pointing",
+            "to": "device"
+        },
+        {
+            "from": "<START>",
+            "to": "compl/ter"
+        },
+        {
+            "from": "compl/ter",
+            "to": "conference."
+        },
+        {
+            "from": "<START>",
+            "to": "such"
+        },
+        {
+            "from": "such",
+            "to": "as"
+        },
+        {
+            "from": "workstations",
+            "to": "as"
+        },
+        {
+            "from": "well",
+            "to": "as"
+        },
+        {
+            "from": "mouse",
+            "to": "as"
+        },
+        {
+            "from": "mouse",
+            "to": "was"
+        },
+        {
+            "from": "speaker",
+            "to": "was"
+        },
+        {
+            "from": "which",
+            "to": "was"
+        },
+        {
+            "from": "was",
+            "to": "first"
+        },
+        {
+            "from": "first",
+            "to": "shown"
+        },
+        {
+            "from": "shown",
+            "to": "by"
+        },
+        {
+            "from": "by",
+            "to": "Engelbart"
+        },
+        {
+            "from": "Engelbart",
+            "to": "using"
+        },
+        {
+            "from": "a",
+            "to": "research"
+        },
+        {
+            "from": "research",
+            "to": "prototype"
+        },
+        {
+            "from": "in",
+            "to": "1967."
+        },
+        {
+            "from": "<START>",
+            "to": "speaker"
+        },
+        {
+            "from": "was",
+            "to": "boring"
+        },
+        {
+            "from": "<START>",
+            "to": "50"
+        },
+        {
+            "from": "The",
+            "to": "Alto,"
+        },
+        {
+            "from": "Alto,",
+            "to": "which"
+        },
+        {
+            "from": "the",
+            "to": "inspiration"
+        },
+        {
+            "from": "for",
+            "to": "all"
+        },
+        {
+            "from": "1990s,",
+            "to": "all"
+        },
+        {
+            "from": "all",
+            "to": "workstations"
+        },
+        {
+            "from": "as",
+            "to": "well"
+        },
+        {
+            "from": "the",
+            "to": "Macin"
+        },
+        {
+            "from": "Macin",
+            "to": ""
+        },
+        {
+            "from": "dis",
+            "to": ""
+        },
+        {
+            "from": "<START>",
+            "to": "started"
+        },
+        {
+            "from": "started",
+            "to": "daydreaming"
+        },
+        {
+            "from": "and",
+            "to": "hit"
+        },
+        {
+            "from": "<START>",
+            "to": "tosh,"
+        },
+        {
+            "from": "tosh,",
+            "to": "included"
+        },
+        {
+            "from": "computers",
+            "to": "included"
+        },
+        {
+            "from": "as",
+            "to": "its"
+        },
+        {
+            "from": "in",
+            "to": "1973."
+        },
+        {
+            "from": "1973.",
+            "to": "By"
+        },
+        {
+            "from": "the",
+            "to": "1990s,"
+        },
+        {
+            "from": "all",
+            "to": "desktop"
+        },
+        {
+            "from": "<START>",
+            "to": "IIpon"
+        },
+        {
+            "from": "the",
+            "to": "idea."
+        },
+        {
+            "from": "<START>",
+            "to": "computers"
+        },
+        {
+            "from": "included",
+            "to": "this"
+        },
+        {
+            "from": "this",
+            "to": "device,"
+        },
+        {
+            "from": "and",
+            "to": "new"
+        },
+        {
+            "from": "new",
+            "to": "user"
+        },
+        {
+            "from": "user",
+            "to": "interfaces"
+        },
+        {
+            "from": "interfaces",
+            "to": "based"
+        },
+        {
+            "from": "based",
+            "to": "on"
+        },
+        {
+            "from": "on",
+            "to": "graphics"
+        },
+        {
+            "from": "graphics",
+            "to": "dis"
+        },
+        {
+            "from": "<START>",
+            "to": "Doug"
+        },
+        {
+            "from": "Doug",
+            "to": "Engelhart"
+        },
+        {
+            "from": "<START>",
+            "to": "plays"
+        },
+        {
+            "from": "mice",
+            "to": "became"
+        },
+        {
+            "from": "the",
+            "to": "norm."
+        }
+    ],
+    "nodes": [
+        {
+            "16": [
+                "0:0"
+            ]
+        },
+        {
+            "Chapter": [
+                "0:1",
+                "8:0"
+            ]
+        },
+        {
+            "1": [
+                "0:2",
+                "16:4"
+            ]
+        },
+        {
+            "Computer": [
+                "0:3"
+            ]
+        },
+        {
+            "Abstractions": [
+                "0:4"
+            ]
+        },
+        {
+            "and": [
+                "0:5",
+                "5:3",
+                "5:12",
+                "6:14",
+                "19:2",
+                "22:4",
+                "24:1"
+            ]
+        },
+        {
+            "Technology": [
+                "0:6"
+            ]
+        },
+        {
+            "Interlace": [
+                "1:0"
+            ]
+        },
+        {
+            "Evaluating": [
+                "2:0"
+            ]
+        },
+        {
+            "performance": [
+                "3:0"
+            ]
+        },
+        {
+            "FIGURE": [
+                "4:0"
+            ]
+        },
+        {
+            "1.5": [
+                "4:1"
+            ]
+        },
+        {
+            "The": [
+                "4:2",
+                "4:12",
+                "14:2",
+                "18:0"
+            ]
+        },
+        {
+            "organization": [
+                "4:3"
+            ]
+        },
+        {
+            "of": [
+                "4:4",
+                "11:7",
+                "13:10"
+            ]
+        },
+        {
+            "a": [
+                "4:5",
+                "11:8",
+                "12:2",
+                "12:5",
+                "13:11",
+                "15:2",
+                "15:10",
+                "20:2"
+            ]
+        },
+        {
+            "computer,": [
+                "4:6"
+            ]
+        },
+        {
+            "showing": [
+                "4:7"
+            ]
+        },
+        {
+            "the": [
+                "4:8",
+                "6:4",
+                "6:8",
+                "9:3",
+                "9:8",
+                "11:1",
+                "11:4",
+                "13:8",
+                "18:4",
+                "18:13",
+                "20:11",
+                "21:1",
+                "24:4"
+            ]
+        },
+        {
+            "five": [
+                "4:9"
+            ]
+        },
+        {
+            "classic:": [
+                "4:10"
+            ]
+        },
+        {
+            "components.": [
+                "4:11"
+            ]
+        },
+        {
+            "processor": [
+                "5:0"
+            ]
+        },
+        {
+            "gels": [
+                "5:1"
+            ]
+        },
+        {
+            "instructions": [
+                "5:2"
+            ]
+        },
+        {
+            "data": [
+                "5:4",
+                "5:9",
+                "5:15"
+            ]
+        },
+        {
+            "from": [
+                "5:5",
+                "6:0"
+            ]
+        },
+        {
+            "memory.": [
+                "5:6",
+                "6:1"
+            ]
+        },
+        {
+            "Input": [
+                "5:7"
+            ]
+        },
+        {
+            "WTiles": [
+                "5:8"
+            ]
+        },
+        {
+            "to": [
+                "5:10"
+            ]
+        },
+        {
+            "memory,": [
+                "5:11",
+                "6:12"
+            ]
+        },
+        {
+            "outpul": [
+                "5:13"
+            ]
+        },
+        {
+            "reads": [
+                "5:14"
+            ]
+        },
+        {
+            "Control": [
+                "6:2"
+            ]
+        },
+        {
+            "sends": [
+                "6:3"
+            ]
+        },
+        {
+            "signals": [
+                "6:5"
+            ]
+        },
+        {
+            "that": [
+                "6:6",
+                "16:3"
+            ]
+        },
+        {
+            "determine": [
+                "6:7"
+            ]
+        },
+        {
+            "operations": [
+                "6:9"
+            ]
+        },
+        {
+            "ofthe": [
+                "6:10"
+            ]
+        },
+        {
+            "datapath,": [
+                "6:11"
+            ]
+        },
+        {
+            "input,": [
+                "6:13"
+            ]
+        },
+        {
+            "output.": [
+                "7:0"
+            ]
+        },
+        {
+            "8": [
+                "8:1"
+            ]
+        },
+        {
+            "describes": [
+                "8:2"
+            ]
+        },
+        {
+            "input/output": [
+                "8:3"
+            ]
+        },
+        {
+            "0/0)": [
+                "8:4"
+            ]
+        },
+        {
+            "devices": [
+                "8:5"
+            ]
+        },
+        {
+            "in": [
+                "8:6",
+                "15:13",
+                "20:8"
+            ]
+        },
+        {
+            "more": [
+                "8:7"
+            ]
+        },
+        {
+            "detail,": [
+                "8:8"
+            ]
+        },
+        {
+            "but": [
+                "8:9"
+            ]
+        },
+        {
+            "let's": [
+                "8:10"
+            ]
+        },
+        {
+            "take": [
+                "8:11",
+                "13:4"
+            ]
+        },
+        {
+            "an": [
+                "8:12"
+            ]
+        },
+        {
+            "introductory": [
+                "9:0"
+            ]
+        },
+        {
+            "tour": [
+                "9:1"
+            ]
+        },
+        {
+            "through": [
+                "9:2"
+            ]
+        },
+        {
+            "computer": [
+                "9:4"
+            ]
+        },
+        {
+            "hardware,": [
+                "9:5"
+            ]
+        },
+        {
+            "starting": [
+                "9:6"
+            ]
+        },
+        {
+            "with": [
+                "9:7"
+            ]
+        },
+        {
+            "external": [
+                "9:9"
+            ]
+        },
+        {
+            "I/O": [
+                "9:10"
+            ]
+        },
+        {
+            "devices.": [
+                "10:0"
+            ]
+        },
+        {
+            "1got": [
+                "11:0"
+            ]
+        },
+        {
+            "idea": [
+                "11:2",
+                "13:9"
+            ]
+        },
+        {
+            "for": [
+                "11:3",
+                "13:6",
+                "18:6",
+                "18:12"
+            ]
+        },
+        {
+            "mouse": [
+                "11:5",
+                "15:3",
+                "20:3"
+            ]
+        },
+        {
+            "Anatomy": [
+                "11:6"
+            ]
+        },
+        {
+            "Mouse": [
+                "11:9"
+            ]
+        },
+        {
+            "while": [
+                "12:0"
+            ]
+        },
+        {
+            "attending": [
+                "12:1"
+            ]
+        },
+        {
+            "talk": [
+                "12:3"
+            ]
+        },
+        {
+            "at": [
+                "12:4"
+            ]
+        },
+        {
+            "Although": [
+                "13:0"
+            ]
+        },
+        {
+            "many": [
+                "13:1"
+            ]
+        },
+        {
+            "users": [
+                "13:2"
+            ]
+        },
+        {
+            "now": [
+                "13:3"
+            ]
+        },
+        {
+            "mice": [
+                "13:5",
+                "24:2"
+            ]
+        },
+        {
+            "granted,": [
+                "13:7"
+            ]
+        },
+        {
+            "pointing": [
+                "13:12",
+                "20:6"
+            ]
+        },
+        {
+            "device": [
+                "13:13",
+                "20:7"
+            ]
+        },
+        {
+            "compl/ter": [
+                "14:0"
+            ]
+        },
+        {
+            "conference.": [
+                "14:1"
+            ]
+        },
+        {
+            "such": [
+                "15:0"
+            ]
+        },
+        {
+            "as": [
+                "15:1",
+                "18:9",
+                "18:11",
+                "20:4"
+            ]
+        },
+        {
+            "was": [
+                "15:4",
+                "16:1",
+                "18:3"
+            ]
+        },
+        {
+            "first": [
+                "15:5"
+            ]
+        },
+        {
+            "shown": [
+                "15:6"
+            ]
+        },
+        {
+            "by": [
+                "15:7"
+            ]
+        },
+        {
+            "Engelbart": [
+                "15:8"
+            ]
+        },
+        {
+            "using": [
+                "15:9"
+            ]
+        },
+        {
+            "research": [
+                "15:11"
+            ]
+        },
+        {
+            "prototype": [
+                "15:12"
+            ]
+        },
+        {
+            "1967.": [
+                "15:14"
+            ]
+        },
+        {
+            "speaker": [
+                "16:0"
+            ]
+        },
+        {
+            "boring": [
+                "16:2"
+            ]
+        },
+        {
+            "50": [
+                "17:0"
+            ]
+        },
+        {
+            "Alto,": [
+                "18:1"
+            ]
+        },
+        {
+            "which": [
+                "18:2"
+            ]
+        },
+        {
+            "inspiration": [
+                "18:5"
+            ]
+        },
+        {
+            "all": [
+                "18:7",
+                "20:13"
+            ]
+        },
+        {
+            "workstations": [
+                "18:8"
+            ]
+        },
+        {
+            "well": [
+                "18:10"
+            ]
+        },
+        {
+            "Macin": [
+                "18:14"
+            ]
+        },
+        {
+            "": [
+                "18:15",
+                "22:12"
+            ]
+        },
+        {
+            "started": [
+                "19:0"
+            ]
+        },
+        {
+            "daydreaming": [
+                "19:1"
+            ]
+        },
+        {
+            "hit": [
+                "19:3"
+            ]
+        },
+        {
+            "tosh,": [
+                "20:0"
+            ]
+        },
+        {
+            "included": [
+                "20:1",
+                "22:1"
+            ]
+        },
+        {
+            "its": [
+                "20:5"
+            ]
+        },
+        {
+            "1973.": [
+                "20:9"
+            ]
+        },
+        {
+            "By": [
+                "20:10"
+            ]
+        },
+        {
+            "1990s,": [
+                "20:12"
+            ]
+        },
+        {
+            "desktop": [
+                "20:14"
+            ]
+        },
+        {
+            "IIpon": [
+                "21:0"
+            ]
+        },
+        {
+            "idea.": [
+                "21:2"
+            ]
+        },
+        {
+            "computers": [
+                "22:0"
+            ]
+        },
+        {
+            "this": [
+                "22:2"
+            ]
+        },
+        {
+            "device,": [
+                "22:3"
+            ]
+        },
+        {
+            "new": [
+                "22:5"
+            ]
+        },
+        {
+            "user": [
+                "22:6"
+            ]
+        },
+        {
+            "interfaces": [
+                "22:7"
+            ]
+        },
+        {
+            "based": [
+                "22:8"
+            ]
+        },
+        {
+            "on": [
+                "22:9"
+            ]
+        },
+        {
+            "graphics": [
+                "22:10"
+            ]
+        },
+        {
+            "dis": [
+                "22:11"
+            ]
+        },
+        {
+            "Doug": [
+                "23:0"
+            ]
+        },
+        {
+            "Engelhart": [
+                "23:1"
+            ]
+        },
+        {
+            "plays": [
+                "24:0"
+            ]
+        },
+        {
+            "became": [
+                "24:3"
+            ]
+        },
+        {
+            "norm.": [
+                "24:5"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,142 @@
+{
+    "edges": [
+        {
+            "from": "<START>",
+            "to": "I"
+        },
+        {
+            "from": "I",
+            "to": "saw"
+        },
+        {
+            "from": "saw",
+            "to": "Joe’s"
+        },
+        {
+            "from": "Joe’s",
+            "to": "dog"
+        },
+        {
+            "from": "The",
+            "to": "dog"
+        },
+        {
+            "from": "dog",
+            "to": "which"
+        },
+        {
+            "from": "which",
+            "to": "was"
+        },
+        {
+            "from": "dog",
+            "to": "was"
+        },
+        {
+            "from": "was",
+            "to": "running"
+        },
+        {
+            "from": "running",
+            "to": "in"
+        },
+        {
+            "from": "in",
+            "to": "the"
+        },
+        {
+            "from": "the",
+            "to": "garden"
+        },
+        {
+            "from": "<START>",
+            "to": "The"
+        },
+        {
+            "from": "was",
+            "to": "chasing"
+        },
+        {
+            "from": "chasing",
+            "to": "a"
+        },
+        {
+            "from": "a",
+            "to": "cat"
+        }
+    ],
+    "nodes": [
+        {
+            "I": [
+                "0:0"
+            ]
+        },
+        {
+            "saw": [
+                "0:1"
+            ]
+        },
+        {
+            "Joe’s": [
+                "0:2"
+            ]
+        },
+        {
+            "dog": [
+                "0:3",
+                "1:1"
+            ]
+        },
+        {
+            "which": [
+                "0:4"
+            ]
+        },
+        {
+            "was": [
+                "0:5",
+                "1:2"
+            ]
+        },
+        {
+            "running": [
+                "0:6"
+            ]
+        },
+        {
+            "in": [
+                "0:7"
+            ]
+        },
+        {
+            "the": [
+                "0:8"
+            ]
+        },
+        {
+            "garden": [
+                "0:9"
+            ]
+        },
+        {
+            "The": [
+                "1:0"
+            ]
+        },
+        {
+            "chasing": [
+                "1:3"
+            ]
+        },
+        {
+            "a": [
+                "1:4"
+            ]
+        },
+        {
+            "cat": [
+                "1:5"
+            ]
+        }
+    ]
+}

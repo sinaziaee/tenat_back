@@ -1,0 +1,4894 @@
+{
+    "edges": [
+        {
+            "from": "<START>",
+            "to": "18"
+        },
+        {
+            "from": "18",
+            "to": "Chapter"
+        },
+        {
+            "from": "Chapter",
+            "to": "1"
+        },
+        {
+            "from": "1",
+            "to": "Computer"
+        },
+        {
+            "from": "Computer",
+            "to": "Abstractions"
+        },
+        {
+            "from": "Abstractions",
+            "to": "and"
+        },
+        {
+            "from": "oflight",
+            "to": "and"
+        },
+        {
+            "from": "screen",
+            "to": "and"
+        },
+        {
+            "from": "black",
+            "to": "and"
+        },
+        {
+            "from": "blue,",
+            "to": "and"
+        },
+        {
+            "from": "laptop",
+            "to": "and"
+        },
+        {
+            "from": "phones,",
+            "to": "and"
+        },
+        {
+            "from": "applied",
+            "to": "and"
+        },
+        {
+            "from": "current",
+            "to": "and"
+        },
+        {
+            "from": "buffer,",
+            "to": "and"
+        },
+        {
+            "from": "changed",
+            "to": "and"
+        },
+        {
+            "from": "and",
+            "to": "Technology"
+        },
+        {
+            "from": "<START>",
+            "to": "Through"
+        },
+        {
+            "from": "<START>",
+            "to": "Through"
+        },
+        {
+            "from": "Through",
+            "to": "the"
+        },
+        {
+            "from": "probably",
+            "to": "the"
+        },
+        {
+            "from": "<START>",
+            "to": "the"
+        },
+        {
+            "from": "<START>",
+            "to": "the"
+        },
+        {
+            "from": "nearly",
+            "to": "the"
+        },
+        {
+            "from": "on",
+            "to": "the"
+        },
+        {
+            "from": "of",
+            "to": "the"
+        },
+        {
+            "from": "and",
+            "to": "the"
+        },
+        {
+            "from": "resolution,",
+            "to": "the"
+        },
+        {
+            "from": "Sutherland,",
+            "to": "the"
+        },
+        {
+            "from": "of",
+            "to": "the"
+        },
+        {
+            "from": "that",
+            "to": "the"
+        },
+        {
+            "from": "not",
+            "to": "the"
+        },
+        {
+            "from": "controls",
+            "to": "the"
+        },
+        {
+            "from": "entering",
+            "to": "the"
+        },
+        {
+            "from": "behind",
+            "to": "the"
+        },
+        {
+            "from": "bend",
+            "to": "the"
+        },
+        {
+            "from": "since",
+            "to": "the"
+        },
+        {
+            "from": "degrees,",
+            "to": "the"
+        },
+        {
+            "from": "determines",
+            "to": "the"
+        },
+        {
+            "from": "of",
+            "to": "the"
+        },
+        {
+            "from": "in",
+            "to": "the"
+        },
+        {
+            "from": "what",
+            "to": "the"
+        },
+        {
+            "from": "display,",
+            "to": "the"
+        },
+        {
+            "from": "store",
+            "to": "the"
+        },
+        {
+            "from": "in",
+            "to": "the"
+        },
+        {
+            "from": "and",
+            "to": "the"
+        },
+        {
+            "from": "to",
+            "to": "the"
+        },
+        {
+            "from": "at",
+            "to": "the"
+        },
+        {
+            "from": "of",
+            "to": "the"
+        },
+        {
+            "from": "on",
+            "to": "the"
+        },
+        {
+            "from": "because",
+            "to": "the"
+        },
+        {
+            "from": "control",
+            "to": "the"
+        },
+        {
+            "from": "on",
+            "to": "the"
+        },
+        {
+            "from": "when",
+            "to": "the"
+        },
+        {
+            "from": "updated,",
+            "to": "the"
+        },
+        {
+            "from": "detect",
+            "to": "the"
+        },
+        {
+            "from": "between",
+            "to": "the"
+        },
+        {
+            "from": "of",
+            "to": "the"
+        },
+        {
+            "from": "Opening",
+            "to": "the"
+        },
+        {
+            "from": "open",
+            "to": "the"
+        },
+        {
+            "from": "containing",
+            "to": "the"
+        },
+        {
+            "from": "the",
+            "to": "Looking"
+        },
+        {
+            "from": "Looking",
+            "to": "Glass"
+        },
+        {
+            "from": "Through",
+            "to": "compl/ter"
+        },
+        {
+            "from": "compl/ter",
+            "to": "displays"
+        },
+        {
+            "from": "For",
+            "to": "displays"
+        },
+        {
+            "from": "crystal",
+            "to": "displays"
+        },
+        {
+            "from": "that",
+            "to": "displays"
+        },
+        {
+            "from": "LCD",
+            "to": "displays"
+        },
+        {
+            "from": "<START>",
+            "to": "1have"
+        },
+        {
+            "from": "1have",
+            "to": "landed"
+        },
+        {
+            "from": "landed",
+            "to": "an"
+        },
+        {
+            "from": "scans",
+            "to": "an"
+        },
+        {
+            "from": "displays",
+            "to": "an"
+        },
+        {
+            "from": "using",
+            "to": "an"
+        },
+        {
+            "from": "use",
+            "to": "an"
+        },
+        {
+            "from": "an",
+            "to": "airplane"
+        },
+        {
+            "from": "airplane",
+            "to": "on"
+        },
+        {
+            "from": "Based",
+            "to": "on"
+        },
+        {
+            "from": "flicker",
+            "to": "on"
+        },
+        {
+            "from": "Depending",
+            "to": "on"
+        },
+        {
+            "from": "is",
+            "to": "on"
+        },
+        {
+            "from": "changes",
+            "to": "on"
+        },
+        {
+            "from": "<START>",
+            "to": "The"
+        },
+        {
+            "from": "<START>",
+            "to": "The"
+        },
+        {
+            "from": "2003.",
+            "to": "The"
+        },
+        {
+            "from": "display.",
+            "to": "The"
+        },
+        {
+            "from": "light.",
+            "to": "The"
+        },
+        {
+            "from": "pixel",
+            "to": "The"
+        },
+        {
+            "from": "map.",
+            "to": "The"
+        },
+        {
+            "from": "<START>",
+            "to": "The"
+        },
+        {
+            "from": "screen.",
+            "to": "The"
+        },
+        {
+            "from": "The",
+            "to": "most"
+        },
+        {
+            "from": "<START>",
+            "to": "most"
+        },
+        {
+            "from": "most",
+            "to": "fascinating"
+        },
+        {
+            "from": "a",
+            "to": "fascinating"
+        },
+        {
+            "from": "fascinating",
+            "to": "I/O"
+        },
+        {
+            "from": "I/O",
+            "to": "device"
+        },
+        {
+            "from": "device",
+            "to": "is"
+        },
+        {
+            "from": "image",
+            "to": "is"
+        },
+        {
+            "from": "difference",
+            "to": "is"
+        },
+        {
+            "from": "pixel",
+            "to": "is"
+        },
+        {
+            "from": "current",
+            "to": "is"
+        },
+        {
+            "from": "aterial",
+            "to": "is"
+        },
+        {
+            "from": "it",
+            "to": "is"
+        },
+        {
+            "from": "on-screen",
+            "to": "is"
+        },
+        {
+            "from": "charge",
+            "to": "is"
+        },
+        {
+            "from": "pixel",
+            "to": "is"
+        },
+        {
+            "from": "map",
+            "to": "is"
+        },
+        {
+            "from": "what",
+            "to": "is"
+        },
+        {
+            "from": "eye",
+            "to": "is"
+        },
+        {
+            "from": "screen",
+            "to": "is"
+        },
+        {
+            "from": "is",
+            "to": "probably"
+        },
+        {
+            "from": "the",
+            "to": "graphics"
+        },
+        {
+            "from": "for",
+            "to": "graphics"
+        },
+        {
+            "from": "the",
+            "to": "graphics"
+        },
+        {
+            "from": "in",
+            "to": "graphics"
+        },
+        {
+            "from": "graphics",
+            "to": "display."
+        },
+        {
+            "from": "low-power",
+            "to": "display."
+        },
+        {
+            "from": "display.",
+            "to": "Based"
+        },
+        {
+            "from": "on",
+            "to": "televi"
+        },
+        {
+            "from": "televi",
+            "to": ""
+        },
+        {
+            "from": "com",
+            "to": ""
+        },
+        {
+            "from": "ofthou",
+            "to": ""
+        },
+        {
+            "from": "orga",
+            "to": ""
+        },
+        {
+            "from": "red",
+            "to": ""
+        },
+        {
+            "from": "uys",
+            "to": ""
+        },
+        {
+            "from": "technol",
+            "to": ""
+        },
+        {
+            "from": "con",
+            "to": ""
+        },
+        {
+            "from": "accord",
+            "to": ""
+        },
+        {
+            "from": "the",
+            "to": "deck"
+        },
+        {
+            "from": "deck",
+            "to": "ofa"
+        },
+        {
+            "from": "ofa",
+            "to": "moving"
+        },
+        {
+            "from": "moving",
+            "to": "carrier,"
+        },
+        {
+            "from": "<START>",
+            "to": "sion"
+        },
+        {
+            "from": "sion",
+            "to": "technology,"
+        },
+        {
+            "from": "technology,",
+            "to": "a"
+        },
+        {
+            "from": "at",
+            "to": "a"
+        },
+        {
+            "from": "observed",
+            "to": "a"
+        },
+        {
+            "from": "notice",
+            "to": "a"
+        },
+        {
+            "from": "hit",
+            "to": "a"
+        },
+        {
+            "from": "<START>",
+            "to": "a"
+        },
+        {
+            "from": "of",
+            "to": "a"
+        },
+        {
+            "from": "watched",
+            "to": "a"
+        },
+        {
+            "from": "as",
+            "to": "a"
+        },
+        {
+            "from": "called",
+            "to": "a"
+        },
+        {
+            "from": "get",
+            "to": "a"
+        },
+        {
+            "from": "as",
+            "to": "a"
+        },
+        {
+            "from": "in",
+            "to": "a"
+        },
+        {
+            "from": "rm",
+            "to": "a"
+        },
+        {
+            "from": "either",
+            "to": "a"
+        },
+        {
+            "from": "across",
+            "to": "a"
+        },
+        {
+            "from": "when",
+            "to": "a"
+        },
+        {
+            "from": "has",
+            "to": "a"
+        },
+        {
+            "from": "in",
+            "to": "a"
+        },
+        {
+            "from": "CRT,",
+            "to": "a"
+        },
+        {
+            "from": "in",
+            "to": "a"
+        },
+        {
+            "from": "in",
+            "to": "a"
+        },
+        {
+            "from": "using",
+            "to": "a"
+        },
+        {
+            "from": "of",
+            "to": "a"
+        },
+        {
+            "from": "whether",
+            "to": "a"
+        },
+        {
+            "from": "shows",
+            "to": "a"
+        },
+        {
+            "from": "using",
+            "to": "a"
+        },
+        {
+            "from": "see",
+            "to": "a"
+        },
+        {
+            "from": "a",
+            "to": "cathode"
+        },
+        {
+            "from": "<START>",
+            "to": "cathode"
+        },
+        {
+            "from": "cathode",
+            "to": "ray"
+        },
+        {
+            "from": "cathode",
+            "to": "ray"
+        },
+        {
+            "from": "ray",
+            "to": "tube"
+        },
+        {
+            "from": "ray",
+            "to": "tube"
+        },
+        {
+            "from": "tube",
+            "to": "(CRT)"
+        },
+        {
+            "from": "tube",
+            "to": "(CRT)"
+        },
+        {
+            "from": "(CRT)",
+            "to": "display"
+        },
+        {
+            "from": "the",
+            "to": "display"
+        },
+        {
+            "from": "simplest",
+            "to": "display"
+        },
+        {
+            "from": "<START>",
+            "to": "display"
+        },
+        {
+            "from": "<START>",
+            "to": "display"
+        },
+        {
+            "from": "the",
+            "to": "display"
+        },
+        {
+            "from": "tal",
+            "to": "display"
+        },
+        {
+            "from": "A",
+            "to": "display"
+        },
+        {
+            "from": "graphics",
+            "to": "display"
+        },
+        {
+            "from": "matrix",
+            "to": "display"
+        },
+        {
+            "from": "crystal",
+            "to": "display"
+        },
+        {
+            "from": "display",
+            "to": "scans"
+        },
+        {
+            "from": "an",
+            "to": "image"
+        },
+        {
+            "from": "The",
+            "to": "image"
+        },
+        {
+            "from": "<START>",
+            "to": "image"
+        },
+        {
+            "from": "<START>",
+            "to": "image"
+        },
+        {
+            "from": "image",
+            "to": "one"
+        },
+        {
+            "from": "one",
+            "to": "line"
+        },
+        {
+            "from": "line",
+            "to": "at"
+        },
+        {
+            "from": "rocket",
+            "to": "at"
+        },
+        {
+            "from": "polarized",
+            "to": "at"
+        },
+        {
+            "from": "switch",
+            "to": "at"
+        },
+        {
+            "from": "switches",
+            "to": "at"
+        },
+        {
+            "from": "display",
+            "to": "at"
+        },
+        {
+            "from": "good",
+            "to": "at"
+        },
+        {
+            "from": "light",
+            "to": "at"
+        },
+        {
+            "from": "<START>",
+            "to": "observed"
+        },
+        {
+            "from": "a",
+            "to": "fluclear"
+        },
+        {
+            "from": "fluclear",
+            "to": "particle"
+        },
+        {
+            "from": "<START>",
+            "to": "time,"
+        },
+        {
+            "from": "time,",
+            "to": "30"
+        },
+        {
+            "from": "30",
+            "to": "to"
+        },
+        {
+            "from": "340",
+            "to": "to"
+        },
+        {
+            "from": "it",
+            "to": "to"
+        },
+        {
+            "from": "colors",
+            "to": "to"
+        },
+        {
+            "from": "CRTs",
+            "to": "to"
+        },
+        {
+            "from": "sands",
+            "to": "to"
+        },
+        {
+            "from": "pixel",
+            "to": "to"
+        },
+        {
+            "from": "used",
+            "to": "to"
+        },
+        {
+            "from": "buffer,",
+            "to": "to"
+        },
+        {
+            "from": "image",
+            "to": "to"
+        },
+        {
+            "from": "out",
+            "to": "to"
+        },
+        {
+            "from": "is",
+            "to": "to"
+        },
+        {
+            "from": "<START>",
+            "to": "to"
+        },
+        {
+            "from": "to",
+            "to": "75"
+        },
+        {
+            "from": "75",
+            "to": "times"
+        },
+        {
+            "from": "times",
+            "to": "per"
+        },
+        {
+            "from": "bit",
+            "to": "per"
+        },
+        {
+            "from": "bits",
+            "to": "per"
+        },
+        {
+            "from": "bits",
+            "to": "per"
+        },
+        {
+            "from": "applied.",
+            "to": "per"
+        },
+        {
+            "from": "bits",
+            "to": "per"
+        },
+        {
+            "from": "per",
+            "to": "second."
+        },
+        {
+            "from": "second.",
+            "to": "At"
+        },
+        {
+            "from": "At",
+            "to": "this"
+        },
+        {
+            "from": "this",
+            "to": "refresh"
+        },
+        {
+            "from": "raster",
+            "to": "refresh"
+        },
+        {
+            "from": "the",
+            "to": "refresh"
+        },
+        {
+            "from": "refresh",
+            "to": "rate,"
+        },
+        {
+            "from": "rate,",
+            "to": "people"
+        },
+        {
+            "from": "people",
+            "to": "don't"
+        },
+        {
+            "from": "don't",
+            "to": "notice"
+        },
+        {
+            "from": "a",
+            "to": "flicker"
+        },
+        {
+            "from": "<START>",
+            "to": "hit"
+        },
+        {
+            "from": "a",
+            "to": "potential"
+        },
+        {
+            "from": "potential",
+            "to": "well,"
+        },
+        {
+            "from": "well,",
+            "to": "j10wn"
+        },
+        {
+            "from": "j10wn",
+            "to": "in"
+        },
+        {
+            "from": "ranges",
+            "to": "in"
+        },
+        {
+            "from": "pixels",
+            "to": "in"
+        },
+        {
+            "from": "<START>",
+            "to": "in"
+        },
+        {
+            "from": "molecules",
+            "to": "in"
+        },
+        {
+            "from": "As",
+            "to": "in"
+        },
+        {
+            "from": "nized",
+            "to": "in"
+        },
+        {
+            "from": "components",
+            "to": "in"
+        },
+        {
+            "from": "image;",
+            "to": "in"
+        },
+        {
+            "from": "red",
+            "to": "in"
+        },
+        {
+            "from": "challenges",
+            "to": "in"
+        },
+        {
+            "from": "the",
+            "to": "screen."
+        },
+        {
+            "from": "a",
+            "to": "screen."
+        },
+        {
+            "from": "the",
+            "to": "screen."
+        },
+        {
+            "from": "the",
+            "to": "screen."
+        },
+        {
+            "from": "a",
+            "to": "rocket"
+        },
+        {
+            "from": "at",
+            "to": "nearly"
+        },
+        {
+            "from": "the",
+            "to": "speed"
+        },
+        {
+            "from": "is",
+            "to": "composed"
+        },
+        {
+            "from": "<START>",
+            "to": "composed"
+        },
+        {
+            "from": "composed",
+            "to": "of"
+        },
+        {
+            "from": "matrix",
+            "to": "of"
+        },
+        {
+            "from": "matrix",
+            "to": "of"
+        },
+        {
+            "from": "size",
+            "to": "of"
+        },
+        {
+            "from": "shades",
+            "to": "of"
+        },
+        {
+            "from": "<START>",
+            "to": "of"
+        },
+        {
+            "from": "each",
+            "to": "of"
+        },
+        {
+            "from": "millions",
+            "to": "of"
+        },
+        {
+            "from": "instead",
+            "to": "of"
+        },
+        {
+            "from": "source",
+            "to": "of"
+        },
+        {
+            "from": "transmission",
+            "to": "of"
+        },
+        {
+            "from": "intensity",
+            "to": "of"
+        },
+        {
+            "from": "mainly",
+            "to": "of"
+        },
+        {
+            "from": "goal",
+            "to": "of"
+        },
+        {
+            "from": "transmission",
+            "to": "of"
+        },
+        {
+            "from": "portion",
+            "to": "of"
+        },
+        {
+            "from": "board",
+            "to": "of"
+        },
+        {
+            "from": "dozens",
+            "to": "of"
+        },
+        {
+            "from": "a",
+            "to": "matrix"
+        },
+        {
+            "from": "a",
+            "to": "matrix"
+        },
+        {
+            "from": "active",
+            "to": "matrix"
+        },
+        {
+            "from": "active",
+            "to": "matrix"
+        },
+        {
+            "from": "active",
+            "to": "matrix"
+        },
+        {
+            "from": "of",
+            "to": "picture"
+        },
+        {
+            "from": "picture",
+            "to": "elements,"
+        },
+        {
+            "from": "elements,",
+            "to": "or"
+        },
+        {
+            "from": "black",
+            "to": "or"
+        },
+        {
+            "from": "flat-panel",
+            "to": "or"
+        },
+        {
+            "from": "buffer,",
+            "to": "or"
+        },
+        {
+            "from": "transmit",
+            "to": "or"
+        },
+        {
+            "from": "gray",
+            "to": "or"
+        },
+        {
+            "from": "or",
+            "to": "pixels,"
+        },
+        {
+            "from": "pixels,",
+            "to": "which"
+        },
+        {
+            "from": "that",
+            "to": "which"
+        },
+        {
+            "from": "which",
+            "to": "can"
+        },
+        {
+            "from": "that",
+            "to": "can"
+        },
+        {
+            "from": "eye",
+            "to": "can"
+        },
+        {
+            "from": "can",
+            "to": "be"
+        },
+        {
+            "from": "<START>",
+            "to": "be"
+        },
+        {
+            "from": "to",
+            "to": "be"
+        },
+        {
+            "from": "can",
+            "to": "be"
+        },
+        {
+            "from": "to",
+            "to": "be"
+        },
+        {
+            "from": "<START>",
+            "to": "oflight"
+        },
+        {
+            "from": "and",
+            "to": "watched"
+        },
+        {
+            "from": "a",
+            "to": "com"
+        },
+        {
+            "from": "desktop",
+            "to": "com"
+        },
+        {
+            "from": "<START>",
+            "to": "represented"
+        },
+        {
+            "from": "be",
+            "to": "represented"
+        },
+        {
+            "from": "represented",
+            "to": "as"
+        },
+        {
+            "from": "such",
+            "to": "as"
+        },
+        {
+            "from": "of",
+            "to": "bits,"
+        },
+        {
+            "from": "bits,",
+            "to": "called"
+        },
+        {
+            "from": "sometimes",
+            "to": "called"
+        },
+        {
+            "from": "a",
+            "to": "bit"
+        },
+        {
+            "from": "I",
+            "to": "bit"
+        },
+        {
+            "from": "the",
+            "to": "bit"
+        },
+        {
+            "from": "the",
+            "to": "bit"
+        },
+        {
+            "from": "the",
+            "to": "bit"
+        },
+        {
+            "from": "bit",
+            "to": "map."
+        },
+        {
+            "from": "bit",
+            "to": "map."
+        },
+        {
+            "from": "map.",
+            "to": "Depending"
+        },
+        {
+            "from": "the",
+            "to": "size"
+        },
+        {
+            "from": "in",
+            "to": "size"
+        },
+        {
+            "from": "<START>",
+            "to": "puter"
+        },
+        {
+            "from": "puter",
+            "to": "reveal"
+        },
+        {
+            "from": "reveal",
+            "to": "its"
+        },
+        {
+            "from": "its",
+            "to": "innermost"
+        },
+        {
+            "from": "<START>",
+            "to": "screen"
+        },
+        {
+            "from": "the",
+            "to": "screen"
+        },
+        {
+            "from": "the",
+            "to": "screen"
+        },
+        {
+            "from": "the",
+            "to": "resolution,"
+        },
+        {
+            "from": "display",
+            "to": "m"
+        },
+        {
+            "from": "crystal",
+            "to": "m"
+        },
+        {
+            "from": "m",
+            "to": "atrix"
+        },
+        {
+            "from": "atrix",
+            "to": "ranges"
+        },
+        {
+            "from": "size",
+            "to": "from"
+        },
+        {
+            "from": "display,",
+            "to": "from"
+        },
+        {
+            "from": "often",
+            "to": "from"
+        },
+        {
+            "from": "from",
+            "to": "512"
+        },
+        {
+            "from": "512",
+            "to": "X"
+        },
+        {
+            "from": "1920",
+            "to": "X"
+        },
+        {
+            "from": "X",
+            "to": "340"
+        },
+        {
+            "from": "<START>",
+            "to": "workings."
+        },
+        {
+            "from": "<START>",
+            "to": "1920"
+        },
+        {
+            "from": "X",
+            "to": "1280"
+        },
+        {
+            "from": "1280",
+            "to": "pixels"
+        },
+        {
+            "from": "in",
+            "to": "2003."
+        },
+        {
+            "from": "The",
+            "to": "simplest"
+        },
+        {
+            "from": "display",
+            "to": "has"
+        },
+        {
+            "from": "that",
+            "to": "has"
+        },
+        {
+            "from": "that",
+            "to": "has"
+        },
+        {
+            "from": "has",
+            "to": "I"
+        },
+        {
+            "from": "per",
+            "to": "pixel,"
+        },
+        {
+            "from": "per",
+            "to": "pixel,"
+        },
+        {
+            "from": "pixel,",
+            "to": "allowing"
+        },
+        {
+            "from": "allowing",
+            "to": "it"
+        },
+        {
+            "from": "instead",
+            "to": "it"
+        },
+        {
+            "from": "unless",
+            "to": "it"
+        },
+        {
+            "from": "<START>",
+            "to": "Ivan"
+        },
+        {
+            "from": "Ivan",
+            "to": "Sutherland,"
+        },
+        {
+            "from": "the",
+            "to": "\"father\""
+        },
+        {
+            "from": "be",
+            "to": "black"
+        },
+        {
+            "from": "of",
+            "to": "black"
+        },
+        {
+            "from": "or",
+            "to": "black"
+        },
+        {
+            "from": "or",
+            "to": "white."
+        },
+        {
+            "from": "white.",
+            "to": "For"
+        },
+        {
+            "from": "screen.",
+            "to": "For"
+        },
+        {
+            "from": "displays",
+            "to": "that"
+        },
+        {
+            "from": "is",
+            "to": "that"
+        },
+        {
+            "from": "set,",
+            "to": "that"
+        },
+        {
+            "from": "liquid",
+            "to": "that"
+        },
+        {
+            "from": "helix",
+            "to": "that"
+        },
+        {
+            "from": "matrix",
+            "to": "that"
+        },
+        {
+            "from": "polymers",
+            "to": "that"
+        },
+        {
+            "from": "<START>",
+            "to": "that"
+        },
+        {
+            "from": "and",
+            "to": "that"
+        },
+        {
+            "from": "that",
+            "to": "support"
+        },
+        {
+            "from": "hardware",
+            "to": "support"
+        },
+        {
+            "from": "support",
+            "to": "256"
+        },
+        {
+            "from": "256",
+            "to": "different"
+        },
+        {
+            "from": "of",
+            "to": "different"
+        },
+        {
+            "from": "different",
+            "to": "shades"
+        },
+        {
+            "from": "of",
+            "to": "computer"
+        },
+        {
+            "from": "the",
+            "to": "computer"
+        },
+        {
+            "from": "computer",
+            "to": "graphics,"
+        },
+        {
+            "from": "graphics,",
+            "to": "quoted"
+        },
+        {
+            "from": "<START>",
+            "to": "white,"
+        },
+        {
+            "from": "white,",
+            "to": "sometimes"
+        },
+        {
+            "from": "called",
+            "to": "gray-scale"
+        },
+        {
+            "from": "gray-scale",
+            "to": "displays,"
+        },
+        {
+            "from": "displays,",
+            "to": "8"
+        },
+        {
+            "from": "use",
+            "to": "8"
+        },
+        {
+            "from": "8",
+            "to": "bits"
+        },
+        {
+            "from": "8",
+            "to": "bits"
+        },
+        {
+            "from": "24",
+            "to": "bits"
+        },
+        {
+            "from": "4",
+            "to": "bits"
+        },
+        {
+            "from": "per",
+            "to": "pixel"
+        },
+        {
+            "from": "LCD",
+            "to": "pixel"
+        },
+        {
+            "from": "<START>",
+            "to": "pixel"
+        },
+        {
+            "from": "<START>",
+            "to": "pixel"
+        },
+        {
+            "from": "each",
+            "to": "pixel"
+        },
+        {
+            "from": "per",
+            "to": "pixel"
+        },
+        {
+            "from": "pixel",
+            "to": "are"
+        },
+        {
+            "from": "Screen",
+            "to": "are"
+        },
+        {
+            "from": "there",
+            "to": "are"
+        },
+        {
+            "from": "are",
+            "to": "required."
+        },
+        {
+            "from": "required.",
+            "to": "A"
+        },
+        {
+            "from": "display",
+            "to": "A"
+        },
+        {
+            "from": "light.",
+            "to": "A"
+        },
+        {
+            "from": "display",
+            "to": "A"
+        },
+        {
+            "from": "A",
+            "to": "color"
+        },
+        {
+            "from": "a",
+            "to": "color"
+        },
+        {
+            "from": "in",
+            "to": "\"Computer"
+        },
+        {
+            "from": "\"Computer",
+            "to": "Software"
+        },
+        {
+            "from": "Software",
+            "to": "for"
+        },
+        {
+            "from": "bits",
+            "to": "for"
+        },
+        {
+            "from": "green),",
+            "to": "for"
+        },
+        {
+            "from": "support",
+            "to": "for"
+        },
+        {
+            "from": "display",
+            "to": "might"
+        },
+        {
+            "from": "might",
+            "to": "use"
+        },
+        {
+            "from": "puters",
+            "to": "use"
+        },
+        {
+            "from": "displays",
+            "to": "use"
+        },
+        {
+            "from": "for",
+            "to": "each"
+        },
+        {
+            "from": "at",
+            "to": "each"
+        },
+        {
+            "from": "with",
+            "to": "each"
+        },
+        {
+            "from": "at",
+            "to": "each"
+        },
+        {
+            "from": "at",
+            "to": "each"
+        },
+        {
+            "from": "the",
+            "to": "three"
+        },
+        {
+            "from": "the",
+            "to": "three"
+        },
+        {
+            "from": "are",
+            "to": "three"
+        },
+        {
+            "from": "three",
+            "to": "colo"
+        },
+        {
+            "from": "",
+            "to": "colo"
+        },
+        {
+            "from": "colo",
+            "to": "rs"
+        },
+        {
+            "from": "rs",
+            "to": "(red,"
+        },
+        {
+            "from": "(red,",
+            "to": "blue,"
+        },
+        {
+            "from": "and",
+            "to": "green),"
+        },
+        {
+            "from": "<START>",
+            "to": "Graphics:'"
+        },
+        {
+            "from": "Graphics:'",
+            "to": "Scientific"
+        },
+        {
+            "from": "Scientific",
+            "to": "American,"
+        },
+        {
+            "from": "<START>",
+            "to": "24"
+        },
+        {
+            "from": "pixel,",
+            "to": "permitting"
+        },
+        {
+            "from": "permitting",
+            "to": "millions"
+        },
+        {
+            "from": "to",
+            "to": "millions"
+        },
+        {
+            "from": "different",
+            "to": "colors"
+        },
+        {
+            "from": "be",
+            "to": "displayed."
+        },
+        {
+            "from": "<START>",
+            "to": "1984"
+        },
+        {
+            "from": "<START>",
+            "to": "All"
+        },
+        {
+            "from": "All",
+            "to": "laptop"
+        },
+        {
+            "from": "and",
+            "to": "handheld"
+        },
+        {
+            "from": "handheld",
+            "to": "computers,"
+        },
+        {
+            "from": "computers,",
+            "to": "calculators,"
+        },
+        {
+            "from": "calculators,",
+            "to": "cellular"
+        },
+        {
+            "from": "cellular",
+            "to": "phones,"
+        },
+        {
+            "from": "and",
+            "to": "many"
+        },
+        {
+            "from": "<START>",
+            "to": "desktop"
+        },
+        {
+            "from": "com",
+            "to": "puters"
+        },
+        {
+            "from": "use",
+            "to": "flat-panel"
+        },
+        {
+            "from": "or",
+            "to": "liquid"
+        },
+        {
+            "from": "a",
+            "to": "liquid"
+        },
+        {
+            "from": "the",
+            "to": "liquid"
+        },
+        {
+            "from": "display,",
+            "to": "liquid"
+        },
+        {
+            "from": "liquid",
+            "to": "crystal"
+        },
+        {
+            "from": "liquid",
+            "to": "crystal"
+        },
+        {
+            "from": "<START>",
+            "to": "crystal"
+        },
+        {
+            "from": "displays",
+            "to": "(LCDs)"
+        },
+        {
+            "from": "(LCDs)",
+            "to": "instead"
+        },
+        {
+            "from": "light;",
+            "to": "instead"
+        },
+        {
+            "from": "<START>",
+            "to": "CRTs"
+        },
+        {
+            "from": "to",
+            "to": "get"
+        },
+        {
+            "from": "a",
+            "to": "thin,"
+        },
+        {
+            "from": "thin,",
+            "to": "low-power"
+        },
+        {
+            "from": "The",
+            "to": "main"
+        },
+        {
+            "from": "main",
+            "to": "difference"
+        },
+        {
+            "from": "the",
+            "to": "LCD"
+        },
+        {
+            "from": "typical",
+            "to": "LCD"
+        },
+        {
+            "from": "most",
+            "to": "LCD"
+        },
+        {
+            "from": "A",
+            "to": "display,"
+        },
+        {
+            "from": "the",
+            "to": "display,"
+        },
+        {
+            "from": "panel",
+            "to": "display,"
+        },
+        {
+            "from": "the",
+            "to": "display,"
+        },
+        {
+            "from": "display,",
+            "to": "such"
+        },
+        {
+            "from": "a",
+            "to": "not"
+        },
+        {
+            "from": "the",
+            "to": "source"
+        },
+        {
+            "from": "light",
+            "to": "source"
+        },
+        {
+            "from": "of",
+            "to": "light;"
+        },
+        {
+            "from": "the",
+            "to": "light;"
+        },
+        {
+            "from": "it",
+            "to": "controls"
+        },
+        {
+            "from": "the",
+            "to": "transmission"
+        },
+        {
+            "from": "the",
+            "to": "transmission"
+        },
+        {
+            "from": "of",
+            "to": "light."
+        },
+        {
+            "from": "reflected",
+            "to": "light."
+        },
+        {
+            "from": "A",
+            "to": "typical"
+        },
+        {
+            "from": "<START>",
+            "to": "television"
+        },
+        {
+            "from": "television",
+            "to": "set,"
+        },
+        {
+            "from": "<START>",
+            "to": "includes"
+        },
+        {
+            "from": "includes",
+            "to": "rod-shaped"
+        },
+        {
+            "from": "rod-shaped",
+            "to": "molecules"
+        },
+        {
+            "from": "that",
+            "to": "fo"
+        },
+        {
+            "from": "fo",
+            "to": "rm"
+        },
+        {
+            "from": "a",
+            "to": "twisting"
+        },
+        {
+            "from": "twisting",
+            "to": "helix"
+        },
+        {
+            "from": "that",
+            "to": "bends"
+        },
+        {
+            "from": "image",
+            "to": "using"
+        },
+        {
+            "from": "ogy",
+            "to": "using"
+        },
+        {
+            "from": "display",
+            "to": "using"
+        },
+        {
+            "from": "an",
+            "to": "electron"
+        },
+        {
+            "from": "electron",
+            "to": "beam"
+        },
+        {
+            "from": "<START>",
+            "to": "light"
+        },
+        {
+            "from": "a",
+            "to": "light"
+        },
+        {
+            "from": "the",
+            "to": "light"
+        },
+        {
+            "from": "block",
+            "to": "light"
+        },
+        {
+            "from": "<START>",
+            "to": "light"
+        },
+        {
+            "from": "light",
+            "to": "entering"
+        },
+        {
+            "from": "from",
+            "to": "either"
+        },
+        {
+            "from": "source",
+            "to": "behind"
+        },
+        {
+            "from": "display",
+            "to": "o"
+        },
+        {
+            "from": "o",
+            "to": "r"
+        },
+        {
+            "from": "colo",
+            "to": "r"
+        },
+        {
+            "from": "r",
+            "to": "less"
+        },
+        {
+            "from": "<START>",
+            "to": "scanned"
+        },
+        {
+            "from": "scanned",
+            "to": "across"
+        },
+        {
+            "from": "<START>",
+            "to": "often"
+        },
+        {
+            "from": "from",
+            "to": "reflected"
+        },
+        {
+            "from": "The",
+            "to": "rods"
+        },
+        {
+            "from": "rods",
+            "to": "straighten"
+        },
+        {
+            "from": "straighten",
+            "to": "out"
+        },
+        {
+            "from": "read",
+            "to": "out"
+        },
+        {
+            "from": "out",
+            "to": "when"
+        },
+        {
+            "from": "example,",
+            "to": "when"
+        },
+        {
+            "from": "a",
+            "to": "current"
+        },
+        {
+            "from": "control",
+            "to": "current"
+        },
+        {
+            "from": "is",
+            "to": "applied"
+        },
+        {
+            "from": "The",
+            "to": "smallest"
+        },
+        {
+            "from": "smallest",
+            "to": "individual"
+        },
+        {
+            "from": "each",
+            "to": "individual"
+        },
+        {
+            "from": "individual",
+            "to": "no"
+        },
+        {
+            "from": "no",
+            "to": "longer"
+        },
+        {
+            "from": "longer",
+            "to": "bend"
+        },
+        {
+            "from": "light;",
+            "to": "since"
+        },
+        {
+            "from": "m",
+            "to": "aterial"
+        },
+        {
+            "from": "is",
+            "to": "between"
+        },
+        {
+            "from": "inconsistency",
+            "to": "between"
+        },
+        {
+            "from": "between",
+            "to": "two"
+        },
+        {
+            "from": "two",
+            "to": "screens"
+        },
+        {
+            "from": "<START>",
+            "to": "picnlrc"
+        },
+        {
+            "from": "picnlrc",
+            "to": "element."
+        },
+        {
+            "from": "element.",
+            "to": "Screen"
+        },
+        {
+            "from": "are",
+            "to": "polarized"
+        },
+        {
+            "from": "at",
+            "to": "90"
+        },
+        {
+            "from": "90",
+            "to": "degrees,"
+        },
+        {
+            "from": "light",
+            "to": "cannot"
+        },
+        {
+            "from": "cannot",
+            "to": "pass"
+        },
+        {
+            "from": "pass",
+            "to": "through"
+        },
+        {
+            "from": "through",
+            "to": "unless"
+        },
+        {
+            "from": "is",
+            "to": "bent."
+        },
+        {
+            "from": "bent.",
+            "to": "Today,"
+        },
+        {
+            "from": "composed",
+            "to": "ofhundreds"
+        },
+        {
+            "from": "ofhundreds",
+            "to": "ofthou"
+        },
+        {
+            "from": "an",
+            "to": "active"
+        },
+        {
+            "from": "color",
+            "to": "active"
+        },
+        {
+            "from": "<START>",
+            "to": "active"
+        },
+        {
+            "from": "a",
+            "to": "tiny"
+        },
+        {
+            "from": "tiny",
+            "to": "transistor"
+        },
+        {
+            "from": "<START>",
+            "to": "transistor"
+        },
+        {
+            "from": "a",
+            "to": "transistor"
+        },
+        {
+            "from": "transistor",
+            "to": "switch"
+        },
+        {
+            "from": "<START>",
+            "to": "sands"
+        },
+        {
+            "from": "millions",
+            "to": "ofpixels,"
+        },
+        {
+            "from": "ofpixels,",
+            "to": "orga"
+        },
+        {
+            "from": "to",
+            "to": "precisely"
+        },
+        {
+            "from": "precisely",
+            "to": "control"
+        },
+        {
+            "from": "to",
+            "to": "control"
+        },
+        {
+            "from": "and",
+            "to": "make"
+        },
+        {
+            "from": "make",
+            "to": "sharper"
+        },
+        {
+            "from": "sharper",
+            "to": "images."
+        },
+        {
+            "from": "images.",
+            "to": "As"
+        },
+        {
+            "from": "a",
+            "to": "CRT,"
+        },
+        {
+            "from": "a",
+            "to": "red"
+        },
+        {
+            "from": "sto",
+            "to": "red"
+        },
+        {
+            "from": "<START>",
+            "to": "nized"
+        },
+        {
+            "from": "a",
+            "to": "matrix."
+        },
+        {
+            "from": "<START>",
+            "to": "green-blue"
+        },
+        {
+            "from": "green-blue",
+            "to": "mask"
+        },
+        {
+            "from": "mask",
+            "to": "associated"
+        },
+        {
+            "from": "associated",
+            "to": "with"
+        },
+        {
+            "from": "buffer",
+            "to": "with"
+        },
+        {
+            "from": "covered",
+            "to": "with"
+        },
+        {
+            "from": "pixel",
+            "to": "determines"
+        },
+        {
+            "from": "the",
+            "to": "intensity"
+        },
+        {
+            "from": "<START>",
+            "to": "flat"
+        },
+        {
+            "from": "flat",
+            "to": "panel"
+        },
+        {
+            "from": "liquid",
+            "to": "uys"
+        },
+        {
+            "from": "r",
+            "to": "components"
+        },
+        {
+            "from": "the",
+            "to": "final"
+        },
+        {
+            "from": "final",
+            "to": "image;"
+        },
+        {
+            "from": "matrix",
+            "to": "LCD,"
+        },
+        {
+            "from": "LCD,",
+            "to": "there"
+        },
+        {
+            "from": "<START>",
+            "to": "tal"
+        },
+        {
+            "from": "display",
+            "to": "technol"
+        },
+        {
+            "from": "transistor",
+            "to": "switches"
+        },
+        {
+            "from": "each",
+            "to": "pixel."
+        },
+        {
+            "from": "per",
+            "to": "pixel."
+        },
+        {
+            "from": "individual",
+            "to": "pixel."
+        },
+        {
+            "from": "<START>",
+            "to": "ogy"
+        },
+        {
+            "from": "a",
+            "to": "thin"
+        },
+        {
+            "from": "of",
+            "to": "thin"
+        },
+        {
+            "from": "thin",
+            "to": "layer"
+        },
+        {
+            "from": "layer",
+            "to": "ofliquid"
+        },
+        {
+            "from": "<START>",
+            "to": "No"
+        },
+        {
+            "from": "No",
+            "to": "matter"
+        },
+        {
+            "from": "matter",
+            "to": "what"
+        },
+        {
+            "from": "represent",
+            "to": "what"
+        },
+        {
+            "from": "computer",
+            "to": "hardware"
+        },
+        {
+            "from": "graphics",
+            "to": "con"
+        },
+        {
+            "from": "<START>",
+            "to": "polymers"
+        },
+        {
+            "from": "be",
+            "to": "used"
+        },
+        {
+            "from": "<START>",
+            "to": "sists"
+        },
+        {
+            "from": "sists",
+            "to": "mainly"
+        },
+        {
+            "from": "a",
+            "to": "raster"
+        },
+        {
+            "from": "refresh",
+            "to": "buffer,"
+        },
+        {
+            "from": "frame",
+            "to": "buffer,"
+        },
+        {
+            "from": "frame",
+            "to": "buffer,"
+        },
+        {
+            "from": "or",
+            "to": "frame"
+        },
+        {
+            "from": "the",
+            "to": "frame"
+        },
+        {
+            "from": "<START>",
+            "to": "frame"
+        },
+        {
+            "from": "to",
+            "to": "store"
+        },
+        {
+            "from": "<START>",
+            "to": "transmit"
+        },
+        {
+            "from": "or",
+            "to": "block"
+        },
+        {
+            "from": "light",
+            "to": "accord"
+        },
+        {
+            "from": "represented",
+            "to": "on-screen"
+        },
+        {
+            "from": "is",
+            "to": "sto"
+        },
+        {
+            "from": "bit",
+            "to": "pattern"
+        },
+        {
+            "from": "<START>",
+            "to": "ingto"
+        },
+        {
+            "from": "ingto",
+            "to": "whether"
+        },
+        {
+            "from": "a",
+            "to": "charge"
+        },
+        {
+            "from": "<START>",
+            "to": "applied."
+        },
+        {
+            "from": "is",
+            "to": "read"
+        },
+        {
+            "from": "refresh",
+            "to": "rate."
+        },
+        {
+            "from": "rate.",
+            "to": "Figure"
+        },
+        {
+            "from": "rectangles.",
+            "to": "Figure"
+        },
+        {
+            "from": "Figure",
+            "to": "1.7"
+        },
+        {
+            "from": "1.7",
+            "to": "shows"
+        },
+        {
+            "from": "frame",
+            "to": "buffer"
+        },
+        {
+            "from": "with",
+            "to": "4"
+        },
+        {
+            "from": "display",
+            "to": "Aliquid"
+        },
+        {
+            "from": "The",
+            "to": "goal"
+        },
+        {
+            "from": "bit",
+            "to": "map"
+        },
+        {
+            "from": "to",
+            "to": "faithfully"
+        },
+        {
+            "from": "faithfully",
+            "to": "represent"
+        },
+        {
+            "from": "<START>",
+            "to": "challenges"
+        },
+        {
+            "from": "graphics",
+            "to": "systems"
+        },
+        {
+            "from": "systems",
+            "to": "arise"
+        },
+        {
+            "from": "arise",
+            "to": "because"
+        },
+        {
+            "from": "the",
+            "to": "human"
+        },
+        {
+            "from": "human",
+            "to": "eye"
+        },
+        {
+            "from": "the",
+            "to": "eye"
+        },
+        {
+            "from": "is",
+            "to": "very"
+        },
+        {
+            "from": "very",
+            "to": "good"
+        },
+        {
+            "from": "pixel.",
+            "to": "detecting"
+        },
+        {
+            "from": "detecting",
+            "to": "even"
+        },
+        {
+            "from": "even",
+            "to": "subtle"
+        },
+        {
+            "from": "subtle",
+            "to": "changes"
+        },
+        {
+            "from": "For",
+            "to": "example,"
+        },
+        {
+            "from": "is",
+            "to": "being"
+        },
+        {
+            "from": "<START>",
+            "to": "updated,"
+        },
+        {
+            "from": "can",
+            "to": "detect"
+        },
+        {
+            "from": "the",
+            "to": "inconsistency"
+        },
+        {
+            "from": "the",
+            "to": "portion"
+        },
+        {
+            "from": "has",
+            "to": "changed"
+        },
+        {
+            "from": "which",
+            "to": "hasn't."
+        },
+        {
+            "from": "<START>",
+            "to": "Opening"
+        },
+        {
+            "from": "the",
+            "to": "Box"
+        },
+        {
+            "from": "<START>",
+            "to": "If"
+        },
+        {
+            "from": "If",
+            "to": "we"
+        },
+        {
+            "from": "computer,",
+            "to": "we"
+        },
+        {
+            "from": "we",
+            "to": "open"
+        },
+        {
+            "from": "the",
+            "to": "box"
+        },
+        {
+            "from": "box",
+            "to": "containing"
+        },
+        {
+            "from": "the",
+            "to": "computer,"
+        },
+        {
+            "from": "we",
+            "to": "see"
+        },
+        {
+            "from": "fascinating",
+            "to": "board"
+        },
+        {
+            "from": "<START>",
+            "to": "green"
+        },
+        {
+            "from": "green",
+            "to": "plastic,"
+        },
+        {
+            "from": "plastic,",
+            "to": "covered"
+        },
+        {
+            "from": "with",
+            "to": "dozens"
+        },
+        {
+            "from": "of",
+            "to": "small"
+        },
+        {
+            "from": "small",
+            "to": "gray"
+        },
+        {
+            "from": "black",
+            "to": "rectangles."
+        },
+        {
+            "from": "Figure",
+            "to": "1.8"
+        }
+    ],
+    "nodes": [
+        {
+            "18": [
+                "0:0"
+            ]
+        },
+        {
+            "Chapter": [
+                "0:1"
+            ]
+        },
+        {
+            "1": [
+                "0:2"
+            ]
+        },
+        {
+            "Computer": [
+                "0:3"
+            ]
+        },
+        {
+            "Abstractions": [
+                "0:4"
+            ]
+        },
+        {
+            "and": [
+                "0:5",
+                "13:1",
+                "16:1",
+                "20:13",
+                "24:14",
+                "28:2",
+                "28:8",
+                "38:13",
+                "44:5",
+                "55:12",
+                "66:3"
+            ]
+        },
+        {
+            "Technology": [
+                "0:6"
+            ]
+        },
+        {
+            "Through": [
+                "1:0",
+                "2:0"
+            ]
+        },
+        {
+            "the": [
+                "1:1",
+                "4:7",
+                "5:0",
+                "10:0",
+                "11:4",
+                "14:12",
+                "14:15",
+                "16:2",
+                "16:4",
+                "19:2",
+                "24:8",
+                "30:12",
+                "32:7",
+                "32:14",
+                "36:2",
+                "36:10",
+                "39:7",
+                "39:10",
+                "40:8",
+                "46:7",
+                "46:10",
+                "47:10",
+                "51:3",
+                "51:5",
+                "53:12",
+                "55:9",
+                "55:13",
+                "57:7",
+                "57:11",
+                "60:3",
+                "60:13",
+                "62:6",
+                "63:2",
+                "64:10",
+                "64:15",
+                "65:1",
+                "65:5",
+                "65:8",
+                "65:11",
+                "67:1",
+                "68:3",
+                "68:6"
+            ]
+        },
+        {
+            "Looking": [
+                "1:2"
+            ]
+        },
+        {
+            "Glass": [
+                "1:3"
+            ]
+        },
+        {
+            "compl/ter": [
+                "2:1"
+            ]
+        },
+        {
+            "displays": [
+                "2:2",
+                "20:5",
+                "29:8",
+                "33:3",
+                "42:2"
+            ]
+        },
+        {
+            "1have": [
+                "3:0"
+            ]
+        },
+        {
+            "landed": [
+                "3:1"
+            ]
+        },
+        {
+            "an": [
+                "3:2",
+                "6:9",
+                "33:4",
+                "35:2",
+                "42:4"
+            ]
+        },
+        {
+            "airplane": [
+                "3:3"
+            ]
+        },
+        {
+            "on": [
+                "3:4",
+                "4:11",
+                "8:16",
+                "14:11",
+                "60:12",
+                "64:9"
+            ]
+        },
+        {
+            "The": [
+                "4:0",
+                "12:0",
+                "18:6",
+                "30:7",
+                "38:4",
+                "39:1",
+                "53:15",
+                "60:0",
+                "60:15"
+            ]
+        },
+        {
+            "most": [
+                "4:1",
+                "42:0"
+            ]
+        },
+        {
+            "fascinating": [
+                "4:2",
+                "68:11"
+            ]
+        },
+        {
+            "I/O": [
+                "4:3"
+            ]
+        },
+        {
+            "device": [
+                "4:4"
+            ]
+        },
+        {
+            "is": [
+                "4:5",
+                "12:2",
+                "30:10",
+                "30:15",
+                "38:11",
+                "39:15",
+                "40:15",
+                "55:5",
+                "56:4",
+                "57:3",
+                "60:6",
+                "60:11",
+                "62:9",
+                "64:17"
+            ]
+        },
+        {
+            "probably": [
+                "4:6"
+            ]
+        },
+        {
+            "graphics": [
+                "4:8",
+                "51:10",
+                "57:8",
+                "62:2"
+            ]
+        },
+        {
+            "display.": [
+                "4:9",
+                "30:6"
+            ]
+        },
+        {
+            "Based": [
+                "4:10"
+            ]
+        },
+        {
+            "televi": [
+                "4:12"
+            ]
+        },
+        {
+            "": [
+                "4:13",
+                "13:5",
+                "41:3",
+                "43:5",
+                "44:15",
+                "47:5",
+                "48:5",
+                "51:12",
+                "54:5"
+            ]
+        },
+        {
+            "deck": [
+                "5:1"
+            ]
+        },
+        {
+            "ofa": [
+                "5:2"
+            ]
+        },
+        {
+            "moving": [
+                "5:3"
+            ]
+        },
+        {
+            "carrier,": [
+                "5:4"
+            ]
+        },
+        {
+            "sion": [
+                "6:0"
+            ]
+        },
+        {
+            "technology,": [
+                "6:1"
+            ]
+        },
+        {
+            "a": [
+                "6:2",
+                "6:14",
+                "7:1",
+                "8:14",
+                "9:1",
+                "11:0",
+                "12:5",
+                "13:3",
+                "14:2",
+                "14:7",
+                "30:3",
+                "32:5",
+                "34:4",
+                "34:9",
+                "36:6",
+                "37:2",
+                "38:9",
+                "42:9",
+                "44:11",
+                "44:13",
+                "45:2",
+                "47:14",
+                "50:2",
+                "53:3",
+                "56:2",
+                "57:17",
+                "61:3",
+                "68:10"
+            ]
+        },
+        {
+            "cathode": [
+                "6:3",
+                "31:0"
+            ]
+        },
+        {
+            "ray": [
+                "6:4",
+                "31:1"
+            ]
+        },
+        {
+            "tube": [
+                "6:5",
+                "31:2"
+            ]
+        },
+        {
+            "(CRT)": [
+                "6:6",
+                "31:3"
+            ]
+        },
+        {
+            "display": [
+                "6:7",
+                "16:5",
+                "18:8",
+                "24:0",
+                "32:0",
+                "36:11",
+                "48:1",
+                "48:3",
+                "57:9",
+                "59:2",
+                "61:1"
+            ]
+        },
+        {
+            "scans": [
+                "6:8"
+            ]
+        },
+        {
+            "image": [
+                "6:10",
+                "12:1",
+                "35:0",
+                "55:0"
+            ]
+        },
+        {
+            "one": [
+                "6:11"
+            ]
+        },
+        {
+            "line": [
+                "6:12"
+            ]
+        },
+        {
+            "at": [
+                "6:13",
+                "11:2",
+                "40:5",
+                "42:13",
+                "49:2",
+                "57:10",
+                "62:12",
+                "64:1"
+            ]
+        },
+        {
+            "observed": [
+                "7:0"
+            ]
+        },
+        {
+            "fluclear": [
+                "7:2"
+            ]
+        },
+        {
+            "particle": [
+                "7:3"
+            ]
+        },
+        {
+            "time,": [
+                "8:0"
+            ]
+        },
+        {
+            "30": [
+                "8:1"
+            ]
+        },
+        {
+            "to": [
+                "8:2",
+                "16:15",
+                "18:16",
+                "26:9",
+                "30:1",
+                "43:1",
+                "44:1",
+                "52:5",
+                "53:10",
+                "55:1",
+                "57:6",
+                "60:7",
+                "63:0"
+            ]
+        },
+        {
+            "75": [
+                "8:3"
+            ]
+        },
+        {
+            "times": [
+                "8:4"
+            ]
+        },
+        {
+            "per": [
+                "8:5",
+                "18:12",
+                "22:7",
+                "26:2",
+                "57:1",
+                "58:5"
+            ]
+        },
+        {
+            "second.": [
+                "8:6"
+            ]
+        },
+        {
+            "At": [
+                "8:7"
+            ]
+        },
+        {
+            "this": [
+                "8:8"
+            ]
+        },
+        {
+            "refresh": [
+                "8:9",
+                "53:5",
+                "57:12"
+            ]
+        },
+        {
+            "rate,": [
+                "8:10"
+            ]
+        },
+        {
+            "people": [
+                "8:11"
+            ]
+        },
+        {
+            "don't": [
+                "8:12"
+            ]
+        },
+        {
+            "notice": [
+                "8:13"
+            ]
+        },
+        {
+            "flicker": [
+                "8:15"
+            ]
+        },
+        {
+            "hit": [
+                "9:0"
+            ]
+        },
+        {
+            "potential": [
+                "9:2"
+            ]
+        },
+        {
+            "well,": [
+                "9:3"
+            ]
+        },
+        {
+            "j10wn": [
+                "9:4"
+            ]
+        },
+        {
+            "in": [
+                "9:5",
+                "16:9",
+                "18:4",
+                "23:0",
+                "34:3",
+                "44:10",
+                "45:1",
+                "47:9",
+                "47:13",
+                "55:8",
+                "62:1"
+            ]
+        },
+        {
+            "screen.": [
+                "10:1",
+                "37:3",
+                "60:14",
+                "64:11"
+            ]
+        },
+        {
+            "rocket": [
+                "11:1"
+            ]
+        },
+        {
+            "nearly": [
+                "11:3"
+            ]
+        },
+        {
+            "speed": [
+                "11:5"
+            ]
+        },
+        {
+            "composed": [
+                "12:3",
+                "41:0"
+            ]
+        },
+        {
+            "of": [
+                "12:4",
+                "12:7",
+                "14:4",
+                "14:14",
+                "20:11",
+                "21:0",
+                "24:7",
+                "26:6",
+                "29:11",
+                "32:9",
+                "32:16",
+                "46:9",
+                "53:2",
+                "60:2",
+                "63:4",
+                "65:10",
+                "68:13",
+                "69:5"
+            ]
+        },
+        {
+            "matrix": [
+                "12:6",
+                "14:3",
+                "42:6",
+                "47:17",
+                "59:1"
+            ]
+        },
+        {
+            "picture": [
+                "12:8"
+            ]
+        },
+        {
+            "elements,": [
+                "12:9"
+            ]
+        },
+        {
+            "or": [
+                "12:10",
+                "20:2",
+                "29:5",
+                "53:7",
+                "54:1",
+                "69:8"
+            ]
+        },
+        {
+            "pixels,": [
+                "12:11"
+            ]
+        },
+        {
+            "which": [
+                "12:12",
+                "66:5"
+            ]
+        },
+        {
+            "can": [
+                "12:13",
+                "52:2",
+                "65:3"
+            ]
+        },
+        {
+            "be": [
+                "12:14",
+                "20:0",
+                "26:10",
+                "52:3",
+                "55:2"
+            ]
+        },
+        {
+            "oflight": [
+                "13:0"
+            ]
+        },
+        {
+            "watched": [
+                "13:2"
+            ]
+        },
+        {
+            "com": [
+                "13:4",
+                "29:1"
+            ]
+        },
+        {
+            "represented": [
+                "14:0",
+                "55:3"
+            ]
+        },
+        {
+            "as": [
+                "14:1",
+                "32:4"
+            ]
+        },
+        {
+            "bits,": [
+                "14:5"
+            ]
+        },
+        {
+            "called": [
+                "14:6",
+                "22:2"
+            ]
+        },
+        {
+            "bit": [
+                "14:8",
+                "18:11",
+                "53:13",
+                "55:14",
+                "60:4"
+            ]
+        },
+        {
+            "map.": [
+                "14:9",
+                "53:14"
+            ]
+        },
+        {
+            "Depending": [
+                "14:10"
+            ]
+        },
+        {
+            "size": [
+                "14:13",
+                "16:10"
+            ]
+        },
+        {
+            "puter": [
+                "15:0"
+            ]
+        },
+        {
+            "reveal": [
+                "15:1"
+            ]
+        },
+        {
+            "its": [
+                "15:2"
+            ]
+        },
+        {
+            "innermost": [
+                "15:3"
+            ]
+        },
+        {
+            "screen": [
+                "16:0",
+                "64:16",
+                "65:12"
+            ]
+        },
+        {
+            "resolution,": [
+                "16:3"
+            ]
+        },
+        {
+            "m": [
+                "16:6",
+                "39:13"
+            ]
+        },
+        {
+            "atrix": [
+                "16:7"
+            ]
+        },
+        {
+            "ranges": [
+                "16:8"
+            ]
+        },
+        {
+            "from": [
+                "16:11",
+                "36:4",
+                "38:1"
+            ]
+        },
+        {
+            "512": [
+                "16:12"
+            ]
+        },
+        {
+            "X": [
+                "16:13",
+                "18:1"
+            ]
+        },
+        {
+            "340": [
+                "16:14"
+            ]
+        },
+        {
+            "workings.": [
+                "17:0"
+            ]
+        },
+        {
+            "1920": [
+                "18:0"
+            ]
+        },
+        {
+            "1280": [
+                "18:2"
+            ]
+        },
+        {
+            "pixels": [
+                "18:3"
+            ]
+        },
+        {
+            "2003.": [
+                "18:5"
+            ]
+        },
+        {
+            "simplest": [
+                "18:7"
+            ]
+        },
+        {
+            "has": [
+                "18:9",
+                "42:8",
+                "66:1"
+            ]
+        },
+        {
+            "I": [
+                "18:10"
+            ]
+        },
+        {
+            "pixel,": [
+                "18:13",
+                "26:3"
+            ]
+        },
+        {
+            "allowing": [
+                "18:14"
+            ]
+        },
+        {
+            "it": [
+                "18:15",
+                "32:12",
+                "40:14"
+            ]
+        },
+        {
+            "Ivan": [
+                "19:0"
+            ]
+        },
+        {
+            "Sutherland,": [
+                "19:1"
+            ]
+        },
+        {
+            "\"father\"": [
+                "19:3"
+            ]
+        },
+        {
+            "black": [
+                "20:1",
+                "20:12",
+                "69:9"
+            ]
+        },
+        {
+            "white.": [
+                "20:3"
+            ]
+        },
+        {
+            "For": [
+                "20:4",
+                "64:12"
+            ]
+        },
+        {
+            "that": [
+                "20:6",
+                "30:11",
+                "33:2",
+                "34:6",
+                "34:12",
+                "42:7",
+                "52:1",
+                "66:0",
+                "66:4"
+            ]
+        },
+        {
+            "support": [
+                "20:7",
+                "51:8"
+            ]
+        },
+        {
+            "256": [
+                "20:8"
+            ]
+        },
+        {
+            "different": [
+                "20:9",
+                "26:7"
+            ]
+        },
+        {
+            "shades": [
+                "20:10"
+            ]
+        },
+        {
+            "computer": [
+                "21:1",
+                "51:6"
+            ]
+        },
+        {
+            "graphics,": [
+                "21:2"
+            ]
+        },
+        {
+            "quoted": [
+                "21:3"
+            ]
+        },
+        {
+            "white,": [
+                "22:0"
+            ]
+        },
+        {
+            "sometimes": [
+                "22:1"
+            ]
+        },
+        {
+            "gray-scale": [
+                "22:3"
+            ]
+        },
+        {
+            "displays,": [
+                "22:4"
+            ]
+        },
+        {
+            "8": [
+                "22:5",
+                "24:3"
+            ]
+        },
+        {
+            "bits": [
+                "22:6",
+                "24:4",
+                "26:1",
+                "58:4"
+            ]
+        },
+        {
+            "pixel": [
+                "22:8",
+                "30:14",
+                "39:0",
+                "44:0",
+                "46:5",
+                "57:2"
+            ]
+        },
+        {
+            "are": [
+                "22:9",
+                "40:3",
+                "47:20"
+            ]
+        },
+        {
+            "required.": [
+                "22:10"
+            ]
+        },
+        {
+            "A": [
+                "22:11",
+                "32:1",
+                "32:18",
+                "48:2"
+            ]
+        },
+        {
+            "color": [
+                "22:12",
+                "47:15"
+            ]
+        },
+        {
+            "\"Computer": [
+                "23:1"
+            ]
+        },
+        {
+            "Software": [
+                "23:2"
+            ]
+        },
+        {
+            "for": [
+                "23:3",
+                "24:5",
+                "24:16",
+                "51:9"
+            ]
+        },
+        {
+            "might": [
+                "24:1"
+            ]
+        },
+        {
+            "use": [
+                "24:2",
+                "29:3",
+                "42:3"
+            ]
+        },
+        {
+            "each": [
+                "24:6",
+                "42:14",
+                "46:4",
+                "49:3",
+                "64:2"
+            ]
+        },
+        {
+            "three": [
+                "24:9",
+                "46:11",
+                "47:21"
+            ]
+        },
+        {
+            "colo": [
+                "24:10",
+                "47:6"
+            ]
+        },
+        {
+            "rs": [
+                "24:11"
+            ]
+        },
+        {
+            "(red,": [
+                "24:12"
+            ]
+        },
+        {
+            "blue,": [
+                "24:13"
+            ]
+        },
+        {
+            "green),": [
+                "24:15"
+            ]
+        },
+        {
+            "Graphics:'": [
+                "25:0"
+            ]
+        },
+        {
+            "Scientific": [
+                "25:1"
+            ]
+        },
+        {
+            "American,": [
+                "25:2"
+            ]
+        },
+        {
+            "24": [
+                "26:0"
+            ]
+        },
+        {
+            "permitting": [
+                "26:4"
+            ]
+        },
+        {
+            "millions": [
+                "26:5",
+                "43:2"
+            ]
+        },
+        {
+            "colors": [
+                "26:8"
+            ]
+        },
+        {
+            "displayed.": [
+                "26:11"
+            ]
+        },
+        {
+            "1984": [
+                "27:0"
+            ]
+        },
+        {
+            "All": [
+                "28:0"
+            ]
+        },
+        {
+            "laptop": [
+                "28:1"
+            ]
+        },
+        {
+            "handheld": [
+                "28:3"
+            ]
+        },
+        {
+            "computers,": [
+                "28:4"
+            ]
+        },
+        {
+            "calculators,": [
+                "28:5"
+            ]
+        },
+        {
+            "cellular": [
+                "28:6"
+            ]
+        },
+        {
+            "phones,": [
+                "28:7"
+            ]
+        },
+        {
+            "many": [
+                "28:9"
+            ]
+        },
+        {
+            "desktop": [
+                "29:0"
+            ]
+        },
+        {
+            "puters": [
+                "29:2"
+            ]
+        },
+        {
+            "flat-panel": [
+                "29:4"
+            ]
+        },
+        {
+            "liquid": [
+                "29:6",
+                "34:5",
+                "39:11",
+                "47:3"
+            ]
+        },
+        {
+            "crystal": [
+                "29:7",
+                "39:12",
+                "61:0"
+            ]
+        },
+        {
+            "(LCDs)": [
+                "29:9"
+            ]
+        },
+        {
+            "instead": [
+                "29:10",
+                "32:11"
+            ]
+        },
+        {
+            "CRTs": [
+                "30:0"
+            ]
+        },
+        {
+            "get": [
+                "30:2"
+            ]
+        },
+        {
+            "thin,": [
+                "30:4"
+            ]
+        },
+        {
+            "low-power": [
+                "30:5"
+            ]
+        },
+        {
+            "main": [
+                "30:8"
+            ]
+        },
+        {
+            "difference": [
+                "30:9"
+            ]
+        },
+        {
+            "LCD": [
+                "30:13",
+                "32:20",
+                "42:1"
+            ]
+        },
+        {
+            "display,": [
+                "32:2",
+                "36:3",
+                "47:2",
+                "51:4"
+            ]
+        },
+        {
+            "such": [
+                "32:3"
+            ]
+        },
+        {
+            "not": [
+                "32:6"
+            ]
+        },
+        {
+            "source": [
+                "32:8",
+                "36:8"
+            ]
+        },
+        {
+            "light;": [
+                "32:10",
+                "39:8"
+            ]
+        },
+        {
+            "controls": [
+                "32:13"
+            ]
+        },
+        {
+            "transmission": [
+                "32:15",
+                "63:3"
+            ]
+        },
+        {
+            "light.": [
+                "32:17",
+                "38:3"
+            ]
+        },
+        {
+            "typical": [
+                "32:19"
+            ]
+        },
+        {
+            "television": [
+                "33:0"
+            ]
+        },
+        {
+            "set,": [
+                "33:1"
+            ]
+        },
+        {
+            "includes": [
+                "34:0"
+            ]
+        },
+        {
+            "rod-shaped": [
+                "34:1"
+            ]
+        },
+        {
+            "molecules": [
+                "34:2"
+            ]
+        },
+        {
+            "fo": [
+                "34:7"
+            ]
+        },
+        {
+            "rm": [
+                "34:8"
+            ]
+        },
+        {
+            "twisting": [
+                "34:10"
+            ]
+        },
+        {
+            "helix": [
+                "34:11"
+            ]
+        },
+        {
+            "bends": [
+                "34:13"
+            ]
+        },
+        {
+            "using": [
+                "35:1",
+                "50:1",
+                "61:2"
+            ]
+        },
+        {
+            "electron": [
+                "35:3"
+            ]
+        },
+        {
+            "beam": [
+                "35:4"
+            ]
+        },
+        {
+            "light": [
+                "36:0",
+                "36:7",
+                "40:9",
+                "54:3",
+                "64:0"
+            ]
+        },
+        {
+            "entering": [
+                "36:1"
+            ]
+        },
+        {
+            "either": [
+                "36:5"
+            ]
+        },
+        {
+            "behind": [
+                "36:9"
+            ]
+        },
+        {
+            "o": [
+                "36:12"
+            ]
+        },
+        {
+            "r": [
+                "36:13",
+                "47:7"
+            ]
+        },
+        {
+            "less": [
+                "36:14"
+            ]
+        },
+        {
+            "scanned": [
+                "37:0"
+            ]
+        },
+        {
+            "across": [
+                "37:1"
+            ]
+        },
+        {
+            "often": [
+                "38:0"
+            ]
+        },
+        {
+            "reflected": [
+                "38:2"
+            ]
+        },
+        {
+            "rods": [
+                "38:5"
+            ]
+        },
+        {
+            "straighten": [
+                "38:6"
+            ]
+        },
+        {
+            "out": [
+                "38:7",
+                "57:5"
+            ]
+        },
+        {
+            "when": [
+                "38:8",
+                "64:14"
+            ]
+        },
+        {
+            "current": [
+                "38:10",
+                "44:4"
+            ]
+        },
+        {
+            "applied": [
+                "38:12"
+            ]
+        },
+        {
+            "smallest": [
+                "39:2"
+            ]
+        },
+        {
+            "individual": [
+                "39:3",
+                "64:3"
+            ]
+        },
+        {
+            "no": [
+                "39:4"
+            ]
+        },
+        {
+            "longer": [
+                "39:5"
+            ]
+        },
+        {
+            "bend": [
+                "39:6"
+            ]
+        },
+        {
+            "since": [
+                "39:9"
+            ]
+        },
+        {
+            "aterial": [
+                "39:14"
+            ]
+        },
+        {
+            "between": [
+                "39:16",
+                "65:7"
+            ]
+        },
+        {
+            "two": [
+                "39:17"
+            ]
+        },
+        {
+            "screens": [
+                "39:18"
+            ]
+        },
+        {
+            "picnlrc": [
+                "40:0"
+            ]
+        },
+        {
+            "element.": [
+                "40:1"
+            ]
+        },
+        {
+            "Screen": [
+                "40:2"
+            ]
+        },
+        {
+            "polarized": [
+                "40:4"
+            ]
+        },
+        {
+            "90": [
+                "40:6"
+            ]
+        },
+        {
+            "degrees,": [
+                "40:7"
+            ]
+        },
+        {
+            "cannot": [
+                "40:10"
+            ]
+        },
+        {
+            "pass": [
+                "40:11"
+            ]
+        },
+        {
+            "through": [
+                "40:12"
+            ]
+        },
+        {
+            "unless": [
+                "40:13"
+            ]
+        },
+        {
+            "bent.": [
+                "40:16"
+            ]
+        },
+        {
+            "Today,": [
+                "40:17"
+            ]
+        },
+        {
+            "ofhundreds": [
+                "41:1"
+            ]
+        },
+        {
+            "ofthou": [
+                "41:2"
+            ]
+        },
+        {
+            "active": [
+                "42:5",
+                "47:16",
+                "59:0"
+            ]
+        },
+        {
+            "tiny": [
+                "42:10"
+            ]
+        },
+        {
+            "transistor": [
+                "42:11",
+                "49:0",
+                "61:4"
+            ]
+        },
+        {
+            "switch": [
+                "42:12"
+            ]
+        },
+        {
+            "sands": [
+                "43:0"
+            ]
+        },
+        {
+            "ofpixels,": [
+                "43:3"
+            ]
+        },
+        {
+            "orga": [
+                "43:4"
+            ]
+        },
+        {
+            "precisely": [
+                "44:2"
+            ]
+        },
+        {
+            "control": [
+                "44:3",
+                "63:1"
+            ]
+        },
+        {
+            "make": [
+                "44:6"
+            ]
+        },
+        {
+            "sharper": [
+                "44:7"
+            ]
+        },
+        {
+            "images.": [
+                "44:8"
+            ]
+        },
+        {
+            "As": [
+                "44:9"
+            ]
+        },
+        {
+            "CRT,": [
+                "44:12"
+            ]
+        },
+        {
+            "red": [
+                "44:14",
+                "55:7"
+            ]
+        },
+        {
+            "nized": [
+                "45:0"
+            ]
+        },
+        {
+            "matrix.": [
+                "45:3"
+            ]
+        },
+        {
+            "green-blue": [
+                "46:0"
+            ]
+        },
+        {
+            "mask": [
+                "46:1"
+            ]
+        },
+        {
+            "associated": [
+                "46:2"
+            ]
+        },
+        {
+            "with": [
+                "46:3",
+                "58:2",
+                "69:3"
+            ]
+        },
+        {
+            "determines": [
+                "46:6"
+            ]
+        },
+        {
+            "intensity": [
+                "46:8"
+            ]
+        },
+        {
+            "flat": [
+                "47:0"
+            ]
+        },
+        {
+            "panel": [
+                "47:1"
+            ]
+        },
+        {
+            "uys": [
+                "47:4"
+            ]
+        },
+        {
+            "components": [
+                "47:8"
+            ]
+        },
+        {
+            "final": [
+                "47:11"
+            ]
+        },
+        {
+            "image;": [
+                "47:12"
+            ]
+        },
+        {
+            "LCD,": [
+                "47:18"
+            ]
+        },
+        {
+            "there": [
+                "47:19"
+            ]
+        },
+        {
+            "tal": [
+                "48:0"
+            ]
+        },
+        {
+            "technol": [
+                "48:4"
+            ]
+        },
+        {
+            "switches": [
+                "49:1"
+            ]
+        },
+        {
+            "pixel.": [
+                "49:4",
+                "58:6",
+                "64:4"
+            ]
+        },
+        {
+            "ogy": [
+                "50:0"
+            ]
+        },
+        {
+            "thin": [
+                "50:3",
+                "68:14"
+            ]
+        },
+        {
+            "layer": [
+                "50:4"
+            ]
+        },
+        {
+            "ofliquid": [
+                "50:5"
+            ]
+        },
+        {
+            "No": [
+                "51:0"
+            ]
+        },
+        {
+            "matter": [
+                "51:1"
+            ]
+        },
+        {
+            "what": [
+                "51:2",
+                "60:10"
+            ]
+        },
+        {
+            "hardware": [
+                "51:7"
+            ]
+        },
+        {
+            "con": [
+                "51:11"
+            ]
+        },
+        {
+            "polymers": [
+                "52:0"
+            ]
+        },
+        {
+            "used": [
+                "52:4"
+            ]
+        },
+        {
+            "sists": [
+                "53:0"
+            ]
+        },
+        {
+            "mainly": [
+                "53:1"
+            ]
+        },
+        {
+            "raster": [
+                "53:4"
+            ]
+        },
+        {
+            "buffer,": [
+                "53:6",
+                "53:9",
+                "55:11"
+            ]
+        },
+        {
+            "frame": [
+                "53:8",
+                "55:10",
+                "58:0"
+            ]
+        },
+        {
+            "store": [
+                "53:11"
+            ]
+        },
+        {
+            "transmit": [
+                "54:0"
+            ]
+        },
+        {
+            "block": [
+                "54:2"
+            ]
+        },
+        {
+            "accord": [
+                "54:4"
+            ]
+        },
+        {
+            "on-screen": [
+                "55:4"
+            ]
+        },
+        {
+            "sto": [
+                "55:6"
+            ]
+        },
+        {
+            "pattern": [
+                "55:15"
+            ]
+        },
+        {
+            "ingto": [
+                "56:0"
+            ]
+        },
+        {
+            "whether": [
+                "56:1"
+            ]
+        },
+        {
+            "charge": [
+                "56:3"
+            ]
+        },
+        {
+            "applied.": [
+                "57:0"
+            ]
+        },
+        {
+            "read": [
+                "57:4"
+            ]
+        },
+        {
+            "rate.": [
+                "57:13"
+            ]
+        },
+        {
+            "Figure": [
+                "57:14",
+                "69:11"
+            ]
+        },
+        {
+            "1.7": [
+                "57:15"
+            ]
+        },
+        {
+            "shows": [
+                "57:16"
+            ]
+        },
+        {
+            "buffer": [
+                "58:1"
+            ]
+        },
+        {
+            "4": [
+                "58:3"
+            ]
+        },
+        {
+            "Aliquid": [
+                "59:3"
+            ]
+        },
+        {
+            "goal": [
+                "60:1"
+            ]
+        },
+        {
+            "map": [
+                "60:5"
+            ]
+        },
+        {
+            "faithfully": [
+                "60:8"
+            ]
+        },
+        {
+            "represent": [
+                "60:9"
+            ]
+        },
+        {
+            "challenges": [
+                "62:0"
+            ]
+        },
+        {
+            "systems": [
+                "62:3"
+            ]
+        },
+        {
+            "arise": [
+                "62:4"
+            ]
+        },
+        {
+            "because": [
+                "62:5"
+            ]
+        },
+        {
+            "human": [
+                "62:7"
+            ]
+        },
+        {
+            "eye": [
+                "62:8",
+                "65:2"
+            ]
+        },
+        {
+            "very": [
+                "62:10"
+            ]
+        },
+        {
+            "good": [
+                "62:11"
+            ]
+        },
+        {
+            "detecting": [
+                "64:5"
+            ]
+        },
+        {
+            "even": [
+                "64:6"
+            ]
+        },
+        {
+            "subtle": [
+                "64:7"
+            ]
+        },
+        {
+            "changes": [
+                "64:8"
+            ]
+        },
+        {
+            "example,": [
+                "64:13"
+            ]
+        },
+        {
+            "being": [
+                "64:18"
+            ]
+        },
+        {
+            "updated,": [
+                "65:0"
+            ]
+        },
+        {
+            "detect": [
+                "65:4"
+            ]
+        },
+        {
+            "inconsistency": [
+                "65:6"
+            ]
+        },
+        {
+            "portion": [
+                "65:9"
+            ]
+        },
+        {
+            "changed": [
+                "66:2"
+            ]
+        },
+        {
+            "hasn't.": [
+                "66:6"
+            ]
+        },
+        {
+            "Opening": [
+                "67:0"
+            ]
+        },
+        {
+            "Box": [
+                "67:2"
+            ]
+        },
+        {
+            "If": [
+                "68:0"
+            ]
+        },
+        {
+            "we": [
+                "68:1",
+                "68:8"
+            ]
+        },
+        {
+            "open": [
+                "68:2"
+            ]
+        },
+        {
+            "box": [
+                "68:4"
+            ]
+        },
+        {
+            "containing": [
+                "68:5"
+            ]
+        },
+        {
+            "computer,": [
+                "68:7"
+            ]
+        },
+        {
+            "see": [
+                "68:9"
+            ]
+        },
+        {
+            "board": [
+                "68:12"
+            ]
+        },
+        {
+            "green": [
+                "69:0"
+            ]
+        },
+        {
+            "plastic,": [
+                "69:1"
+            ]
+        },
+        {
+            "covered": [
+                "69:2"
+            ]
+        },
+        {
+            "dozens": [
+                "69:4"
+            ]
+        },
+        {
+            "small": [
+                "69:6"
+            ]
+        },
+        {
+            "gray": [
+                "69:7"
+            ]
+        },
+        {
+            "rectangles.": [
+                "69:10"
+            ]
+        },
+        {
+            "1.8": [
+                "69:12"
+            ]
+        }
+    ]
+}

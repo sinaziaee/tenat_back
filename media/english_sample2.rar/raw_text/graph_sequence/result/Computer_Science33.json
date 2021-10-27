@@ -1,0 +1,1544 @@
+{
+    "edges": [
+        {
+            "from": "<START>",
+            "to": "17"
+        },
+        {
+            "from": "<START>",
+            "to": "1.3"
+        },
+        {
+            "from": "1.3",
+            "to": "Under"
+        },
+        {
+            "from": "Under",
+            "to": "the"
+        },
+        {
+            "from": "is",
+            "to": "the"
+        },
+        {
+            "from": "and",
+            "to": "the"
+        },
+        {
+            "from": "are",
+            "to": "the"
+        },
+        {
+            "from": "contains",
+            "to": "the"
+        },
+        {
+            "from": "far",
+            "to": "the"
+        },
+        {
+            "from": "by",
+            "to": "the"
+        },
+        {
+            "from": "illuminates",
+            "to": "the"
+        },
+        {
+            "from": "underneath",
+            "to": "the"
+        },
+        {
+            "from": "mouse;",
+            "to": "the"
+        },
+        {
+            "from": "under",
+            "to": "the"
+        },
+        {
+            "from": "compares",
+            "to": "the"
+        },
+        {
+            "from": "<START>",
+            "to": "the"
+        },
+        {
+            "from": "of",
+            "to": "the"
+        },
+        {
+            "from": "by",
+            "to": "the"
+        },
+        {
+            "from": "where",
+            "to": "the"
+        },
+        {
+            "from": "replace",
+            "to": "the"
+        },
+        {
+            "from": "the",
+            "to": "Covers"
+        },
+        {
+            "from": "<START>",
+            "to": "FIGURE"
+        },
+        {
+            "from": "FIGURE",
+            "to": "1.6"
+        },
+        {
+            "from": "1.6",
+            "to": "A"
+        },
+        {
+            "from": "A",
+            "to": "desktop"
+        },
+        {
+            "from": "desktop",
+            "to": "computer."
+        },
+        {
+            "from": "computer.",
+            "to": "The"
+        },
+        {
+            "from": "devices.",
+            "to": "The"
+        },
+        {
+            "from": "<START>",
+            "to": "The"
+        },
+        {
+            "from": "incremented.",
+            "to": "The"
+        },
+        {
+            "from": "<START>",
+            "to": "The"
+        },
+        {
+            "from": "mouse.",
+            "to": "The"
+        },
+        {
+            "from": "cessor.",
+            "to": "The"
+        },
+        {
+            "from": "far.",
+            "to": "The"
+        },
+        {
+            "from": "The",
+            "to": "liquid"
+        },
+        {
+            "from": "liquid",
+            "to": "crystal"
+        },
+        {
+            "from": "crystal",
+            "to": "display"
+        },
+        {
+            "from": "display",
+            "to": "(LCD)"
+        },
+        {
+            "from": "(LCD)",
+            "to": "scre;,on"
+        },
+        {
+            "from": "scre;,on",
+            "to": "is"
+        },
+        {
+            "from": "system",
+            "to": "is"
+        },
+        {
+            "from": "mouse",
+            "to": "is"
+        },
+        {
+            "from": "mouse",
+            "to": "is"
+        },
+        {
+            "from": "the",
+            "to": "primary"
+        },
+        {
+            "from": "the",
+            "to": "primary"
+        },
+        {
+            "from": "primary",
+            "to": "output"
+        },
+        {
+            "from": "<START>",
+            "to": "device,"
+        },
+        {
+            "from": "device,",
+            "to": "and"
+        },
+        {
+            "from": "keyboard",
+            "to": "and"
+        },
+        {
+            "from": "electromechanical",
+            "to": "and"
+        },
+        {
+            "from": "x",
+            "to": "and"
+        },
+        {
+            "from": "mera,",
+            "to": "and"
+        },
+        {
+            "from": "images",
+            "to": "and"
+        },
+        {
+            "from": "moved",
+            "to": "and"
+        },
+        {
+            "from": "costs",
+            "to": "and"
+        },
+        {
+            "from": "the",
+            "to": "keyboard"
+        },
+        {
+            "from": "and",
+            "to": "mouse"
+        },
+        {
+            "from": "original",
+            "to": "mouse"
+        },
+        {
+            "from": "the",
+            "to": "mouse"
+        },
+        {
+            "from": "electromechanical",
+            "to": "mouse"
+        },
+        {
+            "from": "optical",
+            "to": "mouse"
+        },
+        {
+            "from": "the",
+            "to": "mouse"
+        },
+        {
+            "from": "<START>",
+            "to": "mouse"
+        },
+        {
+            "from": "electro-optical",
+            "to": "mouse"
+        },
+        {
+            "from": "mouse",
+            "to": "are"
+        },
+        {
+            "from": "pictures",
+            "to": "are"
+        },
+        {
+            "from": "primary",
+            "to": "input"
+        },
+        {
+            "from": "input",
+            "to": "devices."
+        },
+        {
+            "from": "The",
+            "to": "box"
+        },
+        {
+            "from": "box",
+            "to": "contains"
+        },
+        {
+            "from": "the",
+            "to": "processor"
+        },
+        {
+            "from": "optical",
+            "to": "processor"
+        },
+        {
+            "from": "optical",
+            "to": "processor"
+        },
+        {
+            "from": "processor",
+            "to": "as"
+        },
+        {
+            "from": "<START>",
+            "to": "as"
+        },
+        {
+            "from": "as",
+            "to": "well"
+        },
+        {
+            "from": "as",
+            "to": "additional"
+        },
+        {
+            "from": "additional",
+            "to": "If0"
+        },
+        {
+            "from": "If0",
+            "to": "devices.This"
+        },
+        {
+            "from": "devices.This",
+            "to": "system"
+        },
+        {
+            "from": "is",
+            "to": "a"
+        },
+        {
+            "from": "used",
+            "to": "a"
+        },
+        {
+            "from": "across",
+            "to": "a"
+        },
+        {
+            "from": "actually",
+            "to": "a"
+        },
+        {
+            "from": "lighting,",
+            "to": "a"
+        },
+        {
+            "from": "and",
+            "to": "a"
+        },
+        {
+            "from": "pictures",
+            "to": "a"
+        },
+        {
+            "from": "to",
+            "to": "a"
+        },
+        {
+            "from": "of",
+            "to": "a"
+        },
+        {
+            "from": "a",
+            "to": "Dell"
+        },
+        {
+            "from": "Dell",
+            "to": "Optiplex"
+        },
+        {
+            "from": "Optiplex",
+            "to": "GX260."
+        },
+        {
+            "from": "The",
+            "to": "original"
+        },
+        {
+            "from": "mouse",
+            "to": "was"
+        },
+        {
+            "from": "was",
+            "to": "electromechanical"
+        },
+        {
+            "from": "The",
+            "to": "electromechanical"
+        },
+        {
+            "from": "the",
+            "to": "electromechanical"
+        },
+        {
+            "from": "older",
+            "to": "electromechanical"
+        },
+        {
+            "from": "and",
+            "to": "used"
+        },
+        {
+            "from": "a",
+            "to": "large"
+        },
+        {
+            "from": "large",
+            "to": "ball"
+        },
+        {
+            "from": "ball",
+            "to": "that"
+        },
+        {
+            "from": "processor",
+            "to": "that"
+        },
+        {
+            "from": "that",
+            "to": "when"
+        },
+        {
+            "from": "<START>",
+            "to": "rolled"
+        },
+        {
+            "from": "rolled",
+            "to": "across"
+        },
+        {
+            "from": "a",
+            "to": "surface"
+        },
+        {
+            "from": "the",
+            "to": "surface"
+        },
+        {
+            "from": "surface",
+            "to": "would"
+        },
+        {
+            "from": "would",
+            "to": "cause"
+        },
+        {
+            "from": "electronics",
+            "to": "cause"
+        },
+        {
+            "from": "cause",
+            "to": "an"
+        },
+        {
+            "from": "including",
+            "to": "an"
+        },
+        {
+            "from": "is",
+            "to": "an"
+        },
+        {
+            "from": "cause",
+            "to": "an"
+        },
+        {
+            "from": "an",
+            "to": "x"
+        },
+        {
+            "from": "and",
+            "to": "y"
+        },
+        {
+            "from": "y",
+            "to": "counter"
+        },
+        {
+            "from": "each",
+            "to": "counter"
+        },
+        {
+            "from": "counter",
+            "to": "to"
+        },
+        {
+            "from": "LED",
+            "to": "to"
+        },
+        {
+            "from": "<START>",
+            "to": "to"
+        },
+        {
+            "from": "solution",
+            "to": "to"
+        },
+        {
+            "from": "to",
+            "to": "be"
+        },
+        {
+            "from": "be",
+            "to": "incremented."
+        },
+        {
+            "from": "<START>",
+            "to": "amount"
+        },
+        {
+            "from": "amount",
+            "to": "of"
+        },
+        {
+            "from": "replacement",
+            "to": "of"
+        },
+        {
+            "from": "illustration",
+            "to": "of"
+        },
+        {
+            "from": "reliability",
+            "to": "of"
+        },
+        {
+            "from": "of",
+            "to": "increase"
+        },
+        {
+            "from": "increase",
+            "to": "in"
+        },
+        {
+            "from": "in",
+            "to": "each"
+        },
+        {
+            "from": "counter",
+            "to": "told"
+        },
+        {
+            "from": "told",
+            "to": "how"
+        },
+        {
+            "from": "and",
+            "to": "how"
+        },
+        {
+            "from": "how",
+            "to": "far"
+        },
+        {
+            "from": "mouse",
+            "to": "had"
+        },
+        {
+            "from": "had",
+            "to": "been"
+        },
+        {
+            "from": "largely",
+            "to": "been"
+        },
+        {
+            "from": "been",
+            "to": "moved."
+        },
+        {
+            "from": "mouse",
+            "to": "has"
+        },
+        {
+            "from": "mouse",
+            "to": "has"
+        },
+        {
+            "from": "has",
+            "to": "largely"
+        },
+        {
+            "from": "been",
+            "to": "replaced"
+        },
+        {
+            "from": "replaced",
+            "to": "by"
+        },
+        {
+            "from": "mouse",
+            "to": "by"
+        },
+        {
+            "from": "the",
+            "to": "newer"
+        },
+        {
+            "from": "newer",
+            "to": "all-optical"
+        },
+        {
+            "from": "<START>",
+            "to": "mouse."
+        },
+        {
+            "from": "The",
+            "to": "optical"
+        },
+        {
+            "from": "miniature",
+            "to": "optical"
+        },
+        {
+            "from": "simple",
+            "to": "optical"
+        },
+        {
+            "from": "simple",
+            "to": "optical"
+        },
+        {
+            "from": "is",
+            "to": "actually"
+        },
+        {
+            "from": "a",
+            "to": "miniature"
+        },
+        {
+            "from": "processor",
+            "to": "including"
+        },
+        {
+            "from": "<START>",
+            "to": "LED"
+        },
+        {
+            "from": "The",
+            "to": "LED"
+        },
+        {
+            "from": "to",
+            "to": "provide"
+        },
+        {
+            "from": "provide",
+            "to": "lighting,"
+        },
+        {
+            "from": "a",
+            "to": "tiny"
+        },
+        {
+            "from": "tiny",
+            "to": "black-and-white"
+        },
+        {
+            "from": "black-and-white",
+            "to": "ca"
+        },
+        {
+            "from": "ca",
+            "to": "mera,"
+        },
+        {
+            "from": "a",
+            "to": "simple"
+        },
+        {
+            "from": "a",
+            "to": "simple"
+        },
+        {
+            "from": "optical",
+            "to": "pro"
+        },
+        {
+            "from": "pro",
+            "to": ""
+        },
+        {
+            "from": "<START>",
+            "to": "cessor."
+        },
+        {
+            "from": "LED",
+            "to": "illuminates"
+        },
+        {
+            "from": "surface",
+            "to": "underneath"
+        },
+        {
+            "from": "the",
+            "to": "mouse;"
+        },
+        {
+            "from": "the",
+            "to": "camera"
+        },
+        {
+            "from": "camera",
+            "to": "takes"
+        },
+        {
+            "from": "<START>",
+            "to": "1500"
+        },
+        {
+            "from": "1500",
+            "to": "sample"
+        },
+        {
+            "from": "sample",
+            "to": "pictures"
+        },
+        {
+            "from": "Successive",
+            "to": "pictures"
+        },
+        {
+            "from": "a",
+            "to": "second"
+        },
+        {
+            "from": "second",
+            "to": "under"
+        },
+        {
+            "from": "the",
+            "to": "illumination."
+        },
+        {
+            "from": "illumination.",
+            "to": "Successive"
+        },
+        {
+            "from": "are",
+            "to": "sent"
+        },
+        {
+            "from": "that",
+            "to": "compares"
+        },
+        {
+            "from": "the",
+            "to": "images"
+        },
+        {
+            "from": "and",
+            "to": "determines"
+        },
+        {
+            "from": "determines",
+            "to": "whether"
+        },
+        {
+            "from": "has",
+            "to": "moved"
+        },
+        {
+            "from": "how",
+            "to": "far."
+        },
+        {
+            "from": "The",
+            "to": "replacement"
+        },
+        {
+            "from": "the",
+            "to": "electro-optical"
+        },
+        {
+            "from": "an",
+            "to": "illustration"
+        },
+        {
+            "from": "a",
+            "to": "common"
+        },
+        {
+            "from": "common",
+            "to": "phenomenon"
+        },
+        {
+            "from": "<START>",
+            "to": "where"
+        },
+        {
+            "from": "the",
+            "to": "decreasing"
+        },
+        {
+            "from": "decreasing",
+            "to": "costs"
+        },
+        {
+            "from": "and",
+            "to": "higher"
+        },
+        {
+            "from": "higher",
+            "to": "reliability"
+        },
+        {
+            "from": "of",
+            "to": "electronics"
+        },
+        {
+            "from": "an",
+            "to": "electronic"
+        },
+        {
+            "from": "<START>",
+            "to": "solution"
+        },
+        {
+            "from": "to",
+            "to": "replace"
+        },
+        {
+            "from": "the",
+            "to": "older"
+        },
+        {
+            "from": "electromechanical",
+            "to": "technology."
+        }
+    ],
+    "nodes": [
+        {
+            "17": [
+                "0:0"
+            ]
+        },
+        {
+            "1.3": [
+                "1:0"
+            ]
+        },
+        {
+            "Under": [
+                "1:1"
+            ]
+        },
+        {
+            "the": [
+                "1:2",
+                "2:12",
+                "3:2",
+                "3:7",
+                "3:14",
+                "7:9",
+                "8:8",
+                "11:4",
+                "11:7",
+                "11:9",
+                "12:6",
+                "13:7",
+                "14:0",
+                "14:10",
+                "15:2",
+                "16:1",
+                "17:3"
+            ]
+        },
+        {
+            "Covers": [
+                "1:3"
+            ]
+        },
+        {
+            "FIGURE": [
+                "2:0"
+            ]
+        },
+        {
+            "1.6": [
+                "2:1"
+            ]
+        },
+        {
+            "A": [
+                "2:2"
+            ]
+        },
+        {
+            "desktop": [
+                "2:3"
+            ]
+        },
+        {
+            "computer.": [
+                "2:4"
+            ]
+        },
+        {
+            "The": [
+                "2:5",
+                "3:11",
+                "5:0",
+                "6:14",
+                "8:0",
+                "9:1",
+                "11:1",
+                "14:7"
+            ]
+        },
+        {
+            "liquid": [
+                "2:6"
+            ]
+        },
+        {
+            "crystal": [
+                "2:7"
+            ]
+        },
+        {
+            "display": [
+                "2:8"
+            ]
+        },
+        {
+            "(LCD)": [
+                "2:9"
+            ]
+        },
+        {
+            "scre;,on": [
+                "2:10"
+            ]
+        },
+        {
+            "is": [
+                "2:11",
+                "4:5",
+                "9:4",
+                "15:5"
+            ]
+        },
+        {
+            "primary": [
+                "2:13",
+                "3:8"
+            ]
+        },
+        {
+            "output": [
+                "2:14"
+            ]
+        },
+        {
+            "device,": [
+                "3:0"
+            ]
+        },
+        {
+            "and": [
+                "3:1",
+                "3:4",
+                "5:5",
+                "6:8",
+                "10:9",
+                "13:9",
+                "14:4",
+                "16:4"
+            ]
+        },
+        {
+            "keyboard": [
+                "3:3"
+            ]
+        },
+        {
+            "mouse": [
+                "3:5",
+                "5:2",
+                "7:10",
+                "8:2",
+                "9:3",
+                "14:1",
+                "15:0",
+                "15:4"
+            ]
+        },
+        {
+            "are": [
+                "3:6",
+                "12:10"
+            ]
+        },
+        {
+            "input": [
+                "3:9"
+            ]
+        },
+        {
+            "devices.": [
+                "3:10"
+            ]
+        },
+        {
+            "box": [
+                "3:12"
+            ]
+        },
+        {
+            "contains": [
+                "3:13"
+            ]
+        },
+        {
+            "processor": [
+                "3:15",
+                "9:9",
+                "13:4"
+            ]
+        },
+        {
+            "as": [
+                "3:16",
+                "4:0"
+            ]
+        },
+        {
+            "well": [
+                "3:17"
+            ]
+        },
+        {
+            "additional": [
+                "4:1"
+            ]
+        },
+        {
+            "If0": [
+                "4:2"
+            ]
+        },
+        {
+            "devices.This": [
+                "4:3"
+            ]
+        },
+        {
+            "system": [
+                "4:4"
+            ]
+        },
+        {
+            "a": [
+                "4:6",
+                "5:7",
+                "6:2",
+                "9:6",
+                "10:4",
+                "10:10",
+                "12:3",
+                "13:1",
+                "15:9"
+            ]
+        },
+        {
+            "Dell": [
+                "4:7"
+            ]
+        },
+        {
+            "Optiplex": [
+                "4:8"
+            ]
+        },
+        {
+            "GX260.": [
+                "4:9"
+            ]
+        },
+        {
+            "original": [
+                "5:1"
+            ]
+        },
+        {
+            "was": [
+                "5:3"
+            ]
+        },
+        {
+            "electromechanical": [
+                "5:4",
+                "8:1",
+                "14:11",
+                "17:5"
+            ]
+        },
+        {
+            "used": [
+                "5:6"
+            ]
+        },
+        {
+            "large": [
+                "5:8"
+            ]
+        },
+        {
+            "ball": [
+                "5:9"
+            ]
+        },
+        {
+            "that": [
+                "5:10",
+                "13:5"
+            ]
+        },
+        {
+            "when": [
+                "5:11"
+            ]
+        },
+        {
+            "rolled": [
+                "6:0"
+            ]
+        },
+        {
+            "across": [
+                "6:1"
+            ]
+        },
+        {
+            "surface": [
+                "6:3",
+                "11:5"
+            ]
+        },
+        {
+            "would": [
+                "6:4"
+            ]
+        },
+        {
+            "cause": [
+                "6:5",
+                "16:9"
+            ]
+        },
+        {
+            "an": [
+                "6:6",
+                "9:11",
+                "15:6",
+                "16:10"
+            ]
+        },
+        {
+            "x": [
+                "6:7"
+            ]
+        },
+        {
+            "y": [
+                "6:9"
+            ]
+        },
+        {
+            "counter": [
+                "6:10",
+                "7:5"
+            ]
+        },
+        {
+            "to": [
+                "6:11",
+                "10:1",
+                "13:0",
+                "17:1"
+            ]
+        },
+        {
+            "be": [
+                "6:12"
+            ]
+        },
+        {
+            "incremented.": [
+                "6:13"
+            ]
+        },
+        {
+            "amount": [
+                "7:0"
+            ]
+        },
+        {
+            "of": [
+                "7:1",
+                "14:9",
+                "15:8",
+                "16:7"
+            ]
+        },
+        {
+            "increase": [
+                "7:2"
+            ]
+        },
+        {
+            "in": [
+                "7:3"
+            ]
+        },
+        {
+            "each": [
+                "7:4"
+            ]
+        },
+        {
+            "told": [
+                "7:6"
+            ]
+        },
+        {
+            "how": [
+                "7:7",
+                "14:5"
+            ]
+        },
+        {
+            "far": [
+                "7:8"
+            ]
+        },
+        {
+            "had": [
+                "7:11"
+            ]
+        },
+        {
+            "been": [
+                "7:12",
+                "8:5"
+            ]
+        },
+        {
+            "moved.": [
+                "7:13"
+            ]
+        },
+        {
+            "has": [
+                "8:3",
+                "14:2"
+            ]
+        },
+        {
+            "largely": [
+                "8:4"
+            ]
+        },
+        {
+            "replaced": [
+                "8:6"
+            ]
+        },
+        {
+            "by": [
+                "8:7",
+                "15:1"
+            ]
+        },
+        {
+            "newer": [
+                "8:9"
+            ]
+        },
+        {
+            "all-optical": [
+                "8:10"
+            ]
+        },
+        {
+            "mouse.": [
+                "9:0"
+            ]
+        },
+        {
+            "optical": [
+                "9:2",
+                "9:8",
+                "10:12",
+                "13:3"
+            ]
+        },
+        {
+            "actually": [
+                "9:5"
+            ]
+        },
+        {
+            "miniature": [
+                "9:7"
+            ]
+        },
+        {
+            "including": [
+                "9:10"
+            ]
+        },
+        {
+            "LED": [
+                "10:0",
+                "11:2"
+            ]
+        },
+        {
+            "provide": [
+                "10:2"
+            ]
+        },
+        {
+            "lighting,": [
+                "10:3"
+            ]
+        },
+        {
+            "tiny": [
+                "10:5"
+            ]
+        },
+        {
+            "black-and-white": [
+                "10:6"
+            ]
+        },
+        {
+            "ca": [
+                "10:7"
+            ]
+        },
+        {
+            "mera,": [
+                "10:8"
+            ]
+        },
+        {
+            "simple": [
+                "10:11",
+                "13:2"
+            ]
+        },
+        {
+            "pro": [
+                "10:13"
+            ]
+        },
+        {
+            "": [
+                "10:14"
+            ]
+        },
+        {
+            "cessor.": [
+                "11:0"
+            ]
+        },
+        {
+            "illuminates": [
+                "11:3"
+            ]
+        },
+        {
+            "underneath": [
+                "11:6"
+            ]
+        },
+        {
+            "mouse;": [
+                "11:8"
+            ]
+        },
+        {
+            "camera": [
+                "11:10"
+            ]
+        },
+        {
+            "takes": [
+                "11:11"
+            ]
+        },
+        {
+            "1500": [
+                "12:0"
+            ]
+        },
+        {
+            "sample": [
+                "12:1"
+            ]
+        },
+        {
+            "pictures": [
+                "12:2",
+                "12:9"
+            ]
+        },
+        {
+            "second": [
+                "12:4"
+            ]
+        },
+        {
+            "under": [
+                "12:5"
+            ]
+        },
+        {
+            "illumination.": [
+                "12:7"
+            ]
+        },
+        {
+            "Successive": [
+                "12:8"
+            ]
+        },
+        {
+            "sent": [
+                "12:11"
+            ]
+        },
+        {
+            "compares": [
+                "13:6"
+            ]
+        },
+        {
+            "images": [
+                "13:8"
+            ]
+        },
+        {
+            "determines": [
+                "13:10"
+            ]
+        },
+        {
+            "whether": [
+                "13:11"
+            ]
+        },
+        {
+            "moved": [
+                "14:3"
+            ]
+        },
+        {
+            "far.": [
+                "14:6"
+            ]
+        },
+        {
+            "replacement": [
+                "14:8"
+            ]
+        },
+        {
+            "electro-optical": [
+                "15:3"
+            ]
+        },
+        {
+            "illustration": [
+                "15:7"
+            ]
+        },
+        {
+            "common": [
+                "15:10"
+            ]
+        },
+        {
+            "phenomenon": [
+                "15:11"
+            ]
+        },
+        {
+            "where": [
+                "16:0"
+            ]
+        },
+        {
+            "decreasing": [
+                "16:2"
+            ]
+        },
+        {
+            "costs": [
+                "16:3"
+            ]
+        },
+        {
+            "higher": [
+                "16:5"
+            ]
+        },
+        {
+            "reliability": [
+                "16:6"
+            ]
+        },
+        {
+            "electronics": [
+                "16:8"
+            ]
+        },
+        {
+            "electronic": [
+                "16:11"
+            ]
+        },
+        {
+            "solution": [
+                "17:0"
+            ]
+        },
+        {
+            "replace": [
+                "17:2"
+            ]
+        },
+        {
+            "older": [
+                "17:4"
+            ]
+        },
+        {
+            "technology.": [
+                "17:6"
+            ]
+        }
+    ]
+}

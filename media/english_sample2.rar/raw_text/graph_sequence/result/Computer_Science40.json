@@ -1,0 +1,803 @@
+{
+    "edges": [
+        {
+            "from": "<START>",
+            "to": "24"
+        },
+        {
+            "from": "<START>",
+            "to": "Chapter"
+        },
+        {
+            "from": "Chapter",
+            "to": "1"
+        },
+        {
+            "from": "1",
+            "to": "Computer"
+        },
+        {
+            "from": "Computer",
+            "to": "Abstractions"
+        },
+        {
+            "from": "Abstractions",
+            "to": "and"
+        },
+        {
+            "from": "platters",
+            "to": "and"
+        },
+        {
+            "from": "hardware",
+            "to": "and"
+        },
+        {
+            "from": "designers",
+            "to": "and"
+        },
+        {
+            "from": "hardware",
+            "to": "and"
+        },
+        {
+            "from": "cost",
+            "to": "and"
+        },
+        {
+            "from": "and",
+            "to": "Technology"
+        },
+        {
+            "from": "<START>",
+            "to": "FIGURE"
+        },
+        {
+            "from": "FIGURE",
+            "to": "1.11"
+        },
+        {
+            "from": "1.11",
+            "to": "A"
+        },
+        {
+            "from": "A",
+            "to": "disk"
+        },
+        {
+            "from": "10",
+            "to": "disk"
+        },
+        {
+            "from": "disk",
+            "to": "showing"
+        },
+        {
+            "from": "showing",
+            "to": "10"
+        },
+        {
+            "from": "disk",
+            "to": "platters"
+        },
+        {
+            "from": "and",
+            "to": "the"
+        },
+        {
+            "from": "from",
+            "to": "the"
+        },
+        {
+            "from": "is",
+            "to": "the"
+        },
+        {
+            "from": "<START>",
+            "to": "the"
+        },
+        {
+            "from": "between",
+            "to": "the"
+        },
+        {
+            "from": "is",
+            "to": "the"
+        },
+        {
+            "from": "between",
+            "to": "the"
+        },
+        {
+            "from": "the",
+            "to": "read/"
+        },
+        {
+            "from": "read/",
+            "to": "write"
+        },
+        {
+            "from": "write",
+            "to": "heads."
+        },
+        {
+            "from": "<START>",
+            "to": "BIG"
+        },
+        {
+            "from": "BIG",
+            "to": "Both"
+        },
+        {
+            "from": "Both",
+            "to": "hardware"
+        },
+        {
+            "from": "both",
+            "to": "hardware"
+        },
+        {
+            "from": "<START>",
+            "to": "hardware"
+        },
+        {
+            "from": "and",
+            "to": "software"
+        },
+        {
+            "from": "and",
+            "to": "software"
+        },
+        {
+            "from": "software",
+            "to": "consist"
+        },
+        {
+            "from": "consist",
+            "to": "of"
+        },
+        {
+            "from": "principle",
+            "to": "of"
+        },
+        {
+            "from": "complexity",
+            "to": "of"
+        },
+        {
+            "from": "<START>",
+            "to": "of"
+        },
+        {
+            "from": "implementations",
+            "to": "of"
+        },
+        {
+            "from": "of",
+            "to": "hierarchical"
+        },
+        {
+            "from": "hierarchical",
+            "to": "layers,"
+        },
+        {
+            "from": "layers,",
+            "to": "with"
+        },
+        {
+            "from": "cope",
+            "to": "with"
+        },
+        {
+            "from": "with",
+            "to": "each"
+        },
+        {
+            "from": "<START>",
+            "to": "The"
+        },
+        {
+            "from": "<START>",
+            "to": "lower"
+        },
+        {
+            "from": "lower",
+            "to": "layer"
+        },
+        {
+            "from": "layer",
+            "to": "hiding"
+        },
+        {
+            "from": "hiding",
+            "to": "details"
+        },
+        {
+            "from": "details",
+            "to": "from"
+        },
+        {
+            "from": "the",
+            "to": "level"
+        },
+        {
+            "from": "level",
+            "to": "above."
+        },
+        {
+            "from": "above.",
+            "to": "This"
+        },
+        {
+            "from": "software.",
+            "to": "This"
+        },
+        {
+            "from": "This",
+            "to": "principle"
+        },
+        {
+            "from": "of",
+            "to": "abstrac"
+        },
+        {
+            "from": "abstrac",
+            "to": ""
+        },
+        {
+            "from": "soft",
+            "to": ""
+        },
+        {
+            "from": "",
+            "to": ""
+        },
+        {
+            "from": "<START>",
+            "to": "Picture"
+        },
+        {
+            "from": "Picture",
+            "to": "tion"
+        },
+        {
+            "from": "tion",
+            "to": "is"
+        },
+        {
+            "from": "abstraction",
+            "to": "is"
+        },
+        {
+            "from": "the",
+            "to": "way"
+        },
+        {
+            "from": "way",
+            "to": "both"
+        },
+        {
+            "from": "hardware",
+            "to": "designers"
+        },
+        {
+            "from": "software",
+            "to": "designers"
+        },
+        {
+            "from": "designers",
+            "to": "cope"
+        },
+        {
+            "from": "the",
+            "to": "complexity"
+        },
+        {
+            "from": "of",
+            "to": "computer"
+        },
+        {
+            "from": "computer",
+            "to": "systems."
+        },
+        {
+            "from": "systems.",
+            "to": "One"
+        },
+        {
+            "from": "One",
+            "to": "key"
+        },
+        {
+            "from": "key",
+            "to": "interface"
+        },
+        {
+            "from": "architecture-the",
+            "to": "interface"
+        },
+        {
+            "from": "abstract",
+            "to": "interface"
+        },
+        {
+            "from": "interface",
+            "to": "between"
+        },
+        {
+            "from": "interface",
+            "to": "between"
+        },
+        {
+            "from": "the",
+            "to": "levels"
+        },
+        {
+            "from": "of",
+            "to": "abstraction"
+        },
+        {
+            "from": "the",
+            "to": "instruction"
+        },
+        {
+            "from": "instruction",
+            "to": "set"
+        },
+        {
+            "from": "set",
+            "to": "architecture-the"
+        },
+        {
+            "from": "and",
+            "to": "low-level"
+        },
+        {
+            "from": "low-level",
+            "to": "software."
+        },
+        {
+            "from": "This",
+            "to": "abstract"
+        },
+        {
+            "from": "interface",
+            "to": "enables"
+        },
+        {
+            "from": "enables",
+            "to": "many"
+        },
+        {
+            "from": "<START>",
+            "to": "implementations"
+        },
+        {
+            "from": "of",
+            "to": "varying"
+        },
+        {
+            "from": "varying",
+            "to": "cost"
+        },
+        {
+            "from": "and",
+            "to": "performance"
+        },
+        {
+            "from": "performance",
+            "to": "to"
+        },
+        {
+            "from": "to",
+            "to": "run"
+        },
+        {
+            "from": "run",
+            "to": "identical"
+        },
+        {
+            "from": "identical",
+            "to": "soft"
+        },
+        {
+            "from": "<START>",
+            "to": "ware."
+        }
+    ],
+    "nodes": [
+        {
+            "24": [
+                "0:0"
+            ]
+        },
+        {
+            "Chapter": [
+                "1:0"
+            ]
+        },
+        {
+            "1": [
+                "1:1"
+            ]
+        },
+        {
+            "Computer": [
+                "1:2"
+            ]
+        },
+        {
+            "Abstractions": [
+                "1:3"
+            ]
+        },
+        {
+            "and": [
+                "1:4",
+                "2:8",
+                "3:3",
+                "6:8",
+                "9:1",
+                "10:4"
+            ]
+        },
+        {
+            "Technology": [
+                "1:5"
+            ]
+        },
+        {
+            "FIGURE": [
+                "2:0"
+            ]
+        },
+        {
+            "1.11": [
+                "2:1"
+            ]
+        },
+        {
+            "A": [
+                "2:2"
+            ]
+        },
+        {
+            "disk": [
+                "2:3",
+                "2:6"
+            ]
+        },
+        {
+            "showing": [
+                "2:4"
+            ]
+        },
+        {
+            "10": [
+                "2:5"
+            ]
+        },
+        {
+            "platters": [
+                "2:7"
+            ]
+        },
+        {
+            "the": [
+                "2:9",
+                "5:5",
+                "6:3",
+                "7:0",
+                "7:9",
+                "8:3",
+                "8:9"
+            ]
+        },
+        {
+            "read/": [
+                "2:10"
+            ]
+        },
+        {
+            "write": [
+                "2:11"
+            ]
+        },
+        {
+            "heads.": [
+                "2:12"
+            ]
+        },
+        {
+            "BIG": [
+                "3:0"
+            ]
+        },
+        {
+            "Both": [
+                "3:1"
+            ]
+        },
+        {
+            "hardware": [
+                "3:2",
+                "6:6",
+                "9:0"
+            ]
+        },
+        {
+            "software": [
+                "3:4",
+                "6:9"
+            ]
+        },
+        {
+            "consist": [
+                "3:5"
+            ]
+        },
+        {
+            "of": [
+                "3:6",
+                "5:10",
+                "7:2",
+                "8:0",
+                "10:1"
+            ]
+        },
+        {
+            "hierarchical": [
+                "3:7"
+            ]
+        },
+        {
+            "layers,": [
+                "3:8"
+            ]
+        },
+        {
+            "with": [
+                "3:9",
+                "6:12"
+            ]
+        },
+        {
+            "each": [
+                "3:10"
+            ]
+        },
+        {
+            "The": [
+                "4:0"
+            ]
+        },
+        {
+            "lower": [
+                "5:0"
+            ]
+        },
+        {
+            "layer": [
+                "5:1"
+            ]
+        },
+        {
+            "hiding": [
+                "5:2"
+            ]
+        },
+        {
+            "details": [
+                "5:3"
+            ]
+        },
+        {
+            "from": [
+                "5:4"
+            ]
+        },
+        {
+            "level": [
+                "5:6"
+            ]
+        },
+        {
+            "above.": [
+                "5:7"
+            ]
+        },
+        {
+            "This": [
+                "5:8",
+                "9:4"
+            ]
+        },
+        {
+            "principle": [
+                "5:9"
+            ]
+        },
+        {
+            "abstrac": [
+                "5:11"
+            ]
+        },
+        {
+            "": [
+                "5:12",
+                "10:10",
+                "10:11"
+            ]
+        },
+        {
+            "Picture": [
+                "6:0"
+            ]
+        },
+        {
+            "tion": [
+                "6:1"
+            ]
+        },
+        {
+            "is": [
+                "6:2",
+                "8:2"
+            ]
+        },
+        {
+            "way": [
+                "6:4"
+            ]
+        },
+        {
+            "both": [
+                "6:5"
+            ]
+        },
+        {
+            "designers": [
+                "6:7",
+                "6:10"
+            ]
+        },
+        {
+            "cope": [
+                "6:11"
+            ]
+        },
+        {
+            "complexity": [
+                "7:1"
+            ]
+        },
+        {
+            "computer": [
+                "7:3"
+            ]
+        },
+        {
+            "systems.": [
+                "7:4"
+            ]
+        },
+        {
+            "One": [
+                "7:5"
+            ]
+        },
+        {
+            "key": [
+                "7:6"
+            ]
+        },
+        {
+            "interface": [
+                "7:7",
+                "8:7",
+                "9:6"
+            ]
+        },
+        {
+            "between": [
+                "7:8",
+                "8:8"
+            ]
+        },
+        {
+            "levels": [
+                "7:10"
+            ]
+        },
+        {
+            "abstraction": [
+                "8:1"
+            ]
+        },
+        {
+            "instruction": [
+                "8:4"
+            ]
+        },
+        {
+            "set": [
+                "8:5"
+            ]
+        },
+        {
+            "architecture-the": [
+                "8:6"
+            ]
+        },
+        {
+            "low-level": [
+                "9:2"
+            ]
+        },
+        {
+            "software.": [
+                "9:3"
+            ]
+        },
+        {
+            "abstract": [
+                "9:5"
+            ]
+        },
+        {
+            "enables": [
+                "9:7"
+            ]
+        },
+        {
+            "many": [
+                "9:8"
+            ]
+        },
+        {
+            "implementations": [
+                "10:0"
+            ]
+        },
+        {
+            "varying": [
+                "10:2"
+            ]
+        },
+        {
+            "cost": [
+                "10:3"
+            ]
+        },
+        {
+            "performance": [
+                "10:5"
+            ]
+        },
+        {
+            "to": [
+                "10:6"
+            ]
+        },
+        {
+            "run": [
+                "10:7"
+            ]
+        },
+        {
+            "identical": [
+                "10:8"
+            ]
+        },
+        {
+            "soft": [
+                "10:9"
+            ]
+        },
+        {
+            "ware.": [
+                "11:0"
+            ]
+        }
+    ]
+}
