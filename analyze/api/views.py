@@ -335,7 +335,7 @@ def entity_rec(request):
 
     language = new_map.get('language')
 
-    if language is "English":
+    if language == "English":
         result = entity_recognition_english.apply(from_path=from_path, to_path='entity_recognition',
                                                   name=name)
     else:
