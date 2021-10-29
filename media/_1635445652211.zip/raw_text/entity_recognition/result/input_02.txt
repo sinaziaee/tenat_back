@@ -1,0 +1,4 @@
+European:NORP
+Google:ORG
+$5.1 billion:MONEY
+Wednesday:DATE

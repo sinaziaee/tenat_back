@@ -1,0 +1,51 @@
+[
+    {
+        "output_path": "media/_1635445652211.zip/raw_text/entity_recognition/result"
+    },
+    {
+        "doc_name": "input_01.txt",
+        "entities": [
+            {
+                "label": "ORG",
+                "token": "The Indian Space Research Organisation"
+            },
+            {
+                "label": "GPE",
+                "token": "India"
+            },
+            {
+                "label": "GPE",
+                "token": "Bengaluru"
+            },
+            {
+                "label": "ORG",
+                "token": "Department of Space"
+            }
+        ],
+        "entity-count": 7,
+        "image_address": "media/_1635445652211.zip/raw_text/entity_recognition/result/images/input_01_dep.svg"
+    },
+    {
+        "doc_name": "input_02.txt",
+        "entities": [
+            {
+                "label": "NORP",
+                "token": "European"
+            },
+            {
+                "label": "ORG",
+                "token": "Google"
+            },
+            {
+                "label": "MONEY",
+                "token": "$5.1 billion"
+            },
+            {
+                "label": "DATE",
+                "token": "Wednesday"
+            }
+        ],
+        "entity-count": 4,
+        "image_address": "media/_1635445652211.zip/raw_text/entity_recognition/result/images/input_02_dep.svg"
+    }
+]
