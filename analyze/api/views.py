@@ -212,11 +212,14 @@ def graph_construction(request):
     new_map = request.POST
     name = new_map.get('name')
     from_path = new_map.get('from')
+    level = new_map.get('level')
     graph_type = new_map.get('graph_type')
     min_sim = float(new_map.get('min_sim'))
-    print(new_map.get('min_sim'))
 
-    result = graph.apply(from_path=from_path,to_path='graph_construction',name=name,graph_type=graph_type,min_sim=min_sim)
+    if level == 'document':
+        result = graph.apply(from_path=from_path,to_path='graph_construction',name=name,graph_type=graph_type,min_sim=min_sim)
+    else:
+        result = graph_sequence_construction.apply(from_path,'graph_construction',name)
     if result is not None and len(result) != 0:
         return Response(result, status=status.HTTP_200_OK)
     return Response('failed', status=status.HTTP_400_BAD_REQUEST) 
@@ -227,7 +230,11 @@ def graph_construction(request):
 def graph_viewer(request):
     new_map = request.POST
     name = new_map.get('name')
-    from_path = new_map.get('from')+'/00_graph_data.json'
+    from_path = new_map.get('from')
+    if '.json' not in from_path:
+        from_path = from_path+'/00_graph_data.json'
+    else:
+        from_path = from_path
         # Opening JSON file
     f = open(from_path,'r',encoding='utf-8')
     # returns JSON object as
@@ -336,7 +343,7 @@ def entity_rec(request):
 
     language = new_map.get('language')
 
-    if language is "English":
+    if language == "English":
         result = entity_recognition_english.apply(from_path=from_path, to_path='entity_recognition',
                                                   name=name)
     else:
@@ -346,16 +353,16 @@ def entity_rec(request):
     return Response('failed', status=status.HTTP_400_BAD_REQUEST)
 
 
-@api_view(['POST'])
-def graph_sequence(request):
-    new_map = request.POST
-    name = new_map.get('name')
-    from_path = new_map.get('from')
+# @api_view(['POST'])
+# def graph_sequence(request):
+#     new_map = request.POST
+#     name = new_map.get('name')
+#     from_path = new_map.get('from')
 
-    language = new_map.get('language')
+#     language = new_map.get('language')
 
-    result = graph_sequence_construction.apply(from_path=from_path, to_path='graph_sequence', name=name)
+#     result = graph_sequence_construction.apply(from_path=from_path, to_path='graph_sequence', name=name)
 
-    if result is not None and len(result) != 0:
-        return Response(result, status=status.HTTP_200_OK)
-    return Response('failed', status=status.HTTP_400_BAD_REQUEST)
+#     if result is not None and len(result) != 0:
+#         return Response(result, status=status.HTTP_200_OK)
+#     return Response('failed', status=status.HTTP_400_BAD_REQUEST)

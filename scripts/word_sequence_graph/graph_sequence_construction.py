@@ -20,7 +20,8 @@ def dictionary_to_json(words_dict):
     nodes = []
     edges = []
     for key in words_dict.keys():
-        nodes.append({words_dict[key].word:words_dict[key].index})
+        node = {'id':words_dict[key].word}
+        nodes.append(node);
         for node in words_dict[key].prev:
             new_dict = {}
             new_dict['to'] = words_dict[key].word
@@ -87,7 +88,8 @@ def apply(from_path, to_path, name):
         f_output.write(f'{result}\n')
         f_output.flush()
         save_json.apply(json_result, result_json_file)
-        result_list.append(result_json_file)
+        result_dict = {'doc_name':doc_name,'graph_data_address':result_json_file}
+        result_list.append(result_dict)
     return result_list
 
 

@@ -5,56 +5,56 @@
     {
         "doc_name": "Computer_Science20.txt",
         "removed_count": 160,
-        "top_10_removed_words": "our ,i ,they ,now ,it ,the ,its ,a ,in ,been"
+        "top_10_removed_words": "why ,as ,and ,until ,i ,been ,it ,are ,to ,were"
     },
     {
         "doc_name": "Computer_Science21.txt",
         "removed_count": 228,
-        "top_10_removed_words": "they ,once ,it ,their ,or ,the ,about ,a ,only ,in"
+        "top_10_removed_words": "most ,as ,can ,and ,what ,it ,an ,other ,are ,to"
     },
     {
         "doc_name": "Computer_Science22.txt",
         "removed_count": 187,
-        "top_10_removed_words": "they ,their ,or ,the ,few ,its ,a ,only ,in ,been"
+        "top_10_removed_words": "most ,as ,can ,and ,few ,been ,an ,other ,are ,during"
     },
     {
         "doc_name": "Computer_Science23.txt",
         "removed_count": 86,
-        "top_10_removed_words": "the ,about ,only ,in ,while ,been ,of ,by ,and ,are"
+        "top_10_removed_words": "most ,and ,all ,been ,where ,are ,were ,by ,is ,the"
     },
     {
         "doc_name": "Computer_Science24.txt",
         "removed_count": 86,
-        "top_10_removed_words": "you ,now ,their ,the ,or ,about ,a ,in ,been ,by"
+        "top_10_removed_words": "most ,can ,and ,what ,all ,been ,where ,an ,other ,are"
     },
     {
         "doc_name": "Computer_Science25.txt",
         "removed_count": 230,
-        "top_10_removed_words": "our ,they ,you ,once ,it ,the ,or ,a ,both ,in"
+        "top_10_removed_words": "as ,can ,t ,and ,what ,below ,re ,after ,it ,an"
     },
     {
         "doc_name": "Computer_Science26.txt",
         "removed_count": 152,
-        "top_10_removed_words": "i ,they ,you ,it ,the ,or ,a ,only ,both ,in"
+        "top_10_removed_words": "as ,can ,and ,below ,i ,it ,where ,other ,are ,to"
     },
     {
         "doc_name": "Computer_Science27.txt",
         "removed_count": 156,
-        "top_10_removed_words": "i ,they ,you ,it ,their ,the ,or ,a ,only ,both"
+        "top_10_removed_words": "most ,as ,can ,being ,and ,below ,re ,i ,it ,where"
     },
     {
         "doc_name": "Computer_Science28.txt",
         "removed_count": 150,
-        "top_10_removed_words": "our ,you ,the ,or ,a ,both ,in ,by ,of ,an"
+        "top_10_removed_words": "why ,as ,can ,t ,and ,what ,re ,an ,are ,to"
     },
     {
         "doc_name": "Computer_Science29.txt",
         "removed_count": 162,
-        "top_10_removed_words": "they ,it ,their ,the ,or ,a ,in ,by ,of ,an"
+        "top_10_removed_words": "as ,can ,and ,below ,it ,an ,to ,were ,they ,will"
     },
     {
         "doc_name": "Computer_Science30.txt",
         "removed_count": 60,
-        "top_10_removed_words": "i ,they ,it ,their ,the ,few ,a ,in ,of ,an"
+        "top_10_removed_words": "t ,and ,i ,few ,it ,an ,are ,then ,to ,they"
     }
 ]
