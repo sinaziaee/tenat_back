@@ -13,13 +13,16 @@ def entity_extraction(text, path, doc_name):
     nlp = spacy.load("en_core_web_sm")
     doc = nlp(text)
     doc_entities = [{"token": x.text, "label": x.label_} for x in doc.ents]
+    html = displacy.render(doc, style="ent")
     # doc_ent_dict = [{"token":token.text, "BILUO-tag":token.ent_iob_, "entity-tag":token.ent_type_} for token in doc]
 
-    dep_svg = displacy.render(doc, style='dep')
-    image_address = path + '/images/' + doc_name.replace('.txt', '_dep.svg')
-    Path(image_address).open("w", encoding='utf-8').write(dep_svg)
+    image_address = path + '/images/' + doc_name.replace('.txt', '_entity.html')
+    html_file = Path(image_address).open("w", encoding='utf-8')
+    html_file.write(html)
+    html_file.flush()
 
-    return doc_entities , image_address
+
+    return doc_entities,image_address
 
 def apply(from_path, to_path, name):
     from_path = from_path
@@ -48,16 +51,16 @@ def apply(from_path, to_path, name):
         result_file = str(file).replace('result',to_path+'/result')
         f_output = open(Path(result_file), 'w', encoding='utf8')
         text = f.read()
+        text = text.replace('\n',' ')
 
-        doc_entities, image_address = entity_extraction(text, target_folder_path, doc_name)
-
+        doc_entities,image_address = entity_extraction(text, target_folder_path, doc_name)
+        doc_entity_result = []
         for ent in doc_entities:
             f_output.write(f'{ent["token"]}:{ent["label"]}\n')
+            doc_entity_result.append(f'{ent["token"]}: {ent["label"]}')
 
-
-        SELECT_FIRST_ENTS = 4
-        result = {'doc_name':doc_name,'entities':doc_entities[:SELECT_FIRST_ENTS],'entity-count': len(doc_entities),
-                   'image_address':image_address}
+        doc_entity_result = ', '.join(doc_entity_result[:10])
+        result = {'doc_name':doc_name,'entities':doc_entity_result,'entity_count': len(doc_entities),'image_address':image_address}
         f.flush()
         result_list.append(result)
 

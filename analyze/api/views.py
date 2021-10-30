@@ -340,7 +340,6 @@ def entity_rec(request):
     new_map = request.POST
     name = new_map.get('name')
     from_path = new_map.get('from')
-
     language = new_map.get('language')
 
     if language == "English":

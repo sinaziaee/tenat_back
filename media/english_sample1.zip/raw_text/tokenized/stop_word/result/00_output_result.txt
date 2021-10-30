@@ -5,56 +5,56 @@
     {
         "doc_name": "Computer_Science20.txt",
         "removed_count": 160,
-        "top_10_removed_words": "why ,as ,and ,until ,i ,been ,it ,are ,to ,were"
+        "top_10_removed_words": "been ,s ,who ,had ,not ,have ,when ,more ,why ,are"
     },
     {
         "doc_name": "Computer_Science21.txt",
         "removed_count": 228,
-        "top_10_removed_words": "most ,as ,can ,and ,what ,it ,an ,other ,are ,to"
+        "top_10_removed_words": "an ,have ,some ,or ,more ,are ,can ,to ,both ,which"
     },
     {
         "doc_name": "Computer_Science22.txt",
         "removed_count": 187,
-        "top_10_removed_words": "most ,as ,can ,and ,few ,been ,an ,other ,are ,during"
+        "top_10_removed_words": "an ,been ,not ,have ,when ,some ,or ,more ,are ,can"
     },
     {
         "doc_name": "Computer_Science23.txt",
         "removed_count": 86,
-        "top_10_removed_words": "most ,and ,all ,been ,where ,are ,were ,by ,is ,the"
+        "top_10_removed_words": "between ,very ,so ,not ,some ,are ,where ,were ,which ,has"
     },
     {
         "doc_name": "Computer_Science24.txt",
         "removed_count": 86,
-        "top_10_removed_words": "most ,can ,and ,what ,all ,been ,where ,an ,other ,are"
+        "top_10_removed_words": "that ,an ,between ,s ,who ,have ,or ,are ,can ,to"
     },
     {
         "doc_name": "Computer_Science25.txt",
         "removed_count": 230,
-        "top_10_removed_words": "as ,can ,t ,and ,what ,below ,re ,after ,it ,an"
+        "top_10_removed_words": "an ,between ,s ,not ,have ,or ,more ,are ,can ,does"
     },
     {
         "doc_name": "Computer_Science26.txt",
         "removed_count": 152,
-        "top_10_removed_words": "as ,can ,and ,below ,i ,it ,where ,other ,are ,to"
+        "top_10_removed_words": "have ,some ,or ,are ,can ,does ,to ,both ,where ,o"
     },
     {
         "doc_name": "Computer_Science27.txt",
         "removed_count": 156,
-        "top_10_removed_words": "most ,as ,can ,being ,and ,below ,re ,i ,it ,where"
+        "top_10_removed_words": "an ,between ,s ,or ,when ,are ,can ,to ,both ,where"
     },
     {
         "doc_name": "Computer_Science28.txt",
         "removed_count": 150,
-        "top_10_removed_words": "why ,as ,can ,t ,and ,what ,re ,an ,are ,to"
+        "top_10_removed_words": "an ,so ,s ,do ,not ,or ,why ,are ,can ,to"
     },
     {
         "doc_name": "Computer_Science29.txt",
         "removed_count": 162,
-        "top_10_removed_words": "as ,can ,and ,below ,it ,an ,to ,were ,they ,will"
+        "top_10_removed_words": "an ,so ,s ,or ,more ,can ,to ,were ,below ,this"
     },
     {
         "doc_name": "Computer_Science30.txt",
         "removed_count": 60,
-        "top_10_removed_words": "t ,and ,i ,few ,it ,an ,are ,then ,to ,they"
+        "top_10_removed_words": "an ,so ,some ,when ,more ,are ,to ,over ,i ,this"
     }
 ]
